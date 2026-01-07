@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuenteovejuna - Edición Digital</title>
+    <link rel="stylesheet" href="assets/css/tei.css"/>
+</head>
+<body>
+    <div class="main-layout">
+        <!-- Columna principal para el texto TEI -->
+        <div id="TEI" class="text-column"></div>
+
+        <!-- Columna para las opciones -->
+        <div id="col-opciones" class="notes-column">
+            <div id="resize-handle"></div>
+            
+            <!-- Barra de botones -->
+            <div class="button-bar">
+                <button class="tab-button active" data-tab="notas">Notas</button>
+                <button class="tab-button" data-tab="opciones">Opciones</button>
+                <button class="tab-button" data-tab="info">Acerca de</button>
+            </div>
+            
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content active" id="tab-notas">
+                <div id="panelNotas">
+                    <div id="noteContent">
+                        <p class="placeholder-text">Haz clic en el texto subrayado para ver las notas.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tab-opciones">
+                <div class="opciones-panel">
+                    <h4>Lectura</h4>
+                    
+                    <div class="option-group">
+                        <label class="option-item">
+                            <span>Mostrar marcas de notas</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggle-notes" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </label>
+                        
+                        <label class="option-item">
+                            <span>Mostrar separación de estrofas</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggle-stanzas">
+                                <span class="slider"></span>
+                            </label>
+                        </label>
+                    </div>
+
+                    
+                    <h4>Tamaño del texto</h4>
+                    <div class="option-group">
+                        <div class="font-size-controls">
+                            <button id="decrease-font" class="font-btn">A-</button>
+                            <span id="font-size-display">100%</span>
+                            <button id="increase-font" class="font-btn">A+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tab-info">
+                <div class="info-panel">
+                    <h4>Sobre la edición</h4>
+                    <p></p>
+                    <!-- Aquí irá el contenido "Sobre la edición" -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="footer-link"><a href="assets/tei/fuenteovejuna.xml" target="_new">Ver TEI original</a></div>-->
+
+    <script src="assets/js/CETEI.js"></script>
+    <script>
+        // Variable global para almacenar las notas
+        window.notasXML = null;
+
+        // Cargar el archivo de notas
+        fetch('assets/tei/notas.xml')
+            .then(response => response.text())
+            .then(str => {
+                const parser = new DOMParser();
+                window.notasXML = parser.parseFromString(str, "application/xml");
+                console.log('Notas cargadas:', window.notasXML);
+            })
+            .catch(error => console.error('Error cargando notas:', error));
+
+        // Cargar el documento TEI
+        var CETEIcean = new CETEI();
+        CETEIcean.getHTML5("assets/tei/fuenteovejuna.xml", function(data) {
+            document.getElementById("TEI").appendChild(data);
+        });
+    </script>
+    <script src="assets/js/tei.js"></script>
+</body>
+</html>

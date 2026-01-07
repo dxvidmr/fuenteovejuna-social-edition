@@ -1,0 +1,6316 @@
+{
+  "mapeo": [
+    {
+      "numero_nota": 1,
+      "palabra": "Maestre",
+      "verso": "1",
+      "texto_verso": "¿Sabe el Maestre que estoy",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[3]/*[2]"
+    },
+    {
+      "numero_nota": 3,
+      "palabra": "grave",
+      "verso": "3",
+      "texto_verso": "Está, con la edad, más grave.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[5]/*[2]"
+    },
+    {
+      "numero_nota": 5,
+      "palabra": "nombre",
+      "verso": "7",
+      "texto_verso": "Cuando no sepa mi nombre,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[8]/*[2]"
+    },
+    {
+      "numero_nota": 7,
+      "palabra": "voluntad",
+      "verso": "14",
+      "texto_verso": "para abrir la voluntad",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[10]/*[4]"
+    },
+    {
+      "numero_nota": 8,
+      "palabra": "pies",
+      "verso": "20",
+      "texto_verso": "poner la boca a sus pies,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[11]/*[5]"
+    },
+    {
+      "numero_nota": 9,
+      "palabra": "sufrir",
+      "verso": "23",
+      "texto_verso": "¡Qué cansado es de sufrir!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[2]"
+    },
+    {
+      "numero_nota": 10,
+      "palabra": "tiranía",
+      "verso": "28",
+      "texto_verso": "linaje de tiranía.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[7]"
+    },
+    {
+      "numero_nota": 11,
+      "palabra": "amado",
+      "verso": "31",
+      "texto_verso": "a saber qué es ser amado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[10]"
+    },
+    {
+      "numero_nota": 12,
+      "palabra": "Calatrava",
+      "verso": "34",
+      "texto_verso": "que la cruz de Calatrava",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[13]/*[4]"
+    },
+    {
+      "numero_nota": 13,
+      "palabra": "dan",
+      "verso": "43",
+      "texto_verso": "que agora nueva me dan",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[18]/*[4]"
+    },
+    {
+      "numero_nota": 14,
+      "palabra": "crïanza",
+      "verso": "46",
+      "texto_verso": "que el amor y la crïanza",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[19]/*[4]"
+    },
+    {
+      "numero_nota": 17,
+      "palabra": "claro",
+      "verso": "72",
+      "texto_verso": "de aquel vuestro padre claro,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[5]"
+    },
+    {
+      "numero_nota": 18,
+      "palabra": "coadjutor",
+      "verso": "83",
+      "texto_verso": "fuese vuestro coadjutor;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[16]"
+    },
+    {
+      "numero_nota": 19,
+      "palabra": "deudos",
+      "verso": "89",
+      "texto_verso": "la parte de vuestros deudos:",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[22]"
+    },
+    {
+      "numero_nota": 20,
+      "palabra": "vasallos",
+      "verso": "94",
+      "texto_verso": "obedezcan sus vasallos;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[27]"
+    },
+    {
+      "numero_nota": 22,
+      "palabra": "Juana",
+      "verso": "101",
+      "texto_verso": "en la sucesión de Juana,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[34]"
+    },
+    {
+      "numero_nota": 23,
+      "palabra": "poder",
+      "verso": "103",
+      "texto_verso": "tiene agora en su poder.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[36]"
+    },
+    {
+      "numero_nota": 24,
+      "palabra": "entrambos",
+      "verso": "110",
+      "texto_verso": "para mirarlos a entrambos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[43]"
+    },
+    {
+      "numero_nota": 25,
+      "palabra": "niño",
+      "verso": "118",
+      "texto_verso": "Rodrigo, aunque niño,2 a cuantos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[51]"
+    },
+    {
+      "numero_nota": 26,
+      "palabra": "flacos",
+      "verso": "120",
+      "texto_verso": "para vuestros hombros flacos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[53]"
+    },
+    {
+      "numero_nota": 27,
+      "palabra": "venís",
+      "verso": "122",
+      "texto_verso": "de quien venís,2 que mostrando",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[55]"
+    },
+    {
+      "numero_nota": 28,
+      "palabra": "Villena",
+      "verso": "125",
+      "texto_verso": "los marqueses de Villena",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[58]"
+    },
+    {
+      "numero_nota": 29,
+      "palabra": "Fama",
+      "verso": "127",
+      "texto_verso": "que las alas de la Fama",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[60]"
+    },
+    {
+      "numero_nota": 30,
+      "palabra": "inmortal",
+      "verso": "139",
+      "texto_verso": "capa del templo inmortal",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[72]"
+    },
+    {
+      "numero_nota": 31,
+      "palabra": "parcialidad",
+      "verso": "142",
+      "texto_verso": "que en esta parcialidad,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[3]"
+    },
+    {
+      "numero_nota": 32,
+      "palabra": "intento",
+      "verso": "146",
+      "texto_verso": "a Ciudad Real mi intento,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[7]"
+    },
+    {
+      "numero_nota": 33,
+      "palabra": "estraños",
+      "verso": "151",
+      "texto_verso": "los propios y los estraños",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[12]"
+    },
+    {
+      "numero_nota": 35,
+      "palabra": "residís",
+      "verso": "157",
+      "texto_verso": "Vos, a donde residís,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[18]"
+    },
+    {
+      "numero_nota": 36,
+      "palabra": "crïados",
+      "verso": "159",
+      "texto_verso": "Pocos, pero mis crïados,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[29]/*[2]"
+    },
+    {
+      "numero_nota": 37,
+      "palabra": "servís",
+      "verso": "160",
+      "texto_verso": "que si dellos os servís,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[29]/*[3]"
+    },
+    {
+      "numero_nota": 38,
+      "palabra": "mudanzas",
+      "verso": "168",
+      "texto_verso": "casa entre aquestas mudanzas.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[31]/*[4]"
+    },
+    {
+      "numero_nota": 39,
+      "palabra": "vasallo",
+      "verso": "170",
+      "texto_verso": "que no quedará vasallo",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[32]/*[3]"
+    },
+    {
+      "numero_nota": 40,
+      "palabra": "ristre",
+      "verso": "172",
+      "texto_verso": "poner la lanza en el ristre.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[32]/*[5]"
+    },
+    {
+      "numero_nota": 42,
+      "palabra": "volviera!",
+      "verso": "173",
+      "texto_verso": "¡Mas que nunca acá volviera!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[34]/*[2]"
+    },
+    {
+      "numero_nota": 44,
+      "palabra": "¡Plega",
+      "verso": "177",
+      "texto_verso": "¡Plega al cielo que jamás",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[36]/*[2]"
+    },
+    {
+      "numero_nota": 45,
+      "palabra": "brando",
+      "verso": "182",
+      "texto_verso": "brando como una manteca.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[37]/*[5]"
+    },
+    {
+      "numero_nota": 46,
+      "palabra": "condición?",
+      "verso": "184",
+      "texto_verso": "como esta mi condición?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[38]/*[3]"
+    },
+    {
+      "numero_nota": 47,
+      "palabra": "efeto",
+      "verso": "189",
+      "texto_verso": "¿A qué efeto fuera bueno",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[40]/*[4]"
+    },
+    {
+      "numero_nota": 48,
+      "palabra": "condeno",
+      "verso": "192",
+      "texto_verso": "Luego la infamia condeno.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[42]/*[2]"
+    },
+    {
+      "numero_nota": 49,
+      "palabra": "mes",
+      "verso": "199",
+      "texto_verso": "porque ha que me sigue un mes,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[44]/*[3]"
+    },
+    {
+      "numero_nota": 50,
+      "palabra": "copete",
+      "verso": "204",
+      "texto_verso": "una sarta y un copete.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[44]/*[8]"
+    },
+    {
+      "numero_nota": 51,
+      "palabra": "pecho",
+      "verso": "209",
+      "texto_verso": "para contrastar mi pecho.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[44]/*[13]"
+    },
+    {
+      "numero_nota": 52,
+      "palabra": "habrá",
+      "verso": "211",
+      "texto_verso": "en el arroyo, y habrá",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[46]/*[3]"
+    },
+    {
+      "numero_nota": 54,
+      "palabra": "reverencia",
+      "verso": "216",
+      "texto_verso": "yo para su reverencia.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[3]"
+    },
+    {
+      "numero_nota": 55,
+      "palabra": "precio",
+      "verso": "217",
+      "texto_verso": "Pardiez, más precio poner,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[4]"
+    },
+    {
+      "numero_nota": 56,
+      "palabra": "cangilón",
+      "verso": "224",
+      "texto_verso": "del pegado cangilón;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[11]"
+    },
+    {
+      "numero_nota": 57,
+      "palabra": "armonía",
+      "verso": "228",
+      "texto_verso": "con espumosa armonía;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[15]"
+    },
+    {
+      "numero_nota": 58,
+      "palabra": "viña",
+      "verso": "235",
+      "texto_verso": "de una cuerda de mi viña",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[22]"
+    },
+    {
+      "numero_nota": 59,
+      "palabra": "pimienta",
+      "verso": "238",
+      "texto_verso": "con su aceite y su pimienta,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[25]"
+    },
+    {
+      "numero_nota": 60,
+      "palabra": "devociones",
+      "verso": "241",
+      "texto_verso": "rezalle mis devociones;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[28]"
+    },
+    {
+      "numero_nota": 61,
+      "palabra": "bellacones",
+      "verso": "244",
+      "texto_verso": "tienen estos bellacones,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[31]"
+    },
+    {
+      "numero_nota": 62,
+      "palabra": "cuidado",
+      "verso": "245",
+      "texto_verso": "porque todo su cuidado",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[32]"
+    },
+    {
+      "numero_nota": 65,
+      "palabra": "judío»",
+      "verso": "264",
+      "texto_verso": "dicen: «judío, judío».",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[17]"
+    },
+    {
+      "numero_nota": 66,
+      "palabra": "ascuas",
+      "verso": "269",
+      "texto_verso": "pero pasadas las ascuas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[22]"
+    },
+    {
+      "numero_nota": 67,
+      "palabra": "Pascuas",
+      "verso": "272",
+      "texto_verso": "anda el nombre de las Pascuas.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[25]"
+    },
+    {
+      "numero_nota": 68,
+      "palabra": "diferencia",
+      "verso": "275",
+      "texto_verso": "En aquesta diferencia",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[55]/*[2]"
+    },
+    {
+      "numero_nota": 69,
+      "palabra": "concierto",
+      "verso": "279",
+      "texto_verso": "Pues hagamos un concierto",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[57]/*[2]"
+    },
+    {
+      "numero_nota": 70,
+      "palabra": "mí",
+      "verso": "281",
+      "texto_verso": "y es que si juzgan por mí,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[57]/*[4]"
+    },
+    {
+      "numero_nota": 72,
+      "palabra": "boj",
+      "verso": "286",
+      "texto_verso": "Daré mi rabel de boj,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[59]/*[2]"
+    },
+    {
+      "numero_nota": 73,
+      "palabra": "troj",
+      "verso": "287",
+      "texto_verso": "que vale más que una troj",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[59]/*[3]"
+    },
+    {
+      "numero_nota": 74,
+      "palabra": "uso",
+      "verso": "292",
+      "texto_verso": "Andar al uso queremos:",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[2]"
+    },
+    {
+      "numero_nota": 75,
+      "palabra": "bisojo",
+      "verso": "294",
+      "texto_verso": "al ciego, tuerto; al bisojo,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[4]"
+    },
+    {
+      "numero_nota": 76,
+      "palabra": "soldadesca",
+      "verso": "298",
+      "texto_verso": "al mal galán, soldadesca;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[8]"
+    },
+    {
+      "numero_nota": 77,
+      "palabra": "parapoco",
+      "verso": "305",
+      "texto_verso": "Al cobarde, parapoco",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[15]"
+    },
+    {
+      "numero_nota": 78,
+      "palabra": "bizarro",
+      "verso": "306",
+      "texto_verso": "al atrevido, bizarro;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[16]"
+    },
+    {
+      "numero_nota": 79,
+      "palabra": "jarro",
+      "verso": "307",
+      "texto_verso": "compañero al que es un jarro,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[17]"
+    },
+    {
+      "numero_nota": 80,
+      "palabra": "resfrïado",
+      "verso": "313",
+      "texto_verso": "Al buboso, resfrïado;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[23]"
+    },
+    {
+      "numero_nota": 81,
+      "palabra": "corcovado",
+      "verso": "316",
+      "texto_verso": "al corcovado,8 cargado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[26]"
+    },
+    {
+      "numero_nota": 83,
+      "palabra": "descompuesto",
+      "verso": "330",
+      "texto_verso": "venturoso al descompuesto",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[4]"
+    },
+    {
+      "numero_nota": 85,
+      "palabra": "moscatel",
+      "verso": "334",
+      "texto_verso": "al liberal, moscatel;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[8]"
+    },
+    {
+      "numero_nota": 86,
+      "palabra": "madeja",
+      "verso": "336",
+      "texto_verso": "y al que es piadoso, madeja.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[10]"
+    },
+    {
+      "numero_nota": 87,
+      "palabra": "dimuño",
+      "verso": "349",
+      "texto_verso": "¡Digo que eres el dimuño!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[67]/*[2]"
+    },
+    {
+      "numero_nota": 88,
+      "palabra": "mal",
+      "verso": "350",
+      "texto_verso": "¡Soncas que lo dice mal",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[68]/*[2]"
+    },
+    {
+      "numero_nota": 89,
+      "palabra": "puño",
+      "verso": "352",
+      "texto_verso": "la echó el cura con el puño.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[69]/*[3]"
+    },
+    {
+      "numero_nota": 90,
+      "palabra": "discreción",
+      "verso": "359",
+      "texto_verso": "En tu discreción confío.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[75]/*[2]"
+    },
+    {
+      "numero_nota": 91,
+      "palabra": "verdad",
+      "verso": "365",
+      "texto_verso": "porque yo sé que es verdad",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[80]/*[3]"
+    },
+    {
+      "numero_nota": 93,
+      "palabra": "rigor",
+      "verso": "367",
+      "texto_verso": "Generalmente, es rigor.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[83]/*[2]"
+    },
+    {
+      "numero_nota": 94,
+      "palabra": "conservar",
+      "verso": "370",
+      "texto_verso": "ni aun el mundo conservar",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[84]/*[4]"
+    },
+    {
+      "numero_nota": 95,
+      "palabra": "está",
+      "verso": "378",
+      "texto_verso": "flema y sangre, claro está.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[85]/*[9]"
+    },
+    {
+      "numero_nota": 96,
+      "palabra": "concierto",
+      "verso": "382",
+      "texto_verso": "porque el amor es concierto.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[86]/*[5]"
+    },
+    {
+      "numero_nota": 97,
+      "palabra": "aquí",
+      "verso": "388",
+      "texto_verso": "de cuanto se mira aquí;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[87]/*[7]"
+    },
+    {
+      "numero_nota": 98,
+      "palabra": "semejante",
+      "verso": "407",
+      "texto_verso": "su semejante?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[90]/*[6]"
+    },
+    {
+      "numero_nota": 99,
+      "palabra": "gozarla",
+      "verso": "412",
+      "texto_verso": "Para gozarla.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[94]/*[2]"
+    },
+    {
+      "numero_nota": 100,
+      "palabra": "todo",
+      "verso": "420",
+      "texto_verso": "y quiero dármele en todo",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[99]/*[5]"
+    },
+    {
+      "numero_nota": 101,
+      "palabra": "amado",
+      "verso": "426",
+      "texto_verso": "y la virtud de lo amado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[100]/*[7]"
+    },
+    {
+      "numero_nota": 102,
+      "palabra": "escuelas",
+      "verso": "430",
+      "texto_verso": "en sus cademias y escuelas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[101]/*[5]"
+    },
+    {
+      "numero_nota": 103,
+      "palabra": "agravios",
+      "verso": "432",
+      "texto_verso": "en persuadir sus agravios.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[102]/*[3]"
+    },
+    {
+      "numero_nota": 105,
+      "palabra": "desdén",
+      "verso": "444",
+      "texto_verso": "¿Qué mayor que ese desdén?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[108]/*[2]"
+    },
+    {
+      "numero_nota": 107,
+      "palabra": "amigos",
+      "verso": "453",
+      "texto_verso": "alguna sangre, y amigos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[115]/*[4]"
+    },
+    {
+      "numero_nota": 108,
+      "palabra": "jornada",
+      "verso": "457",
+      "texto_verso": "Para emprender la jornada",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[4]"
+    },
+    {
+      "numero_nota": 109,
+      "palabra": "infantes",
+      "verso": "461",
+      "texto_verso": "dos mil lucidos infantes,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[8]"
+    },
+    {
+      "numero_nota": 110,
+      "palabra": "sacro",
+      "verso": "467",
+      "texto_verso": "aunque sean de orden sacro;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[14]"
+    },
+    {
+      "numero_nota": 111,
+      "palabra": "entiende",
+      "verso": "468",
+      "texto_verso": "mas contra moros se entiende.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[15]"
+    },
+    {
+      "numero_nota": 112,
+      "palabra": "bizarro",
+      "verso": "469",
+      "texto_verso": "Salió el muchacho bizarro",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[16]"
+    },
+    {
+      "numero_nota": 113,
+      "palabra": "verde",
+      "verso": "470",
+      "texto_verso": "con una casaca verde",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[17]"
+    },
+    {
+      "numero_nota": 114,
+      "palabra": "oro",
+      "verso": "471",
+      "texto_verso": "bordada de cifras de oro,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[18]"
+    },
+    {
+      "numero_nota": 115,
+      "palabra": "brazaletes",
+      "verso": "472",
+      "texto_verso": "que sólo los brazaletes",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[19]"
+    },
+    {
+      "numero_nota": 116,
+      "palabra": "prenden",
+      "verso": "474",
+      "texto_verso": "que seis alamares prenden.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[21]"
+    },
+    {
+      "numero_nota": 117,
+      "palabra": "bridón",
+      "verso": "475",
+      "texto_verso": "Un corpulento bridón",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[22]"
+    },
+    {
+      "numero_nota": 118,
+      "palabra": "rodado",
+      "verso": "476",
+      "texto_verso": "rucio rodado, que al Betis",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[23]"
+    },
+    {
+      "numero_nota": 119,
+      "palabra": "agua",
+      "verso": "477",
+      "texto_verso": "bebió el agua, y en su orilla",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[24]"
+    },
+    {
+      "numero_nota": 120,
+      "palabra": "fértil",
+      "verso": "478",
+      "texto_verso": "despuntó la grama fértil.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[25]"
+    },
+    {
+      "numero_nota": 121,
+      "palabra": "codón",
+      "verso": "479",
+      "texto_verso": "El codón, labrado en cintas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[26]"
+    },
+    {
+      "numero_nota": 122,
+      "palabra": "lazadas",
+      "verso": "481",
+      "texto_verso": "cogido en blancas lazadas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[28]"
+    },
+    {
+      "numero_nota": 123,
+      "palabra": "teje",
+      "verso": "484",
+      "texto_verso": "iguales labores teje.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[31]"
+    },
+    {
+      "numero_nota": 124,
+      "palabra": "cabos",
+      "verso": "487",
+      "texto_verso": "melado de negros cabos,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[34]"
+    },
+    {
+      "numero_nota": 125,
+      "palabra": "bebe",
+      "verso": "488",
+      "texto_verso": "puesto que con blanco bebe,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[35]"
+    },
+    {
+      "numero_nota": 126,
+      "palabra": "jacerina",
+      "verso": "489",
+      "texto_verso": "sobre turca jacerina,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[36]"
+    },
+    {
+      "numero_nota": 127,
+      "palabra": "luciente",
+      "verso": "490",
+      "texto_verso": "peto y espaldar luciente",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[37]"
+    },
+    {
+      "numero_nota": 128,
+      "palabra": "plumas",
+      "verso": "494",
+      "texto_verso": "con blancas plumas, parece",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[41]"
+    },
+    {
+      "numero_nota": 129,
+      "palabra": "vierte",
+      "verso": "496",
+      "texto_verso": "aquellos azares vierte.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[43]"
+    },
+    {
+      "numero_nota": 130,
+      "palabra": "lanza",
+      "verso": "499",
+      "texto_verso": "un fresno entero por lanza,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[46]"
+    },
+    {
+      "numero_nota": 131,
+      "palabra": "arma",
+      "verso": "501",
+      "texto_verso": "La ciudad se puso en arma,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[48]"
+    },
+    {
+      "numero_nota": 132,
+      "palabra": "real",
+      "verso": "503",
+      "texto_verso": "de la corona real,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[50]"
+    },
+    {
+      "numero_nota": 133,
+      "palabra": "Entrola",
+      "verso": "505",
+      "texto_verso": "Entrola bien resistida;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[52]"
+    },
+    {
+      "numero_nota": 134,
+      "palabra": "públicamente",
+      "verso": "512",
+      "texto_verso": "azotar públicamente.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[59]"
+    },
+    {
+      "numero_nota": 135,
+      "palabra": "sujete",
+      "verso": "520",
+      "texto_verso": "a su roja cruz sujete",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[67]"
+    },
+    {
+      "numero_nota": 136,
+      "palabra": "ciudad",
+      "verso": "523",
+      "texto_verso": "que el saco de la ciudad",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[70]"
+    },
+    {
+      "numero_nota": 137,
+      "palabra": "alegremente",
+      "verso": "526",
+      "texto_verso": "recebilde alegremente,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[73]"
+    },
+    {
+      "numero_nota": 138,
+      "palabra": "laureles",
+      "verso": "528",
+      "texto_verso": "son los mejores laureles.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[75]"
+    },
+    {
+      "numero_nota": 142,
+      "palabra": "honrado",
+      "verso": "550",
+      "texto_verso": "y el Regimiento que hoy habéis honrado",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[3]"
+    },
+    {
+      "numero_nota": 143,
+      "palabra": "dones",
+      "verso": "555",
+      "texto_verso": "más que de ricos dones: lo primero",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[8]"
+    },
+    {
+      "numero_nota": 144,
+      "palabra": "barros",
+      "verso": "556",
+      "texto_verso": "traen dos cestas de polidos barros;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[9]"
+    },
+    {
+      "numero_nota": 145,
+      "palabra": "guerrero",
+      "verso": "559",
+      "texto_verso": "para cantar vueso valor guerrero.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[12]"
+    },
+    {
+      "numero_nota": 146,
+      "palabra": "sal",
+      "verso": "560",
+      "texto_verso": "Diez cebones en sal, valientes piezas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[13]"
+    },
+    {
+      "numero_nota": 147,
+      "palabra": "menudencias",
+      "verso": "561",
+      "texto_verso": "sin otras menudencias, y cecinas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[14]"
+    },
+    {
+      "numero_nota": 148,
+      "palabra": "cecinas",
+      "verso": "561",
+      "texto_verso": "sin otras menudencias, y cecinas,",
+      "score": 0.8,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[14]"
+    },
+    {
+      "numero_nota": 149,
+      "palabra": "cortezas",
+      "verso": "562",
+      "texto_verso": "y más que guantes de ámbar sus cortezas.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[15]"
+    },
+    {
+      "numero_nota": 150,
+      "palabra": "gallinas",
+      "verso": "563",
+      "texto_verso": "Cien pares de capones y gallinas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[16]"
+    },
+    {
+      "numero_nota": 153,
+      "palabra": "aceros",
+      "verso": "574",
+      "texto_verso": "que el vino suele dar lindos aceros.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[27]"
+    },
+    {
+      "numero_nota": 154,
+      "palabra": "pecho",
+      "verso": "576",
+      "texto_verso": "no quiero daros cuenta: justo pecho",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[29]"
+    },
+    {
+      "numero_nota": 155,
+      "palabra": "umbrales",
+      "verso": "584",
+      "texto_verso": "y juncia, a vuestros umbrales,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[140]/*[5]"
+    },
+    {
+      "numero_nota": 157,
+      "palabra": "huera!",
+      "verso": "600",
+      "texto_verso": "Conmigo no, ¡tirte a huera",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[153]/*[2]"
+    },
+    {
+      "numero_nota": 159,
+      "palabra": "digo",
+      "verso": "611",
+      "texto_verso": "en no hacer lo que les digo?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[160]/*[3]"
+    },
+    {
+      "numero_nota": 160,
+      "palabra": "¡Entrá",
+      "verso": "612",
+      "texto_verso": "¡Entrá, pues!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[161]/*[2]"
+    },
+    {
+      "numero_nota": 162,
+      "palabra": "postigo",
+      "verso": "614",
+      "texto_verso": "que echaréis luego el postigo.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[164]/*[3]"
+    },
+    {
+      "numero_nota": 163,
+      "palabra": "presentadas",
+      "verso": "619",
+      "texto_verso": "¡También venís presentadas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[168]/*[2]"
+    },
+    {
+      "numero_nota": 164,
+      "palabra": "estremadas",
+      "verso": "622",
+      "texto_verso": "Basta, que son estremadas.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[170]/*[2]"
+    },
+    {
+      "numero_nota": 165,
+      "palabra": "llevamos",
+      "verso": "627",
+      "texto_verso": "¡Muy buen recado llevamos!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[175]/*[2]"
+    },
+    {
+      "numero_nota": 167,
+      "palabra": "esto",
+      "verso": "631",
+      "texto_verso": "Quien sirve se obliga a esto.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[176]/*[2]"
+    },
+    {
+      "numero_nota": 168,
+      "palabra": "medrar",
+      "verso": "632",
+      "texto_verso": "Si en algo desea medrar",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[176]/*[3]"
+    },
+    {
+      "numero_nota": 169,
+      "palabra": "presto",
+      "verso": "634",
+      "texto_verso": "o ha de despedirse presto.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[176]/*[5]"
+    },
+    {
+      "numero_nota": 171,
+      "palabra": "Alfonso",
+      "verso": "637",
+      "texto_verso": "por ver Alfonso en tal puesto,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[178]/*[4]"
+    },
+    {
+      "numero_nota": 172,
+      "palabra": "previene",
+      "verso": "638",
+      "texto_verso": "y su ejército previene.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[178]/*[5]"
+    },
+    {
+      "numero_nota": 173,
+      "palabra": "llano",
+      "verso": "642",
+      "texto_verso": "el ser muy cierto está llano.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[178]/*[9]"
+    },
+    {
+      "numero_nota": 174,
+      "palabra": "vea",
+      "verso": "648",
+      "texto_verso": "con la prevención se vea.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[179]/*[7]"
+    },
+    {
+      "numero_nota": 175,
+      "palabra": "¿entrarán",
+      "verso": "653",
+      "texto_verso": "de Ciudad Real: ¿entrarán?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[181]/*[4]"
+    },
+    {
+      "numero_nota": 176,
+      "palabra": "hado",
+      "verso": "666",
+      "texto_verso": "deste honor el hado adverso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[184]/*[13]"
+    },
+    {
+      "numero_nota": 177,
+      "palabra": "estremado",
+      "verso": "669",
+      "texto_verso": "es en valor estremado,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[184]/*[16]"
+    },
+    {
+      "numero_nota": 178,
+      "palabra": "cerco",
+      "verso": "674",
+      "texto_verso": "nos puso apretado cerco.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[184]/*[21]"
+    },
+    {
+      "numero_nota": 179,
+      "palabra": "presto",
+      "verso": "686",
+      "texto_verso": "a no remediarlo presto.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[184]/*[33]"
+    },
+    {
+      "numero_nota": 180,
+      "palabra": "ajenos",
+      "verso": "694",
+      "texto_verso": "de todo contento ajenos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[186]/*[8]"
+    },
+    {
+      "numero_nota": 181,
+      "palabra": "mal",
+      "verso": "706",
+      "texto_verso": "y causarnos mucho mal.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[189]/*[9]"
+    },
+    {
+      "numero_nota": 182,
+      "palabra": "luego",
+      "verso": "707",
+      "texto_verso": "Don Manrique, partid luego,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[190]/*[2]"
+    },
+    {
+      "numero_nota": 183,
+      "palabra": "compañías",
+      "verso": "708",
+      "texto_verso": "llevando dos compañías;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[190]/*[3]"
+    },
+    {
+      "numero_nota": 184,
+      "palabra": "demasías",
+      "verso": "709",
+      "texto_verso": "remediad sus demasías",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[190]/*[4]"
+    },
+    {
+      "numero_nota": 185,
+      "palabra": "osado",
+      "verso": "712",
+      "texto_verso": "con vos, que es Córdoba osado,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[190]/*[7]"
+    },
+    {
+      "numero_nota": 186,
+      "palabra": "valor",
+      "verso": "718",
+      "texto_verso": "como de tan gran valor.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[191]/*[3]"
+    },
+    {
+      "numero_nota": 187,
+      "palabra": "paños",
+      "verso": "723",
+      "texto_verso": "A medio torcer los paños,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[2]"
+    },
+    {
+      "numero_nota": 188,
+      "palabra": "ojo",
+      "verso": "730",
+      "texto_verso": "y todos nos traen sobre ojo",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[9]"
+    },
+    {
+      "numero_nota": 189,
+      "palabra": "brïoso",
+      "verso": "732",
+      "texto_verso": "de los que huellan brïoso",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[11]"
+    },
+    {
+      "numero_nota": 190,
+      "palabra": "costoso",
+      "verso": "734",
+      "texto_verso": "vistes bizarro y costoso,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[13]"
+    },
+    {
+      "numero_nota": 191,
+      "palabra": "somos",
+      "verso": "738",
+      "texto_verso": "que ya para en uno somos;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[17]"
+    },
+    {
+      "numero_nota": 192,
+      "palabra": "piporros",
+      "verso": "742",
+      "texto_verso": "en dejando los piporros.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[21]"
+    },
+    {
+      "numero_nota": 193,
+      "palabra": "trojes",
+      "verso": "743",
+      "texto_verso": "Y mejor sus trojes vean",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[22]"
+    },
+    {
+      "numero_nota": 194,
+      "palabra": "pongo",
+      "verso": "750",
+      "texto_verso": "ni en ella el cuidado pongo",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[29]"
+    },
+    {
+      "numero_nota": 195,
+      "palabra": "oigo",
+      "verso": "754",
+      "texto_verso": "la vida, cuando te oigo.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[195]/*[5]"
+    },
+    {
+      "numero_nota": 196,
+      "palabra": "cuidadoso",
+      "verso": "760",
+      "texto_verso": "de verme tan cuidadoso",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[197]/*[3]"
+    },
+    {
+      "numero_nota": 197,
+      "palabra": "como",
+      "verso": "762",
+      "texto_verso": "ni bebo, duermo ni como?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[197]/*[5]"
+    },
+    {
+      "numero_nota": 198,
+      "palabra": "rostro",
+      "verso": "764",
+      "texto_verso": "en ese angélico rostro?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[197]/*[7]"
+    },
+    {
+      "numero_nota": 199,
+      "palabra": "Frondoso",
+      "verso": "766",
+      "texto_verso": "Pues salúdate, Frondoso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[198]/*[2]"
+    },
+    {
+      "numero_nota": 200,
+      "palabra": "sonorosos",
+      "verso": "770",
+      "texto_verso": "con arrullos sonorosos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[199]/*[5]"
+    },
+    {
+      "numero_nota": 201,
+      "palabra": "asomos",
+      "verso": "774",
+      "texto_verso": "ya tengo algunos asomos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[200]/*[4]"
+    },
+    {
+      "numero_nota": 202,
+      "palabra": "gama",
+      "verso": "781",
+      "texto_verso": "y topar tan bella gama.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[205]/*[4]"
+    },
+    {
+      "numero_nota": 203,
+      "palabra": "monstro",
+      "verso": "790",
+      "texto_verso": "que vienes a ser un monstro",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[207]/*[6]"
+    },
+    {
+      "numero_nota": 204,
+      "palabra": "huyas",
+      "verso": "797",
+      "texto_verso": "huyas al señor que tienes,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[207]/*[13]"
+    },
+    {
+      "numero_nota": 205,
+      "palabra": "desposorio",
+      "verso": "804",
+      "texto_verso": "dos días del desposorio?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[207]/*[20]"
+    },
+    {
+      "numero_nota": 206,
+      "palabra": "demonio",
+      "verso": "812",
+      "texto_verso": "os tuviera por demonio,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[208]/*[9]"
+    },
+    {
+      "numero_nota": 207,
+      "palabra": "melindres",
+      "verso": "818",
+      "texto_verso": "reduzgo melindres.)",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[209]/*[6]"
+    },
+    {
+      "numero_nota": 208,
+      "palabra": "generoso",
+      "verso": "826",
+      "texto_verso": "Comendador generoso,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[217]/*[2]"
+    },
+    {
+      "numero_nota": 209,
+      "palabra": "asombro",
+      "verso": "830",
+      "texto_verso": "aunque la cruz me da asombro",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[217]/*[6]"
+    },
+    {
+      "numero_nota": 211,
+      "palabra": "loco",
+      "verso": "834",
+      "texto_verso": "¡Oh, malhaya el hombre loco,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[223]/*[2]"
+    },
+    {
+      "numero_nota": 212,
+      "palabra": "quité",
+      "verso": "837",
+      "texto_verso": "la caza, me la quité.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[223]/*[5]"
+    },
+    {
+      "numero_nota": 213,
+      "palabra": "nuez",
+      "verso": "839",
+      "texto_verso": "la nuez, que os he de apiolar.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[224]/*[3]"
+    },
+    {
+      "numero_nota": 214,
+      "palabra": "apiolar",
+      "verso": "839",
+      "texto_verso": "la nuez, que os he de apiolar.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[224]/*[3]"
+    },
+    {
+      "numero_nota": 215,
+      "palabra": "trono",
+      "verso": "846",
+      "texto_verso": "el día que está en su trono.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[226]/*[6]"
+    },
+    {
+      "numero_nota": 216,
+      "palabra": "caballero",
+      "verso": "851",
+      "texto_verso": "las leyes de caballero.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[227]/*[6]"
+    },
+    {
+      "numero_nota": 218,
+      "palabra": "cerrara",
+      "verso": "859",
+      "texto_verso": "¡Que no cerrara con él!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[229]/*[5]"
+    },
+    {
+      "numero_nota": 219,
+      "palabra": "corro",
+      "verso": "860",
+      "texto_verso": "¡Vive el Cielo, que me corro!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[3]/*[229]/*[6]"
+    },
+    {
+      "numero_nota": 222,
+      "palabra": "crece",
+      "verso": "863",
+      "texto_verso": "El año apunta mal, y el tiempo crece,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[3]/*[4]"
+    },
+    {
+      "numero_nota": 223,
+      "palabra": "trece",
+      "verso": "865",
+      "texto_verso": "aunque lo contradicen más de trece.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[3]/*[6]"
+    },
+    {
+      "numero_nota": 224,
+      "palabra": "república",
+      "verso": "867",
+      "texto_verso": "en gobernar en paz esta república.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[4]/*[3]"
+    },
+    {
+      "numero_nota": 225,
+      "palabra": "importantes",
+      "verso": "872",
+      "texto_verso": "los secretos a Dios sólo importantes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[6]"
+    },
+    {
+      "numero_nota": 226,
+      "palabra": "ignorante",
+      "verso": "876",
+      "texto_verso": "al más sabio veréis más ignorante.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[10]"
+    },
+    {
+      "numero_nota": 227,
+      "palabra": "lumbres",
+      "verso": "878",
+      "texto_verso": "y el proceder de las celestes lumbres?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[12]"
+    },
+    {
+      "numero_nota": 228,
+      "palabra": "tasa",
+      "verso": "881",
+      "texto_verso": "Ellos en el sembrar nos ponen tasa:",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[15]"
+    },
+    {
+      "numero_nota": 229,
+      "palabra": "daca",
+      "verso": "882",
+      "texto_verso": "daca el trigo, cebada y las legumbres,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[16]"
+    },
+    {
+      "numero_nota": 231,
+      "palabra": "Hircania",
+      "verso": "890",
+      "texto_verso": "y que habrá muchos tigres en Hircania.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[24]"
+    },
+    {
+      "numero_nota": 232,
+      "palabra": "palmatoria",
+      "verso": "893",
+      "texto_verso": "A fe que no ganéis la palmatoria,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[7]/*[2]"
+    },
+    {
+      "numero_nota": 233,
+      "palabra": "mentidero",
+      "verso": "894",
+      "texto_verso": "porque ya está ocupado el mentidero.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[7]/*[3]"
+    },
+    {
+      "numero_nota": 234,
+      "palabra": "seréis",
+      "verso": "896",
+      "texto_verso": "Un Bártulo seréis.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[10]/*[2]"
+    },
+    {
+      "numero_nota": 236,
+      "palabra": "confuso",
+      "verso": "908",
+      "texto_verso": "de ver letreros sólo está confuso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[7]"
+    },
+    {
+      "numero_nota": 237,
+      "palabra": "jerga",
+      "verso": "910",
+      "texto_verso": "mil ingenios sacó de entre la jerga,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[9]"
+    },
+    {
+      "numero_nota": 239,
+      "palabra": "renuncia",
+      "verso": "916",
+      "texto_verso": "en quien la Fama su valor renuncia.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[15]"
+    },
+    {
+      "numero_nota": 240,
+      "palabra": "grave",
+      "verso": "917",
+      "texto_verso": "Mas muchos que opinión tuvieron grave",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[16]"
+    },
+    {
+      "numero_nota": 241,
+      "palabra": "envían",
+      "verso": "924",
+      "texto_verso": "impresos por el mundo los envían.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[23]"
+    },
+    {
+      "numero_nota": 242,
+      "palabra": "impresión",
+      "verso": "927",
+      "texto_verso": "Leonelo, la impresión es importante.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[18]/*[2]"
+    },
+    {
+      "numero_nota": 243,
+      "palabra": "Agustino",
+      "verso": "931",
+      "texto_verso": "un Jerónimo santo, un Agustino.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[19]/*[5]"
+    },
+    {
+      "numero_nota": 244,
+      "palabra": "mohíno",
+      "verso": "932",
+      "texto_verso": "Dejaldo y asentaos, que estáis mohíno.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[20]/*[2]"
+    },
+    {
+      "numero_nota": 245,
+      "palabra": "dote",
+      "verso": "933",
+      "texto_verso": "No hay en cuatro haciendas para un dote,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[22]/*[2]"
+    },
+    {
+      "numero_nota": 247,
+      "palabra": "vulgo",
+      "verso": "936",
+      "texto_verso": "que en esto el barrio y vulgo anda confuso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[22]/*[5]"
+    },
+    {
+      "numero_nota": 248,
+      "palabra": "puso",
+      "verso": "938",
+      "texto_verso": "¡Cuál a Laurencia en ese campo puso!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[24]/*[2]"
+    },
+    {
+      "numero_nota": 250,
+      "palabra": "estén",
+      "verso": "943",
+      "texto_verso": "que se estén.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[29]/*[3]"
+    },
+    {
+      "numero_nota": 253,
+      "palabra": "galgo",
+      "verso": "951",
+      "texto_verso": "¿Vio vusiñoría el galgo?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[34]/*[2]"
+    },
+    {
+      "numero_nota": 254,
+      "palabra": "va",
+      "verso": "962",
+      "texto_verso": "por momentos se me va.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[37]/*[5]"
+    },
+    {
+      "numero_nota": 255,
+      "palabra": "vos",
+      "verso": "966",
+      "texto_verso": "para alcanzada de vos?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[42]/*[3]"
+    },
+    {
+      "numero_nota": 257,
+      "palabra": "verme",
+      "verso": "972",
+      "texto_verso": "traza de verme.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[45]/*[6]"
+    },
+    {
+      "numero_nota": 258,
+      "palabra": "Aristóteles",
+      "verso": "978",
+      "texto_verso": "de Aristóteles.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[47]/*[5]"
+    },
+    {
+      "numero_nota": 259,
+      "palabra": "igual",
+      "verso": "983",
+      "texto_verso": "(¿Viose desvergüenza igual?)",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[49]/*[2]"
+    },
+    {
+      "numero_nota": 260,
+      "palabra": "limpia",
+      "verso": "993",
+      "texto_verso": "que no es de sangre tan limpia.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[53]/*[4]"
+    },
+    {
+      "numero_nota": 261,
+      "palabra": "tiñe",
+      "verso": "996",
+      "texto_verso": "que el mal más tiñe que alimpia.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[55]/*[3]"
+    },
+    {
+      "numero_nota": 262,
+      "palabra": "honran,",
+      "verso": "999",
+      "texto_verso": "Esas palabras les honran,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[57]/*[2]"
+    },
+    {
+      "numero_nota": 263,
+      "palabra": "mujeres",
+      "verso": "1006",
+      "texto_verso": "que visiten sus mujeres.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[58]/*[7]"
+    },
+    {
+      "numero_nota": 264,
+      "palabra": "castiga",
+      "verso": "1010",
+      "texto_verso": "y más presto quien castiga.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[59]/*[5]"
+    },
+    {
+      "numero_nota": 265,
+      "palabra": "reportes",
+      "verso": "1016",
+      "texto_verso": "Que te reportes te ruego.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[65]/*[2]"
+    },
+    {
+      "numero_nota": 266,
+      "palabra": "corrillo",
+      "verso": "1017",
+      "texto_verso": "Querrían hacer corrillo",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[66]/*[2]"
+    },
+    {
+      "numero_nota": 267,
+      "palabra": "siente",
+      "verso": "1028",
+      "texto_verso": "el disgusto que se siente.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[73]/*[4]"
+    },
+    {
+      "numero_nota": 268,
+      "palabra": "conmigo",
+      "verso": "1029",
+      "texto_verso": "¿Éstos se igualan conmigo?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[74]/*[2]"
+    },
+    {
+      "numero_nota": 269,
+      "palabra": "aqueso",
+      "verso": "1030",
+      "texto_verso": "Que no es aqueso igualarse.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[75]/*[2]"
+    },
+    {
+      "numero_nota": 270,
+      "palabra": "capilla",
+      "verso": "1036",
+      "texto_verso": "y su capilla imitaba,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[77]/*[5]"
+    },
+    {
+      "numero_nota": 271,
+      "palabra": "famoso",
+      "verso": "1038",
+      "texto_verso": "un beneficio famoso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[77]/*[7]"
+    },
+    {
+      "numero_nota": 272,
+      "palabra": "tiemblan",
+      "verso": "1047",
+      "texto_verso": "tiemblan Córdoba y Granada,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[82]/*[3]"
+    },
+    {
+      "numero_nota": 273,
+      "palabra": "Flores",
+      "verso": "1050",
+      "texto_verso": "¡El mundo se acaba, Flores!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[82]/*[6]"
+    },
+    {
+      "numero_nota": 274,
+      "palabra": "amores",
+      "verso": "1051",
+      "texto_verso": "Como eso pueden amores.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[83]/*[2]"
+    },
+    {
+      "numero_nota": 275,
+      "palabra": "debes",
+      "verso": "1053",
+      "texto_verso": "que grande amistad le debes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[83]/*[4]"
+    },
+    {
+      "numero_nota": 276,
+      "palabra": "puño",
+      "verso": "1055",
+      "texto_verso": "que si no, de punta a puño,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[84]/*[3]"
+    },
+    {
+      "numero_nota": 277,
+      "palabra": "lugar",
+      "verso": "1057",
+      "texto_verso": "pasara todo el lugar;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[84]/*[5]"
+    },
+    {
+      "numero_nota": 278,
+      "palabra": "fïarse",
+      "verso": "1063",
+      "texto_verso": "¿Hasta allá quiere fïarse?...",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[86]/*[2]"
+    },
+    {
+      "numero_nota": 279,
+      "palabra": "contado",
+      "verso": "1065",
+      "texto_verso": "donde te pagarán de contado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[87]/*[3]"
+    },
+    {
+      "numero_nota": 281,
+      "palabra": "venías",
+      "verso": "1072",
+      "texto_verso": "a visitalla venías;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[91]/*[5]"
+    },
+    {
+      "numero_nota": 282,
+      "palabra": "primero",
+      "verso": "1074",
+      "texto_verso": "entrarás como primero.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[91]/*[7]"
+    },
+    {
+      "numero_nota": 283,
+      "palabra": "aires",
+      "verso": "1077",
+      "texto_verso": "Cuida, y anda por los aires.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[93]/*[2]"
+    },
+    {
+      "numero_nota": 284,
+      "palabra": "donaires",
+      "verso": "1080",
+      "texto_verso": "te ha ofrecido sus donaires.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[97]/*[3]"
+    },
+    {
+      "numero_nota": 285,
+      "palabra": "bien",
+      "verso": "1090",
+      "texto_verso": "de la esperanza del bien;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[99]/*[5]"
+    },
+    {
+      "numero_nota": 287,
+      "palabra": "accidente",
+      "verso": "1098",
+      "texto_verso": "huélgase que a su accidente",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[100]/*[3]"
+    },
+    {
+      "numero_nota": 288,
+      "palabra": "desear",
+      "verso": "1104",
+      "texto_verso": "lo que pudo desear.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[100]/*[9]"
+    },
+    {
+      "numero_nota": 289,
+      "palabra": "nuevas",
+      "verso": "1110",
+      "texto_verso": "y el gabán en armas nuevas;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[104]/*[5]"
+    },
+    {
+      "numero_nota": 290,
+      "palabra": "pierda",
+      "verso": "1116",
+      "texto_verso": "que no es mucho que se pierda",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[104]/*[11]"
+    },
+    {
+      "numero_nota": 291,
+      "palabra": "aragonesas",
+      "verso": "1122",
+      "texto_verso": "y barras aragonesas.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[104]/*[17]"
+    },
+    {
+      "numero_nota": 292,
+      "palabra": "vuelva",
+      "verso": "1126",
+      "texto_verso": "a Almagro con vida vuelva.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[104]/*[21]"
+    },
+    {
+      "numero_nota": 293,
+      "palabra": "tente",
+      "verso": "1130",
+      "texto_verso": "No prosigas, tente,espera.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[105]/*[2]"
+    },
+    {
+      "numero_nota": 294,
+      "palabra": "él",
+      "verso": "439",
+      "texto_verso": "porque él o el cura os darán",
+      "score": 0.8,
+      "xpath": "/*/*[2]/*/*/*[3]/*[107]/*[4]"
+    },
+    {
+      "numero_nota": 295,
+      "palabra": "nombra",
+      "verso": "1150",
+      "texto_verso": "Sangrienta fiera le nombra,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[118]/*[2]"
+    },
+    {
+      "numero_nota": 296,
+      "palabra": "jara",
+      "verso": "1155",
+      "texto_verso": "le puso al pecho una jara.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[119]/*[5]"
+    },
+    {
+      "numero_nota": 297,
+      "palabra": "garrotillo",
+      "verso": "1169",
+      "texto_verso": "¡Mal garrotillo le dé!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[123]/*[2]"
+    },
+    {
+      "numero_nota": 298,
+      "palabra": "encajara",
+      "verso": "1174",
+      "texto_verso": "al casco se la encajara!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[124]/*[6]"
+    },
+    {
+      "numero_nota": 299,
+      "palabra": "jamás",
+      "verso": "1176",
+      "texto_verso": "tan vicioso por jamás.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[124]/*[8]"
+    },
+    {
+      "numero_nota": 300,
+      "palabra": "inhumano",
+      "verso": "1178",
+      "texto_verso": "más que una fiera inhumano.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[125]/*[3]"
+    },
+    {
+      "numero_nota": 301,
+      "palabra": "historia",
+      "verso": "1180",
+      "texto_verso": "que yo no entiendo de historia)",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[126]/*[3]"
+    },
+    {
+      "numero_nota": 302,
+      "palabra": "ve",
+      "verso": "1182",
+      "texto_verso": "vencida déste se ve.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[126]/*[5]"
+    },
+    {
+      "numero_nota": 303,
+      "palabra": "aspereza",
+      "verso": "1186",
+      "texto_verso": "de una tigre la aspereza.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[127]/*[4]"
+    },
+    {
+      "numero_nota": 306,
+      "palabra": "aquí",
+      "verso": "1206",
+      "texto_verso": "Piedras hay, Jacinta, aquí.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[141]/*[2]"
+    },
+    {
+      "numero_nota": 307,
+      "palabra": "vendida",
+      "verso": "1218",
+      "texto_verso": "que la llevéis bien vendida!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[149]/*[4]"
+    },
+    {
+      "numero_nota": 308,
+      "palabra": "apear",
+      "verso": "1220",
+      "texto_verso": "me habéis de hacer apear?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[151]/*[3]"
+    },
+    {
+      "numero_nota": 309,
+      "palabra": "atreve",
+      "verso": "1224",
+      "texto_verso": "a nuestras armas se atreve.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[152]/*[5]"
+    },
+    {
+      "numero_nota": 310,
+      "palabra": "soceso",
+      "verso": "1226",
+      "texto_verso": "de soceso tan injusto,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[153]/*[3]"
+    },
+    {
+      "numero_nota": 311,
+      "palabra": "honor",
+      "verso": "1238",
+      "texto_verso": "¿Así volvéis por su honor?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[157]/*[2]"
+    },
+    {
+      "numero_nota": 314,
+      "palabra": "tiemplan",
+      "verso": "1267",
+      "texto_verso": "no tiemplan bien un airado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[172]/*[4]"
+    },
+    {
+      "numero_nota": 315,
+      "palabra": "ser",
+      "verso": "1272",
+      "texto_verso": "del ejército has de ser!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[176]/*[4]"
+    },
+    {
+      "numero_nota": 316,
+      "palabra": "divina",
+      "verso": "1278",
+      "texto_verso": "a la justicia divina.\n                            Llévanla y vanse, y salen Laurencia y Frondoso",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[181]/*[3]"
+    },
+    {
+      "numero_nota": 318,
+      "palabra": "afición",
+      "verso": "1282",
+      "texto_verso": "de la afición que me debes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[183]/*[4]"
+    },
+    {
+      "numero_nota": 319,
+      "palabra": "recuesto",
+      "verso": "1283",
+      "texto_verso": "Desde aquel recuesto vi",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[183]/*[5]"
+    },
+    {
+      "numero_nota": 320,
+      "palabra": "cuidado",
+      "verso": "1296",
+      "texto_verso": "si vive en ti mi cuidado,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[185]/*[7]"
+    },
+    {
+      "numero_nota": 321,
+      "palabra": "merecer",
+      "verso": "1298",
+      "texto_verso": "el puerto de merecer.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[185]/*[9]"
+    },
+    {
+      "numero_nota": 323,
+      "palabra": "bese",
+      "verso": "1307",
+      "texto_verso": "Deja que tus plantas bese",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[187]/*[2]"
+    },
+    {
+      "numero_nota": 324,
+      "palabra": "confiese",
+      "verso": "1310",
+      "texto_verso": "por ella es bien que confiese.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[187]/*[5]"
+    },
+    {
+      "numero_nota": 328,
+      "palabra": "sinrazón",
+      "verso": "1326",
+      "texto_verso": "pierde por su sinrazón.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[192]/*[9]"
+    },
+    {
+      "numero_nota": 330,
+      "palabra": "general",
+      "verso": "1334",
+      "texto_verso": "por capitán general.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[193]/*[9]"
+    },
+    {
+      "numero_nota": 331,
+      "palabra": "pro",
+      "verso": "1336",
+      "texto_verso": "doncella de buena pro.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[194]/*[3]"
+    },
+    {
+      "numero_nota": 332,
+      "palabra": "bayeta",
+      "verso": "1338",
+      "texto_verso": "No hay negra bayeta o tinta",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[196]/*[2]"
+    },
+    {
+      "numero_nota": 333,
+      "palabra": "provecho",
+      "verso": "1344",
+      "texto_verso": "este palo sin provecho?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[197]/*[6]"
+    },
+    {
+      "numero_nota": 334,
+      "palabra": "dio",
+      "verso": "1352",
+      "texto_verso": "a sus crïados la dio.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[199]/*[7]"
+    },
+    {
+      "numero_nota": 335,
+      "palabra": "amoroso",
+      "verso": "1358",
+      "texto_verso": "y a mí otro ser amoroso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[202]/*[5]"
+    },
+    {
+      "numero_nota": 337,
+      "palabra": "corazón",
+      "verso": "1378",
+      "texto_verso": "que siente mi corazón.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[208]/*[5]"
+    },
+    {
+      "numero_nota": 338,
+      "palabra": "celo",
+      "verso": "1382",
+      "texto_verso": "la limpieza de tu celo.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[208]/*[9]"
+    },
+    {
+      "numero_nota": 339,
+      "palabra": "presto",
+      "verso": "1385",
+      "texto_verso": "sólo digo que estoy presto,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[208]/*[12]"
+    },
+    {
+      "numero_nota": 340,
+      "palabra": "advertís",
+      "verso": "1395",
+      "texto_verso": "En el dote, si advertís,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[210]/*[6]"
+    },
+    {
+      "numero_nota": 341,
+      "palabra": "maravedís",
+      "verso": "1398",
+      "texto_verso": "algunos maravedís.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[210]/*[9]"
+    },
+    {
+      "numero_nota": 342,
+      "palabra": "agradecer",
+      "verso": "1402",
+      "texto_verso": "lo podéis agradecer!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[212]/*[3]"
+    },
+    {
+      "numero_nota": 343,
+      "palabra": "atropella",
+      "verso": "1406",
+      "texto_verso": "quien los gustos atropella.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[214]/*[3]"
+    },
+    {
+      "numero_nota": 344,
+      "palabra": "venido",
+      "verso": "1411",
+      "texto_verso": "a preguntarte ha venido",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[217]/*[5]"
+    },
+    {
+      "numero_nota": 347,
+      "palabra": "sabes",
+      "verso": "1427",
+      "texto_verso": "pero por lo que tú sabes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[224]/*[4]"
+    },
+    {
+      "numero_nota": 348,
+      "palabra": "llaves",
+      "verso": "1430",
+      "texto_verso": "¿Yo? Pues tengo yo las llaves,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[227]/*[2]"
+    },
+    {
+      "numero_nota": 349,
+      "palabra": "compadre",
+      "verso": "1432",
+      "texto_verso": "a mi compadre en la plaza.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[227]/*[4]"
+    },
+    {
+      "numero_nota": 351,
+      "palabra": "día",
+      "verso": "1440",
+      "texto_verso": "cosa que pasa en un día;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[231]/*[3]"
+    },
+    {
+      "numero_nota": 353,
+      "palabra": "despojos",
+      "verso": "1455",
+      "texto_verso": "Y no se alabarán que en sus despojos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[240]/*[2]"
+    },
+    {
+      "numero_nota": 354,
+      "palabra": "pendón",
+      "verso": "1456",
+      "texto_verso": "pondrán nuestro pendón de Calatrava,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[240]/*[3]"
+    },
+    {
+      "numero_nota": 355,
+      "palabra": "bastaba",
+      "verso": "1457",
+      "texto_verso": "que a honrar su empresa y los demás bastaba.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[240]/*[4]"
+    },
+    {
+      "numero_nota": 356,
+      "palabra": "desinios",
+      "verso": "1458",
+      "texto_verso": "Tus desinios, Girón, quedan perdidos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[241]/*[2]"
+    },
+    {
+      "numero_nota": 357,
+      "palabra": "ciega",
+      "verso": "1459",
+      "texto_verso": "¿Qué puedo hacer, si Fortuna ciega",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[242]/*[2]"
+    },
+    {
+      "numero_nota": 358,
+      "palabra": "luces",
+      "verso": "1461",
+      "texto_verso": "Ya coronan de luces las almenas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[244]/*[2]"
+    },
+    {
+      "numero_nota": 359,
+      "palabra": "vitoriosos",
+      "verso": "1463",
+      "texto_verso": "entoldan con pendones vitoriosos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[244]/*[4]"
+    },
+    {
+      "numero_nota": 360,
+      "palabra": "cuesta",
+      "verso": "1464",
+      "texto_verso": "Bien pudieran, de sangre que les cuesta.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[245]/*[2]"
+    },
+    {
+      "numero_nota": 361,
+      "palabra": "Católico",
+      "verso": "1469",
+      "texto_verso": "o reducir la tuya al Rey Católico.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[247]/*[4]"
+    },
+    {
+      "numero_nota": 362,
+      "palabra": "enseñarte",
+      "verso": "1471",
+      "texto_verso": "El tiempo ha de enseñarte.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[249]/*[2]"
+    },
+    {
+      "numero_nota": 363,
+      "palabra": "engaños",
+      "verso": "1473",
+      "texto_verso": "sujetos al rigor de sus engaños!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[250]/*[3]"
+    },
+    {
+      "numero_nota": 365,
+      "palabra": "trovar",
+      "verso": "1479",
+      "texto_verso": "¿Supiéraslo tú trovar",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[255]/*[2]"
+    },
+    {
+      "numero_nota": 366,
+      "palabra": "alborotes",
+      "verso": "1484",
+      "texto_verso": "para que no te alborotes,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[257]/*[3]"
+    },
+    {
+      "numero_nota": 367,
+      "palabra": "fui",
+      "verso": "1492",
+      "texto_verso": "harto desdichado fui.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[259]/*[5]"
+    },
+    {
+      "numero_nota": 368,
+      "palabra": "chinas",
+      "verso": "1497",
+      "texto_verso": "llena de tinta y de chinas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[259]/*[10]"
+    },
+    {
+      "numero_nota": 369,
+      "palabra": "razonable",
+      "verso": "1504",
+      "texto_verso": "si es la copla razonable!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[262]/*[3]"
+    },
+    {
+      "numero_nota": 371,
+      "palabra": "presto",
+      "verso": "1514",
+      "texto_verso": "¡Fue muy presto!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[265]/*[2]"
+    },
+    {
+      "numero_nota": 372,
+      "palabra": "seta",
+      "verso": "1515",
+      "texto_verso": "una cosa desta seta:",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[3]"
+    },
+    {
+      "numero_nota": 373,
+      "palabra": "buñolero",
+      "verso": "1516",
+      "texto_verso": "¿no habéis visto un buñolero,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[4]"
+    },
+    {
+      "numero_nota": 374,
+      "palabra": "tuertos",
+      "verso": "1521",
+      "texto_verso": "otros tuertos y mal hechos,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[9]"
+    },
+    {
+      "numero_nota": 375,
+      "palabra": "previniendo",
+      "verso": "1526",
+      "texto_verso": "la materia previniendo,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[14]"
+    },
+    {
+      "numero_nota": 376,
+      "palabra": "dio",
+      "verso": "1527",
+      "texto_verso": "que es quien la masa le dio.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[15]"
+    },
+    {
+      "numero_nota": 377,
+      "palabra": "miel",
+      "verso": "1530",
+      "texto_verso": "confïado en que la miel",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[18]"
+    },
+    {
+      "numero_nota": 378,
+      "palabra": "pecho",
+      "verso": "1532",
+      "texto_verso": "Mas poniéndolo en el pecho,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[20]"
+    },
+    {
+      "numero_nota": 379,
+      "palabra": "besar",
+      "verso": "1538",
+      "texto_verso": "Las manos nos da a besar.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[268]/*[2]"
+    },
+    {
+      "numero_nota": 380,
+      "palabra": "procuras",
+      "verso": "1539",
+      "texto_verso": "Hija, ¿mi mano procuras?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[269]/*[2]"
+    },
+    {
+      "numero_nota": 381,
+      "palabra": "luego",
+      "verso": "1540",
+      "texto_verso": "Pídela a tu padre luego",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[269]/*[3]"
+    },
+    {
+      "numero_nota": 382,
+      "palabra": "bendición",
+      "verso": "1544",
+      "texto_verso": "con su larga bendición.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[270]/*[4]"
+    },
+    {
+      "numero_nota": 383,
+      "palabra": "echad",
+      "verso": "1545",
+      "texto_verso": "Los dos a los dos la echad.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[271]/*[2]"
+    },
+    {
+      "numero_nota": 384,
+      "palabra": "tañed",
+      "verso": "1546",
+      "texto_verso": "¡Ea, tañed y cantad,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[272]/*[2]"
+    },
+    {
+      "numero_nota": 387,
+      "palabra": "baja;",
+      "verso": "1549",
+      "texto_verso": "la niña en cabellos baja;",
+      "score": 0.8,
+      "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[3]"
+    },
+    {
+      "numero_nota": 390,
+      "palabra": "celosías",
+      "verso": "1562",
+      "texto_verso": "hacer quiso celosías",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[16]"
+    },
+    {
+      "numero_nota": 392,
+      "palabra": "queda",
+      "verso": "1572",
+      "texto_verso": "Estése la boda queda",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[275]/*[2]"
+    },
+    {
+      "numero_nota": 393,
+      "palabra": "lugar",
+      "verso": "1576",
+      "texto_verso": "¿Quieres lugar? ¿Cómo vienes",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[276]/*[4]"
+    },
+    {
+      "numero_nota": 394,
+      "palabra": "alarde",
+      "verso": "1577",
+      "texto_verso": "con tu belicoso alarde?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[276]/*[5]"
+    },
+    {
+      "numero_nota": 395,
+      "palabra": "padre",
+      "verso": "1591",
+      "texto_verso": "sentencie su mismo padre.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[283]/*[9]"
+    },
+    {
+      "numero_nota": 396,
+      "palabra": "case",
+      "verso": "1593",
+      "texto_verso": "¿Qué me obliga a que se case?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[285]/*[2]"
+    },
+    {
+      "numero_nota": 397,
+      "palabra": "sois",
+      "verso": "1596",
+      "texto_verso": "por ser vos quien sois.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[286]/*[3]"
+    },
+    {
+      "numero_nota": 398,
+      "palabra": "Orden",
+      "verso": "1600",
+      "texto_verso": "es contra toda su Orden,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[287]/*[6]"
+    },
+    {
+      "numero_nota": 399,
+      "palabra": "él",
+      "verso": "1604",
+      "texto_verso": "de alzar pendón contra él,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[287]/*[10]"
+    },
+    {
+      "numero_nota": 400,
+      "palabra": "descomponga",
+      "verso": "1612",
+      "texto_verso": "se descomponga con vos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[288]/*[5]"
+    },
+    {
+      "numero_nota": 401,
+      "palabra": "defienda",
+      "verso": "1616",
+      "texto_verso": "¿qué mucho que la defienda?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[288]/*[9]"
+    },
+    {
+      "numero_nota": 402,
+      "palabra": "señor",
+      "verso": "1618",
+      "texto_verso": "Por vuestra virtud, señor.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[290]/*[2]"
+    },
+    {
+      "numero_nota": 403,
+      "palabra": "sufrir",
+      "verso": "1626",
+      "texto_verso": "de las guerras, en sufrir",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[292]/*[7]"
+    },
+    {
+      "numero_nota": 404,
+      "palabra": "lugares",
+      "verso": "1627",
+      "texto_verso": "en sus villas y lugares",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[292]/*[8]"
+    },
+    {
+      "numero_nota": 405,
+      "palabra": "cruces",
+      "verso": "1629",
+      "texto_verso": "por traer cruces tan grandes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[292]/*[10]"
+    },
+    {
+      "numero_nota": 406,
+      "palabra": "¡Hola",
+      "verso": "1633",
+      "texto_verso": "¡Hola! ¡La vara quitalde!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[293]/*[2]"
+    },
+    {
+      "numero_nota": 407,
+      "palabra": "norabuena",
+      "verso": "1634",
+      "texto_verso": "Tomad, señor, norabuena.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[294]/*[2]"
+    },
+    {
+      "numero_nota": 408,
+      "palabra": "cardenales",
+      "verso": "1647",
+      "texto_verso": "que aún se ven los cardenales",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[306]/*[3]"
+    },
+    {
+      "numero_nota": 409,
+      "palabra": "atabales",
+      "verso": "1653",
+      "texto_verso": "me puso los atabales!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[4]/*[308]/*[5]"
+    },
+    {
+      "numero_nota": 411,
+      "palabra": "junta",
+      "verso": "1654",
+      "texto_verso": "¿No han venido a la junta?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[3]/*[2]"
+    },
+    {
+      "numero_nota": 412,
+      "palabra": "apriesa",
+      "verso": "1655",
+      "texto_verso": "Pues más apriesa nuestro daño corre.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[5]/*[2]"
+    },
+    {
+      "numero_nota": 413,
+      "palabra": "más",
+      "verso": "1656",
+      "texto_verso": "Ya está lo más del pueblo prevenido.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[6]/*[2]"
+    },
+    {
+      "numero_nota": 414,
+      "palabra": "torre",
+      "verso": "1657",
+      "texto_verso": "Frondoso con prisiones en la torre",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[7]/*[2]"
+    },
+    {
+      "numero_nota": 415,
+      "palabra": "obsequias",
+      "verso": "1666",
+      "texto_verso": "qué obsequias debe hacer toda esta gente",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[13]/*[4]"
+    },
+    {
+      "numero_nota": 417,
+      "palabra": "apresta",
+      "verso": "1679",
+      "texto_verso": "y su venida a Córdoba se apresta,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[14]/*[5]"
+    },
+    {
+      "numero_nota": 418,
+      "palabra": "villa",
+      "verso": "1680",
+      "texto_verso": "vayan dos regidores a la villa",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[14]/*[6]"
+    },
+    {
+      "numero_nota": 419,
+      "palabra": "remedio",
+      "verso": "1681",
+      "texto_verso": "y, echándose a sus pies, pidan remedio.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[14]/*[7]"
+    },
+    {
+      "numero_nota": 421,
+      "palabra": "desamparar",
+      "verso": "1687",
+      "texto_verso": "desamparar la villa doy por voto.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[16]/*[3]"
+    },
+    {
+      "numero_nota": 422,
+      "palabra": "vida",
+      "verso": "1690",
+      "texto_verso": "que ha de costar la junta alguna vida!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[18]/*[3]"
+    },
+    {
+      "numero_nota": 423,
+      "palabra": "árbol",
+      "verso": "1691",
+      "texto_verso": "Ya todo el árbol de paciencia roto,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[19]/*[2]"
+    },
+    {
+      "numero_nota": 424,
+      "palabra": "perdida",
+      "verso": "1692",
+      "texto_verso": "corre la nave de temor perdida.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[19]/*[3]"
+    },
+    {
+      "numero_nota": 425,
+      "palabra": "vivís",
+      "verso": "1695",
+      "texto_verso": "la patria en que vivís, y en la cabeza",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[19]/*[6]"
+    },
+    {
+      "numero_nota": 427,
+      "palabra": "esclavo",
+      "verso": "1697",
+      "texto_verso": "¿Qué esclavo se trató con más bajeza?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[19]/*[8]"
+    },
+    {
+      "numero_nota": 429,
+      "palabra": "temores",
+      "verso": "1709",
+      "texto_verso": "más cuerdo represento sus temores.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[24]/*[6]"
+    },
+    {
+      "numero_nota": 430,
+      "palabra": "compasan",
+      "verso": "1710",
+      "texto_verso": "Si nuestras desventuras se compasan,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[25]/*[2]"
+    },
+    {
+      "numero_nota": 432,
+      "palabra": "soy",
+      "verso": "1722",
+      "texto_verso": "en contingencia quién soy.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[30]/*[4]"
+    },
+    {
+      "numero_nota": 434,
+      "palabra": "presupone",
+      "verso": "1737",
+      "texto_verso": "la obligación presupone;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[14]"
+    },
+    {
+      "numero_nota": 435,
+      "palabra": "guardas",
+      "verso": "1741",
+      "texto_verso": "las guardas ni los ladrones.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[18]"
+    },
+    {
+      "numero_nota": 436,
+      "palabra": "ojos",
+      "verso": "1742",
+      "texto_verso": "Llevóme de vuestros ojos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[19]"
+    },
+    {
+      "numero_nota": 437,
+      "palabra": "torpes",
+      "verso": "1751",
+      "texto_verso": "a sus apetitos torpes?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[28]"
+    },
+    {
+      "numero_nota": 438,
+      "palabra": "nobles",
+      "verso": "1755",
+      "texto_verso": "¿Vosotros sois hombres nobles?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[32]"
+    },
+    {
+      "numero_nota": 439,
+      "palabra": "deudos",
+      "verso": "1756",
+      "texto_verso": "¿Vosotros padres y deudos?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[33]"
+    },
+    {
+      "numero_nota": 440,
+      "palabra": "sois",
+      "verso": "1760",
+      "texto_verso": "ovejas sois: bien lo dice",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[37]"
+    },
+    {
+      "numero_nota": 441,
+      "palabra": "jaspes",
+      "verso": "1764",
+      "texto_verso": "pues sois jaspes, pues sois tigres…",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[41]"
+    },
+    {
+      "numero_nota": 442,
+      "palabra": "nacistes",
+      "verso": "1770",
+      "texto_verso": "liebres cobardes nacistes;",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[47]"
+    },
+    {
+      "numero_nota": 444,
+      "palabra": "sufrís",
+      "verso": "1773",
+      "texto_verso": "sufrís que otros hombres gocen!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[50]"
+    },
+    {
+      "numero_nota": 445,
+      "palabra": "cinta",
+      "verso": "1774",
+      "texto_verso": "Poneos ruecas en la cinta.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[51]"
+    },
+    {
+      "numero_nota": 446,
+      "palabra": "traidores",
+      "verso": "1779",
+      "texto_verso": "la sangre destos traidores,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[56]"
+    },
+    {
+      "numero_nota": 447,
+      "palabra": "piedras",
+      "verso": "1780",
+      "texto_verso": "y que os han de tirar piedras,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[57]"
+    },
+    {
+      "numero_nota": 449,
+      "palabra": "basquiñas",
+      "verso": "1784",
+      "texto_verso": "nuestras tocas y basquiñas,",
+      "score": 0.75,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[61]"
+    },
+    {
+      "numero_nota": 450,
+      "palabra": "solimanes",
+      "verso": "1785",
+      "texto_verso": "solimanes y colores!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[62]"
+    },
+    {
+      "numero_nota": 451,
+      "palabra": "colores",
+      "verso": "1785",
+      "texto_verso": "solimanes y colores!",
+      "score": 0.6666666666666666,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[62]"
+    },
+    {
+      "numero_nota": 452,
+      "palabra": "pregones",
+      "verso": "1787",
+      "texto_verso": "sin sentencia, sin pregones,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[64]"
+    },
+    {
+      "numero_nota": 453,
+      "palabra": "almena",
+      "verso": "1789",
+      "texto_verso": "del almena de una torre.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[66]"
+    },
+    {
+      "numero_nota": 454,
+      "palabra": "huelgo",
+      "verso": "1791",
+      "texto_verso": "y yo me huelgo, medio hombres,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[68]"
+    },
+    {
+      "numero_nota": 455,
+      "palabra": "amazonas",
+      "verso": "1794",
+      "texto_verso": "aquel siglo de amazonas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[71]"
+    },
+    {
+      "numero_nota": 456,
+      "palabra": "orbe",
+      "verso": "1795",
+      "texto_verso": "eterno espanto del orbe.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[72]"
+    },
+    {
+      "numero_nota": 457,
+      "palabra": "asombre",
+      "verso": "1801",
+      "texto_verso": "Y yo, por más que me asombre",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[36]/*[2]"
+    },
+    {
+      "numero_nota": 459,
+      "palabra": "inormes",
+      "verso": "1805",
+      "texto_verso": "y mueran estos inormes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[38]/*[4]"
+    },
+    {
+      "numero_nota": 460,
+      "palabra": "lanzones",
+      "verso": "1811",
+      "texto_verso": "Tomad espadas, lanzones,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[41]/*[2]"
+    },
+    {
+      "numero_nota": 461,
+      "palabra": "chuzos",
+      "verso": "1812",
+      "texto_verso": "ballestas, chuzos y palos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[41]/*[3]"
+    },
+    {
+      "numero_nota": 462,
+      "palabra": "menores",
+      "verso": "1829",
+      "texto_verso": "sus agravios los menores!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[50]/*[9]"
+    },
+    {
+      "numero_nota": 463,
+      "palabra": "mujeres",
+      "verso": "1836",
+      "texto_verso": "de una escuadra de mujeres.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[52]/*[7]"
+    },
+    {
+      "numero_nota": 464,
+      "palabra": "alférez",
+      "verso": "1838",
+      "texto_verso": "Pascuala, alférez serás.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[54]/*[2]"
+    },
+    {
+      "numero_nota": 465,
+      "palabra": "enarbole",
+      "verso": "1839",
+      "texto_verso": "Pues déjame que enarbole",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[55]/*[2]"
+    },
+    {
+      "numero_nota": 466,
+      "palabra": "espacio",
+      "verso": "1842",
+      "texto_verso": "No hay espacio para eso,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[56]/*[2]"
+    },
+    {
+      "numero_nota": 467,
+      "palabra": "pendones",
+      "verso": "1845",
+      "texto_verso": "nuestras tocas por pendones.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[56]/*[5]"
+    },
+    {
+      "numero_nota": 468,
+      "palabra": "Rodamontes",
+      "verso": "1849",
+      "texto_verso": "no hay Cides ni Rodamontes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[60]/*[4]"
+    },
+    {
+      "numero_nota": 470,
+      "palabra": "pena",
+      "verso": "1851",
+      "texto_verso": "quiero que le colguéis, por mayor pena.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[63]/*[3]"
+    },
+    {
+      "numero_nota": 471,
+      "palabra": "almena",
+      "verso": "1853",
+      "texto_verso": "Colgalde luego en la primera almena.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[65]/*[2]"
+    },
+    {
+      "numero_nota": 472,
+      "palabra": "Templa",
+      "verso": "1865",
+      "texto_verso": "Templa, Frondoso, ese villano Alcalde.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[80]/*[3]"
+    },
+    {
+      "numero_nota": 473,
+      "palabra": "villano",
+      "verso": "1865",
+      "texto_verso": "Templa, Frondoso, ese villano Alcalde.",
+      "score": 0.75,
+      "xpath": "/*/*[2]/*/*/*[5]/*[80]/*[3]"
+    },
+    {
+      "numero_nota": 474,
+      "palabra": "movido",
+      "verso": "1866",
+      "texto_verso": "Yo voy, señor, que amor les ha movido.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[81]/*[2]"
+    },
+    {
+      "numero_nota": 475,
+      "palabra": "resuelven",
+      "verso": "1872",
+      "texto_verso": "los pueblos agraviados, y resuelven,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[87]/*[3]"
+    },
+    {
+      "numero_nota": 476,
+      "palabra": "rastrillo",
+      "verso": "1874",
+      "texto_verso": "En esta puerta, así como rastrillo,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[88]/*[2]"
+    },
+    {
+      "numero_nota": 477,
+      "palabra": "acometamos",
+      "verso": "1877",
+      "texto_verso": "Estoy porque a su furia acometamos.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[91]/*[3]"
+    },
+    {
+      "numero_nota": 479,
+      "palabra": "esperanzas",
+      "verso": "1890",
+      "texto_verso": "Parad en este puesto de esperanzas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[104]/*[2]"
+    },
+    {
+      "numero_nota": 480,
+      "palabra": "esperes",
+      "verso": "1893",
+      "texto_verso": "En él beban su sangre, es bien que esperes.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[105]/*[3]"
+    },
+    {
+      "numero_nota": 482,
+      "palabra": "espero",
+      "verso": "1897",
+      "texto_verso": "¡Piedad, Señor, que en tu clemencia espero!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[111]/*[3]"
+    },
+    {
+      "numero_nota": 483,
+      "palabra": "saco",
+      "verso": "1900",
+      "texto_verso": "No me vengo si el alma no le saco.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[117]/*[2]"
+    },
+    {
+      "numero_nota": 484,
+      "palabra": "entrar",
+      "verso": "1901",
+      "texto_verso": "¡No escusamos entrar!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[118]/*[2]"
+    },
+    {
+      "numero_nota": 485,
+      "palabra": "marquesotes",
+      "verso": "1903",
+      "texto_verso": "¿Con lágrimas agora, marquesotes?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[121]/*[3]"
+    },
+    {
+      "numero_nota": 486,
+      "palabra": "alcahuete",
+      "verso": "1908",
+      "texto_verso": "Cuando ser alcahuete no bastara,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[130]/*[2]"
+    },
+    {
+      "numero_nota": 487,
+      "palabra": "ancho",
+      "verso": "1915",
+      "texto_verso": "¿No le viene muy ancho?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[137]/*[2]"
+    },
+    {
+      "numero_nota": 488,
+      "palabra": "lloras?",
+      "verso": "",
+      "texto_verso": "¿Aqueso lloras?",
+      "score": 0.5,
+      "xpath": "/*/*[2]/*/*/*[5]/*[138]/*[2]"
+    },
+    {
+      "numero_nota": 489,
+      "palabra": "placeres",
+      "verso": "1916",
+      "texto_verso": "¡Muere, concertador de sus placeres!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[139]/*[2]"
+    },
+    {
+      "numero_nota": 490,
+      "palabra": "teñid",
+      "verso": "1919",
+      "texto_verso": "¡Entrad, teñid las armas vencedoras",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[144]/*[3]"
+    },
+    {
+      "numero_nota": 493,
+      "palabra": "contradición",
+      "verso": "1925",
+      "texto_verso": "con poca contradición.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[5]"
+    },
+    {
+      "numero_nota": 494,
+      "palabra": "Cabra",
+      "verso": "1930",
+      "texto_verso": "Queda el de Cabra ocupado",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[10]"
+    },
+    {
+      "numero_nota": 495,
+      "palabra": "osado",
+      "verso": "1933",
+      "texto_verso": "a él el contrario osado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[13]"
+    },
+    {
+      "numero_nota": 497,
+      "palabra": "procura",
+      "verso": "1941",
+      "texto_verso": "tomar la fuerza procura.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[21]"
+    },
+    {
+      "numero_nota": 498,
+      "palabra": "asistente",
+      "verso": "1943",
+      "texto_verso": "en ese sitio asistente,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[23]"
+    },
+    {
+      "numero_nota": 499,
+      "palabra": "recela",
+      "verso": "1947",
+      "texto_verso": "el daño que nos recela,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[27]"
+    },
+    {
+      "numero_nota": 500,
+      "palabra": "Repórtate",
+      "verso": "1958",
+      "texto_verso": "Repórtate.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[151]/*[2]"
+    },
+    {
+      "numero_nota": 501,
+      "palabra": "aleves",
+      "verso": "1967",
+      "texto_verso": "por sus súbditos aleves,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[11]"
+    },
+    {
+      "numero_nota": 502,
+      "palabra": "atreven",
+      "verso": "1969",
+      "texto_verso": "con leve causa se atreven.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[13]"
+    },
+    {
+      "numero_nota": 503,
+      "palabra": "plebe",
+      "verso": "1971",
+      "texto_verso": "que le acumula la plebe,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[15]"
+    },
+    {
+      "numero_nota": 504,
+      "palabra": "pecho",
+      "verso": "1980",
+      "texto_verso": "rompen el cruzado pecho",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[24]"
+    },
+    {
+      "numero_nota": 505,
+      "palabra": "picas",
+      "verso": "1984",
+      "texto_verso": "adonde en picas y espadas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[28]"
+    },
+    {
+      "numero_nota": 508,
+      "palabra": "tajadas",
+      "verso": "1992",
+      "texto_verso": "que las mayores tajadas",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[36]"
+    },
+    {
+      "numero_nota": 510,
+      "palabra": "diese",
+      "verso": "2009",
+      "texto_verso": "para que cuenta te diese.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[53]"
+    },
+    {
+      "numero_nota": 511,
+      "palabra": "rigor",
+      "verso": "2015",
+      "texto_verso": "pide que tu rigor prueben.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[59]"
+    },
+    {
+      "numero_nota": 512,
+      "palabra": "luego",
+      "verso": "2020",
+      "texto_verso": "y que vaya luego un juez",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[153]/*[6]"
+    },
+    {
+      "numero_nota": 513,
+      "palabra": "juez",
+      "verso": "2020",
+      "texto_verso": "y que vaya luego un juez",
+      "score": 0.8,
+      "xpath": "/*/*[2]/*/*/*[5]/*[153]/*[6]"
+    },
+    {
+      "numero_nota": 516,
+      "palabra": "pie",
+      "verso": "2035",
+      "texto_verso": "Si le faltare algún pie,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[157]/*[3]"
+    },
+    {
+      "numero_nota": 517,
+      "palabra": "curioso",
+      "verso": "2036",
+      "texto_verso": "enmiéndelo el más curioso.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[157]/*[4]"
+    },
+    {
+      "numero_nota": 519,
+      "palabra": "Miguel",
+      "verso": "2041",
+      "texto_verso": "A los Cielos San Miguel",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[157]/*[9]"
+    },
+    {
+      "numero_nota": 520,
+      "palabra": "famosos",
+      "verso": "2049",
+      "texto_verso": "¡Vivan los Reyes famosos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[161]/*[2]"
+    },
+    {
+      "numero_nota": 521,
+      "palabra": "enanos",
+      "verso": "2054",
+      "texto_verso": "de gigantes y de enanos",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[161]/*[7]"
+    },
+    {
+      "numero_nota": 522,
+      "palabra": "donado",
+      "verso": "2060",
+      "texto_verso": "Yo soy poeta donado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[164]/*[2]"
+    },
+    {
+      "numero_nota": 523,
+      "palabra": "barriga",
+      "verso": "2062",
+      "texto_verso": "el envés de la barriga.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[165]/*[3]"
+    },
+    {
+      "numero_nota": 525,
+      "palabra": "rabel",
+      "verso": "2065",
+      "texto_verso": "de manera que el rabel",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[166]/*[4]"
+    },
+    {
+      "numero_nota": 528,
+      "palabra": "allá",
+      "verso": "2071",
+      "texto_verso": "Quita la cabeza allá.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[167]/*[2]"
+    },
+    {
+      "numero_nota": 529,
+      "palabra": "ahorcado",
+      "verso": "2072",
+      "texto_verso": "Cara tiene de ahorcado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[168]/*[2]"
+    },
+    {
+      "numero_nota": 531,
+      "palabra": "Aragón",
+      "verso": "2081",
+      "texto_verso": "y las barras de Aragón,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[177]/*[3]"
+    },
+    {
+      "numero_nota": 533,
+      "palabra": "hacer",
+      "verso": "2090",
+      "texto_verso": "y jornada que han de hacer.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[177]/*[12]"
+    },
+    {
+      "numero_nota": 534,
+      "palabra": "una",
+      "verso": "2091",
+      "texto_verso": "Concertaos todos a una",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[177]/*[13]"
+    },
+    {
+      "numero_nota": 536,
+      "palabra": "derecho",
+      "verso": "2096",
+      "texto_verso": "Es el camino derecho:",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[180]/*[2]"
+    },
+    {
+      "numero_nota": 539,
+      "palabra": "tormento",
+      "verso": "2104",
+      "texto_verso": "en el tormento.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[183]/*[7]"
+    },
+    {
+      "numero_nota": 540,
+      "palabra": "flaco",
+      "verso": "2105",
+      "texto_verso": "otro más flaco?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[184]/*[3]"
+    },
+    {
+      "numero_nota": 541,
+      "palabra": "vuelta",
+      "verso": "2113",
+      "texto_verso": "¡Dalde otra vuelta!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[195]/*[2]"
+    },
+    {
+      "numero_nota": 543,
+      "palabra": "proceso",
+      "verso": "2114",
+      "texto_verso": "¡Cagajón para el proceso!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[197]/*[2]"
+    },
+    {
+      "numero_nota": 545,
+      "palabra": "van",
+      "verso": "2122",
+      "texto_verso": "El pueblo prendiendo van",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[205]/*[2]"
+    },
+    {
+      "numero_nota": 547,
+      "palabra": "sucedido",
+      "verso": "2127",
+      "texto_verso": "¡Que tal caso ha sucedido!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[209]/*[2]"
+    },
+    {
+      "numero_nota": 548,
+      "palabra": "traído",
+      "verso": "2130",
+      "texto_verso": "por la nueva que has traído.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[209]/*[5]"
+    },
+    {
+      "numero_nota": 549,
+      "palabra": "intento",
+      "verso": "2132",
+      "texto_verso": "y enojarte no es mi intento.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[210]/*[3]"
+    },
+    {
+      "numero_nota": 551,
+      "palabra": "manos",
+      "verso": "2148",
+      "texto_verso": "lo que él le entregó en sus manos?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[213]/*[3]"
+    },
+    {
+      "numero_nota": 553,
+      "palabra": "recelar",
+      "verso": "2163",
+      "texto_verso": "Amando, recelar daño en lo amado",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[215]/*[2]"
+    },
+    {
+      "numero_nota": 554,
+      "palabra": "robado",
+      "verso": "2170",
+      "texto_verso": "ver llevar el temor el bien robado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[215]/*[9]"
+    },
+    {
+      "numero_nota": 556,
+      "palabra": "condena",
+      "verso": "2172",
+      "texto_verso": "al temor de su daño me condena,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[215]/*[11]"
+    },
+    {
+      "numero_nota": 557,
+      "palabra": "muerte",
+      "verso": "2176",
+      "texto_verso": "si está en ausencia, está cierta mi muerte.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[215]/*[15]"
+    },
+    {
+      "numero_nota": 558,
+      "palabra": "sucede",
+      "verso": "2186",
+      "texto_verso": "que por los demás sucede,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[222]/*[3]"
+    },
+    {
+      "numero_nota": 559,
+      "palabra": "razón",
+      "verso": "2197",
+      "texto_verso": "porque no es puesto en razón",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[223]/*[8]"
+    },
+    {
+      "numero_nota": 560,
+      "palabra": "estraño",
+      "verso": "2199",
+      "texto_verso": "sea con mi sangre estraño",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[223]/*[10]"
+    },
+    {
+      "numero_nota": 562,
+      "palabra": "viejo",
+      "verso": "2205",
+      "texto_verso": "¡Decid la verdad, buen viejo!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[227]/*[2]"
+    },
+    {
+      "numero_nota": 564,
+      "palabra": "tened",
+      "verso": "2225",
+      "texto_verso": "en ese potro tened.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[240]/*[3]"
+    },
+    {
+      "numero_nota": 565,
+      "palabra": "luego",
+      "verso": "2226",
+      "texto_verso": "¡Dale esa mancuerda luego!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[240]/*[4]"
+    },
+    {
+      "numero_nota": 566,
+      "palabra": "espantas",
+      "verso": "2234",
+      "texto_verso": "Niegan niños, ¿qué te espantas?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[247]/*[2]"
+    },
+    {
+      "numero_nota": 567,
+      "palabra": "encantas",
+      "verso": "2235",
+      "texto_verso": "Parece que los encantas.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[248]/*[2]"
+    },
+    {
+      "numero_nota": 568,
+      "palabra": "desnudo",
+      "verso": "2240",
+      "texto_verso": "¡Ese desnudo, ese gordo!",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[252]/*[3]"
+    },
+    {
+      "numero_nota": 571,
+      "palabra": "quitado",
+      "verso": "2260",
+      "texto_verso": "el tuyo me le ha quitado.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[269]/*[4]"
+    },
+    {
+      "numero_nota": 574,
+      "palabra": "cuela",
+      "verso": "2267",
+      "texto_verso": "Bien lo cuela. Bueno está.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[282]/*[2]"
+    },
+    {
+      "numero_nota": 575,
+      "palabra": "bebe",
+      "verso": "2271",
+      "texto_verso": "El que bien niega bien bebe.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[287]/*[2]"
+    },
+    {
+      "numero_nota": 576,
+      "palabra": "cuela",
+      "verso": "2274",
+      "texto_verso": "A vez por vuelta las cuela.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[291]/*[2]"
+    },
+    {
+      "numero_nota": 577,
+      "palabra": "Arrópale",
+      "verso": "2275",
+      "texto_verso": "Arrópale, que se hiela.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[292]/*[2]"
+    },
+    {
+      "numero_nota": 579,
+      "palabra": "tiene",
+      "verso": "2280",
+      "texto_verso": "¿Qué tiene?",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[296]/*[4]"
+    },
+    {
+      "numero_nota": 581,
+      "palabra": "arromadizo",
+      "verso": "2281",
+      "texto_verso": "Vamos, que me arromadizo.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[297]/*[3]"
+    },
+    {
+      "numero_nota": 584,
+      "palabra": "gloria",
+      "verso": "2295",
+      "texto_verso": "En nueva gloria convierte",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[309]/*[2]"
+    },
+    {
+      "numero_nota": 585,
+      "palabra": "tuerza",
+      "verso": "2299",
+      "texto_verso": "Vuestra majestad le tuerza,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[310]/*[2]"
+    },
+    {
+      "numero_nota": 586,
+      "palabra": "llana",
+      "verso": "2302",
+      "texto_verso": "En paz queda, quieta y llana.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[312]/*[2]"
+    },
+    {
+      "numero_nota": 587,
+      "palabra": "empeño",
+      "verso": "2310",
+      "texto_verso": "Mi fe, señora, os empeño,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[317]/*[2]"
+    },
+    {
+      "numero_nota": 588,
+      "palabra": "perdón",
+      "verso": "2316",
+      "texto_verso": "os pide humilde perdón.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[5]"
+    },
+    {
+      "numero_nota": 589,
+      "palabra": "Fernando",
+      "verso": "2321",
+      "texto_verso": "El consejo de Fernando",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[10]"
+    },
+    {
+      "numero_nota": 590,
+      "palabra": "fiel",
+      "verso": "2323",
+      "texto_verso": "—injusto fiel— y ansí yo",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[12]"
+    },
+    {
+      "numero_nota": 591,
+      "palabra": "demando",
+      "verso": "2324",
+      "texto_verso": "perdón humilde os demando.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[13]"
+    },
+    {
+      "numero_nota": 592,
+      "palabra": "certifico",
+      "verso": "2327",
+      "texto_verso": "desde aquí me certifico",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[16]"
+    },
+    {
+      "numero_nota": 593,
+      "palabra": "apenas",
+      "verso": "2333",
+      "texto_verso": "donde sacándola apenas,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[22]"
+    },
+    {
+      "numero_nota": 594,
+      "palabra": "disgustaros",
+      "verso": "2340",
+      "texto_verso": "de en mi vida disgustaros.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[29]"
+    },
+    {
+      "numero_nota": 595,
+      "palabra": "peregrino",
+      "verso": "2345",
+      "texto_verso": "Vos con valor peregrino",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[322]/*[2]"
+    },
+    {
+      "numero_nota": 596,
+      "palabra": "divino",
+      "verso": "2348",
+      "texto_verso": "y vos un Jerjes divino.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[323]/*[3]"
+    },
+    {
+      "numero_nota": 597,
+      "palabra": "despacho",
+      "verso": "2351",
+      "texto_verso": "con el despacho ha venido",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[325]/*[4]"
+    },
+    {
+      "numero_nota": 598,
+      "palabra": "comendadores",
+      "verso": "2356",
+      "texto_verso": "a matar comendadores.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[327]/*[4]"
+    },
+    {
+      "numero_nota": 600,
+      "palabra": "asistí",
+      "verso": "2364",
+      "texto_verso": "y diligencia asistí.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[331]/*[5]"
+    },
+    {
+      "numero_nota": 602,
+      "palabra": "inquirido",
+      "verso": "2379",
+      "texto_verso": "posible haberlo inquirido",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[331]/*[20]"
+    },
+    {
+      "numero_nota": 603,
+      "palabra": "informarte",
+      "verso": "2387",
+      "texto_verso": "dellos podrás informarte.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[331]/*[28]"
+    },
+    {
+      "numero_nota": 604,
+      "palabra": "di",
+      "verso": "2388",
+      "texto_verso": "Que entren, pues vienen, les di.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[332]/*[2]"
+    },
+    {
+      "numero_nota": 605,
+      "palabra": "extraño",
+      "verso": "2404",
+      "texto_verso": "siendo de piedad extraño.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[338]/*[12]"
+    },
+    {
+      "numero_nota": 606,
+      "palabra": "pasar",
+      "verso": "2416",
+      "texto_verso": "lo que pudiera pasar.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[339]/*[13]"
+    },
+    {
+      "numero_nota": 607,
+      "palabra": "Nerón",
+      "verso": "2425",
+      "texto_verso": "aquel perverso Nerón",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[10]"
+    },
+    {
+      "numero_nota": 608,
+      "palabra": "reverso",
+      "verso": "2427",
+      "texto_verso": "que el reverso me ha dejado",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[12]"
+    },
+    {
+      "numero_nota": 610,
+      "palabra": "atabales",
+      "verso": "2429",
+      "texto_verso": "Tocaron mis atabales",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[14]"
+    },
+    {
+      "numero_nota": 611,
+      "palabra": "prolijo",
+      "verso": "2433",
+      "texto_verso": "Gasté en este mal prolijo,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[18]"
+    },
+    {
+      "numero_nota": 613,
+      "palabra": "murta",
+      "verso": "2435",
+      "texto_verso": "polvos de arrayán y murta",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[20]"
+    },
+    {
+      "numero_nota": 614,
+      "palabra": "cortijo",
+      "verso": "2436",
+      "texto_verso": "más que vale mi cortijo.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[21]"
+    },
+    {
+      "numero_nota": 615,
+      "palabra": "abono",
+      "verso": "2444",
+      "texto_verso": "por abono la inocencia.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[341]/*[9]"
+    },
+    {
+      "numero_nota": 616,
+      "palabra": "perdonarse",
+      "verso": "2448",
+      "texto_verso": "por fuerza ha de perdonarse.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[342]/*[5]"
+    },
+    {
+      "numero_nota": 617,
+      "palabra": "herede",
+      "verso": "2452",
+      "texto_verso": "comendador que la herede.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[342]/*[9]"
+    },
+    {
+      "numero_nota": 618,
+      "palabra": "senado",
+      "verso": "2455",
+      "texto_verso": "Y aquí, discreto senado,",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[343]/*[4]"
+    },
+    {
+      "numero_nota": 619,
+      "palabra": "fin",
+      "verso": "2456",
+      "texto_verso": "Fuenteovejuna da fin.",
+      "score": 1.0,
+      "xpath": "/*/*[2]/*/*/*[5]/*[343]/*[5]"
+    }
+  ],
+  "no_encontradas": [
+    {
+      "numero": 41,
+      "palabra": "LAURENCIA41.)",
+      "contexto": "y salen PASCUALA y LAURENCIA41.)",
+      "texto_completo": "(Vanse y salen PASCUALA y LAURENCIA41.)"
+    },
+    {
+      "numero": 53,
+      "palabra": "cura!53",
+      "contexto": "¡Que no, sino al cura!53",
+      "texto_completo": "¡Que no, sino al cura!53"
+    },
+    {
+      "numero": 92,
+      "palabra": "amor92.",
+      "contexto": "Que no hay amor92.",
+      "texto_completo": "Que no hay amor92."
+    },
+    {
+      "numero": 104,
+      "palabra": "quistión104",
+      "contexto": "Con la quistión104",
+      "texto_completo": "Con la quistión104"
+    },
+    {
+      "numero": 106,
+      "palabra": "azor106!)",
+      "contexto": "¡Gentil azor106!)",
+      "texto_completo": "¡Gentil azor106!)"
+    },
+    {
+      "numero": 139,
+      "palabra": "(Cantan139.)",
+      "contexto": "(Cantan139.)",
+      "texto_completo": "(Cantan139.)"
+    },
+    {
+      "numero": 140,
+      "palabra": "moricos140,",
+      "contexto": "Venciendo moricos140,",
+      "texto_completo": "Venciendo moricos140,"
+    },
+    {
+      "numero": 141,
+      "palabra": "pendones141.",
+      "contexto": "trae sus pendones141.",
+      "texto_completo": "trae sus pendones141."
+    },
+    {
+      "numero": 161,
+      "palabra": "¡Harre161!,",
+      "contexto": "¡Harre161!,",
+      "texto_completo": "¡Harre161!,"
+    },
+    {
+      "numero": 170,
+      "palabra": "acompañamiento170.)",
+      "contexto": "DOÑA ISABEL, MANRIQUE y acompañamiento170.)",
+      "texto_completo": "(Vanse los dos y salgan el REY DON FERNANDO, la REINA DOÑA ISABEL, MANRIQUE y acompañamiento170.)"
+    },
+    {
+      "numero": 210,
+      "palabra": "perro210.",
+      "contexto": "No hay perro210.",
+      "texto_completo": "No hay perro210."
+    },
+    {
+      "numero": 220,
+      "palabra": "1.º220",
+      "contexto": "Salen ESTEBAN y REGIDOR 1.º220",
+      "texto_completo": "Salen ESTEBAN y REGIDOR 1.º220"
+    },
+    {
+      "numero": 235,
+      "palabra": "barbero235.",
+      "contexto": "Ni aun un barbero235.",
+      "texto_completo": "Ni aun un barbero235."
+    },
+    {
+      "numero": 251,
+      "palabra": "Vusiñoría251",
+      "contexto": "Vusiñoría251",
+      "texto_completo": "Vusiñoría251"
+    },
+    {
+      "numero": 256,
+      "palabra": "pena256.",
+      "contexto": "Ha dado en darme pena256.",
+      "texto_completo": "Ha dado en darme pena256."
+    },
+    {
+      "numero": 280,
+      "palabra": "desposado280",
+      "contexto": "Que su desposado280",
+      "texto_completo": "Que su desposado280"
+    },
+    {
+      "numero": 317,
+      "palabra": "FRONDOSO317.)",
+      "contexto": "y salen LAURENCIA y FRONDOSO317.)",
+      "texto_completo": "(Llévanla y vanse, y salen LAURENCIA y FRONDOSO317.)"
+    },
+    {
+      "numero": 326,
+      "palabra": "REGIDOR326.)",
+      "contexto": "ESTEBAN, alcalde, y el REGIDOR326.)",
+      "texto_completo": "(Salen ESTEBAN, alcalde, y el REGIDOR326.)"
+    },
+    {
+      "numero": 346,
+      "palabra": "Voluntad346",
+      "contexto": "Voluntad346",
+      "texto_completo": "Voluntad346"
+    },
+    {
+      "numero": 350,
+      "palabra": "dote350,",
+      "contexto": "en la traza del dote350,",
+      "texto_completo": "Hijo, y en la traza del dote350,"
+    },
+    {
+      "numero": 352,
+      "palabra": "ORTUÑO352.)",
+      "contexto": "el COMENDADOR, FLORES y ORTUÑO352.)",
+      "texto_completo": "(Salen el MAESTRE, el COMENDADOR, FLORES y ORTUÑO352.)"
+    },
+    {
+      "numero": 364,
+      "palabra": "ROJO364].)",
+      "contexto": "ESTEBAN alcalde [y JUAN ROJO364].)",
+      "texto_completo": "(Sale la boda: MÚSICOS, MENGO, FRONDOSO, LAURENCIA, PASCUALA, BARRILDO y ESTEBAN alcalde [y JUAN ROJO364].)"
+    },
+    {
+      "numero": 370,
+      "palabra": "puntos370!",
+      "contexto": "riñan ni anden en puntos370!",
+      "texto_completo": "ni riñan ni anden en puntos370!"
+    },
+    {
+      "numero": 388,
+      "palabra": "gallarda388?",
+      "contexto": "niña gallarda388?",
+      "texto_completo": "niña gallarda388?"
+    },
+    {
+      "numero": 410,
+      "palabra": "BARRILDO410.",
+      "contexto": "Salen ESTEBAN, ALONSO y BARRILDO410.",
+      "texto_completo": "Salen ESTEBAN, ALONSO y BARRILDO410."
+    },
+    {
+      "numero": 431,
+      "palabra": "desmelenada431.)",
+      "contexto": "(Sale LAURENCIA, desmelenada431.)",
+      "texto_completo": "(Sale LAURENCIA, desmelenada431.)"
+    },
+    {
+      "numero": 433,
+      "palabra": "ojos433?",
+      "contexto": "¿Por qué, mis ojos433?",
+      "texto_completo": "¿Por qué, mis ojos433?"
+    },
+    {
+      "numero": 458,
+      "palabra": "Descoge458",
+      "contexto": "Descoge458",
+      "texto_completo": "Descoge458"
+    },
+    {
+      "numero": 469,
+      "palabra": "COMENDADOR469.)",
+      "contexto": "y CIMBRANOS y el COMENDADOR469.)",
+      "texto_completo": "(Sale FRONDOSO, atadas las manos; FLORES, ORTUÑO y CIMBRANOS y el COMENDADOR469.)"
+    },
+    {
+      "numero": 478,
+      "palabra": "todos478.)",
+      "contexto": "(Salen todos478.)",
+      "texto_completo": "(Salen todos478.)"
+    },
+    {
+      "numero": 481,
+      "palabra": "(Dentro481.)",
+      "contexto": "(Dentro481.)",
+      "texto_completo": "(Dentro481.)"
+    },
+    {
+      "numero": 491,
+      "palabra": "maestre491.)",
+      "contexto": "ISABEL, y DON MANRIQUE, maestre491.)",
+      "texto_completo": "(Vanse y salen el REY FERNANDO y la REINA DOÑA ISABEL, y DON MANRIQUE, maestre491.)"
+    },
+    {
+      "numero": 514,
+      "palabra": "lanza515.)",
+      "contexto": "FERNÁN GÓMEZ514 en una lanza515.)",
+      "texto_completo": "(Vanse, y salen los labradores y labradoras con la cabeza de FERNÁN GÓMEZ514 en una lanza515.)"
+    },
+    {
+      "numero": 515,
+      "palabra": "lanza515.)",
+      "contexto": "FERNÁN GÓMEZ514 en una lanza515.)",
+      "texto_completo": "(Vanse, y salen los labradores y labradoras con la cabeza de FERNÁN GÓMEZ514 en una lanza515.)"
+    },
+    {
+      "numero": 518,
+      "palabra": "son518,",
+      "contexto": "que para en uno son518,",
+      "texto_completo": "pues que para en uno son518,"
+    },
+    {
+      "numero": 524,
+      "palabra": "aquél524,",
+      "contexto": "me mandó azotar aquél524,",
+      "texto_completo": "me mandó azotar aquél524,"
+    },
+    {
+      "numero": 526,
+      "palabra": "pringo526,",
+      "contexto": "Pero agora que los pringo526,",
+      "texto_completo": "Pero agora que los pringo526,"
+    },
+    {
+      "numero": 527,
+      "palabra": "Cristiánigos527,",
+      "contexto": "¡vivan los Reyes Cristiánigos527,",
+      "texto_completo": "¡vivan los Reyes Cristiánigos527,"
+    },
+    {
+      "numero": 530,
+      "palabra": "armas530.)",
+      "contexto": "JUAN ROJO con las armas530.)",
+      "texto_completo": "(Saca un escudo JUAN ROJO con las armas530.)"
+    },
+    {
+      "numero": 542,
+      "palabra": "ninguna542.",
+      "contexto": "Es ninguna542.",
+      "texto_completo": "Es ninguna542."
+    },
+    {
+      "numero": 544,
+      "palabra": "REGIDOR544.)",
+      "contexto": "(Sale el REGIDOR544.)",
+      "texto_completo": "(Sale el REGIDOR544.)"
+    },
+    {
+      "numero": 546,
+      "palabra": "SOLDADO546.)",
+      "contexto": "el MAESTRE y un SOLDADO546.)",
+      "texto_completo": "(Vanse y salen el MAESTRE y un SOLDADO546.)"
+    },
+    {
+      "numero": 552,
+      "palabra": "sola552.)",
+      "contexto": "(Vanse. Sale LAURENCIA sola552.)",
+      "texto_completo": "(Vanse. Sale LAURENCIA sola552.)"
+    },
+    {
+      "numero": 561,
+      "palabra": "responden561.)",
+      "contexto": "dentro el JUEZ y responden561.)",
+      "texto_completo": "(Dice dentro el JUEZ y responden561.)"
+    },
+    {
+      "numero": 573,
+      "palabra": "Diacitrón573.",
+      "contexto": "Diacitrón573.",
+      "texto_completo": "Diacitrón573."
+    },
+    {
+      "numero": 578,
+      "palabra": "pregunta578.",
+      "contexto": "Si hay vino pregunta578.",
+      "texto_completo": "Si hay vino pregunta578."
+    },
+    {
+      "numero": 580,
+      "palabra": "punta580.",
+      "contexto": "Una cierta punta580.",
+      "texto_completo": "Una cierta punta580."
+    },
+    {
+      "numero": 582,
+      "palabra": "MANRIQUE582.)",
+      "contexto": "y la REINA y MANRIQUE582.)",
+      "texto_completo": "(Vanse, y salen el REY y la REINA y MANRIQUE582.)"
+    }
+  ],
+  "multiples": [
+    {
+      "numero_nota": 2,
+      "palabra": "villa",
+      "contexto": "en la villa",
+      "candidatos": [
+        {
+          "verso": "2",
+          "texto": "en la villa?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[3]/*[3]"
+        },
+        {
+          "verso": "44",
+          "texto": "que en la villa estáis.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[18]/*[5]"
+        },
+        {
+          "verso": "193",
+          "texto": "¡Cuántas mozas en la villa,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[42]/*[3]"
+        },
+        {
+          "verso": "196",
+          "texto": "Tendré yo por maravilla",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[43]/*[2]"
+        },
+        {
+          "verso": "252",
+          "texto": "que al villano el gorrïón.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 4,
+      "palabra": "Guzmán",
+      "contexto": "Fernán Gómez de Guzmán",
+      "candidatos": [
+        {
+          "verso": "5",
+          "texto": "Fernán Gómez de Guzmán?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[6]/*[3]"
+        },
+        {
+          "verso": "42",
+          "texto": "Fernán Gómez de Guzmán,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[18]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 6,
+      "palabra": "Mayor",
+      "contexto": "de Comendador Mayor",
+      "candidatos": [
+        {
+          "verso": "9",
+          "texto": "de Comendador Mayor?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[8]/*[4]"
+        },
+        {
+          "verso": "1606",
+          "texto": "al Comendador mayor",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[287]/*[12]"
+        },
+        {
+          "verso": "444",
+          "texto": "¿Qué mayor que ese desdén?",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[108]/*[2]"
+        },
+        {
+          "verso": "1851",
+          "texto": "quiero que le colguéis, por mayor pena.",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[5]/*[63]/*[3]"
+        },
+        {
+          "verso": "1954",
+          "texto": "oye la mayor crueldad",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[5]/*[150]/*[6]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 15,
+      "palabra": "Seguro",
+      "contexto": "Seguro",
+      "candidatos": [
+        {
+          "verso": "52",
+          "texto": "Seguro, Fernando, estaba",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[20]/*[2]"
+        },
+        {
+          "verso": "75",
+          "texto": "que después por más seguro",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[8]"
+        },
+        {
+          "verso": "569",
+          "texto": "Y porque digo puro, os aseguro",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[22]"
+        },
+        {
+          "verso": "644",
+          "texto": "está el socorro seguro,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[179]/*[3]"
+        },
+        {
+          "verso": "722",
+          "texto": "seguro está el buen suceso.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[192]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 16,
+      "palabra": "Pontífice",
+      "contexto": "el Pontífice",
+      "candidatos": [
+        {
+          "verso": "59",
+          "texto": "el Pontífice.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[21]/*[6]"
+        },
+        {
+          "verso": "78",
+          "texto": "dando el Pontífice santo,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[11]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 21,
+      "palabra": "deudos",
+      "contexto": "a vuestros deudos",
+      "candidatos": [
+        {
+          "verso": "89",
+          "texto": "la parte de vuestros deudos:",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[22]"
+        },
+        {
+          "verso": "99",
+          "texto": "a vuestros deudos,2 que, en fin,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[32]"
+        },
+        {
+          "verso": "144",
+          "texto": "con mis deudos me concierto.",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[5]"
+        },
+        {
+          "verso": "1468",
+          "texto": "o seguir esta parte de tus deudos,",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[4]/*[247]/*[3]"
+        },
+        {
+          "verso": "1756",
+          "texto": "¿Vosotros padres y deudos?",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[33]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 34,
+      "palabra": "color",
+      "contexto": "de la color",
+      "candidatos": [
+        {
+          "verso": "155",
+          "texto": "de la color de la cruz,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[16]"
+        },
+        {
+          "verso": "495",
+          "texto": "que del color naranjado",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[42]"
+        },
+        {
+          "verso": "1785",
+          "texto": "solimanes y colores!",
+          "score": 0.3333333333333333,
+          "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[62]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 43,
+      "palabra": "he",
+      "contexto": "Pues a la he",
+      "candidatos": [
+        {
+          "verso": "56",
+          "texto": "que he puesto por vos la vida",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[21]/*[3]"
+        },
+        {
+          "verso": "174",
+          "texto": "Pues a la he que pensé",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[35]/*[2]"
+        },
+        {
+          "verso": "332",
+          "texto": "y al que reprehende, odioso.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[6]"
+        },
+        {
+          "verso": "346",
+          "texto": "mal hecha a la hermosa y casta,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[20]"
+        },
+        {
+          "verso": "839",
+          "texto": "la nuez, que os he de apiolar.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[224]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 63,
+      "palabra": "gusto",
+      "contexto": "es anochecer con gusto",
+      "candidatos": [
+        {
+          "verso": "246",
+          "texto": "después de darnos disgusto,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[33]"
+        },
+        {
+          "verso": "247",
+          "texto": "es anochecer con gusto",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[34]"
+        },
+        {
+          "verso": "1087",
+          "texto": "No hay disgustos que se igualen",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[99]/*[2]"
+        },
+        {
+          "verso": "2319",
+          "texto": "en cosas de vuestro gusto,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[8]"
+        },
+        {
+          "verso": "413",
+          "texto": "Pues ese gusto que intenta,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[95]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 64,
+      "palabra": "luego",
+      "contexto": "mas luego",
+      "candidatos": [
+        {
+          "verso": "259",
+          "texto": "mas luego que el frío cesa,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[12]"
+        },
+        {
+          "verso": "707",
+          "texto": "Don Manrique, partid luego,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[190]/*[2]"
+        },
+        {
+          "verso": "192",
+          "texto": "Luego la infamia condeno.",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[42]/*[2]"
+        },
+        {
+          "verso": "415",
+          "texto": "Luego, ¿por quererse a sí,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[97]/*[2]"
+        },
+        {
+          "verso": "614",
+          "texto": "que echaréis luego el postigo.",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[164]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 71,
+      "palabra": "precio",
+      "contexto": "precio",
+      "candidatos": [
+        {
+          "verso": "217",
+          "texto": "Pardiez, más precio poner,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[4]"
+        },
+        {
+          "verso": "225",
+          "texto": "y más precio al mediodía",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[12]"
+        },
+        {
+          "verso": "283",
+          "texto": "precio de aquesta contienda.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[57]/*[6]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 82,
+      "palabra": "damas",
+      "contexto": "damas",
+      "candidatos": [
+        {
+          "verso": "290",
+          "texto": "¡Dios os guarde, hermosas damas!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[61]/*[3]"
+        },
+        {
+          "verso": "291",
+          "texto": "¿Damas, Frondoso, nos llamas?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[62]/*[2]"
+        },
+        {
+          "verso": "318",
+          "texto": "damas, sin pasar de aquí,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[28]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 84,
+      "palabra": "compuesto",
+      "contexto": "melancólico al compuesto",
+      "candidatos": [
+        {
+          "verso": "330",
+          "texto": "venturoso al descompuesto",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[4]"
+        },
+        {
+          "verso": "331",
+          "texto": "melancólico al compuesto",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 151,
+      "palabra": "puro",
+      "contexto": "jaeces bordados de oro puro",
+      "candidatos": [
+        {
+          "verso": "567",
+          "texto": "no jaeces bordados de oro puro,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[20]"
+        },
+        {
+          "verso": "569",
+          "texto": "Y porque digo puro, os aseguro",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[22]"
+        },
+        {
+          "verso": "381",
+          "texto": "Armonía es puro amor,",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[86]/*[4]"
+        },
+        {
+          "verso": "1510",
+          "texto": "de puro vivir cansados.",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[4]/*[263]/*[7]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 152,
+      "palabra": "puro",
+      "contexto": "Y porque digo puro",
+      "candidatos": [
+        {
+          "verso": "567",
+          "texto": "no jaeces bordados de oro puro,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[20]"
+        },
+        {
+          "verso": "569",
+          "texto": "Y porque digo puro, os aseguro",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[22]"
+        },
+        {
+          "verso": "381",
+          "texto": "Armonía es puro amor,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[86]/*[4]"
+        },
+        {
+          "verso": "1510",
+          "texto": "de puro vivir cansados.",
+          "score": 0.25,
+          "xpath": "/*/*[2]/*/*/*[4]/*[263]/*[7]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 156,
+      "palabra": "Dios",
+      "contexto": "Id con Dios",
+      "candidatos": [
+        {
+          "verso": "589",
+          "texto": "Id con Dios.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[141]/*[3]"
+        },
+        {
+          "verso": "810",
+          "texto": "Id con Dios tras vueso corzo;",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[208]/*[7]"
+        },
+        {
+          "verso": "1009",
+          "texto": "En las ciudades hay Dios",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[59]/*[4]"
+        },
+        {
+          "verso": "236",
+          "texto": "(que Dios de pedrisco guarde);",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[23]"
+        },
+        {
+          "verso": "332",
+          "texto": "y al que reprehende, odioso.",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[6]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 158,
+      "palabra": "entrar",
+      "contexto": "bien huera entrar",
+      "candidatos": [
+        {
+          "verso": "607",
+          "texto": "Si los Alcaldes entraran,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[157]/*[2]"
+        },
+        {
+          "verso": "609",
+          "texto": "bien huera entrar; mas si no…",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[157]/*[4]"
+        },
+        {
+          "verso": "1714",
+          "texto": "Dejadme entrar, que bien puedo,",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[5]/*[27]/*[2]"
+        },
+        {
+          "verso": "617",
+          "texto": "(Si entraren, Ortuño, cierra.)",
+          "score": 0.3333333333333333,
+          "xpath": "/*/*[2]/*/*/*[3]/*[166]/*[2]"
+        },
+        {
+          "verso": "653",
+          "texto": "de Ciudad Real: ¿entrarán?",
+          "score": 0.3333333333333333,
+          "xpath": "/*/*[2]/*/*/*[3]/*[181]/*[4]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 166,
+      "palabra": "sufrir",
+      "contexto": "se ha de poder sufrir",
+      "candidatos": [
+        {
+          "verso": "628",
+          "texto": "No se ha de poder sufrir",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[175]/*[3]"
+        },
+        {
+          "verso": "1626",
+          "texto": "de las guerras, en sufrir",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[292]/*[7]"
+        },
+        {
+          "verso": "869",
+          "texto": "No se puede sufrir que estos astrólogos",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[3]"
+        },
+        {
+          "verso": "1498",
+          "texto": "¿cómo se puede sufrir?",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[4]/*[259]/*[11]"
+        },
+        {
+          "verso": "23",
+          "texto": "¡Qué cansado es de sufrir!",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 217,
+      "palabra": "estado",
+      "contexto": "con mi estado",
+      "candidatos": [
+        {
+          "verso": "392",
+          "texto": "que le conserva en su estado.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[87]/*[11]"
+        },
+        {
+          "verso": "853",
+          "texto": "con mi estado, y, pues me es",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[228]/*[3]"
+        },
+        {
+          "verso": "357",
+          "texto": "Como prestado, y aun dado,",
+          "score": 0.3333333333333333,
+          "xpath": "/*/*[2]/*/*/*[3]/*[74]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 221,
+      "palabra": "pósito",
+      "contexto": "saque más agora el pósito",
+      "candidatos": [
+        {
+          "verso": "862",
+          "texto": "que no se saque más agora el pósito.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[3]/*[3]"
+        },
+        {
+          "verso": "864",
+          "texto": "y es mejor que el sustento esté en depósito,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[3]/*[5]"
+        },
+        {
+          "verso": "866",
+          "texto": "Yo siempre he sido, al fin, deste propósito,",
+          "score": 0.2,
+          "xpath": "/*/*[2]/*/*/*[4]/*[4]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 230,
+      "palabra": "calabazas",
+      "contexto": "a la fe, las calabazas",
+      "candidatos": [
+        {
+          "verso": "883",
+          "texto": "calabazas, pepinos y mostazas...",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[17]"
+        },
+        {
+          "verso": "884",
+          "texto": "¡Ellos son, a la fe, las calabazas!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[18]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 238,
+      "palabra": "parte",
+      "contexto": "parece que en sagrada parte",
+      "candidatos": [
+        {
+          "verso": "911",
+          "texto": "y que parece que en sagrada parte",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[10]"
+        },
+        {
+          "verso": "913",
+          "texto": "éste las distribuye y las reparte.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[15]/*[12]"
+        },
+        {
+          "verso": "89",
+          "texto": "la parte de vuestros deudos:",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[22]"
+        },
+        {
+          "verso": "547",
+          "texto": "Aún no muestra una parte del que siente.",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[137]/*[2]"
+        },
+        {
+          "verso": "888",
+          "texto": "sobrará por las partes de Alemania;",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[22]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 246,
+      "palabra": "uso",
+      "contexto": "han de ser al uso",
+      "candidatos": [
+        {
+          "verso": "934",
+          "texto": "si es que las vistas han de ser al uso;",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[22]/*[3]"
+        },
+        {
+          "verso": "936",
+          "texto": "que en esto el barrio y vulgo anda confuso.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[22]/*[5]"
+        },
+        {
+          "verso": "501",
+          "texto": "La ciudad se puso en arma,",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[48]"
+        },
+        {
+          "verso": "674",
+          "texto": "nos puso apretado cerco.",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[184]/*[21]"
+        },
+        {
+          "verso": "1653",
+          "texto": "me puso los atabales!",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[4]/*[308]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 249,
+      "palabra": "gente",
+      "contexto": "Dios guarde la buena gente",
+      "candidatos": [
+        {
+          "verso": "445",
+          "texto": "Dios guarde a la buena gente.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[110]/*[2]"
+        },
+        {
+          "verso": "941",
+          "texto": "Dios guarde la buena gente.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[27]/*[2]"
+        },
+        {
+          "verso": "111",
+          "texto": "Poca gente es menester,",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[44]"
+        },
+        {
+          "verso": "163",
+          "texto": "hay gente humilde, y alguna",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[29]/*[6]"
+        },
+        {
+          "verso": "301",
+          "texto": "Al pleitista, diligente;",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[63]/*[11]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 252,
+      "palabra": "tienen",
+      "contexto": "los que no la tienen",
+      "candidatos": [
+        {
+          "verso": "566",
+          "texto": "Acá no tienen armas ni caballos,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[19]"
+        },
+        {
+          "verso": "877",
+          "texto": "¿Tienen ellos las nubes en su casa",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[11]"
+        },
+        {
+          "verso": "949",
+          "texto": "honra los que no la tienen.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[32]/*[4]"
+        },
+        {
+          "verso": "244",
+          "texto": "tienen estos bellacones,",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[31]"
+        },
+        {
+          "verso": "1678",
+          "texto": "que en paz tienen los reyes a Castilla",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[5]/*[14]/*[4]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 286,
+      "palabra": "materia",
+      "contexto": "la materia",
+      "candidatos": [
+        {
+          "verso": "427",
+          "texto": "En materia habéis entrado",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[101]/*[2]"
+        },
+        {
+          "verso": "1095",
+          "texto": "la materia;y que esto sea",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[99]/*[10]"
+        },
+        {
+          "verso": "1526",
+          "texto": "la materia previniendo,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[266]/*[14]"
+        },
+        {
+          "verso": "404",
+          "texto": "porque ¿es materia el rigor",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[90]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 304,
+      "palabra": "libre",
+      "contexto": "que cuando contigo es libre",
+      "candidatos": [
+        {
+          "verso": "1196",
+          "texto": "Pues Jacinta, Dios te libre,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[133]/*[2]"
+        },
+        {
+          "verso": "1197",
+          "texto": "que cuando contigo es libre,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[133]/*[3]"
+        },
+        {
+          "verso": "974",
+          "texto": "en hablar tan libremente.",
+          "score": 0.2,
+          "xpath": "/*/*[2]/*/*/*[4]/*[46]/*[4]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 305,
+      "palabra": "ser",
+      "contexto": "porque tengo el ser",
+      "candidatos": [
+        {
+          "verso": "1201",
+          "texto": "Yo sí lo tengo de ser,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[137]/*[2]"
+        },
+        {
+          "verso": "1202",
+          "texto": "porque tengo el ser y el nombre.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[137]/*[3]"
+        },
+        {
+          "verso": "48",
+          "texto": "por ser, cual somos los dos,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[19]/*[6]"
+        },
+        {
+          "verso": "117",
+          "texto": "Será bien que deis asombro,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[50]"
+        },
+        {
+          "verso": "137",
+          "texto": "entrambas han de ser rojas,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[70]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 312,
+      "palabra": "ti",
+      "contexto": "en llevarme para ti",
+      "candidatos": [
+        {
+          "verso": "1258",
+          "texto": "¡Harto bien me restituyes",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[169]/*[2]"
+        },
+        {
+          "verso": "1260",
+          "texto": "en llevarme para ti!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[169]/*[4]"
+        },
+        {
+          "verso": "109",
+          "texto": "a Andalucía y Castilla,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[42]"
+        },
+        {
+          "verso": "112",
+          "texto": "porque tiene por soldados",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[45]"
+        },
+        {
+          "verso": "456",
+          "texto": "siendo mis ojos testigos?",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 313,
+      "palabra": "vence",
+      "contexto": "te vence",
+      "candidatos": [
+        {
+          "verso": "540",
+          "texto": "viene vencedore;",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[131]"
+        },
+        {
+          "verso": "1265",
+          "texto": "te vence.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[171]/*[6]"
+        },
+        {
+          "verso": "1919",
+          "texto": "¡Entrad, teñid las armas vencedoras",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[144]/*[3]"
+        },
+        {
+          "verso": "516",
+          "texto": "pelea, castiga, y vence",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[63]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 322,
+      "palabra": "tiene",
+      "contexto": "para en uno nos tiene",
+      "candidatos": [
+        {
+          "verso": "112",
+          "texto": "porque tiene por soldados",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[45]"
+        },
+        {
+          "verso": "1300",
+          "texto": "ya para en uno nos tiene;",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[185]/*[11]"
+        },
+        {
+          "verso": "244",
+          "texto": "tienen estos bellacones,",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[31]"
+        },
+        {
+          "verso": "458",
+          "texto": "de esta ciudad, que ya tiene",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[5]"
+        },
+        {
+          "verso": "693",
+          "texto": "tiene a los súbditos suyos",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[186]/*[7]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 325,
+      "palabra": "suceso",
+      "contexto": "buen suceso",
+      "candidatos": [
+        {
+          "verso": "647",
+          "texto": "de modo que el buen suceso",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[179]/*[6]"
+        },
+        {
+          "verso": "722",
+          "texto": "seguro está el buen suceso.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[192]/*[3]"
+        },
+        {
+          "verso": "1318",
+          "texto": "buen suceso.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[188]/*[9]"
+        },
+        {
+          "verso": "2018",
+          "texto": "El triste suceso ha sido",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[5]/*[153]/*[4]"
+        },
+        {
+          "verso": "2446",
+          "texto": "el suceso por escrito,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[5]/*[342]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 327,
+      "palabra": "término",
+      "contexto": "Fue su término",
+      "candidatos": [
+        {
+          "verso": "1319",
+          "texto": "Fue su término de modo",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[192]/*[2]"
+        },
+        {
+          "verso": "2423",
+          "texto": "que con término insolente",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[8]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 329,
+      "palabra": "ya",
+      "contexto": "este nombre les dan ya",
+      "candidatos": [
+        {
+          "verso": "1327",
+          "texto": "Ya a los Católicos Reyes,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[193]/*[2]"
+        },
+        {
+          "verso": "1328",
+          "texto": "que este nombre les dan ya,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[193]/*[3]"
+        },
+        {
+          "verso": "1222",
+          "texto": "—que ya es razón que aniquiles,",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[4]/*[152]/*[3]"
+        },
+        {
+          "verso": "80",
+          "texto": "y después las suyas Paulo,",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[13]"
+        },
+        {
+          "verso": "195",
+          "texto": "andan ya descalabradas!",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[42]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 336,
+      "palabra": "decir",
+      "contexto": "otro lo ha de decir",
+      "candidatos": [
+        {
+          "verso": "1373",
+          "texto": "que he sido en decirlo osado,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[207]/*[8]"
+        },
+        {
+          "verso": "1374",
+          "texto": "como otro lo ha de decir.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[207]/*[9]"
+        },
+        {
+          "verso": "629",
+          "texto": "lo que nos ha de decir,",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[3]/*[175]/*[4]"
+        },
+        {
+          "verso": "2092",
+          "texto": "en lo que habéis de decir.",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[5]/*[177]/*[14]"
+        },
+        {
+          "verso": "2346",
+          "texto": "sabéis bien decir y hacer.",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[5]/*[322]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 345,
+      "palabra": "ti",
+      "contexto": "Frondoso, Laurencia, en ti",
+      "candidatos": [
+        {
+          "verso": "1278",
+          "texto": "a la justicia divina.\n                            Llévanla y vanse, y salen Laurencia y Frondoso",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[181]/*[3]"
+        },
+        {
+          "verso": "1422",
+          "texto": "Frondoso, Laurencia, en ti.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[221]/*[4]"
+        },
+        {
+          "verso": "249",
+          "texto": "Tienes, Laurencia, razón,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[2]"
+        },
+        {
+          "verso": "440",
+          "texto": "bastante satisfación.",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[107]/*[5]"
+        },
+        {
+          "verso": "751",
+          "texto": "Tal me tienen tus desdenes,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[195]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 385,
+      "palabra": "uno",
+      "contexto": "pues que para en uno",
+      "candidatos": [
+        {
+          "verso": "1547",
+          "texto": "pues que para en uno son!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[272]/*[3]"
+        },
+        {
+          "verso": "2039",
+          "texto": "pues que para en uno son,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[157]/*[7]"
+        },
+        {
+          "verso": "333",
+          "texto": "Importuno al que aconseja;",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[3]/*[66]/*[7]"
+        },
+        {
+          "verso": "738",
+          "texto": "que ya para en uno somos;",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[3]/*[194]/*[17]"
+        },
+        {
+          "verso": "1143",
+          "texto": "pues no hay hombre ninguno",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[4]/*[114]/*[4]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 386,
+      "palabra": "Fuenteovejuna",
+      "contexto": "Al val386 de Fuenteovejuna",
+      "candidatos": [
+        {
+          "verso": "162",
+          "texto": "Ya veis que en Fuenteovejuna",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[29]/*[5]"
+        },
+        {
+          "verso": "541",
+          "texto": "que a Fuenteovejuna",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[132]"
+        },
+        {
+          "verso": "981",
+          "texto": "Mirad que en Fuenteovejuna",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[48]/*[5]"
+        },
+        {
+          "verso": "1467",
+          "texto": "Y yo a Fuenteovejuna, mientras tratas",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[247]/*[2]"
+        },
+        {
+          "verso": "1548",
+          "texto": "Al val de Fuenteovejuna",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 389,
+      "palabra": "deseos",
+      "contexto": "Que mis linces deseos",
+      "candidatos": [
+        {
+          "verso": "1558",
+          "texto": "Que mis linces deseos",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[12]"
+        },
+        {
+          "verso": "1570",
+          "texto": "Que mis linces deseos",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[24]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 391,
+      "palabra": "ramas.",
+      "contexto": "de las intricadas391 ramas.",
+      "candidatos": [
+        {
+          "verso": "1552",
+          "texto": "Entre las ramas se esconde,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[6]"
+        },
+        {
+          "verso": "1555",
+          "texto": "pone delante las ramas.",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[9]"
+        },
+        {
+          "verso": "1563",
+          "texto": "de las intricadas ramas.",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[4]/*[273]/*[17]"
+        },
+        {
+          "verso": "777",
+          "texto": "¡Escóndete en esas ramas!",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[202]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 416,
+      "palabra": "la",
+      "contexto": "Pues si ya la",
+      "candidatos": [
+        {
+          "verso": "1672",
+          "texto": "que no esté lastimado en honra y vida?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[13]/*[10]"
+        },
+        {
+          "verso": "1673",
+          "texto": "¿No os lamentáis los unos de los otros?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[13]/*[11]"
+        },
+        {
+          "verso": "1674",
+          "texto": "Pues si ya la tenéis todos perdida,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[13]/*[12]"
+        },
+        {
+          "verso": "200",
+          "texto": "y todo, Pascuala, en vano.",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[44]/*[4]"
+        },
+        {
+          "verso": "451",
+          "texto": "La guerra se acaba ya,",
+          "score": 0.75,
+          "xpath": "/*/*[2]/*/*/*[3]/*[115]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 420,
+      "palabra": "medio",
+      "contexto": "con tanta guerra en medio",
+      "candidatos": [
+        {
+          "verso": "1683",
+          "texto": "ha tantos enemigos, otro medio",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[15]/*[3]"
+        },
+        {
+          "verso": "1685",
+          "texto": "hacernos bien con tanta guerra en medio.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[15]/*[5]"
+        },
+        {
+          "verso": "715",
+          "texto": "que éste es el medio mejor",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[190]/*[10]"
+        },
+        {
+          "verso": "225",
+          "texto": "y más precio al mediodía",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[12]"
+        },
+        {
+          "verso": "1681",
+          "texto": "y, echándose a sus pies, pidan remedio.",
+          "score": 0.4,
+          "xpath": "/*/*[2]/*/*/*[5]/*[14]/*[7]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 426,
+      "palabra": "vara",
+      "contexto": "la vara",
+      "candidatos": [
+        {
+          "verso": "1633",
+          "texto": "¡Hola! ¡La vara quitalde!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[293]/*[2]"
+        },
+        {
+          "verso": "1696",
+          "texto": "la vara quiebran tan injustamente…",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[19]/*[7]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 428,
+      "palabra": "vais",
+      "contexto": "que vais",
+      "candidatos": [
+        {
+          "verso": "1706",
+          "texto": "que vais en estas cosas con recelo.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[24]/*[3]"
+        },
+        {
+          "verso": "2330",
+          "texto": "de Granada, adonde vais,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[319]/*[19]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 443,
+      "palabra": "bárbaros",
+      "contexto": "bárbaros",
+      "candidatos": [
+        {
+          "verso": "1703",
+          "texto": "y no bárbaros hombres inhumanos.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[23]/*[3]"
+        },
+        {
+          "verso": "1771",
+          "texto": "bárbaros sois, no españoles;",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[48]"
+        },
+        {
+          "verso": "2013",
+          "texto": "los bárbaros delincuentes:",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[57]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 448,
+      "palabra": "tocas",
+      "contexto": "nuestras tocas",
+      "candidatos": [
+        {
+          "verso": "1784",
+          "texto": "nuestras tocas y basquiñas,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[34]/*[61]"
+        },
+        {
+          "verso": "1845",
+          "texto": "nuestras tocas por pendones.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[56]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 492,
+      "palabra": "prevención",
+      "contexto": "De modo la prevención",
+      "candidatos": [
+        {
+          "verso": "648",
+          "texto": "con la prevención se vea.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[179]/*[7]"
+        },
+        {
+          "verso": "1922",
+          "texto": "De modo la prevención",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 496,
+      "palabra": "Discreto",
+      "contexto": "Discreto",
+      "candidatos": [
+        {
+          "verso": "1934",
+          "texto": "REY: Discreto el acuerdo fue",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[148]/*[14]"
+        },
+        {
+          "verso": "2455",
+          "texto": "Y aquí, discreto senado,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[343]/*[4]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 506,
+      "palabra": "porfía",
+      "contexto": "y, a porfía",
+      "candidatos": [
+        {
+          "verso": "243",
+          "texto": "con su amor y sus porfías,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[50]/*[30]"
+        },
+        {
+          "verso": "1987",
+          "texto": "y, a porfía, quien más puede",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[31]"
+        },
+        {
+          "verso": "2256",
+          "texto": "niega con mayor porfía.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[268]/*[5]"
+        },
+        {
+          "verso": "",
+          "texto": "¡Qué porfía!",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[5]/*[229]/*[2]"
+        },
+        {
+          "verso": "2430",
+          "texto": "tres hombres con tal porfía,",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[15]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 507,
+      "palabra": "mesa",
+      "contexto": "mesa",
+      "candidatos": [
+        {
+          "verso": "258",
+          "texto": "las migajas de la mesa;",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[51]/*[11]"
+        },
+        {
+          "verso": "1988",
+          "texto": "mesa su barba y cabello",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[32]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 509,
+      "palabra": "armas",
+      "contexto": "Sus armas",
+      "candidatos": [
+        {
+          "verso": "566",
+          "texto": "Acá no tienen armas ni caballos,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[19]"
+        },
+        {
+          "verso": "1994",
+          "texto": "Sus armas borran con picas",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[38]"
+        },
+        {
+          "verso": "1996",
+          "texto": "tus reales armas fijar,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[152]/*[40]"
+        },
+        {
+          "verso": "573",
+          "texto": "mejor que de las armas aceradas,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[26]"
+        },
+        {
+          "verso": "1110",
+          "texto": "y el gabán en armas nuevas;",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[4]/*[104]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 532,
+      "palabra": "Advertid",
+      "contexto": "Advertid",
+      "candidatos": [
+        {
+          "verso": "87",
+          "texto": "advertid que es honra vuestra",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[20]"
+        },
+        {
+          "verso": "844",
+          "texto": "Y advertid que Amor es sordo,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[226]/*[4]"
+        },
+        {
+          "verso": "2083",
+          "texto": "Advertid, Fuenteovejuna,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[177]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 535,
+      "palabra": "¿Qué",
+      "contexto": "¿Qué",
+      "candidatos": [
+        {
+          "verso": "23",
+          "texto": "¡Qué cansado es de sufrir!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[2]"
+        },
+        {
+          "verso": "24",
+          "texto": "¡Qué áspero y qué importuno!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[3]"
+        },
+        {
+          "verso": "31",
+          "texto": "a saber qué es ser amado.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[12]/*[10]"
+        },
+        {
+          "verso": "65",
+          "texto": "¿Qué hay de guerra por allá?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[24]/*[2]"
+        },
+        {
+          "verso": "189",
+          "texto": "¿A qué efeto fuera bueno",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[40]/*[4]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 537,
+      "palabra": "agora",
+      "contexto": "agora",
+      "candidatos": [
+        {
+          "verso": "43",
+          "texto": "que agora nueva me dan",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[18]/*[4]"
+        },
+        {
+          "verso": "103",
+          "texto": "tiene agora en su poder.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[27]/*[36]"
+        },
+        {
+          "verso": "358",
+          "texto": "desde agora os doy el mío.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[74]/*[3]"
+        },
+        {
+          "verso": "581",
+          "texto": "Descansad, señor, agora,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[140]/*[2]"
+        },
+        {
+          "verso": "793",
+          "texto": "agora no quiere el campo,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[207]/*[9]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 538,
+      "palabra": "habemos",
+      "contexto": "en lo que habemos",
+      "candidatos": [
+        {
+          "verso": "2102",
+          "texto": "en lo que habemos de hacer.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[183]/*[5]"
+        },
+        {
+          "verso": "2440",
+          "texto": "ya tus armas puesto habemos.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[341]/*[5]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 550,
+      "palabra": "dado",
+      "contexto": "al Rey se han dado",
+      "candidatos": [
+        {
+          "verso": "2139",
+          "texto": "SOLDADO Señor, tu enojo reporta,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[211]/*[8]"
+        },
+        {
+          "verso": "2140",
+          "texto": "porque ellos al Rey se han dado,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[211]/*[9]"
+        },
+        {
+          "verso": "2151",
+          "texto": "Por saber que al Rey se han dado",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[213]/*[6]"
+        },
+        {
+          "verso": "2145",
+          "texto": "SOLDADO Con él sobre esa razón",
+          "score": 0.8,
+          "xpath": "/*/*[2]/*/*/*[5]/*[212]/*[4]"
+        },
+        {
+          "verso": "50",
+          "texto": "yo vuestro Comendador",
+          "score": 0.6,
+          "xpath": "/*/*[2]/*/*/*[3]/*[19]/*[8]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 555,
+      "palabra": "esposo",
+      "contexto": "Mi esposo",
+      "candidatos": [
+        {
+          "verso": "756",
+          "texto": "el desear ser tu esposo,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[195]/*[7]"
+        },
+        {
+          "verso": "1370",
+          "texto": "el ser su esposo procuro.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[207]/*[5]"
+        },
+        {
+          "verso": "2171",
+          "texto": "Mi esposo adoro. La ocasión que veo",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[215]/*[10]"
+        },
+        {
+          "verso": "804",
+          "texto": "dos días del desposorio?",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[3]/*[207]/*[20]"
+        },
+        {
+          "verso": "1230",
+          "texto": "a esposo y padres honrados,",
+          "score": 0.5,
+          "xpath": "/*/*[2]/*/*/*[4]/*[153]/*[7]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 563,
+      "palabra": "aprieta",
+      "contexto": "aprieta",
+      "candidatos": [
+        {
+          "verso": "2214",
+          "texto": "aprieta! ¡Perro, yo sé",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[235]/*[3]"
+        },
+        {
+          "verso": "2216",
+          "texto": "¿Callas? ¡Aprieta, borracho!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[235]/*[5]"
+        },
+        {
+          "verso": "2236",
+          "texto": "¡Aprieta!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[248]/*[3]"
+        },
+        {
+          "verso": "2237",
+          "texto": "¡Aprieta, infame! ¿Estás sordo?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[250]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 569,
+      "palabra": "espalda",
+      "contexto": "la espalda",
+      "candidatos": [
+        {
+          "verso": "490",
+          "texto": "peto y espaldar luciente",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[117]/*[37]"
+        },
+        {
+          "verso": "2250",
+          "texto": "la espalda.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[264]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 570,
+      "palabra": "yo",
+      "contexto": "Quedo570, que yo",
+      "candidatos": [
+        {
+          "verso": "9",
+          "texto": "de Comendador Mayor?",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[8]/*[4]"
+        },
+        {
+          "verso": "148",
+          "texto": "rayo sus muros abraso.",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[28]/*[9]"
+        },
+        {
+          "verso": "179",
+          "texto": "Yo, Laurencia, he visto alguna",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[37]/*[2]"
+        },
+        {
+          "verso": "190",
+          "texto": "querer a Fernando yo?",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[40]/*[5]"
+        },
+        {
+          "verso": "196",
+          "texto": "Tendré yo por maravilla",
+          "score": 0.6666666666666666,
+          "xpath": "/*/*[2]/*/*/*[3]/*[43]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 572,
+      "palabra": "¡Vítor",
+      "contexto": "¡Vítor",
+      "candidatos": [
+        {
+          "verso": "2261",
+          "texto": "¡Vítor, Mengo!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[271]/*[2]"
+        },
+        {
+          "verso": "2262",
+          "texto": "¡Mengo, vítor!",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[273]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 583,
+      "palabra": "entendí",
+      "contexto": "No entendí",
+      "candidatos": [
+        {
+          "verso": "354",
+          "texto": "si no es que mal lo entendí?",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[70]/*[3]"
+        },
+        {
+          "verso": "2293",
+          "texto": "No entendí, señor, hallaros",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[308]/*[2]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 599,
+      "palabra": "suerte",
+      "contexto": "de la suerte",
+      "candidatos": [
+        {
+          "verso": "323",
+          "texto": "de esa suerte; y a fe mía,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[64]/*[4]"
+        },
+        {
+          "verso": "789",
+          "texto": "Cielo te dio, de tal suerte,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[207]/*[5]"
+        },
+        {
+          "verso": "1115",
+          "texto": "en Ciudad Real, de suerte",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[104]/*[10]"
+        },
+        {
+          "verso": "2173",
+          "texto": "si no le ayuda la felice suerte.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[215]/*[12]"
+        },
+        {
+          "verso": "2362",
+          "texto": "de la suerte que has mandado,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[331]/*[3]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 601,
+      "palabra": "pidiendo",
+      "contexto": "en pidiendo",
+      "candidatos": [
+        {
+          "verso": "662",
+          "texto": "el real amparo pidiendo.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[184]/*[9]"
+        },
+        {
+          "verso": "875",
+          "texto": "Y pidiendo el presente lo importante,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[5]/*[9]"
+        },
+        {
+          "verso": "2371",
+          "texto": "en pidiendo quién lo ha hecho,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[331]/*[12]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 609,
+      "palabra": "salmón",
+      "contexto": "como rueda de salmón",
+      "candidatos": [
+        {
+          "verso": "1652",
+          "texto": "¡como ruedas de salmón",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[4]/*[308]/*[4]"
+        },
+        {
+          "verso": "2428",
+          "texto": "como rueda de salmón.",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[13]"
+        }
+      ]
+    },
+    {
+      "numero_nota": 612,
+      "palabra": "cuero",
+      "contexto": "porque el cuero",
+      "candidatos": [
+        {
+          "verso": "570",
+          "texto": "que vienen doce cueros, que aun en cueros",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[3]/*[138]/*[23]"
+        },
+        {
+          "verso": "2434",
+          "texto": "porque el cuero se me curta,",
+          "score": 1.0,
+          "xpath": "/*/*[2]/*/*/*[5]/*[340]/*[19]"
+        },
+        {
+          "verso": "1401",
+          "texto": "¡Pues que no la pide en cueros,",
+          "score": 0.3333333333333333,
+          "xpath": "/*/*[2]/*/*/*[4]/*[212]/*[2]"
+        }
+      ]
+    }
+  ]
+}

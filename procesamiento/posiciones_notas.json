@@ -1,0 +1,3716 @@
+[
+  {
+    "numero": 1,
+    "palabra": "Maestre",
+    "contexto": "¿Sabe el Maestre",
+    "texto_completo": "¿Sabe el Maestre1 que estoy"
+  },
+  {
+    "numero": 2,
+    "palabra": "villa",
+    "contexto": "en la villa",
+    "texto_completo": "en la villa2?"
+  },
+  {
+    "numero": 3,
+    "palabra": "grave",
+    "contexto": "con la edad, más grave",
+    "texto_completo": "Está, con la edad, más grave3."
+  },
+  {
+    "numero": 4,
+    "palabra": "Guzmán",
+    "contexto": "Fernán Gómez de Guzmán",
+    "texto_completo": "Fernán Gómez de Guzmán4?"
+  },
+  {
+    "numero": 5,
+    "palabra": "nombre",
+    "contexto": "Cuando no sepa mi nombre",
+    "texto_completo": "Cuando no sepa mi nombre5,"
+  },
+  {
+    "numero": 6,
+    "palabra": "Mayor",
+    "contexto": "de Comendador Mayor",
+    "texto_completo": "de Comendador Mayor6?"
+  },
+  {
+    "numero": 7,
+    "palabra": "voluntad",
+    "contexto": "para abrir la voluntad",
+    "texto_completo": "para abrir la voluntad7"
+  },
+  {
+    "numero": 8,
+    "palabra": "pies",
+    "contexto": "la boca a sus pies",
+    "texto_completo": "poner la boca a sus pies8,"
+  },
+  {
+    "numero": 9,
+    "palabra": "sufrir",
+    "contexto": "¡Qué cansado es de sufrir",
+    "texto_completo": "¡Qué cansado es de sufrir9!"
+  },
+  {
+    "numero": 10,
+    "palabra": "tiranía",
+    "contexto": "linaje de tiranía",
+    "texto_completo": "linaje de tiranía10."
+  },
+  {
+    "numero": 11,
+    "palabra": "amado",
+    "contexto": "saber qué es ser amado",
+    "texto_completo": "a saber qué es ser amado11."
+  },
+  {
+    "numero": 12,
+    "palabra": "Calatrava",
+    "contexto": "que la cruz de Calatrava",
+    "texto_completo": "que la cruz de Calatrava12"
+  },
+  {
+    "numero": 13,
+    "palabra": "dan",
+    "contexto": "que agora nueva me dan",
+    "texto_completo": "que agora nueva me dan13"
+  },
+  {
+    "numero": 14,
+    "palabra": "crïanza",
+    "contexto": "el amor y la crïanza",
+    "texto_completo": "que el amor y la crïanza14"
+  },
+  {
+    "numero": 15,
+    "palabra": "Seguro",
+    "contexto": "Seguro",
+    "texto_completo": "Seguro15, Fernando, estaba"
+  },
+  {
+    "numero": 16,
+    "palabra": "Pontífice",
+    "contexto": "el Pontífice",
+    "texto_completo": "el Pontífice16."
+  },
+  {
+    "numero": 17,
+    "palabra": "claro",
+    "contexto": "de aquel vuestro padre claro",
+    "texto_completo": "de aquel vuestro padre claro17,"
+  },
+  {
+    "numero": 18,
+    "palabra": "coadjutor",
+    "contexto": "fuese vuestro coadjutor",
+    "texto_completo": "fuese vuestro coadjutor18;"
+  },
+  {
+    "numero": 19,
+    "palabra": "deudos",
+    "contexto": "la parte de vuestros deudos",
+    "texto_completo": "la parte de vuestros deudos19:"
+  },
+  {
+    "numero": 20,
+    "palabra": "vasallos",
+    "contexto": "obedezcan sus vasallos",
+    "texto_completo": "obedezcan sus vasallos20;"
+  },
+  {
+    "numero": 21,
+    "palabra": "deudos",
+    "contexto": "a vuestros deudos",
+    "texto_completo": "a vuestros deudos21, que, en fin,"
+  },
+  {
+    "numero": 22,
+    "palabra": "Juana",
+    "contexto": "en la sucesión de Juana",
+    "texto_completo": "en la sucesión de Juana22,"
+  },
+  {
+    "numero": 23,
+    "palabra": "poder",
+    "contexto": "tiene agora en su poder",
+    "texto_completo": "tiene agora en su poder23."
+  },
+  {
+    "numero": 24,
+    "palabra": "entrambos",
+    "contexto": "para mirarlos a entrambos",
+    "texto_completo": "para mirarlos a entrambos24."
+  },
+  {
+    "numero": 25,
+    "palabra": "niño",
+    "contexto": "Rodrigo, aunque niño",
+    "texto_completo": "Rodrigo, aunque niño25, a cuantos"
+  },
+  {
+    "numero": 26,
+    "palabra": "flacos",
+    "contexto": "para vuestros hombros flacos",
+    "texto_completo": "para vuestros hombros flacos26."
+  },
+  {
+    "numero": 27,
+    "palabra": "venís",
+    "contexto": "de quien venís",
+    "texto_completo": "de quien venís27, que mostrando"
+  },
+  {
+    "numero": 28,
+    "palabra": "Villena",
+    "contexto": "los marqueses de Villena",
+    "texto_completo": "los marqueses de Villena28,"
+  },
+  {
+    "numero": 29,
+    "palabra": "Fama",
+    "contexto": "las alas de la Fama",
+    "texto_completo": "que las alas de la Fama29"
+  },
+  {
+    "numero": 30,
+    "palabra": "inmortal",
+    "contexto": "capa del templo inmortal",
+    "texto_completo": "capa del templo inmortal30"
+  },
+  {
+    "numero": 31,
+    "palabra": "parcialidad",
+    "contexto": "que en esta parcialidad",
+    "texto_completo": "que en esta parcialidad31,"
+  },
+  {
+    "numero": 32,
+    "palabra": "intento",
+    "contexto": "a Ciudad Real mi intento",
+    "texto_completo": "a Ciudad Real mi intento32,"
+  },
+  {
+    "numero": 33,
+    "palabra": "estraños",
+    "contexto": "los propios y los estraños",
+    "texto_completo": "los propios y los estraños33"
+  },
+  {
+    "numero": 34,
+    "palabra": "color",
+    "contexto": "de la color",
+    "texto_completo": "de la color34 de la cruz,"
+  },
+  {
+    "numero": 35,
+    "palabra": "residís",
+    "contexto": "Vos, a donde residís",
+    "texto_completo": "Vos, a donde residís35,"
+  },
+  {
+    "numero": 36,
+    "palabra": "crïados",
+    "contexto": "Pocos, pero mis crïados",
+    "texto_completo": "Pocos, pero mis crïados36,"
+  },
+  {
+    "numero": 37,
+    "palabra": "servís",
+    "contexto": "que si dellos os servís",
+    "texto_completo": "que si dellos os servís37,"
+  },
+  {
+    "numero": 38,
+    "palabra": "mudanzas",
+    "contexto": "casa entre aquestas mudanzas",
+    "texto_completo": "casa entre aquestas mudanzas38."
+  },
+  {
+    "numero": 39,
+    "palabra": "vasallo",
+    "contexto": "que no quedará vasallo",
+    "texto_completo": "que no quedará vasallo39."
+  },
+  {
+    "numero": 40,
+    "palabra": "ristre",
+    "contexto": "la lanza en el ristre",
+    "texto_completo": "poner la lanza en el ristre40."
+  },
+  {
+    "numero": 41,
+    "palabra": "LAURENCIA41.)",
+    "contexto": "y salen PASCUALA y LAURENCIA41.)",
+    "texto_completo": "(Vanse y salen PASCUALA y LAURENCIA41.)"
+  },
+  {
+    "numero": 42,
+    "palabra": "volviera!",
+    "contexto": "¡Mas que nunca acá volviera!",
+    "texto_completo": "¡Mas que nunca acá volviera!42"
+  },
+  {
+    "numero": 43,
+    "palabra": "he",
+    "contexto": "Pues a la he",
+    "texto_completo": "Pues a la he43 que pensé"
+  },
+  {
+    "numero": 44,
+    "palabra": "¡Plega",
+    "contexto": "¡Plega",
+    "texto_completo": "¡Plega44 al cielo que jamás"
+  },
+  {
+    "numero": 45,
+    "palabra": "brando",
+    "contexto": "brando",
+    "texto_completo": "brando45 como una manteca."
+  },
+  {
+    "numero": 46,
+    "palabra": "condición?",
+    "contexto": "como esta mi condición?",
+    "texto_completo": "como esta mi condición?46"
+  },
+  {
+    "numero": 47,
+    "palabra": "efeto",
+    "contexto": "¿A qué efeto",
+    "texto_completo": "¿A qué efeto47 fuera bueno"
+  },
+  {
+    "numero": 48,
+    "palabra": "condeno",
+    "contexto": "Luego la infamia condeno",
+    "texto_completo": "Luego la infamia condeno48."
+  },
+  {
+    "numero": 49,
+    "palabra": "mes",
+    "contexto": "que me sigue un mes",
+    "texto_completo": "porque ha que me sigue un mes49,"
+  },
+  {
+    "numero": 50,
+    "palabra": "copete",
+    "contexto": "una sarta y un copete",
+    "texto_completo": "una sarta y un copete50."
+  },
+  {
+    "numero": 51,
+    "palabra": "pecho",
+    "contexto": "para contrastar mi pecho",
+    "texto_completo": "para contrastar mi pecho51."
+  },
+  {
+    "numero": 52,
+    "palabra": "habrá",
+    "contexto": "en el arroyo, y habrá",
+    "texto_completo": "en el arroyo, y habrá52"
+  },
+  {
+    "numero": 53,
+    "palabra": "cura!53",
+    "contexto": "¡Que no, sino al cura!53",
+    "texto_completo": "¡Que no, sino al cura!53"
+  },
+  {
+    "numero": 54,
+    "palabra": "reverencia",
+    "contexto": "yo para su reverencia",
+    "texto_completo": "yo para su reverencia54."
+  },
+  {
+    "numero": 55,
+    "palabra": "precio",
+    "contexto": "Pardiez, más precio",
+    "texto_completo": "Pardiez, más precio55 poner,"
+  },
+  {
+    "numero": 56,
+    "palabra": "cangilón",
+    "contexto": "del pegado cangilón",
+    "texto_completo": "del pegado cangilón56;"
+  },
+  {
+    "numero": 57,
+    "palabra": "armonía",
+    "contexto": "con espumosa armonía",
+    "texto_completo": "con espumosa armonía57;"
+  },
+  {
+    "numero": 58,
+    "palabra": "viña",
+    "contexto": "una cuerda de mi viña",
+    "texto_completo": "de una cuerda de mi viña58"
+  },
+  {
+    "numero": 59,
+    "palabra": "pimienta",
+    "contexto": "su aceite y su pimienta",
+    "texto_completo": "con su aceite y su pimienta59,"
+  },
+  {
+    "numero": 60,
+    "palabra": "devociones",
+    "contexto": "rezalle mis devociones",
+    "texto_completo": "rezalle mis devociones60;"
+  },
+  {
+    "numero": 61,
+    "palabra": "bellacones",
+    "contexto": "tienen estos bellacones",
+    "texto_completo": "tienen estos bellacones61,"
+  },
+  {
+    "numero": 62,
+    "palabra": "cuidado",
+    "contexto": "porque todo su cuidado",
+    "texto_completo": "porque todo su cuidado62"
+  },
+  {
+    "numero": 63,
+    "palabra": "gusto",
+    "contexto": "es anochecer con gusto",
+    "texto_completo": "es anochecer con gusto63"
+  },
+  {
+    "numero": 64,
+    "palabra": "luego",
+    "contexto": "mas luego",
+    "texto_completo": "mas luego64 que el frío cesa,"
+  },
+  {
+    "numero": 65,
+    "palabra": "judío»",
+    "contexto": "dicen: «judío, judío»",
+    "texto_completo": "dicen: «judío, judío»65."
+  },
+  {
+    "numero": 66,
+    "palabra": "ascuas",
+    "contexto": "pero pasadas las ascuas",
+    "texto_completo": "pero pasadas las ascuas66,"
+  },
+  {
+    "numero": 67,
+    "palabra": "Pascuas",
+    "contexto": "el nombre de las Pascuas",
+    "texto_completo": "anda el nombre de las Pascuas67."
+  },
+  {
+    "numero": 68,
+    "palabra": "diferencia",
+    "contexto": "En aquesta diferencia",
+    "texto_completo": "En aquesta diferencia68"
+  },
+  {
+    "numero": 69,
+    "palabra": "concierto",
+    "contexto": "Pues hagamos un concierto",
+    "texto_completo": "Pues hagamos un concierto69"
+  },
+  {
+    "numero": 70,
+    "palabra": "mí",
+    "contexto": "que si juzgan por mí",
+    "texto_completo": "y es que si juzgan por mí70,"
+  },
+  {
+    "numero": 71,
+    "palabra": "precio",
+    "contexto": "precio",
+    "texto_completo": "precio71 de aquesta contienda."
+  },
+  {
+    "numero": 72,
+    "palabra": "boj",
+    "contexto": "Daré mi rabel de boj",
+    "texto_completo": "Daré mi rabel de boj72,"
+  },
+  {
+    "numero": 73,
+    "palabra": "troj",
+    "contexto": "vale más que una troj",
+    "texto_completo": "que vale más que una troj73"
+  },
+  {
+    "numero": 74,
+    "palabra": "uso",
+    "contexto": "Andar al uso",
+    "texto_completo": "Andar al uso74 queremos:"
+  },
+  {
+    "numero": 75,
+    "palabra": "bisojo",
+    "contexto": "al ciego, tuerto; al bisojo",
+    "texto_completo": "al ciego, tuerto; al bisojo75,"
+  },
+  {
+    "numero": 76,
+    "palabra": "soldadesca",
+    "contexto": "al mal galán, soldadesca",
+    "texto_completo": "al mal galán, soldadesca76;"
+  },
+  {
+    "numero": 77,
+    "palabra": "parapoco",
+    "contexto": "Al cobarde, parapoco",
+    "texto_completo": "Al cobarde, parapoco77;"
+  },
+  {
+    "numero": 78,
+    "palabra": "bizarro",
+    "contexto": "al atrevido, bizarro",
+    "texto_completo": "al atrevido, bizarro78;"
+  },
+  {
+    "numero": 79,
+    "palabra": "jarro",
+    "contexto": "al que es un jarro",
+    "texto_completo": "compañero al que es un jarro79,"
+  },
+  {
+    "numero": 80,
+    "palabra": "resfrïado",
+    "contexto": "Al buboso, resfrïado",
+    "texto_completo": "Al buboso, resfrïado80;"
+  },
+  {
+    "numero": 81,
+    "palabra": "corcovado",
+    "contexto": "al corcovado",
+    "texto_completo": "al corcovado81, cargado."
+  },
+  {
+    "numero": 82,
+    "palabra": "damas",
+    "contexto": "damas",
+    "texto_completo": "damas82, sin pasar de aquí,"
+  },
+  {
+    "numero": 83,
+    "palabra": "descompuesto",
+    "contexto": "venturoso al descompuesto",
+    "texto_completo": "venturoso al descompuesto83;"
+  },
+  {
+    "numero": 84,
+    "palabra": "compuesto",
+    "contexto": "melancólico al compuesto",
+    "texto_completo": "melancólico al compuesto84"
+  },
+  {
+    "numero": 85,
+    "palabra": "moscatel",
+    "contexto": "al liberal, moscatel",
+    "texto_completo": "al liberal, moscatel85;"
+  },
+  {
+    "numero": 86,
+    "palabra": "madeja",
+    "contexto": "al que es piadoso, madeja",
+    "texto_completo": "y al que es piadoso, madeja86."
+  },
+  {
+    "numero": 87,
+    "palabra": "dimuño",
+    "contexto": "¡Digo que eres el dimuño",
+    "texto_completo": "¡Digo que eres el dimuño87!"
+  },
+  {
+    "numero": 88,
+    "palabra": "mal",
+    "contexto": "¡Soncas que lo dice mal",
+    "texto_completo": "¡Soncas que lo dice mal88!"
+  },
+  {
+    "numero": 89,
+    "palabra": "puño",
+    "contexto": "el cura con el puño",
+    "texto_completo": "la echó el cura con el puño89."
+  },
+  {
+    "numero": 90,
+    "palabra": "discreción",
+    "contexto": "En tu discreción",
+    "texto_completo": "En tu discreción90 confío."
+  },
+  {
+    "numero": 91,
+    "palabra": "verdad",
+    "contexto": "yo sé que es verdad",
+    "texto_completo": "porque yo sé que es verdad91."
+  },
+  {
+    "numero": 92,
+    "palabra": "amor92.",
+    "contexto": "Que no hay amor92.",
+    "texto_completo": "Que no hay amor92."
+  },
+  {
+    "numero": 93,
+    "palabra": "rigor",
+    "contexto": "Generalmente, es rigor",
+    "texto_completo": "Generalmente, es rigor93."
+  },
+  {
+    "numero": 94,
+    "palabra": "conservar",
+    "contexto": "ni aun el mundo conservar",
+    "texto_completo": "ni aun el mundo conservar94."
+  },
+  {
+    "numero": 95,
+    "palabra": "está",
+    "contexto": "flema y sangre, claro está",
+    "texto_completo": "flema y sangre, claro está95."
+  },
+  {
+    "numero": 96,
+    "palabra": "concierto",
+    "contexto": "porque el amor es concierto",
+    "texto_completo": "porque el amor es concierto96."
+  },
+  {
+    "numero": 97,
+    "palabra": "aquí",
+    "contexto": "de cuanto se mira aquí",
+    "texto_completo": "de cuanto se mira aquí97;"
+  },
+  {
+    "numero": 98,
+    "palabra": "semejante",
+    "contexto": "su semejante",
+    "texto_completo": "su semejante98?"
+  },
+  {
+    "numero": 99,
+    "palabra": "gozarla",
+    "contexto": "Para gozarla",
+    "texto_completo": "Para gozarla99."
+  },
+  {
+    "numero": 100,
+    "palabra": "todo",
+    "contexto": "y quiero dármele en todo",
+    "texto_completo": "y quiero dármele en todo100."
+  },
+  {
+    "numero": 101,
+    "palabra": "amado",
+    "contexto": "la virtud de lo amado",
+    "texto_completo": "y la virtud de lo amado101."
+  },
+  {
+    "numero": 102,
+    "palabra": "escuelas",
+    "contexto": "en sus cademias y escuelas",
+    "texto_completo": "en sus cademias y escuelas102."
+  },
+  {
+    "numero": 103,
+    "palabra": "agravios",
+    "contexto": "en persuadir sus agravios",
+    "texto_completo": "en persuadir sus agravios103."
+  },
+  {
+    "numero": 104,
+    "palabra": "quistión104",
+    "contexto": "Con la quistión104",
+    "texto_completo": "Con la quistión104"
+  },
+  {
+    "numero": 105,
+    "palabra": "desdén",
+    "contexto": "¿Qué mayor que ese desdén",
+    "texto_completo": "¿Qué mayor que ese desdén105?"
+  },
+  {
+    "numero": 106,
+    "palabra": "azor106!)",
+    "contexto": "¡Gentil azor106!)",
+    "texto_completo": "¡Gentil azor106!)"
+  },
+  {
+    "numero": 107,
+    "palabra": "amigos",
+    "contexto": "alguna sangre, y amigos",
+    "texto_completo": "alguna sangre, y amigos107."
+  },
+  {
+    "numero": 108,
+    "palabra": "jornada",
+    "contexto": "Para emprender la jornada",
+    "texto_completo": "Para emprender la jornada108"
+  },
+  {
+    "numero": 109,
+    "palabra": "infantes",
+    "contexto": "dos mil lucidos infantes",
+    "texto_completo": "dos mil lucidos infantes109,"
+  },
+  {
+    "numero": 110,
+    "palabra": "sacro",
+    "contexto": "aunque sean de orden sacro",
+    "texto_completo": "aunque sean de orden sacro110;"
+  },
+  {
+    "numero": 111,
+    "palabra": "entiende",
+    "contexto": "mas contra moros se entiende",
+    "texto_completo": "mas contra moros se entiende111."
+  },
+  {
+    "numero": 112,
+    "palabra": "bizarro",
+    "contexto": "Salió el muchacho bizarro",
+    "texto_completo": "Salió el muchacho bizarro112"
+  },
+  {
+    "numero": 113,
+    "palabra": "verde",
+    "contexto": "con una casaca verde",
+    "texto_completo": "con una casaca verde113,"
+  },
+  {
+    "numero": 114,
+    "palabra": "oro",
+    "contexto": "bordada de cifras de oro",
+    "texto_completo": "bordada de cifras de oro114,"
+  },
+  {
+    "numero": 115,
+    "palabra": "brazaletes",
+    "contexto": "que sólo los brazaletes",
+    "texto_completo": "que sólo los brazaletes115"
+  },
+  {
+    "numero": 116,
+    "palabra": "prenden",
+    "contexto": "que seis alamares prenden",
+    "texto_completo": "que seis alamares prenden116."
+  },
+  {
+    "numero": 117,
+    "palabra": "bridón",
+    "contexto": "Un corpulento bridón",
+    "texto_completo": "Un corpulento bridón117,"
+  },
+  {
+    "numero": 118,
+    "palabra": "rodado",
+    "contexto": "rucio rodado",
+    "texto_completo": "rucio rodado118, que al Betis"
+  },
+  {
+    "numero": 119,
+    "palabra": "agua",
+    "contexto": "bebió el agua",
+    "texto_completo": "bebió el agua119, y en su orilla"
+  },
+  {
+    "numero": 120,
+    "palabra": "fértil",
+    "contexto": "despuntó la grama fértil",
+    "texto_completo": "despuntó la grama fértil120."
+  },
+  {
+    "numero": 121,
+    "palabra": "codón",
+    "contexto": "El codón",
+    "texto_completo": "El codón121, labrado en cintas"
+  },
+  {
+    "numero": 122,
+    "palabra": "lazadas",
+    "contexto": "cogido en blancas lazadas",
+    "texto_completo": "cogido en blancas lazadas122"
+  },
+  {
+    "numero": 123,
+    "palabra": "teje",
+    "contexto": "iguales labores teje",
+    "texto_completo": "iguales labores teje123."
+  },
+  {
+    "numero": 124,
+    "palabra": "cabos",
+    "contexto": "melado de negros cabos",
+    "texto_completo": "melado de negros cabos124,"
+  },
+  {
+    "numero": 125,
+    "palabra": "bebe",
+    "contexto": "puesto que con blanco bebe",
+    "texto_completo": "puesto que con blanco bebe125,"
+  },
+  {
+    "numero": 126,
+    "palabra": "jacerina",
+    "contexto": "sobre turca jacerina",
+    "texto_completo": "sobre turca jacerina126,"
+  },
+  {
+    "numero": 127,
+    "palabra": "luciente",
+    "contexto": "peto y espaldar luciente",
+    "texto_completo": "peto y espaldar luciente127,"
+  },
+  {
+    "numero": 128,
+    "palabra": "plumas",
+    "contexto": "con blancas plumas",
+    "texto_completo": "con blancas plumas128, parece"
+  },
+  {
+    "numero": 129,
+    "palabra": "vierte",
+    "contexto": "aquellos azares vierte",
+    "texto_completo": "aquellos azares vierte129."
+  },
+  {
+    "numero": 130,
+    "palabra": "lanza",
+    "contexto": "un fresno entero por lanza",
+    "texto_completo": "un fresno entero por lanza130,"
+  },
+  {
+    "numero": 131,
+    "palabra": "arma",
+    "contexto": "ciudad se puso en arma",
+    "texto_completo": "La ciudad se puso en arma131,"
+  },
+  {
+    "numero": 132,
+    "palabra": "real",
+    "contexto": "de la corona real",
+    "texto_completo": "de la corona real132,"
+  },
+  {
+    "numero": 133,
+    "palabra": "Entrola",
+    "contexto": "Entrola",
+    "texto_completo": "Entrola133 bien resistida;"
+  },
+  {
+    "numero": 134,
+    "palabra": "públicamente",
+    "contexto": "azotar públicamente",
+    "texto_completo": "azotar públicamente134."
+  },
+  {
+    "numero": 135,
+    "palabra": "sujete",
+    "contexto": "a su roja cruz sujete",
+    "texto_completo": "a su roja cruz sujete135."
+  },
+  {
+    "numero": 136,
+    "palabra": "ciudad",
+    "contexto": "el saco de la ciudad",
+    "texto_completo": "que el saco de la ciudad136"
+  },
+  {
+    "numero": 137,
+    "palabra": "alegremente",
+    "contexto": "recebilde alegremente",
+    "texto_completo": "recebilde alegremente137,"
+  },
+  {
+    "numero": 138,
+    "palabra": "laureles",
+    "contexto": "son los mejores laureles",
+    "texto_completo": "son los mejores laureles138."
+  },
+  {
+    "numero": 139,
+    "palabra": "(Cantan139.)",
+    "contexto": "(Cantan139.)",
+    "texto_completo": "(Cantan139.)"
+  },
+  {
+    "numero": 140,
+    "palabra": "moricos140,",
+    "contexto": "Venciendo moricos140,",
+    "texto_completo": "Venciendo moricos140,"
+  },
+  {
+    "numero": 141,
+    "palabra": "pendones141.",
+    "contexto": "trae sus pendones141.",
+    "texto_completo": "trae sus pendones141."
+  },
+  {
+    "numero": 142,
+    "palabra": "honrado",
+    "contexto": "Regimiento que hoy habéis honrado",
+    "texto_completo": "y el Regimiento que hoy habéis honrado142"
+  },
+  {
+    "numero": 143,
+    "palabra": "dones",
+    "contexto": "más que de ricos dones",
+    "texto_completo": "más que de ricos dones143: lo primero"
+  },
+  {
+    "numero": 144,
+    "palabra": "barros",
+    "contexto": "dos cestas de polidos barros",
+    "texto_completo": "traen dos cestas de polidos barros144;"
+  },
+  {
+    "numero": 145,
+    "palabra": "guerrero",
+    "contexto": "para cantar vueso valor guerrero",
+    "texto_completo": "para cantar vueso valor guerrero145."
+  },
+  {
+    "numero": 146,
+    "palabra": "sal",
+    "contexto": "Diez cebones en sal",
+    "texto_completo": "Diez cebones en sal146, valientes piezas"
+  },
+  {
+    "numero": 147,
+    "palabra": "menudencias",
+    "contexto": "sin otras menudencias",
+    "texto_completo": "sin otras menudencias147, y cecinas148,"
+  },
+  {
+    "numero": 148,
+    "palabra": "cecinas",
+    "contexto": "sin otras menudencias147, y cecinas",
+    "texto_completo": "sin otras menudencias147, y cecinas148,"
+  },
+  {
+    "numero": 149,
+    "palabra": "cortezas",
+    "contexto": "guantes de ámbar sus cortezas",
+    "texto_completo": "y más que guantes de ámbar sus cortezas149."
+  },
+  {
+    "numero": 150,
+    "palabra": "gallinas",
+    "contexto": "pares de capones y gallinas",
+    "texto_completo": "Cien pares de capones y gallinas150,"
+  },
+  {
+    "numero": 151,
+    "palabra": "puro",
+    "contexto": "jaeces bordados de oro puro",
+    "texto_completo": "no jaeces bordados de oro puro151,"
+  },
+  {
+    "numero": 152,
+    "palabra": "puro",
+    "contexto": "Y porque digo puro",
+    "texto_completo": "Y porque digo puro152, os aseguro"
+  },
+  {
+    "numero": 153,
+    "palabra": "aceros",
+    "contexto": "vino suele dar lindos aceros",
+    "texto_completo": "que el vino suele dar lindos aceros153."
+  },
+  {
+    "numero": 154,
+    "palabra": "pecho",
+    "contexto": "quiero daros cuenta: justo pecho",
+    "texto_completo": "no quiero daros cuenta: justo pecho154"
+  },
+  {
+    "numero": 155,
+    "palabra": "umbrales",
+    "contexto": "y juncia, a vuestros umbrales",
+    "texto_completo": "y juncia, a vuestros umbrales155,"
+  },
+  {
+    "numero": 156,
+    "palabra": "Dios",
+    "contexto": "Id con Dios",
+    "texto_completo": "Id con Dios156."
+  },
+  {
+    "numero": 157,
+    "palabra": "huera!",
+    "contexto": "Conmigo no, ¡tirte a huera!",
+    "texto_completo": "Conmigo no, ¡tirte a huera!157"
+  },
+  {
+    "numero": 158,
+    "palabra": "entrar",
+    "contexto": "bien huera entrar",
+    "texto_completo": "bien huera entrar158; mas si no..."
+  },
+  {
+    "numero": 159,
+    "palabra": "digo",
+    "contexto": "hacer lo que les digo",
+    "texto_completo": "en no hacer lo que les digo159?"
+  },
+  {
+    "numero": 160,
+    "palabra": "¡Entrá",
+    "contexto": "¡Entrá",
+    "texto_completo": "¡Entrá160, pues!"
+  },
+  {
+    "numero": 161,
+    "palabra": "¡Harre161!,",
+    "contexto": "¡Harre161!,",
+    "texto_completo": "¡Harre161!,"
+  },
+  {
+    "numero": 162,
+    "palabra": "postigo",
+    "contexto": "que echaréis luego el postigo",
+    "texto_completo": "que echaréis luego el postigo162."
+  },
+  {
+    "numero": 163,
+    "palabra": "presentadas",
+    "contexto": "¡También venís presentadas",
+    "texto_completo": "¡También venís presentadas163"
+  },
+  {
+    "numero": 164,
+    "palabra": "estremadas",
+    "contexto": "Basta, que son estremadas",
+    "texto_completo": "Basta, que son estremadas164."
+  },
+  {
+    "numero": 165,
+    "palabra": "llevamos",
+    "contexto": "¡Muy buen recado llevamos",
+    "texto_completo": "¡Muy buen recado llevamos165!"
+  },
+  {
+    "numero": 166,
+    "palabra": "sufrir",
+    "contexto": "se ha de poder sufrir",
+    "texto_completo": "No se ha de poder sufrir166"
+  },
+  {
+    "numero": 167,
+    "palabra": "esto",
+    "contexto": "sirve se obliga a esto",
+    "texto_completo": "Quien sirve se obliga a esto167."
+  },
+  {
+    "numero": 168,
+    "palabra": "medrar",
+    "contexto": "Si en algo desea medrar",
+    "texto_completo": "Si en algo desea medrar168"
+  },
+  {
+    "numero": 169,
+    "palabra": "presto",
+    "contexto": "o ha de despedirse presto",
+    "texto_completo": "o ha de despedirse presto169."
+  },
+  {
+    "numero": 170,
+    "palabra": "acompañamiento170.)",
+    "contexto": "DOÑA ISABEL, MANRIQUE y acompañamiento170.)",
+    "texto_completo": "(Vanse los dos y salgan el REY DON FERNANDO, la REINA DOÑA ISABEL, MANRIQUE y acompañamiento170.)"
+  },
+  {
+    "numero": 171,
+    "palabra": "Alfonso",
+    "contexto": "por ver Alfonso",
+    "texto_completo": "por ver Alfonso171 en tal puesto,"
+  },
+  {
+    "numero": 172,
+    "palabra": "previene",
+    "contexto": "y su ejército previene",
+    "texto_completo": "y su ejército previene172."
+  },
+  {
+    "numero": 173,
+    "palabra": "llano",
+    "contexto": "ser muy cierto está llano",
+    "texto_completo": "el ser muy cierto está llano173."
+  },
+  {
+    "numero": 174,
+    "palabra": "vea",
+    "contexto": "con la prevención se vea",
+    "texto_completo": "con la prevención se vea174."
+  },
+  {
+    "numero": 175,
+    "palabra": "¿entrarán",
+    "contexto": "de Ciudad Real: ¿entrarán",
+    "texto_completo": "de Ciudad Real: ¿entrarán175?"
+  },
+  {
+    "numero": 176,
+    "palabra": "hado",
+    "contexto": "deste honor el hado",
+    "texto_completo": "deste honor el hado176 adverso."
+  },
+  {
+    "numero": 177,
+    "palabra": "estremado",
+    "contexto": "es en valor estremado",
+    "texto_completo": "es en valor estremado177,"
+  },
+  {
+    "numero": 178,
+    "palabra": "cerco",
+    "contexto": "nos puso apretado cerco",
+    "texto_completo": "nos puso apretado cerco178."
+  },
+  {
+    "numero": 179,
+    "palabra": "presto",
+    "contexto": "a no remediarlo presto",
+    "texto_completo": "a no remediarlo presto179."
+  },
+  {
+    "numero": 180,
+    "palabra": "ajenos",
+    "contexto": "de todo contento ajenos",
+    "texto_completo": "de todo contento ajenos180."
+  },
+  {
+    "numero": 181,
+    "palabra": "mal",
+    "contexto": "y causarnos mucho mal",
+    "texto_completo": "y causarnos mucho mal181."
+  },
+  {
+    "numero": 182,
+    "palabra": "luego",
+    "contexto": "Don Manrique, partid luego",
+    "texto_completo": "Don Manrique, partid luego182,"
+  },
+  {
+    "numero": 183,
+    "palabra": "compañías",
+    "contexto": "llevando dos compañías",
+    "texto_completo": "llevando dos compañías183;"
+  },
+  {
+    "numero": 184,
+    "palabra": "demasías",
+    "contexto": "remediad sus demasías",
+    "texto_completo": "remediad sus demasías184"
+  },
+  {
+    "numero": 185,
+    "palabra": "osado",
+    "contexto": "vos, que es Córdoba osado",
+    "texto_completo": "con vos, que es Córdoba osado185,"
+  },
+  {
+    "numero": 186,
+    "palabra": "valor",
+    "contexto": "como de tan gran valor",
+    "texto_completo": "como de tan gran valor186."
+  },
+  {
+    "numero": 187,
+    "palabra": "paños",
+    "contexto": "A medio torcer los paños",
+    "texto_completo": "A medio torcer los paños187,"
+  },
+  {
+    "numero": 188,
+    "palabra": "ojo",
+    "contexto": "todos nos traen sobre ojo",
+    "texto_completo": "y todos nos traen sobre ojo188."
+  },
+  {
+    "numero": 189,
+    "palabra": "brïoso",
+    "contexto": "de los que huellan brïoso",
+    "texto_completo": "de los que huellan brïoso189"
+  },
+  {
+    "numero": 190,
+    "palabra": "costoso",
+    "contexto": "vistes bizarro y costoso",
+    "texto_completo": "vistes bizarro y costoso190,"
+  },
+  {
+    "numero": 191,
+    "palabra": "somos",
+    "contexto": "ya para en uno somos",
+    "texto_completo": "que ya para en uno somos191;"
+  },
+  {
+    "numero": 192,
+    "palabra": "piporros",
+    "contexto": "en dejando los piporros",
+    "texto_completo": "en dejando los piporros192."
+  },
+  {
+    "numero": 193,
+    "palabra": "trojes",
+    "contexto": "Y mejor sus trojes",
+    "texto_completo": "Y mejor sus trojes193 vean"
+  },
+  {
+    "numero": 194,
+    "palabra": "pongo",
+    "contexto": "en ella el cuidado pongo",
+    "texto_completo": "ni en ella el cuidado pongo194."
+  },
+  {
+    "numero": 195,
+    "palabra": "oigo",
+    "contexto": "la vida, cuando te oigo",
+    "texto_completo": "la vida, cuando te oigo195."
+  },
+  {
+    "numero": 196,
+    "palabra": "cuidadoso",
+    "contexto": "de verme tan cuidadoso",
+    "texto_completo": "de verme tan cuidadoso196"
+  },
+  {
+    "numero": 197,
+    "palabra": "como",
+    "contexto": "ni bebo, duermo ni como",
+    "texto_completo": "ni bebo, duermo ni como197?"
+  },
+  {
+    "numero": 198,
+    "palabra": "rostro",
+    "contexto": "en ese angélico rostro",
+    "texto_completo": "en ese angélico rostro198?"
+  },
+  {
+    "numero": 199,
+    "palabra": "Frondoso",
+    "contexto": "Pues salúdate, Frondoso",
+    "texto_completo": "Pues salúdate, Frondoso199."
+  },
+  {
+    "numero": 200,
+    "palabra": "sonorosos",
+    "contexto": "con arrullos sonorosos",
+    "texto_completo": "con arrullos sonorosos200,"
+  },
+  {
+    "numero": 201,
+    "palabra": "asomos",
+    "contexto": "ya tengo algunos asomos",
+    "texto_completo": "ya tengo algunos asomos201."
+  },
+  {
+    "numero": 202,
+    "palabra": "gama",
+    "contexto": "y topar tan bella gama",
+    "texto_completo": "y topar tan bella gama202."
+  },
+  {
+    "numero": 203,
+    "palabra": "monstro",
+    "contexto": "vienes a ser un monstro",
+    "texto_completo": "que vienes a ser un monstro203."
+  },
+  {
+    "numero": 204,
+    "palabra": "huyas",
+    "contexto": "huyas",
+    "texto_completo": "huyas204 al señor que tienes,"
+  },
+  {
+    "numero": 205,
+    "palabra": "desposorio",
+    "contexto": "dos días del desposorio",
+    "texto_completo": "dos días del desposorio205?"
+  },
+  {
+    "numero": 206,
+    "palabra": "demonio",
+    "contexto": "os tuviera por demonio",
+    "texto_completo": "os tuviera por demonio206,"
+  },
+  {
+    "numero": 207,
+    "palabra": "melindres",
+    "contexto": "reduzgo melindres",
+    "texto_completo": "reduzgo melindres207.)"
+  },
+  {
+    "numero": 208,
+    "palabra": "generoso",
+    "contexto": "Comendador generoso",
+    "texto_completo": "Comendador generoso208,"
+  },
+  {
+    "numero": 209,
+    "palabra": "asombro",
+    "contexto": "la cruz me da asombro",
+    "texto_completo": "aunque la cruz me da asombro209."
+  },
+  {
+    "numero": 210,
+    "palabra": "perro210.",
+    "contexto": "No hay perro210.",
+    "texto_completo": "No hay perro210."
+  },
+  {
+    "numero": 211,
+    "palabra": "loco",
+    "contexto": "¡Oh, malhaya el hombre loco",
+    "texto_completo": "¡Oh, malhaya el hombre loco211,"
+  },
+  {
+    "numero": 212,
+    "palabra": "quité",
+    "contexto": "la caza, me la quité",
+    "texto_completo": "la caza, me la quité212."
+  },
+  {
+    "numero": 213,
+    "palabra": "nuez",
+    "contexto": "la nuez",
+    "texto_completo": "la nuez213, que os he de apiolar214."
+  },
+  {
+    "numero": 214,
+    "palabra": "apiolar",
+    "contexto": "que os he de apiolar",
+    "texto_completo": "la nuez213, que os he de apiolar214."
+  },
+  {
+    "numero": 215,
+    "palabra": "trono",
+    "contexto": "que está en su trono",
+    "texto_completo": "el día que está en su trono215."
+  },
+  {
+    "numero": 216,
+    "palabra": "caballero",
+    "contexto": "las leyes de caballero",
+    "texto_completo": "las leyes de caballero216."
+  },
+  {
+    "numero": 217,
+    "palabra": "estado",
+    "contexto": "con mi estado",
+    "texto_completo": "con mi estado217, y, pues me es"
+  },
+  {
+    "numero": 218,
+    "palabra": "cerrara",
+    "contexto": "¡Que no cerrara",
+    "texto_completo": "¡Que no cerrara218 con él!"
+  },
+  {
+    "numero": 219,
+    "palabra": "corro",
+    "contexto": "el Cielo, que me corro",
+    "texto_completo": "¡Vive el Cielo, que me corro219!"
+  },
+  {
+    "numero": 220,
+    "palabra": "1.º220",
+    "contexto": "Salen ESTEBAN y REGIDOR 1.º220",
+    "texto_completo": "Salen ESTEBAN y REGIDOR 1.º220"
+  },
+  {
+    "numero": 221,
+    "palabra": "pósito",
+    "contexto": "saque más agora el pósito",
+    "texto_completo": "que no se saque más agora el pósito221."
+  },
+  {
+    "numero": 222,
+    "palabra": "crece",
+    "contexto": "mal, y el tiempo crece",
+    "texto_completo": "El año apunta mal, y el tiempo crece222,"
+  },
+  {
+    "numero": 223,
+    "palabra": "trece",
+    "contexto": "lo contradicen más de trece",
+    "texto_completo": "aunque lo contradicen más de trece223."
+  },
+  {
+    "numero": 224,
+    "palabra": "república",
+    "contexto": "gobernar en paz esta república",
+    "texto_completo": "en gobernar en paz esta república224."
+  },
+  {
+    "numero": 225,
+    "palabra": "importantes",
+    "contexto": "secretos a Dios sólo importantes",
+    "texto_completo": "los secretos a Dios sólo importantes225."
+  },
+  {
+    "numero": 226,
+    "palabra": "ignorante",
+    "contexto": "más sabio veréis más ignorante",
+    "texto_completo": "al más sabio veréis más ignorante226."
+  },
+  {
+    "numero": 227,
+    "palabra": "lumbres",
+    "contexto": "proceder de las celestes lumbres",
+    "texto_completo": "y el proceder de las celestes lumbres227?"
+  },
+  {
+    "numero": 228,
+    "palabra": "tasa",
+    "contexto": "el sembrar nos ponen tasa",
+    "texto_completo": "Ellos en el sembrar nos ponen tasa228:"
+  },
+  {
+    "numero": 229,
+    "palabra": "daca",
+    "contexto": "daca",
+    "texto_completo": "daca229 el trigo, cebada y las legumbres,"
+  },
+  {
+    "numero": 230,
+    "palabra": "calabazas",
+    "contexto": "a la fe, las calabazas",
+    "texto_completo": "¡Ellos son, a la fe, las calabazas230!"
+  },
+  {
+    "numero": 231,
+    "palabra": "Hircania",
+    "contexto": "habrá muchos tigres en Hircania",
+    "texto_completo": "y que habrá muchos tigres en Hircania231."
+  },
+  {
+    "numero": 232,
+    "palabra": "palmatoria",
+    "contexto": "que no ganéis la palmatoria",
+    "texto_completo": "A fe que no ganéis la palmatoria232,"
+  },
+  {
+    "numero": 233,
+    "palabra": "mentidero",
+    "contexto": "ya está ocupado el mentidero",
+    "texto_completo": "porque ya está ocupado el mentidero233."
+  },
+  {
+    "numero": 234,
+    "palabra": "seréis",
+    "contexto": "Un bártulo seréis",
+    "texto_completo": "Un bártulo seréis234."
+  },
+  {
+    "numero": 235,
+    "palabra": "barbero235.",
+    "contexto": "Ni aun un barbero235.",
+    "texto_completo": "Ni aun un barbero235."
+  },
+  {
+    "numero": 236,
+    "palabra": "confuso",
+    "contexto": "ver letreros sólo está confuso",
+    "texto_completo": "de ver letreros sólo está confuso236."
+  },
+  {
+    "numero": 237,
+    "palabra": "jerga",
+    "contexto": "sacó de entre la jerga",
+    "texto_completo": "mil ingenios sacó de entre la jerga237,"
+  },
+  {
+    "numero": 238,
+    "palabra": "parte",
+    "contexto": "parece que en sagrada parte",
+    "texto_completo": "y que parece que en sagrada parte238"
+  },
+  {
+    "numero": 239,
+    "palabra": "renuncia",
+    "contexto": "la Fama su valor renuncia",
+    "texto_completo": "en quien la Fama su valor renuncia239."
+  },
+  {
+    "numero": 240,
+    "palabra": "grave",
+    "contexto": "muchos que opinión tuvieron grave",
+    "texto_completo": "Mas muchos que opinión tuvieron grave240"
+  },
+  {
+    "numero": 241,
+    "palabra": "envían",
+    "contexto": "por el mundo los envían",
+    "texto_completo": "impresos por el mundo los envían241."
+  },
+  {
+    "numero": 242,
+    "palabra": "impresión",
+    "contexto": "Leonelo, la impresión",
+    "texto_completo": "Leonelo, la impresión242 es importante."
+  },
+  {
+    "numero": 243,
+    "palabra": "Agustino",
+    "contexto": "un Jerónimo santo, un Agustino",
+    "texto_completo": "un Jerónimo santo, un Agustino243."
+  },
+  {
+    "numero": 244,
+    "palabra": "mohíno",
+    "contexto": "y asentaos, que estáis mohíno",
+    "texto_completo": "Dejaldo y asentaos, que estáis mohíno244."
+  },
+  {
+    "numero": 245,
+    "palabra": "dote",
+    "contexto": "cuatro haciendas para un dote",
+    "texto_completo": "No hay en cuatro haciendas para un dote245,"
+  },
+  {
+    "numero": 246,
+    "palabra": "uso",
+    "contexto": "han de ser al uso",
+    "texto_completo": "si es que las vistas han de ser al uso246;"
+  },
+  {
+    "numero": 247,
+    "palabra": "vulgo",
+    "contexto": "esto el barrio y vulgo",
+    "texto_completo": "que en esto el barrio y vulgo247 anda confuso."
+  },
+  {
+    "numero": 248,
+    "palabra": "puso",
+    "contexto": "Laurencia en ese campo puso",
+    "texto_completo": "¡Cuál a Laurencia en ese campo puso248!"
+  },
+  {
+    "numero": 249,
+    "palabra": "gente",
+    "contexto": "Dios guarde la buena gente",
+    "texto_completo": "Dios guarde la buena gente249."
+  },
+  {
+    "numero": 250,
+    "palabra": "estén",
+    "contexto": "que se estén",
+    "texto_completo": "que se estén250."
+  },
+  {
+    "numero": 251,
+    "palabra": "Vusiñoría251",
+    "contexto": "Vusiñoría251",
+    "texto_completo": "Vusiñoría251"
+  },
+  {
+    "numero": 252,
+    "palabra": "tienen",
+    "contexto": "los que no la tienen",
+    "texto_completo": "honra los que no la tienen252."
+  },
+  {
+    "numero": 253,
+    "palabra": "galgo",
+    "contexto": "¿Vio vusiñoría el galgo",
+    "texto_completo": "¿Vio vusiñoría el galgo253?"
+  },
+  {
+    "numero": 254,
+    "palabra": "va",
+    "contexto": "por momentos se me va",
+    "texto_completo": "por momentos se me va254."
+  },
+  {
+    "numero": 255,
+    "palabra": "vos",
+    "contexto": "para alcanzada de vos",
+    "texto_completo": "para alcanzada de vos255?"
+  },
+  {
+    "numero": 256,
+    "palabra": "pena256.",
+    "contexto": "Ha dado en darme pena256.",
+    "texto_completo": "Ha dado en darme pena256."
+  },
+  {
+    "numero": 257,
+    "palabra": "verme",
+    "contexto": "traza de verme",
+    "texto_completo": "traza de verme257."
+  },
+  {
+    "numero": 258,
+    "palabra": "Aristóteles",
+    "contexto": "de Aristóteles",
+    "texto_completo": "de Aristóteles258."
+  },
+  {
+    "numero": 259,
+    "palabra": "igual",
+    "contexto": "(¿Viose desvergüenza igual",
+    "texto_completo": "(¿Viose desvergüenza igual259?)"
+  },
+  {
+    "numero": 260,
+    "palabra": "limpia",
+    "contexto": "es de sangre tan limpia",
+    "texto_completo": "que no es de sangre tan limpia260."
+  },
+  {
+    "numero": 261,
+    "palabra": "tiñe",
+    "contexto": "que el mal más tiñe",
+    "texto_completo": "que el mal más tiñe261 que alimpia."
+  },
+  {
+    "numero": 262,
+    "palabra": "honran,",
+    "contexto": "Esas palabras les honran,",
+    "texto_completo": "Esas palabras les honran,262"
+  },
+  {
+    "numero": 263,
+    "palabra": "mujeres",
+    "contexto": "que visiten sus mujeres",
+    "texto_completo": "que visiten sus mujeres263."
+  },
+  {
+    "numero": 264,
+    "palabra": "castiga",
+    "contexto": "y más presto quien castiga",
+    "texto_completo": "y más presto quien castiga264."
+  },
+  {
+    "numero": 265,
+    "palabra": "reportes",
+    "contexto": "Que te reportes",
+    "texto_completo": "Que te reportes265 te ruego."
+  },
+  {
+    "numero": 266,
+    "palabra": "corrillo",
+    "contexto": "Querrían hacer corrillo",
+    "texto_completo": "Querrían hacer corrillo266"
+  },
+  {
+    "numero": 267,
+    "palabra": "siente",
+    "contexto": "el disgusto que se siente",
+    "texto_completo": "el disgusto que se siente267."
+  },
+  {
+    "numero": 268,
+    "palabra": "conmigo",
+    "contexto": "¿Éstos se igualan conmigo",
+    "texto_completo": "¿Éstos se igualan conmigo268?"
+  },
+  {
+    "numero": 269,
+    "palabra": "aqueso",
+    "contexto": "Que no es aqueso",
+    "texto_completo": "Que no es aqueso269 igualarse."
+  },
+  {
+    "numero": 270,
+    "palabra": "capilla",
+    "contexto": "y su capilla",
+    "texto_completo": "y su capilla270 imitaba,"
+  },
+  {
+    "numero": 271,
+    "palabra": "famoso",
+    "contexto": "un beneficio famoso",
+    "texto_completo": "un beneficio famoso271."
+  },
+  {
+    "numero": 272,
+    "palabra": "tiemblan",
+    "contexto": "tiemblan",
+    "texto_completo": "tiemblan272 Córdoba y Granada,"
+  },
+  {
+    "numero": 273,
+    "palabra": "Flores",
+    "contexto": "¡El mundo se acaba, Flores",
+    "texto_completo": "¡El mundo se acaba, Flores273!"
+  },
+  {
+    "numero": 274,
+    "palabra": "amores",
+    "contexto": "Como eso pueden amores",
+    "texto_completo": "Como eso pueden amores274."
+  },
+  {
+    "numero": 275,
+    "palabra": "debes",
+    "contexto": "que grande amistad le debes",
+    "texto_completo": "que grande amistad le debes275."
+  },
+  {
+    "numero": 276,
+    "palabra": "puño",
+    "contexto": "no, de punta a puño",
+    "texto_completo": "que si no, de punta a puño276,"
+  },
+  {
+    "numero": 277,
+    "palabra": "lugar",
+    "contexto": "pasara todo el lugar",
+    "texto_completo": "pasara todo el lugar277;"
+  },
+  {
+    "numero": 278,
+    "palabra": "fïarse",
+    "contexto": "¿Hasta allá quiere fïarse",
+    "texto_completo": "¿Hasta allá quiere fïarse278?..."
+  },
+  {
+    "numero": 279,
+    "palabra": "contado",
+    "contexto": "te pagarán de contado",
+    "texto_completo": "te pagarán de contado279."
+  },
+  {
+    "numero": 280,
+    "palabra": "desposado280",
+    "contexto": "Que su desposado280",
+    "texto_completo": "Que su desposado280"
+  },
+  {
+    "numero": 281,
+    "palabra": "venías",
+    "contexto": "a visitalla venías",
+    "texto_completo": "a visitalla venías281;"
+  },
+  {
+    "numero": 282,
+    "palabra": "primero",
+    "contexto": "entrarás como primero",
+    "texto_completo": "entrarás como primero282."
+  },
+  {
+    "numero": 283,
+    "palabra": "aires",
+    "contexto": "y anda por los aires",
+    "texto_completo": "Cuida, y anda por los aires283."
+  },
+  {
+    "numero": 284,
+    "palabra": "donaires",
+    "contexto": "te ha ofrecido sus donaires",
+    "texto_completo": "te ha ofrecido sus donaires284."
+  },
+  {
+    "numero": 285,
+    "palabra": "bien",
+    "contexto": "de la esperanza del bien",
+    "texto_completo": "de la esperanza del bien285;"
+  },
+  {
+    "numero": 286,
+    "palabra": "materia",
+    "contexto": "la materia",
+    "texto_completo": "la materia286; y que esto sea"
+  },
+  {
+    "numero": 287,
+    "palabra": "accidente",
+    "contexto": "huélgase que a su accidente",
+    "texto_completo": "huélgase que a su accidente287"
+  },
+  {
+    "numero": 288,
+    "palabra": "desear",
+    "contexto": "lo que pudo desear",
+    "texto_completo": "lo que pudo desear288."
+  },
+  {
+    "numero": 289,
+    "palabra": "nuevas",
+    "contexto": "el gabán en armas nuevas",
+    "texto_completo": "y el gabán en armas nuevas289;"
+  },
+  {
+    "numero": 290,
+    "palabra": "pierda",
+    "contexto": "es mucho que se pierda",
+    "texto_completo": "que no es mucho que se pierda290"
+  },
+  {
+    "numero": 291,
+    "palabra": "aragonesas",
+    "contexto": "y barras aragonesas",
+    "texto_completo": "y barras aragonesas291."
+  },
+  {
+    "numero": 292,
+    "palabra": "vuelva",
+    "contexto": "a Almagro con vida vuelva",
+    "texto_completo": "a Almagro con vida vuelva292."
+  },
+  {
+    "numero": 293,
+    "palabra": "tente",
+    "contexto": "No prosigas, tente",
+    "texto_completo": "No prosigas, tente293, espera."
+  },
+  {
+    "numero": 294,
+    "palabra": "él",
+    "contexto": "porque no demos con él",
+    "texto_completo": "porque no demos con él294."
+  },
+  {
+    "numero": 295,
+    "palabra": "nombra",
+    "contexto": "Sangrienta fiera le nombra",
+    "texto_completo": "Sangrienta fiera le nombra295,"
+  },
+  {
+    "numero": 296,
+    "palabra": "jara",
+    "contexto": "puso al pecho una jara",
+    "texto_completo": "le puso al pecho una jara296."
+  },
+  {
+    "numero": 297,
+    "palabra": "garrotillo",
+    "contexto": "¡Mal garrotillo",
+    "texto_completo": "¡Mal garrotillo297 le dé!"
+  },
+  {
+    "numero": 298,
+    "palabra": "encajara",
+    "contexto": "al casco se la encajara",
+    "texto_completo": "al casco se la encajara298!"
+  },
+  {
+    "numero": 299,
+    "palabra": "jamás",
+    "contexto": "tan vicioso por jamás",
+    "texto_completo": "tan vicioso por jamás299."
+  },
+  {
+    "numero": 300,
+    "palabra": "inhumano",
+    "contexto": "más que una fiera inhumano",
+    "texto_completo": "más que una fiera inhumano300."
+  },
+  {
+    "numero": 301,
+    "palabra": "historia",
+    "contexto": "yo no entiendo de historia",
+    "texto_completo": "que yo no entiendo de historia301)"
+  },
+  {
+    "numero": 302,
+    "palabra": "ve",
+    "contexto": "vencida déste se ve",
+    "texto_completo": "vencida déste se ve302."
+  },
+  {
+    "numero": 303,
+    "palabra": "aspereza",
+    "contexto": "de una tigre la aspereza",
+    "texto_completo": "de una tigre la aspereza303."
+  },
+  {
+    "numero": 304,
+    "palabra": "libre",
+    "contexto": "que cuando contigo es libre",
+    "texto_completo": "que cuando contigo es libre304,"
+  },
+  {
+    "numero": 305,
+    "palabra": "ser",
+    "contexto": "porque tengo el ser",
+    "texto_completo": "porque tengo el ser305 y el nombre."
+  },
+  {
+    "numero": 306,
+    "palabra": "aquí",
+    "contexto": "Piedras hay, Jacinta, aquí",
+    "texto_completo": "Piedras hay, Jacinta, aquí306."
+  },
+  {
+    "numero": 307,
+    "palabra": "vendida",
+    "contexto": "que la llevéis bien vendida",
+    "texto_completo": "que la llevéis bien vendida307!"
+  },
+  {
+    "numero": 308,
+    "palabra": "apear",
+    "contexto": "me habéis de hacer apear",
+    "texto_completo": "me habéis de hacer apear308?"
+  },
+  {
+    "numero": 309,
+    "palabra": "atreve",
+    "contexto": "a nuestras armas se atreve",
+    "texto_completo": "a nuestras armas se atreve309."
+  },
+  {
+    "numero": 310,
+    "palabra": "soceso",
+    "contexto": "de soceso",
+    "texto_completo": "de soceso310 tan injusto,"
+  },
+  {
+    "numero": 311,
+    "palabra": "honor",
+    "contexto": "¿Así volvéis por su honor",
+    "texto_completo": "¿Así volvéis por su honor311?"
+  },
+  {
+    "numero": 312,
+    "palabra": "ti",
+    "contexto": "en llevarme para ti",
+    "texto_completo": "en llevarme para ti312!"
+  },
+  {
+    "numero": 313,
+    "palabra": "vence",
+    "contexto": "te vence",
+    "texto_completo": "te vence313."
+  },
+  {
+    "numero": 314,
+    "palabra": "tiemplan",
+    "contexto": "no tiemplan",
+    "texto_completo": "no tiemplan314 bien un airado."
+  },
+  {
+    "numero": 315,
+    "palabra": "ser",
+    "contexto": "del ejército has de ser",
+    "texto_completo": "del ejército has de ser315!"
+  },
+  {
+    "numero": 316,
+    "palabra": "divina",
+    "contexto": "a la justicia divina",
+    "texto_completo": "a la justicia divina316."
+  },
+  {
+    "numero": 317,
+    "palabra": "FRONDOSO317.)",
+    "contexto": "y salen LAURENCIA y FRONDOSO317.)",
+    "texto_completo": "(Llévanla y vanse, y salen LAURENCIA y FRONDOSO317.)"
+  },
+  {
+    "numero": 318,
+    "palabra": "afición",
+    "contexto": "de la afición",
+    "texto_completo": "de la afición318 que me debes."
+  },
+  {
+    "numero": 319,
+    "palabra": "recuesto",
+    "contexto": "Desde aquel recuesto",
+    "texto_completo": "Desde aquel recuesto319 vi"
+  },
+  {
+    "numero": 320,
+    "palabra": "cuidado",
+    "contexto": "vive en ti mi cuidado",
+    "texto_completo": "si vive en ti mi cuidado320,"
+  },
+  {
+    "numero": 321,
+    "palabra": "merecer",
+    "contexto": "el puerto de merecer",
+    "texto_completo": "el puerto de merecer321."
+  },
+  {
+    "numero": 322,
+    "palabra": "tiene",
+    "contexto": "para en uno nos tiene",
+    "texto_completo": "ya para en uno nos tiene322;"
+  },
+  {
+    "numero": 323,
+    "palabra": "bese",
+    "contexto": "Deja que tus plantas bese",
+    "texto_completo": "Deja que tus plantas bese323"
+  },
+  {
+    "numero": 324,
+    "palabra": "confiese",
+    "contexto": "ella es bien que confiese",
+    "texto_completo": "por ella es bien que confiese324."
+  },
+  {
+    "numero": 325,
+    "palabra": "suceso",
+    "contexto": "buen suceso",
+    "texto_completo": "buen suceso325."
+  },
+  {
+    "numero": 326,
+    "palabra": "REGIDOR326.)",
+    "contexto": "ESTEBAN, alcalde, y el REGIDOR326.)",
+    "texto_completo": "(Salen ESTEBAN, alcalde, y el REGIDOR326.)"
+  },
+  {
+    "numero": 327,
+    "palabra": "término",
+    "contexto": "Fue su término",
+    "texto_completo": "Fue su término327 de modo"
+  },
+  {
+    "numero": 328,
+    "palabra": "sinrazón",
+    "contexto": "pierde por su sinrazón",
+    "texto_completo": "pierde por su sinrazón328."
+  },
+  {
+    "numero": 329,
+    "palabra": "ya",
+    "contexto": "este nombre les dan ya",
+    "texto_completo": "que este nombre les dan ya329,"
+  },
+  {
+    "numero": 330,
+    "palabra": "general",
+    "contexto": "por capitán general",
+    "texto_completo": "por capitán general330."
+  },
+  {
+    "numero": 331,
+    "palabra": "pro",
+    "contexto": "doncella de buena pro",
+    "texto_completo": "doncella de buena pro331."
+  },
+  {
+    "numero": 332,
+    "palabra": "bayeta",
+    "contexto": "No hay negra bayeta",
+    "texto_completo": "No hay negra bayeta332 o tinta"
+  },
+  {
+    "numero": 333,
+    "palabra": "provecho",
+    "contexto": "este palo sin provecho",
+    "texto_completo": "este palo sin provecho333?"
+  },
+  {
+    "numero": 334,
+    "palabra": "dio",
+    "contexto": "a sus crïados la dio",
+    "texto_completo": "a sus crïados la dio334."
+  },
+  {
+    "numero": 335,
+    "palabra": "amoroso",
+    "contexto": "a mí otro ser amoroso",
+    "texto_completo": "y a mí otro ser amoroso335."
+  },
+  {
+    "numero": 336,
+    "palabra": "decir",
+    "contexto": "otro lo ha de decir",
+    "texto_completo": "como otro lo ha de decir336."
+  },
+  {
+    "numero": 337,
+    "palabra": "corazón",
+    "contexto": "que siente mi corazón",
+    "texto_completo": "que siente mi corazón337."
+  },
+  {
+    "numero": 338,
+    "palabra": "celo",
+    "contexto": "la limpieza de tu celo",
+    "texto_completo": "la limpieza de tu celo338."
+  },
+  {
+    "numero": 339,
+    "palabra": "presto",
+    "contexto": "sólo digo que estoy presto",
+    "texto_completo": "sólo digo que estoy presto339,"
+  },
+  {
+    "numero": 340,
+    "palabra": "advertís",
+    "contexto": "En el dote, si advertís",
+    "texto_completo": "En el dote, si advertís340,"
+  },
+  {
+    "numero": 341,
+    "palabra": "maravedís",
+    "contexto": "algunos maravedís",
+    "texto_completo": "algunos maravedís341."
+  },
+  {
+    "numero": 342,
+    "palabra": "agradecer",
+    "contexto": "lo podéis agradecer",
+    "texto_completo": "lo podéis agradecer342!"
+  },
+  {
+    "numero": 343,
+    "palabra": "atropella",
+    "contexto": "quien los gustos atropella",
+    "texto_completo": "quien los gustos atropella343."
+  },
+  {
+    "numero": 344,
+    "palabra": "venido",
+    "contexto": "a preguntarte ha venido",
+    "texto_completo": "a preguntarte ha venido344"
+  },
+  {
+    "numero": 345,
+    "palabra": "ti",
+    "contexto": "Frondoso, Laurencia, en ti",
+    "texto_completo": "Frondoso, Laurencia, en ti345."
+  },
+  {
+    "numero": 346,
+    "palabra": "Voluntad346",
+    "contexto": "Voluntad346",
+    "texto_completo": "Voluntad346"
+  },
+  {
+    "numero": 347,
+    "palabra": "sabes",
+    "contexto": "por lo que tú sabes",
+    "texto_completo": "pero por lo que tú sabes347."
+  },
+  {
+    "numero": 348,
+    "palabra": "llaves",
+    "contexto": "Pues tengo yo las llaves",
+    "texto_completo": "¿Yo? Pues tengo yo las llaves348,"
+  },
+  {
+    "numero": 349,
+    "palabra": "compadre",
+    "contexto": "a mi compadre",
+    "texto_completo": "a mi compadre349 en la plaza."
+  },
+  {
+    "numero": 350,
+    "palabra": "dote350,",
+    "contexto": "en la traza del dote350,",
+    "texto_completo": "Hijo, y en la traza del dote350,"
+  },
+  {
+    "numero": 351,
+    "palabra": "día",
+    "contexto": "que pasa en un día",
+    "texto_completo": "cosa que pasa en un día351;"
+  },
+  {
+    "numero": 352,
+    "palabra": "ORTUÑO352.)",
+    "contexto": "el COMENDADOR, FLORES y ORTUÑO352.)",
+    "texto_completo": "(Salen el MAESTRE, el COMENDADOR, FLORES y ORTUÑO352.)"
+  },
+  {
+    "numero": 353,
+    "palabra": "despojos",
+    "contexto": "alabarán que en sus despojos",
+    "texto_completo": "Y no se alabarán que en sus despojos353"
+  },
+  {
+    "numero": 354,
+    "palabra": "pendón",
+    "contexto": "pondrán nuestro pendón",
+    "texto_completo": "pondrán nuestro pendón354 de Calatrava,"
+  },
+  {
+    "numero": 355,
+    "palabra": "bastaba",
+    "contexto": "empresa y los demás bastaba",
+    "texto_completo": "que a honrar su empresa y los demás bastaba355."
+  },
+  {
+    "numero": 356,
+    "palabra": "desinios",
+    "contexto": "Tus desinios",
+    "texto_completo": "Tus desinios356, Girón, quedan perdidos."
+  },
+  {
+    "numero": 357,
+    "palabra": "ciega",
+    "contexto": "puedo hacer, si Fortuna ciega",
+    "texto_completo": "¿Qué puedo hacer, si Fortuna ciega357"
+  },
+  {
+    "numero": 358,
+    "palabra": "luces",
+    "contexto": "Ya coronan de luces",
+    "texto_completo": "Ya coronan de luces358 las almenas,"
+  },
+  {
+    "numero": 359,
+    "palabra": "vitoriosos",
+    "contexto": "entoldan con pendones vitoriosos",
+    "texto_completo": "entoldan con pendones vitoriosos359."
+  },
+  {
+    "numero": 360,
+    "palabra": "cuesta",
+    "contexto": "de sangre que les cuesta",
+    "texto_completo": "Bien pudieran, de sangre que les cuesta360."
+  },
+  {
+    "numero": 361,
+    "palabra": "Católico",
+    "contexto": "la tuya al Rey Católico",
+    "texto_completo": "o reducir la tuya al Rey Católico361."
+  },
+  {
+    "numero": 362,
+    "palabra": "enseñarte",
+    "contexto": "El tiempo ha de enseñarte",
+    "texto_completo": "El tiempo ha de enseñarte362."
+  },
+  {
+    "numero": 363,
+    "palabra": "engaños",
+    "contexto": "al rigor de sus engaños",
+    "texto_completo": "sujetos al rigor de sus engaños363!"
+  },
+  {
+    "numero": 364,
+    "palabra": "ROJO364].)",
+    "contexto": "ESTEBAN alcalde [y JUAN ROJO364].)",
+    "texto_completo": "(Sale la boda: MÚSICOS, MENGO, FRONDOSO, LAURENCIA, PASCUALA, BARRILDO y ESTEBAN alcalde [y JUAN ROJO364].)"
+  },
+  {
+    "numero": 365,
+    "palabra": "trovar",
+    "contexto": "¿Supiéraslo tú trovar",
+    "texto_completo": "¿Supiéraslo tú trovar365"
+  },
+  {
+    "numero": 366,
+    "palabra": "alborotes",
+    "contexto": "para que no te alborotes",
+    "texto_completo": "para que no te alborotes366,"
+  },
+  {
+    "numero": 367,
+    "palabra": "fui",
+    "contexto": "harto desdichado fui",
+    "texto_completo": "harto desdichado fui367."
+  },
+  {
+    "numero": 368,
+    "palabra": "chinas",
+    "contexto": "de tinta y de chinas",
+    "texto_completo": "llena de tinta y de chinas368,"
+  },
+  {
+    "numero": 369,
+    "palabra": "razonable",
+    "contexto": "si es la copla razonable",
+    "texto_completo": "si es la copla razonable369!"
+  },
+  {
+    "numero": 370,
+    "palabra": "puntos370!",
+    "contexto": "riñan ni anden en puntos370!",
+    "texto_completo": "ni riñan ni anden en puntos370!"
+  },
+  {
+    "numero": 371,
+    "palabra": "presto",
+    "contexto": "¡Fue muy presto",
+    "texto_completo": "¡Fue muy presto371!"
+  },
+  {
+    "numero": 372,
+    "palabra": "seta",
+    "contexto": "una cosa desta seta",
+    "texto_completo": "una cosa desta seta372:"
+  },
+  {
+    "numero": 373,
+    "palabra": "buñolero",
+    "contexto": "¿no habéis visto un buñolero",
+    "texto_completo": "¿no habéis visto un buñolero373,"
+  },
+  {
+    "numero": 374,
+    "palabra": "tuertos",
+    "contexto": "otros tuertos",
+    "texto_completo": "otros tuertos374 y mal hechos,"
+  },
+  {
+    "numero": 375,
+    "palabra": "previniendo",
+    "contexto": "la materia previniendo",
+    "texto_completo": "la materia previniendo375,"
+  },
+  {
+    "numero": 376,
+    "palabra": "dio",
+    "contexto": "quien la masa le dio",
+    "texto_completo": "que es quien la masa le dio376."
+  },
+  {
+    "numero": 377,
+    "palabra": "miel",
+    "contexto": "confïado en que la miel",
+    "texto_completo": "confïado en que la miel377"
+  },
+  {
+    "numero": 378,
+    "palabra": "pecho",
+    "contexto": "Mas poniéndolo en el pecho",
+    "texto_completo": "Mas poniéndolo en el pecho378,"
+  },
+  {
+    "numero": 379,
+    "palabra": "besar",
+    "contexto": "manos nos da a besar",
+    "texto_completo": "Las manos nos da a besar379."
+  },
+  {
+    "numero": 380,
+    "palabra": "procuras",
+    "contexto": "Hija, ¿mi mano procuras",
+    "texto_completo": "Hija, ¿mi mano procuras380?"
+  },
+  {
+    "numero": 381,
+    "palabra": "luego",
+    "contexto": "Pídela a tu padre luego",
+    "texto_completo": "Pídela a tu padre luego381"
+  },
+  {
+    "numero": 382,
+    "palabra": "bendición",
+    "contexto": "con su larga bendición",
+    "texto_completo": "con su larga bendición382."
+  },
+  {
+    "numero": 383,
+    "palabra": "echad",
+    "contexto": "a los dos la echad",
+    "texto_completo": "Los dos a los dos la echad383."
+  },
+  {
+    "numero": 384,
+    "palabra": "tañed",
+    "contexto": "¡Ea, tañed",
+    "texto_completo": "¡Ea, tañed384 y cantad,"
+  },
+  {
+    "numero": 385,
+    "palabra": "uno",
+    "contexto": "pues que para en uno",
+    "texto_completo": "pues que para en uno385 son!"
+  },
+  {
+    "numero": 386,
+    "palabra": "Fuenteovejuna",
+    "contexto": "Al val386 de Fuenteovejuna",
+    "texto_completo": "Al val386 de Fuenteovejuna"
+  },
+  {
+    "numero": 387,
+    "palabra": "baja;",
+    "contexto": "la niña en cabellos387 baja;",
+    "texto_completo": "la niña en cabellos387 baja;"
+  },
+  {
+    "numero": 388,
+    "palabra": "gallarda388?",
+    "contexto": "niña gallarda388?",
+    "texto_completo": "niña gallarda388?"
+  },
+  {
+    "numero": 389,
+    "palabra": "deseos",
+    "contexto": "Que mis linces deseos",
+    "texto_completo": "Que mis linces deseos389"
+  },
+  {
+    "numero": 390,
+    "palabra": "celosías",
+    "contexto": "hacer quiso celosías",
+    "texto_completo": "hacer quiso celosías390"
+  },
+  {
+    "numero": 391,
+    "palabra": "ramas.",
+    "contexto": "de las intricadas391 ramas.",
+    "texto_completo": "de las intricadas391 ramas."
+  },
+  {
+    "numero": 392,
+    "palabra": "queda",
+    "contexto": "Estése la boda queda",
+    "texto_completo": "Estése la boda queda392"
+  },
+  {
+    "numero": 393,
+    "palabra": "lugar",
+    "contexto": "¿Quieres lugar",
+    "texto_completo": "¿Quieres lugar393? ¿Cómo vienes"
+  },
+  {
+    "numero": 394,
+    "palabra": "alarde",
+    "contexto": "con tu belicoso alarde",
+    "texto_completo": "con tu belicoso alarde394?"
+  },
+  {
+    "numero": 395,
+    "palabra": "padre",
+    "contexto": "sentencie su mismo padre",
+    "texto_completo": "sentencie su mismo padre395."
+  },
+  {
+    "numero": 396,
+    "palabra": "case",
+    "contexto": "obliga a que se case",
+    "texto_completo": "¿Qué me obliga a que se case396?"
+  },
+  {
+    "numero": 397,
+    "palabra": "sois",
+    "contexto": "por ser vos quien sois",
+    "texto_completo": "por ser vos quien sois397."
+  },
+  {
+    "numero": 398,
+    "palabra": "Orden",
+    "contexto": "es contra toda su Orden",
+    "texto_completo": "es contra toda su Orden398,"
+  },
+  {
+    "numero": 399,
+    "palabra": "él",
+    "contexto": "de alzar pendón contra él",
+    "texto_completo": "de alzar pendón contra él399,"
+  },
+  {
+    "numero": 400,
+    "palabra": "descomponga",
+    "contexto": "se descomponga",
+    "texto_completo": "se descomponga400 con vos"
+  },
+  {
+    "numero": 401,
+    "palabra": "defienda",
+    "contexto": "¿qué mucho que la defienda",
+    "texto_completo": "¿qué mucho que la defienda401?"
+  },
+  {
+    "numero": 402,
+    "palabra": "señor",
+    "contexto": "Por vuestra virtud, señor",
+    "texto_completo": "Por vuestra virtud, señor402."
+  },
+  {
+    "numero": 403,
+    "palabra": "sufrir",
+    "contexto": "de las guerras, en sufrir",
+    "texto_completo": "de las guerras, en sufrir403"
+  },
+  {
+    "numero": 404,
+    "palabra": "lugares",
+    "contexto": "en sus villas y lugares",
+    "texto_completo": "en sus villas y lugares404"
+  },
+  {
+    "numero": 405,
+    "palabra": "cruces",
+    "contexto": "por traer cruces",
+    "texto_completo": "por traer cruces405 tan grandes."
+  },
+  {
+    "numero": 406,
+    "palabra": "¡Hola",
+    "contexto": "¡Hola",
+    "texto_completo": "¡Hola406! ¡La vara quitalde!"
+  },
+  {
+    "numero": 407,
+    "palabra": "norabuena",
+    "contexto": "Tomad, señor, norabuena",
+    "texto_completo": "Tomad, señor, norabuena407."
+  },
+  {
+    "numero": 408,
+    "palabra": "cardenales",
+    "contexto": "aún se ven los cardenales",
+    "texto_completo": "que aún se ven los cardenales408"
+  },
+  {
+    "numero": 409,
+    "palabra": "atabales",
+    "contexto": "me puso los atabales",
+    "texto_completo": "me puso los atabales409!"
+  },
+  {
+    "numero": 410,
+    "palabra": "BARRILDO410.",
+    "contexto": "Salen ESTEBAN, ALONSO y BARRILDO410.",
+    "texto_completo": "Salen ESTEBAN, ALONSO y BARRILDO410."
+  },
+  {
+    "numero": 411,
+    "palabra": "junta",
+    "contexto": "han venido a la junta",
+    "texto_completo": "¿No han venido a la junta411?"
+  },
+  {
+    "numero": 412,
+    "palabra": "apriesa",
+    "contexto": "Pues más apriesa",
+    "texto_completo": "Pues más apriesa412 nuestro daño corre."
+  },
+  {
+    "numero": 413,
+    "palabra": "más",
+    "contexto": "Ya está lo más",
+    "texto_completo": "Ya está lo más413 del pueblo prevenido."
+  },
+  {
+    "numero": 414,
+    "palabra": "torre",
+    "contexto": "con prisiones en la torre",
+    "texto_completo": "Frondoso con prisiones en la torre414"
+  },
+  {
+    "numero": 415,
+    "palabra": "obsequias",
+    "contexto": "qué obsequias",
+    "texto_completo": "qué obsequias415 debe hacer toda esta gente"
+  },
+  {
+    "numero": 416,
+    "palabra": "la",
+    "contexto": "Pues si ya la",
+    "texto_completo": "Pues si ya la416 tenéis todos perdida,"
+  },
+  {
+    "numero": 417,
+    "palabra": "apresta",
+    "contexto": "venida a Córdoba se apresta",
+    "texto_completo": "y su venida a Córdoba se apresta417,"
+  },
+  {
+    "numero": 418,
+    "palabra": "villa",
+    "contexto": "dos regidores a la villa",
+    "texto_completo": "vayan dos regidores a la villa418"
+  },
+  {
+    "numero": 419,
+    "palabra": "remedio",
+    "contexto": "a sus pies, pidan remedio",
+    "texto_completo": "y, echándose a sus pies, pidan remedio419."
+  },
+  {
+    "numero": 420,
+    "palabra": "medio",
+    "contexto": "con tanta guerra en medio",
+    "texto_completo": "hacernos bien con tanta guerra en medio420."
+  },
+  {
+    "numero": 421,
+    "palabra": "desamparar",
+    "contexto": "desamparar",
+    "texto_completo": "desamparar421 la villa doy por voto."
+  },
+  {
+    "numero": 422,
+    "palabra": "vida",
+    "contexto": "costar la junta alguna vida",
+    "texto_completo": "que ha de costar la junta alguna vida422!"
+  },
+  {
+    "numero": 423,
+    "palabra": "árbol",
+    "contexto": "Ya todo el árbol",
+    "texto_completo": "Ya todo el árbol423 de paciencia roto,"
+  },
+  {
+    "numero": 424,
+    "palabra": "perdida",
+    "contexto": "la nave de temor perdida",
+    "texto_completo": "corre la nave de temor perdida424."
+  },
+  {
+    "numero": 425,
+    "palabra": "vivís",
+    "contexto": "la patria en que vivís",
+    "texto_completo": "la patria en que vivís425, y en la cabeza"
+  },
+  {
+    "numero": 426,
+    "palabra": "vara",
+    "contexto": "la vara",
+    "texto_completo": "la vara426 quiebran tan injustamente..."
+  },
+  {
+    "numero": 427,
+    "palabra": "esclavo",
+    "contexto": "¿Qué esclavo",
+    "texto_completo": "¿Qué esclavo427 se trató con más bajeza?"
+  },
+  {
+    "numero": 428,
+    "palabra": "vais",
+    "contexto": "que vais",
+    "texto_completo": "que vais428 en estas cosas con recelo."
+  },
+  {
+    "numero": 429,
+    "palabra": "temores",
+    "contexto": "más cuerdo represento sus temores",
+    "texto_completo": "más cuerdo represento sus temores429."
+  },
+  {
+    "numero": 430,
+    "palabra": "compasan",
+    "contexto": "Si nuestras desventuras se compasan",
+    "texto_completo": "Si nuestras desventuras se compasan430,"
+  },
+  {
+    "numero": 431,
+    "palabra": "desmelenada431.)",
+    "contexto": "(Sale LAURENCIA, desmelenada431.)",
+    "texto_completo": "(Sale LAURENCIA, desmelenada431.)"
+  },
+  {
+    "numero": 432,
+    "palabra": "soy",
+    "contexto": "en contingencia quién soy",
+    "texto_completo": "en contingencia quién soy432."
+  },
+  {
+    "numero": 433,
+    "palabra": "ojos433?",
+    "contexto": "¿Por qué, mis ojos433?",
+    "texto_completo": "¿Por qué, mis ojos433?"
+  },
+  {
+    "numero": 434,
+    "palabra": "presupone",
+    "contexto": "la obligación presupone",
+    "texto_completo": "la obligación presupone434;"
+  },
+  {
+    "numero": 435,
+    "palabra": "guardas",
+    "contexto": "las guardas",
+    "texto_completo": "las guardas435 ni los ladrones."
+  },
+  {
+    "numero": 436,
+    "palabra": "ojos",
+    "contexto": "Llevóme de vuestros ojos",
+    "texto_completo": "Llevóme de vuestros ojos436"
+  },
+  {
+    "numero": 437,
+    "palabra": "torpes",
+    "contexto": "a sus apetitos torpes",
+    "texto_completo": "a sus apetitos torpes437?"
+  },
+  {
+    "numero": 438,
+    "palabra": "nobles",
+    "contexto": "¿Vosotros sois hombres nobles",
+    "texto_completo": "¿Vosotros sois hombres nobles438?"
+  },
+  {
+    "numero": 439,
+    "palabra": "deudos",
+    "contexto": "¿Vosotros padres y deudos",
+    "texto_completo": "¿Vosotros padres y deudos439?"
+  },
+  {
+    "numero": 440,
+    "palabra": "sois",
+    "contexto": "ovejas sois",
+    "texto_completo": "ovejas sois440: bien lo dice"
+  },
+  {
+    "numero": 441,
+    "palabra": "jaspes",
+    "contexto": "pues sois jaspes",
+    "texto_completo": "pues sois jaspes441, pues sois tigres..."
+  },
+  {
+    "numero": 442,
+    "palabra": "nacistes",
+    "contexto": "liebres cobardes nacistes",
+    "texto_completo": "liebres cobardes nacistes442;"
+  },
+  {
+    "numero": 443,
+    "palabra": "bárbaros",
+    "contexto": "bárbaros",
+    "texto_completo": "bárbaros443 sois, no españoles;"
+  },
+  {
+    "numero": 444,
+    "palabra": "sufrís",
+    "contexto": "sufrís",
+    "texto_completo": "sufrís444 que otros hombres gocen!"
+  },
+  {
+    "numero": 445,
+    "palabra": "cinta",
+    "contexto": "Poneos ruecas en la cinta",
+    "texto_completo": "Poneos ruecas en la cinta445."
+  },
+  {
+    "numero": 446,
+    "palabra": "traidores",
+    "contexto": "la sangre destos traidores",
+    "texto_completo": "la sangre destos traidores446,"
+  },
+  {
+    "numero": 447,
+    "palabra": "piedras",
+    "contexto": "os han de tirar piedras",
+    "texto_completo": "y que os han de tirar piedras447,"
+  },
+  {
+    "numero": 448,
+    "palabra": "tocas",
+    "contexto": "nuestras tocas",
+    "texto_completo": "nuestras tocas448 y basquiñas449,"
+  },
+  {
+    "numero": 449,
+    "palabra": "basquiñas",
+    "contexto": "nuestras tocas448 y basquiñas",
+    "texto_completo": "nuestras tocas448 y basquiñas449,"
+  },
+  {
+    "numero": 450,
+    "palabra": "solimanes",
+    "contexto": "solimanes",
+    "texto_completo": "solimanes450 y colores451!"
+  },
+  {
+    "numero": 451,
+    "palabra": "colores",
+    "contexto": "solimanes450 y colores",
+    "texto_completo": "solimanes450 y colores451!"
+  },
+  {
+    "numero": 452,
+    "palabra": "pregones",
+    "contexto": "sin sentencia, sin pregones",
+    "texto_completo": "sin sentencia, sin pregones452,"
+  },
+  {
+    "numero": 453,
+    "palabra": "almena",
+    "contexto": "del almena",
+    "texto_completo": "del almena453 de una torre."
+  },
+  {
+    "numero": 454,
+    "palabra": "huelgo",
+    "contexto": "y yo me huelgo",
+    "texto_completo": "y yo me huelgo454, medio hombres,"
+  },
+  {
+    "numero": 455,
+    "palabra": "amazonas",
+    "contexto": "aquel siglo de amazonas",
+    "texto_completo": "aquel siglo de amazonas455,"
+  },
+  {
+    "numero": 456,
+    "palabra": "orbe",
+    "contexto": "eterno espanto del orbe",
+    "texto_completo": "eterno espanto del orbe456."
+  },
+  {
+    "numero": 457,
+    "palabra": "asombre",
+    "contexto": "por más que me asombre",
+    "texto_completo": "Y yo, por más que me asombre457"
+  },
+  {
+    "numero": 458,
+    "palabra": "Descoge458",
+    "contexto": "Descoge458",
+    "texto_completo": "Descoge458"
+  },
+  {
+    "numero": 459,
+    "palabra": "inormes",
+    "contexto": "y mueran estos inormes",
+    "texto_completo": "y mueran estos inormes459."
+  },
+  {
+    "numero": 460,
+    "palabra": "lanzones",
+    "contexto": "Tomad espadas, lanzones",
+    "texto_completo": "Tomad espadas, lanzones460,"
+  },
+  {
+    "numero": 461,
+    "palabra": "chuzos",
+    "contexto": "ballestas, chuzos",
+    "texto_completo": "ballestas, chuzos461 y palos."
+  },
+  {
+    "numero": 462,
+    "palabra": "menores",
+    "contexto": "sus agravios los menores",
+    "texto_completo": "sus agravios los menores462!"
+  },
+  {
+    "numero": 463,
+    "palabra": "mujeres",
+    "contexto": "de una escuadra de mujeres",
+    "texto_completo": "de una escuadra de mujeres463."
+  },
+  {
+    "numero": 464,
+    "palabra": "alférez",
+    "contexto": "Pascuala, alférez",
+    "texto_completo": "Pascuala, alférez464 serás."
+  },
+  {
+    "numero": 465,
+    "palabra": "enarbole",
+    "contexto": "Pues déjame que enarbole",
+    "texto_completo": "Pues déjame que enarbole465"
+  },
+  {
+    "numero": 466,
+    "palabra": "espacio",
+    "contexto": "No hay espacio",
+    "texto_completo": "No hay espacio466 para eso,"
+  },
+  {
+    "numero": 467,
+    "palabra": "pendones",
+    "contexto": "nuestras tocas por pendones",
+    "texto_completo": "nuestras tocas por pendones467."
+  },
+  {
+    "numero": 468,
+    "palabra": "Rodamontes",
+    "contexto": "no hay Cides ni Rodamontes",
+    "texto_completo": "no hay Cides ni Rodamontes468."
+  },
+  {
+    "numero": 469,
+    "palabra": "COMENDADOR469.)",
+    "contexto": "y CIMBRANOS y el COMENDADOR469.)",
+    "texto_completo": "(Sale FRONDOSO, atadas las manos; FLORES, ORTUÑO y CIMBRANOS y el COMENDADOR469.)"
+  },
+  {
+    "numero": 470,
+    "palabra": "pena",
+    "contexto": "le colguéis, por mayor pena",
+    "texto_completo": "quiero que le colguéis, por mayor pena470."
+  },
+  {
+    "numero": 471,
+    "palabra": "almena",
+    "contexto": "luego en la primera almena",
+    "texto_completo": "Colgalde luego en la primera almena471."
+  },
+  {
+    "numero": 472,
+    "palabra": "Templa",
+    "contexto": "Templa",
+    "texto_completo": "Templa472, Frondoso, ese villano473 Alcalde."
+  },
+  {
+    "numero": 473,
+    "palabra": "villano",
+    "contexto": "Templa472, Frondoso, ese villano",
+    "texto_completo": "Templa472, Frondoso, ese villano473 Alcalde."
+  },
+  {
+    "numero": 474,
+    "palabra": "movido",
+    "contexto": "que amor les ha movido",
+    "texto_completo": "Yo voy, señor, que amor les ha movido474."
+  },
+  {
+    "numero": 475,
+    "palabra": "resuelven",
+    "contexto": "los pueblos agraviados, y resuelven",
+    "texto_completo": "los pueblos agraviados, y resuelven475,"
+  },
+  {
+    "numero": 476,
+    "palabra": "rastrillo",
+    "contexto": "esta puerta, así como rastrillo",
+    "texto_completo": "En esta puerta, así como rastrillo476,"
+  },
+  {
+    "numero": 477,
+    "palabra": "acometamos",
+    "contexto": "porque a su furia acometamos",
+    "texto_completo": "Estoy porque a su furia acometamos477."
+  },
+  {
+    "numero": 478,
+    "palabra": "todos478.)",
+    "contexto": "(Salen todos478.)",
+    "texto_completo": "(Salen todos478.)"
+  },
+  {
+    "numero": 479,
+    "palabra": "esperanzas",
+    "contexto": "en este puesto de esperanzas",
+    "texto_completo": "Parad en este puesto de esperanzas479,"
+  },
+  {
+    "numero": 480,
+    "palabra": "esperes",
+    "contexto": "sangre, es bien que esperes",
+    "texto_completo": "En él beban su sangre, es bien que esperes480."
+  },
+  {
+    "numero": 481,
+    "palabra": "(Dentro481.)",
+    "contexto": "(Dentro481.)",
+    "texto_completo": "(Dentro481.)"
+  },
+  {
+    "numero": 482,
+    "palabra": "espero",
+    "contexto": "que en tu clemencia espero",
+    "texto_completo": "¡Piedad, Señor, que en tu clemencia espero482!"
+  },
+  {
+    "numero": 483,
+    "palabra": "saco",
+    "contexto": "el alma no le saco",
+    "texto_completo": "No me vengo si el alma no le saco483."
+  },
+  {
+    "numero": 484,
+    "palabra": "entrar",
+    "contexto": "¡No escusamos entrar",
+    "texto_completo": "¡No escusamos entrar484!"
+  },
+  {
+    "numero": 485,
+    "palabra": "marquesotes",
+    "contexto": "¿Con lágrimas agora, marquesotes",
+    "texto_completo": "¿Con lágrimas agora, marquesotes485?"
+  },
+  {
+    "numero": 486,
+    "palabra": "alcahuete",
+    "contexto": "Cuando ser alcahuete",
+    "texto_completo": "Cuando ser alcahuete486 no bastara,"
+  },
+  {
+    "numero": 487,
+    "palabra": "ancho",
+    "contexto": "¿No le viene muy ancho",
+    "texto_completo": "¿No le viene muy ancho487?"
+  },
+  {
+    "numero": 488,
+    "palabra": "lloras?",
+    "contexto": "¿Aqueso488 lloras?",
+    "texto_completo": "¿Aqueso488 lloras?"
+  },
+  {
+    "numero": 489,
+    "palabra": "placeres",
+    "contexto": "¡Muere, concertador de sus placeres",
+    "texto_completo": "¡Muere, concertador de sus placeres489!"
+  },
+  {
+    "numero": 490,
+    "palabra": "teñid",
+    "contexto": "¡Entrad, teñid",
+    "texto_completo": "¡Entrad, teñid490 las armas vencedoras"
+  },
+  {
+    "numero": 491,
+    "palabra": "maestre491.)",
+    "contexto": "ISABEL, y DON MANRIQUE, maestre491.)",
+    "texto_completo": "(Vanse y salen el REY FERNANDO y la REINA DOÑA ISABEL, y DON MANRIQUE, maestre491.)"
+  },
+  {
+    "numero": 492,
+    "palabra": "prevención",
+    "contexto": "De modo la prevención",
+    "texto_completo": "De modo la prevención492"
+  },
+  {
+    "numero": 493,
+    "palabra": "contradición",
+    "contexto": "con poca contradición",
+    "texto_completo": "con poca contradición493."
+  },
+  {
+    "numero": 494,
+    "palabra": "Cabra",
+    "contexto": "Queda el de Cabra",
+    "texto_completo": "Queda el de Cabra494 ocupado"
+  },
+  {
+    "numero": 495,
+    "palabra": "osado",
+    "contexto": "a él el contrario osado",
+    "texto_completo": "a él el contrario osado495."
+  },
+  {
+    "numero": 496,
+    "palabra": "Discreto",
+    "contexto": "Discreto",
+    "texto_completo": "Discreto496 el acuerdo fue"
+  },
+  {
+    "numero": 497,
+    "palabra": "procura",
+    "contexto": "tomar la fuerza procura",
+    "texto_completo": "tomar la fuerza procura497."
+  },
+  {
+    "numero": 498,
+    "palabra": "asistente",
+    "contexto": "en ese sitio asistente",
+    "texto_completo": "en ese sitio asistente498,"
+  },
+  {
+    "numero": 499,
+    "palabra": "recela",
+    "contexto": "el daño que nos recela",
+    "texto_completo": "el daño que nos recela499,"
+  },
+  {
+    "numero": 500,
+    "palabra": "Repórtate",
+    "contexto": "Repórtate",
+    "texto_completo": "Repórtate500."
+  },
+  {
+    "numero": 501,
+    "palabra": "aleves",
+    "contexto": "por sus súbditos aleves",
+    "texto_completo": "por sus súbditos aleves501,"
+  },
+  {
+    "numero": 502,
+    "palabra": "atreven",
+    "contexto": "con leve causa se atreven",
+    "texto_completo": "con leve causa se atreven502."
+  },
+  {
+    "numero": 503,
+    "palabra": "plebe",
+    "contexto": "que le acumula la plebe",
+    "texto_completo": "que le acumula la plebe503,"
+  },
+  {
+    "numero": 504,
+    "palabra": "pecho",
+    "contexto": "rompen el cruzado pecho",
+    "texto_completo": "rompen el cruzado pecho504"
+  },
+  {
+    "numero": 505,
+    "palabra": "picas",
+    "contexto": "adonde en picas",
+    "texto_completo": "adonde en picas505 y espadas"
+  },
+  {
+    "numero": 506,
+    "palabra": "porfía",
+    "contexto": "y, a porfía",
+    "texto_completo": "y, a porfía506, quien más puede"
+  },
+  {
+    "numero": 507,
+    "palabra": "mesa",
+    "contexto": "mesa",
+    "texto_completo": "mesa507 su barba y cabello"
+  },
+  {
+    "numero": 508,
+    "palabra": "tajadas",
+    "contexto": "que las mayores tajadas",
+    "texto_completo": "que las mayores tajadas508"
+  },
+  {
+    "numero": 509,
+    "palabra": "armas",
+    "contexto": "Sus armas",
+    "texto_completo": "Sus armas509 borran con picas"
+  },
+  {
+    "numero": 510,
+    "palabra": "diese",
+    "contexto": "para que cuenta te diese",
+    "texto_completo": "para que cuenta te diese510."
+  },
+  {
+    "numero": 511,
+    "palabra": "rigor",
+    "contexto": "pide que tu rigor",
+    "texto_completo": "pide que tu rigor511 prueben."
+  },
+  {
+    "numero": 512,
+    "palabra": "luego",
+    "contexto": "y que vaya luego",
+    "texto_completo": "y que vaya luego512 un juez513"
+  },
+  {
+    "numero": 513,
+    "palabra": "juez",
+    "contexto": "que vaya luego512 un juez",
+    "texto_completo": "y que vaya luego512 un juez513"
+  },
+  {
+    "numero": 514,
+    "palabra": "lanza515.)",
+    "contexto": "FERNÁN GÓMEZ514 en una lanza515.)",
+    "texto_completo": "(Vanse, y salen los labradores y labradoras con la cabeza de FERNÁN GÓMEZ514 en una lanza515.)"
+  },
+  {
+    "numero": 515,
+    "palabra": "lanza515.)",
+    "contexto": "FERNÁN GÓMEZ514 en una lanza515.)",
+    "texto_completo": "(Vanse, y salen los labradores y labradoras con la cabeza de FERNÁN GÓMEZ514 en una lanza515.)"
+  },
+  {
+    "numero": 516,
+    "palabra": "pie",
+    "contexto": "Si le faltare algún pie",
+    "texto_completo": "Si le faltare algún pie516,"
+  },
+  {
+    "numero": 517,
+    "palabra": "curioso",
+    "contexto": "enmiéndelo el más curioso",
+    "texto_completo": "enmiéndelo el más curioso517."
+  },
+  {
+    "numero": 518,
+    "palabra": "son518,",
+    "contexto": "que para en uno son518,",
+    "texto_completo": "pues que para en uno son518,"
+  },
+  {
+    "numero": 519,
+    "palabra": "Miguel",
+    "contexto": "A los Cielos San Miguel",
+    "texto_completo": "A los Cielos San Miguel519"
+  },
+  {
+    "numero": 520,
+    "palabra": "famosos",
+    "contexto": "¡Vivan los Reyes famosos",
+    "texto_completo": "¡Vivan los Reyes famosos520"
+  },
+  {
+    "numero": 521,
+    "palabra": "enanos",
+    "contexto": "de gigantes y de enanos",
+    "texto_completo": "de gigantes y de enanos521"
+  },
+  {
+    "numero": 522,
+    "palabra": "donado",
+    "contexto": "Yo soy poeta donado",
+    "texto_completo": "Yo soy poeta donado522."
+  },
+  {
+    "numero": 523,
+    "palabra": "barriga",
+    "contexto": "el envés de la barriga",
+    "texto_completo": "el envés de la barriga523."
+  },
+  {
+    "numero": 524,
+    "palabra": "aquél524,",
+    "contexto": "me mandó azotar aquél524,",
+    "texto_completo": "me mandó azotar aquél524,"
+  },
+  {
+    "numero": 525,
+    "palabra": "rabel",
+    "contexto": "de manera que el rabel",
+    "texto_completo": "de manera que el rabel525"
+  },
+  {
+    "numero": 526,
+    "palabra": "pringo526,",
+    "contexto": "Pero agora que los pringo526,",
+    "texto_completo": "Pero agora que los pringo526,"
+  },
+  {
+    "numero": 527,
+    "palabra": "Cristiánigos527,",
+    "contexto": "¡vivan los Reyes Cristiánigos527,",
+    "texto_completo": "¡vivan los Reyes Cristiánigos527,"
+  },
+  {
+    "numero": 528,
+    "palabra": "allá",
+    "contexto": "Quita la cabeza allá",
+    "texto_completo": "Quita la cabeza allá528."
+  },
+  {
+    "numero": 529,
+    "palabra": "ahorcado",
+    "contexto": "Cara tiene de ahorcado",
+    "texto_completo": "Cara tiene de ahorcado529."
+  },
+  {
+    "numero": 530,
+    "palabra": "armas530.)",
+    "contexto": "JUAN ROJO con las armas530.)",
+    "texto_completo": "(Saca un escudo JUAN ROJO con las armas530.)"
+  },
+  {
+    "numero": 531,
+    "palabra": "Aragón",
+    "contexto": "y las barras de Aragón",
+    "texto_completo": "y las barras de Aragón531,"
+  },
+  {
+    "numero": 532,
+    "palabra": "Advertid",
+    "contexto": "Advertid",
+    "texto_completo": "Advertid532, Fuenteovejuna,"
+  },
+  {
+    "numero": 533,
+    "palabra": "hacer",
+    "contexto": "jornada que han de hacer",
+    "texto_completo": "y jornada que han de hacer533."
+  },
+  {
+    "numero": 534,
+    "palabra": "una",
+    "contexto": "Concertaos todos a una",
+    "texto_completo": "Concertaos todos a una534"
+  },
+  {
+    "numero": 535,
+    "palabra": "¿Qué",
+    "contexto": "¿Qué",
+    "texto_completo": "¿Qué535 es tu consejo?"
+  },
+  {
+    "numero": 536,
+    "palabra": "derecho",
+    "contexto": "Es el camino derecho",
+    "texto_completo": "Es el camino derecho536:"
+  },
+  {
+    "numero": 537,
+    "palabra": "agora",
+    "contexto": "agora",
+    "texto_completo": "agora537 el pesquisidor,"
+  },
+  {
+    "numero": 538,
+    "palabra": "habemos",
+    "contexto": "en lo que habemos",
+    "texto_completo": "en lo que habemos538 de hacer."
+  },
+  {
+    "numero": 539,
+    "palabra": "tormento",
+    "contexto": "en el tormento",
+    "texto_completo": "en el tormento539."
+  },
+  {
+    "numero": 540,
+    "palabra": "flaco",
+    "contexto": "otro más flaco",
+    "texto_completo": "otro más flaco540?"
+  },
+  {
+    "numero": 541,
+    "palabra": "vuelta",
+    "contexto": "¡Dalde otra vuelta",
+    "texto_completo": "¡Dalde otra vuelta541!"
+  },
+  {
+    "numero": 542,
+    "palabra": "ninguna542.",
+    "contexto": "Es ninguna542.",
+    "texto_completo": "Es ninguna542."
+  },
+  {
+    "numero": 543,
+    "palabra": "proceso",
+    "contexto": "¡Cagajón para el proceso",
+    "texto_completo": "¡Cagajón para el proceso543!"
+  },
+  {
+    "numero": 544,
+    "palabra": "REGIDOR544.)",
+    "contexto": "(Sale el REGIDOR544.)",
+    "texto_completo": "(Sale el REGIDOR544.)"
+  },
+  {
+    "numero": 545,
+    "palabra": "van",
+    "contexto": "El pueblo prendiendo van",
+    "texto_completo": "El pueblo prendiendo van545"
+  },
+  {
+    "numero": 546,
+    "palabra": "SOLDADO546.)",
+    "contexto": "el MAESTRE y un SOLDADO546.)",
+    "texto_completo": "(Vanse y salen el MAESTRE y un SOLDADO546.)"
+  },
+  {
+    "numero": 547,
+    "palabra": "sucedido",
+    "contexto": "¡Que tal caso ha sucedido",
+    "texto_completo": "¡Que tal caso ha sucedido547!"
+  },
+  {
+    "numero": 548,
+    "palabra": "traído",
+    "contexto": "la nueva que has traído",
+    "texto_completo": "por la nueva que has traído548."
+  },
+  {
+    "numero": 549,
+    "palabra": "intento",
+    "contexto": "enojarte no es mi intento",
+    "texto_completo": "y enojarte no es mi intento549."
+  },
+  {
+    "numero": 550,
+    "palabra": "dado",
+    "contexto": "al Rey se han dado",
+    "texto_completo": "porque ellos al Rey se han dado550,"
+  },
+  {
+    "numero": 551,
+    "palabra": "manos",
+    "contexto": "le entregó en sus manos",
+    "texto_completo": "lo que él le entregó en sus manos551?"
+  },
+  {
+    "numero": 552,
+    "palabra": "sola552.)",
+    "contexto": "(Vanse. Sale LAURENCIA sola552.)",
+    "texto_completo": "(Vanse. Sale LAURENCIA sola552.)"
+  },
+  {
+    "numero": 553,
+    "palabra": "recelar",
+    "contexto": "Amando, recelar",
+    "texto_completo": "Amando, recelar553 daño en lo amado"
+  },
+  {
+    "numero": 554,
+    "palabra": "robado",
+    "contexto": "el temor el bien robado",
+    "texto_completo": "ver llevar el temor el bien robado554."
+  },
+  {
+    "numero": 555,
+    "palabra": "esposo",
+    "contexto": "Mi esposo",
+    "texto_completo": "Mi esposo555 adoro. La ocasión que veo"
+  },
+  {
+    "numero": 556,
+    "palabra": "condena",
+    "contexto": "de su daño me condena",
+    "texto_completo": "al temor de su daño me condena556,"
+  },
+  {
+    "numero": 557,
+    "palabra": "muerte",
+    "contexto": "ausencia, está cierta mi muerte",
+    "texto_completo": "si está en ausencia, está cierta mi muerte557."
+  },
+  {
+    "numero": 558,
+    "palabra": "sucede",
+    "contexto": "que por los demás sucede",
+    "texto_completo": "que por los demás sucede558,"
+  },
+  {
+    "numero": 559,
+    "palabra": "razón",
+    "contexto": "no es puesto en razón",
+    "texto_completo": "porque no es puesto en razón559"
+  },
+  {
+    "numero": 560,
+    "palabra": "estraño",
+    "contexto": "sea con mi sangre estraño",
+    "texto_completo": "sea con mi sangre estraño560"
+  },
+  {
+    "numero": 561,
+    "palabra": "responden561.)",
+    "contexto": "dentro el JUEZ y responden561.)",
+    "texto_completo": "(Dice dentro el JUEZ y responden561.)"
+  },
+  {
+    "numero": 562,
+    "palabra": "viejo",
+    "contexto": "¡Decid la verdad, buen viejo",
+    "texto_completo": "¡Decid la verdad, buen viejo562!"
+  },
+  {
+    "numero": 563,
+    "palabra": "aprieta",
+    "contexto": "aprieta",
+    "texto_completo": "aprieta563! ¡Perro, yo sé"
+  },
+  {
+    "numero": 564,
+    "palabra": "tened",
+    "contexto": "en ese potro tened",
+    "texto_completo": "en ese potro tened564."
+  },
+  {
+    "numero": 565,
+    "palabra": "luego",
+    "contexto": "¡Dale esa mancuerda luego",
+    "texto_completo": "¡Dale esa mancuerda luego565!"
+  },
+  {
+    "numero": 566,
+    "palabra": "espantas",
+    "contexto": "Niegan niños, ¿qué te espantas",
+    "texto_completo": "Niegan niños, ¿qué te espantas566"
+  },
+  {
+    "numero": 567,
+    "palabra": "encantas",
+    "contexto": "Parece que los encantas",
+    "texto_completo": "Parece que los encantas567."
+  },
+  {
+    "numero": 568,
+    "palabra": "desnudo",
+    "contexto": "¡Ese desnudo",
+    "texto_completo": "¡Ese desnudo568, ese gordo!"
+  },
+  {
+    "numero": 569,
+    "palabra": "espalda",
+    "contexto": "la espalda",
+    "texto_completo": "la espalda569."
+  },
+  {
+    "numero": 570,
+    "palabra": "yo",
+    "contexto": "Quedo570, que yo",
+    "texto_completo": "Quedo570, que yo"
+  },
+  {
+    "numero": 571,
+    "palabra": "quitado",
+    "contexto": "tuyo me le ha quitado",
+    "texto_completo": "el tuyo me le ha quitado571."
+  },
+  {
+    "numero": 572,
+    "palabra": "¡Vítor",
+    "contexto": "¡Vítor",
+    "texto_completo": "¡Vítor572, Mengo!"
+  },
+  {
+    "numero": 573,
+    "palabra": "Diacitrón573.",
+    "contexto": "Diacitrón573.",
+    "texto_completo": "Diacitrón573."
+  },
+  {
+    "numero": 574,
+    "palabra": "cuela",
+    "contexto": "Bien lo cuela",
+    "texto_completo": "Bien lo cuela574. Bueno está."
+  },
+  {
+    "numero": 575,
+    "palabra": "bebe",
+    "contexto": "que bien niega bien bebe",
+    "texto_completo": "El que bien niega bien bebe575."
+  },
+  {
+    "numero": 576,
+    "palabra": "cuela",
+    "contexto": "vez por vuelta las cuela",
+    "texto_completo": "A vez por vuelta las cuela576."
+  },
+  {
+    "numero": 577,
+    "palabra": "Arrópale",
+    "contexto": "Arrópale",
+    "texto_completo": "Arrópale577, que se hiela."
+  },
+  {
+    "numero": 578,
+    "palabra": "pregunta578.",
+    "contexto": "Si hay vino pregunta578.",
+    "texto_completo": "Si hay vino pregunta578."
+  },
+  {
+    "numero": 579,
+    "palabra": "tiene",
+    "contexto": "¿Qué tiene",
+    "texto_completo": "¿Qué tiene579?"
+  },
+  {
+    "numero": 580,
+    "palabra": "punta580.",
+    "contexto": "Una cierta punta580.",
+    "texto_completo": "Una cierta punta580."
+  },
+  {
+    "numero": 581,
+    "palabra": "arromadizo",
+    "contexto": "Vamos, que me arromadizo",
+    "texto_completo": "Vamos, que me arromadizo581."
+  },
+  {
+    "numero": 582,
+    "palabra": "MANRIQUE582.)",
+    "contexto": "y la REINA y MANRIQUE582.)",
+    "texto_completo": "(Vanse, y salen el REY y la REINA y MANRIQUE582.)"
+  },
+  {
+    "numero": 583,
+    "palabra": "entendí",
+    "contexto": "No entendí",
+    "texto_completo": "No entendí583, señor, hallaros"
+  },
+  {
+    "numero": 584,
+    "palabra": "gloria",
+    "contexto": "En nueva gloria",
+    "texto_completo": "En nueva gloria584 convierte"
+  },
+  {
+    "numero": 585,
+    "palabra": "tuerza",
+    "contexto": "Vuestra majestad le tuerza",
+    "texto_completo": "Vuestra majestad le tuerza585,"
+  },
+  {
+    "numero": 586,
+    "palabra": "llana",
+    "contexto": "paz queda, quieta y llana",
+    "texto_completo": "En paz queda, quieta y llana586."
+  },
+  {
+    "numero": 587,
+    "palabra": "empeño",
+    "contexto": "Mi fe, señora, os empeño",
+    "texto_completo": "Mi fe, señora, os empeño587,"
+  },
+  {
+    "numero": 588,
+    "palabra": "perdón",
+    "contexto": "os pide humilde perdón",
+    "texto_completo": "os pide humilde perdón588."
+  },
+  {
+    "numero": 589,
+    "palabra": "Fernando",
+    "contexto": "El consejo de Fernando",
+    "texto_completo": "El consejo de Fernando589"
+  },
+  {
+    "numero": 590,
+    "palabra": "fiel",
+    "contexto": "-injusto fiel",
+    "texto_completo": "-injusto fiel590- y ansí yo"
+  },
+  {
+    "numero": 591,
+    "palabra": "demando",
+    "contexto": "perdón humilde os demando",
+    "texto_completo": "perdón humilde os demando591."
+  },
+  {
+    "numero": 592,
+    "palabra": "certifico",
+    "contexto": "desde aquí me certifico",
+    "texto_completo": "desde aquí me certifico592"
+  },
+  {
+    "numero": 593,
+    "palabra": "apenas",
+    "contexto": "donde sacándola apenas",
+    "texto_completo": "donde sacándola apenas593,"
+  },
+  {
+    "numero": 594,
+    "palabra": "disgustaros",
+    "contexto": "de en mi vida disgustaros",
+    "texto_completo": "de en mi vida disgustaros594."
+  },
+  {
+    "numero": 595,
+    "palabra": "peregrino",
+    "contexto": "Vos con valor peregrino",
+    "texto_completo": "Vos con valor peregrino595"
+  },
+  {
+    "numero": 596,
+    "palabra": "divino",
+    "contexto": "y vos un Jerjes divino",
+    "texto_completo": "y vos un Jerjes divino596."
+  },
+  {
+    "numero": 597,
+    "palabra": "despacho",
+    "contexto": "con el despacho",
+    "texto_completo": "con el despacho597 ha venido"
+  },
+  {
+    "numero": 598,
+    "palabra": "comendadores",
+    "contexto": "a matar comendadores",
+    "texto_completo": "a matar comendadores598."
+  },
+  {
+    "numero": 599,
+    "palabra": "suerte",
+    "contexto": "de la suerte",
+    "texto_completo": "de la suerte599 que has mandado,"
+  },
+  {
+    "numero": 600,
+    "palabra": "asistí",
+    "contexto": "y diligencia asistí",
+    "texto_completo": "y diligencia asistí600."
+  },
+  {
+    "numero": 601,
+    "palabra": "pidiendo",
+    "contexto": "en pidiendo",
+    "texto_completo": "en pidiendo601 quién lo ha hecho,"
+  },
+  {
+    "numero": 602,
+    "palabra": "inquirido",
+    "contexto": "posible haberlo inquirido",
+    "texto_completo": "posible haberlo inquirido602"
+  },
+  {
+    "numero": 603,
+    "palabra": "informarte",
+    "contexto": "dellos podrás informarte",
+    "texto_completo": "dellos podrás informarte603."
+  },
+  {
+    "numero": 604,
+    "palabra": "di",
+    "contexto": "entren, pues vienen, les di",
+    "texto_completo": "Que entren, pues vienen, les di604."
+  },
+  {
+    "numero": 605,
+    "palabra": "extraño",
+    "contexto": "siendo de piedad extraño",
+    "texto_completo": "siendo de piedad extraño605."
+  },
+  {
+    "numero": 606,
+    "palabra": "pasar",
+    "contexto": "lo que pudiera pasar",
+    "texto_completo": "lo que pudiera pasar606."
+  },
+  {
+    "numero": 607,
+    "palabra": "Nerón",
+    "contexto": "aquel perverso Nerón",
+    "texto_completo": "aquel perverso Nerón607"
+  },
+  {
+    "numero": 608,
+    "palabra": "reverso",
+    "contexto": "que el reverso",
+    "texto_completo": "que el reverso608 me ha dejado"
+  },
+  {
+    "numero": 609,
+    "palabra": "salmón",
+    "contexto": "como rueda de salmón",
+    "texto_completo": "como rueda de salmón609."
+  },
+  {
+    "numero": 610,
+    "palabra": "atabales",
+    "contexto": "Tocaron mis atabales",
+    "texto_completo": "Tocaron mis atabales610"
+  },
+  {
+    "numero": 611,
+    "palabra": "prolijo",
+    "contexto": "Gasté en este mal prolijo",
+    "texto_completo": "Gasté en este mal prolijo611,"
+  },
+  {
+    "numero": 612,
+    "palabra": "cuero",
+    "contexto": "porque el cuero",
+    "texto_completo": "porque el cuero612 se me curta,"
+  },
+  {
+    "numero": 613,
+    "palabra": "murta",
+    "contexto": "polvos de arrayán y murta",
+    "texto_completo": "polvos de arrayán y murta613"
+  },
+  {
+    "numero": 614,
+    "palabra": "cortijo",
+    "contexto": "más que vale mi cortijo",
+    "texto_completo": "más que vale mi cortijo614."
+  },
+  {
+    "numero": 615,
+    "palabra": "abono",
+    "contexto": "por abono",
+    "texto_completo": "por abono615 la inocencia."
+  },
+  {
+    "numero": 616,
+    "palabra": "perdonarse",
+    "contexto": "por fuerza ha de perdonarse",
+    "texto_completo": "por fuerza ha de perdonarse616."
+  },
+  {
+    "numero": 617,
+    "palabra": "herede",
+    "contexto": "Comendador que la herede",
+    "texto_completo": "Comendador que la herede617."
+  },
+  {
+    "numero": 618,
+    "palabra": "senado",
+    "contexto": "Y aquí, discreto senado",
+    "texto_completo": "Y aquí, discreto senado618,"
+  },
+  {
+    "numero": 619,
+    "palabra": "fin",
+    "contexto": "Fuenteovejuna da fin",
+    "texto_completo": "Fuenteovejuna da fin619."
+  }
+]

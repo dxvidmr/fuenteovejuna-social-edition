@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+  font-family: 'Nunito Sans', 'Open Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Layout principal con dos columnas */
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Columna de texto */
+.text-column {
+  flex: 1;
+  padding: 50px;
+  overflow-y: auto;
+  max-height: 100vh;
+  font-family: 'Google Sans Code', 'Oxygen Mono', 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+/* Columna de notas */
+.notes-column {
+  position: relative;
+  width: 25%;
+  min-width: 30%;
+  max-width: 50%;
+  border-left: 2px solid #ccc;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra de botones/pestañas */
+.button-bar {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #ccc;
+  background-color: #e9ecef;
+  flex-shrink: 0;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6c757d;
+  transition: all 0.2s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-button:hover {
+  background-color: #dee2e6;
+  color: #495057;
+}
+
+.tab-button.active {
+  background-color: #f9f9f9;
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+/* Contenido de pestañas */
+.tab-content {
+  display: none;
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Panel de opciones */
+.opciones-panel h4,
+.info-panel h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.option-group {
+  margin-bottom: 1.5rem;
+}
+
+.option-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+
+/* Controles de tamaño de fuente */
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.font-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.font-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#font-size-display {
+  font-weight: 500;
+  color: #495057;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Placeholder para notas */
+.placeholder-text {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Panel de notas sin el h4 ya que está en la pestaña */
+#panelNotas {
+  height: 100%;
+}
+
+.footer-link {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+sup {
+  font-size: 70%;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+tei-div {
+  display: block;
+  margin-top: .5em;
+}
+tei-p {
+  display: block;
+  margin-top: .5em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+tei-hi[rend="italic"] {
+  font-style: italic;
+}
+
+tei-standoff {
+  display: none;
+}
+.notes {
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+tei-head[type="comedia-head"] {
+  font-size: 300%;
+}
+tei-head[type="castList-head"] {
+  font-size: 150%;
+}
+tei-head[type="act-head"] {
+  font-size: 200%;
+}
+tei-list {
+  display: block;
+}
+tei-item {
+  display: block;
+  margin-left: 1em;
+}
+
+tei-item::before {
+  content: "→";
+  margin-right: 5px; /* Ajusta el espacio entre el guion y el texto */
+}
+
+
+tei-text[type="literary-text"] {
+  text-align: center;
+}
+
+tei-castItem {
+  display: list-item;
+}
+tei-castList {
+  display: block;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+tei-lg {
+  display: block;
+}
+
+tei-l {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+tei-l[part="Y"][corresp="2-2"][facs="t-1"] {
+  text-indent: 200px;
+}
+
+/* Versos partidos - la indentación se calculará con JS */
+tei-l[part="F"] {
+  display: block;
+  margin-left: 170px; /* Base, se ajustará con JS */
+}
+
+tei-sp {
+  display: flex;
+  margin-bottom: 1em;
+  text-align: left;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+tei-speaker {
+  font-weight: 500;
+  width: 150px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+/* Los versos dentro de tei-sp necesitan ser flex items */
+tei-sp > tei-l {
+  flex-basis: calc(100% - 170px);
+}
+
+/* Los versos que no son el primero necesitan margin-left para alinearse */
+tei-sp > tei-l:not(:first-of-type) {
+  margin-left: 170px;
+}
+
+tei-stage {
+  display: block;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 170px;
+}
+
+tei-div[type="footnotes"] {
+  display: none;
+}
+
+tei-div[type="editor"] {
+  background-color: #f2f2f2; 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  margin: 20px; 
+}
+
+tei-div[type="colophon"] {
+  background-color: #f2f2f2; 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  margin: 20px; 
+}
+
+tei-quote {
+  font-style: italic;
+  text-align: center;
+}
+
+tei-milestone[unit="stanza"]::after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted #999;
+  width: 75%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+tei-milestone[unit="stanza"]::after {
+  display: none;
+}
+
+tei-milestone[unit="stanza"].show-line::after {
+  display: block; 
+}
+
+.container {
+  position: relative;
+}
+
+/* Handle para redimensionar */
+#resize-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  cursor: ew-resize;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+#resize-handle:hover {
+  background-color: #007bff;
+}
+
+#resize-handle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+#resize-handle:hover::after {
+  background-color: #fff;
+}
+
+/* Estilo del contenido de las notas */
+#noteContent {
+  font-size: 90%;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+/* Estilos para el título del panel de notas */
+#panelNotas h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el botón de alternar estrofas */
+.fixed-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.fixed-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para targets de notas */
+.note-wrapper.note-target {
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.note-wrapper.note-target:hover,
+.note-wrapper.note-active {
+  text-decoration: none;
+  background: linear-gradient(transparent 5%, rgba(0, 123, 255, 0.15) 5%, rgba(0, 123, 255, 0.15) 80%);
+  border-bottom: 2px solid #007bff;
+}
+
+/* Cuando las notas están ocultas */
+.notes-hidden .note-wrapper.note-target {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* En hover siguen funcionando aunque estén ocultas */
+.notes-hidden .note-wrapper.note-target:hover,
+.notes-hidden .note-wrapper.note-active {
+  text-decoration: none;
+  background: linear-gradient(transparent 5%, rgba(0, 123, 255, 0.15) 5%, rgba(0, 123, 255, 0.15) 80%);
+  border-bottom: 2px solid #007bff;
+}
+
+/* Mantener compatibilidad con elementos sin wrapper */
+.note-target:not(.note-wrapper),
+tei-l.note-target,
+tei-seg.note-target {
+  border-bottom: 2px solid #999;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-image: linear-gradient(transparent 80%, #999 80%, #999 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: fit-content;
+  display: table;
+}
+
+.note-target:not(.note-wrapper):hover,
+.note-target:not(.note-wrapper).note-active,
+tei-l.note-target:hover,
+tei-seg.note-target:hover,
+tei-l.note-active,
+tei-seg.note-active {
+  background-image: linear-gradient(transparent 65%, rgba(0, 123, 255, 0.25) 65%, rgba(0, 123, 255, 0.25) 100%);
+  border-bottom-color: #007bff;
+}
+
+/* Estilos mejorados para el panel de notas */
+.note-display {
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.note-display h5 {
+  margin: 0 0 0.5rem 0;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.note-display p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.note-display .note-id {
+  display: block;
+  margin-top: 0.75rem;
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-style: italic;
+}
