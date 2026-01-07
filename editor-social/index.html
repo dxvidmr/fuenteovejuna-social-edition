@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor Social - Fuenteovejuna</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/editor-social.css">
+  
+  <!-- Librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  
+  <!-- Navegación -->
+  <nav style="padding: 20px; background: #f5f5f5; border-bottom: 2px solid #ddd;">
+    <a href="../index.html" style="margin-right: 20px;">← Inicio</a>
+    <a href="../edicion/index.html">Ver edición completa</a>
+  </nav>
+  
+  <!-- Contenido principal -->
+  <div class="editor-social-container">
+    
+    <!-- Header del editor social -->
+    <div class="editor-social-header">
+      <h1>Editor Social de Fuenteovejuna</h1>
+      <p>Lee los pasajes y evalúa si las notas te resultan útiles</p>
+      <div class="editor-social-progreso">
+        Pasaje <span id="pasaje-actual">1</span> de <span id="pasajes-totales">-</span>
+      </div>
+    </div>
+    
+    <!-- Pasaje actual -->
+    <div class="pasaje-container">
+      <div id="pasaje-content">
+        <div class="loading">Cargando pasaje...</div>
+      </div>
+    </div>
+    
+    <!-- Notas del pasaje -->
+    <div class="notas-container">
+      <h2 style="margin-bottom: 20px; color: #333;">Notas de este pasaje</h2>
+      <div id="notas-list">
+        <!-- Se llenará dinámicamente con JS -->
+      </div>
+    </div>
+    
+    <!-- Controles de navegación -->
+    <div class="editor-social-controles">
+      <button id="btn-siguiente" class="btn-siguiente">Siguiente pasaje →</button>
+      <button id="btn-saltar" class="btn-saltar">Saltar sin evaluar</button>
+    </div>
+    
+  </div>
+  
+  <!-- Modal de modo (se carga dinámicamente) -->
+  <div id="modal-container"></div>
+  
+  <!-- Scripts (orden importante) -->
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/supabase-client.js"></script>
+  <script src="../assets/js/utils.js"></script>
+  <script src="../assets/js/user-manager.js"></script>
+  <script src="../assets/js/modal-modo.js"></script>
+  <script src="../assets/js/pasajes.js"></script>
+  <script src="../assets/js/notas.js"></script>
+  <script src="../assets/js/editor-social.js"></script>
+  
+</body>
+</html>

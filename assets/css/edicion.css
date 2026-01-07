@@ -1,0 +1,551 @@
+/* ============================================
+   LAYOUT PRINCIPAL (2 COLUMNAS)
+   ============================================ */
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Columna de texto */
+.text-column {
+  flex: 1;
+  padding: 50px;
+  overflow-y: auto;
+  max-height: 100vh;
+  font-family: 'Google Sans Code', 'Oxygen Mono', 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+/* Columna de notas */
+.notes-column {
+  position: relative;
+  width: 25%;
+  min-width: 30%;
+  max-width: 50%;
+  border-left: 2px solid #ccc;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   PANEL DE OPCIONES
+   ============================================ */
+
+.opciones-panel h4,
+.info-panel h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.option-group {
+  margin-bottom: 1.5rem;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Controles de tamaño de fuente */
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.font-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.font-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#font-size-display {
+  font-weight: 500;
+  color: #495057;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* ============================================
+   PANEL DE NOTAS
+   ============================================ */
+
+.placeholder-text {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#panelNotas {
+  height: 100%;
+}
+
+#noteContent {
+  font-size: 90%;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+#panelNotas h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Estilos mejorados para el panel de notas */
+.note-display {
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.note-display h5 {
+  margin: 0 0 0.5rem 0;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.note-display p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.note-display .note-id {
+  display: block;
+  margin-top: 0.75rem;
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.note-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* ============================================
+   RESIZE HANDLE
+   ============================================ */
+
+.container {
+  position: relative;
+}
+
+#resize-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  cursor: ew-resize;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+#resize-handle:hover {
+  background-color: #007bff;
+}
+
+#resize-handle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+#resize-handle:hover::after {
+  background-color: #fff;
+}
+
+/* ============================================
+   ESTILOS TEI (elementos renderizados)
+   ============================================ */
+
+tei-div {
+  display: block;
+  margin-top: .5em;
+}
+
+tei-p {
+  display: block;
+  margin-top: .5em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+tei-hi[rend="italic"] {
+  font-style: italic;
+}
+
+tei-standoff {
+  display: none;
+}
+
+.notes {
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+tei-head[type="comedia-head"] {
+  font-size: 300%;
+}
+
+tei-head[type="castList-head"] {
+  font-size: 150%;
+}
+
+tei-head[type="act-head"] {
+  font-size: 200%;
+}
+
+tei-list {
+  display: block;
+}
+
+tei-item {
+  display: block;
+  margin-left: 1em;
+}
+
+tei-item::before {
+  content: "→";
+  margin-right: 5px;
+}
+
+tei-text[type="literary-text"] {
+  text-align: center;
+}
+
+tei-castItem {
+  display: list-item;
+}
+
+tei-castList {
+  display: block;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+tei-lg {
+  display: block;
+}
+
+tei-l {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+tei-l[part="Y"][corresp="2-2"][facs="t-1"] {
+  text-indent: 200px;
+}
+
+/* Versos partidos - la indentación se calculará con JS */
+tei-l[part="F"] {
+  display: block;
+  margin-left: 170px;
+}
+
+tei-sp {
+  display: flex;
+  margin-bottom: 1em;
+  text-align: left;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+tei-speaker {
+  font-weight: 500;
+  width: 150px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+tei-sp > tei-l {
+  flex-basis: calc(100% - 170px);
+}
+
+tei-sp > tei-l:not(:first-of-type) {
+  margin-left: 170px;
+}
+
+tei-stage {
+  display: block;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 170px;
+}
+
+tei-div[type="footnotes"] {
+  display: none;
+}
+
+tei-div[type="editor"] {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
+}
+
+tei-div[type="colophon"] {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
+}
+
+tei-quote {
+  font-style: italic;
+  text-align: center;
+}
+
+tei-milestone[unit="stanza"]::after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted #999;
+  width: 75%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+tei-milestone[unit="stanza"].show-line::after {
+  display: block;
+}
+
+/* ============================================
+   NOTAS (targets y highlights)
+   ============================================ */
+
+/* Estilo base para targets de notas con wrapper */
+.note-wrapper.note-target {
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.note-wrapper.note-target:hover,
+.note-wrapper.note-active {
+  text-decoration: none;
+  background: linear-gradient(transparent 5%, rgba(0, 123, 255, 0.15) 5%, rgba(0, 123, 255, 0.15) 80%);
+  border-bottom: 2px solid #007bff;
+}
+
+/* Cuando las notas están ocultas */
+.notes-hidden .note-wrapper.note-target {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* En hover siguen funcionando aunque estén ocultas */
+.notes-hidden .note-wrapper.note-target:hover,
+.notes-hidden .note-wrapper.note-active {
+  text-decoration: none;
+  background: linear-gradient(transparent 5%, rgba(0, 123, 255, 0.15) 5%, rgba(0, 123, 255, 0.15) 80%);
+  border-bottom: 2px solid #007bff;
+}
+
+/* Mantener compatibilidad con elementos sin wrapper (legacy) */
+.note-target:not(.note-wrapper),
+tei-l.note-target,
+tei-seg.note-target {
+  border-bottom: 2px solid #999;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-image: linear-gradient(transparent 80%, #999 80%, #999 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: fit-content;
+  display: table;
+}
+
+.note-target:not(.note-wrapper):hover,
+.note-target:not(.note-wrapper).note-active,
+tei-l.note-target:hover,
+tei-seg.note-target:hover,
+tei-l.note-active,
+tei-seg.note-active {
+  background-image: linear-gradient(transparent 65%, rgba(0, 123, 255, 0.25) 65%, rgba(0, 123, 255, 0.25) 100%);
+  border-bottom-color: #007bff;
+}
+
+/* ============================================
+   EVALUACIÓN DE NOTAS
+   ============================================ */
+
+.nota-evaluacion {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.evaluacion-header {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.evaluacion-botones {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-evaluar {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-evaluar:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.btn-util:hover {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.btn-mejorable:hover {
+  background: #fff3e0;
+  border-color: #ff9800;
+}
+
+.evaluacion-comentario {
+  margin-top: 12px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.evaluacion-comentario textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 13px;
+  resize: vertical;
+  margin-bottom: 8px;
+}
+
+.evaluacion-comentario textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn-enviar-comentario,
+.btn-cancelar-comentario {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.btn-enviar-comentario {
+  background: #007bff;
+  color: white;
+}
+
+.btn-enviar-comentario:hover {
+  background: #0056b3;
+}
+
+.btn-cancelar-comentario {
+  background: #eee;
+  color: #333;
+}
+
+.btn-cancelar-comentario:hover {
+  background: #ddd;
+}
+
+.evaluacion-feedback {
+  color: #4caf50;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  text-align: center;
+  background: #e8f5e9;
+  border-radius: 4px;
+}
+
+/* ============================================
+   BOTÓN FIJO (toggles)
+   ============================================ */
+
+.fixed-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.fixed-button:hover {
+  background-color: #0056b3;
+}

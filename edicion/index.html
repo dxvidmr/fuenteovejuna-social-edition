@@ -4,29 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuenteovejuna - Edición Digital</title>
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/components.css">
     <link rel="stylesheet" href="../assets/css/edicion.css">
-    
-    <!-- Librería Supabase (CDN) - DEBE IR ANTES DE TUS SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-    
-    <!-- Navegación superior -->
-    <nav style="padding: 20px; background: #f5f5f5; border-bottom: 2px solid #ddd;">
-        <a href="../index.html" style="margin-right: 20px;">← Inicio</a>
-        <a href="../editor-social/index.html">Editor Social</a>
-    </nav>
-    
-    <!-- Layout principal -->
     <div class="main-layout">
         <!-- Columna principal para el texto TEI -->
         <div id="TEI" class="text-column"></div>
 
-        <!-- Columna para las opciones y notas -->
+        <!-- Columna para las opciones -->
         <div id="col-opciones" class="notes-column">
             <div id="resize-handle"></div>
             
@@ -67,6 +54,7 @@
                             </label>
                         </label>
                     </div>
+
                     
                     <h4>Tamaño del texto</h4>
                     <div class="option-group">
@@ -82,71 +70,42 @@
             <div class="tab-content" id="tab-info">
                 <div class="info-panel">
                     <h4>Sobre la edición</h4>
-                    <p style="line-height: 1.6; color: #555;">
-                        Esta es una edición digital divulgativa de <em>Fuenteovejuna</em> 
-                        con notas explicativas que puedes evaluar para ayudar a mejorarlas.
-                    </p>
-                    <p style="margin-top: 16px; line-height: 1.6; color: #555;">
-                        Haz clic en las notas del panel y evalúalas con 👍 (útil) o 👎 (mejorable).
-                    </p>
+                    <p></p>
+                    <!-- Aquí irá el contenido "Sobre la edición" -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal container (necesario para modal-modo.js) -->
-    <div id="modal-container"></div>
+    <!--<div class="footer-link"><a href="../assets/xml/fuenteovejuna.xml" target="_new">Ver TEI original</a></div>-->
 
-    <!-- SCRIPTS EN ORDEN CORRECTO -->
-    
-    <!-- 1. Configuración (credenciales Supabase) -->
-    <script src="../assets/js/config.js"></script>
-    
-    <!-- 2. Cliente Supabase (usa config.js) -->
-    <script src="../assets/js/supabase-client.js"></script>
-    
-    <!-- 3. Utilidades generales -->
-    <script src="../assets/js/utils.js"></script>
-    
-    <!-- 4. Gestión de usuario -->
-    <script src="../assets/js/user-manager.js"></script>
-    
-    <!-- 5. Modal de modo de participación -->
-    <script src="../assets/js/modal-modo.js"></script>
-    
-    <!-- 6. Gestión de notas (carga desde Supabase) -->
-    <script src="../assets/js/notas.js"></script>
-    
-    <!-- 7. CETEIcean (tu versión custom) -->
     <script src="../assets/js/CETEI.js"></script>
-    
-    <!-- 8. Script inline: Cargar XMLs -->
     <script>
-        // Variable global para almacenar las notas XML
+        // Variable global para almacenar las notas
         window.notasXML = null;
 
-        // Cargar el archivo de notas externas
+        // Cargar el archivo de notas
         fetch('../assets/xml/notas.xml')
             .then(response => response.text())
             .then(str => {
                 const parser = new DOMParser();
                 window.notasXML = parser.parseFromString(str, "application/xml");
-                console.log('✓ Notas XML cargadas:', window.notasXML);
+                console.log('Notas cargadas:', window.notasXML);
             })
-            .catch(error => console.error('Error cargando notas.xml:', error));
+            .catch(error => console.error('Error cargando notas:', error));
 
-        // Cargar el documento TEI principal
+        // Cargar el documento TEI
         var CETEIcean = new CETEI();
         CETEIcean.getHTML5("../assets/xml/fuenteovejuna.xml", function(data) {
             document.getElementById("TEI").appendChild(data);
-            console.log('✓ TEI principal cargado');
         });
     </script>
-    
-    <!-- 9. Lógica de tu edición (procesa notas, eventos, etc.) -->
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/supabase-client.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/user-manager.js"></script>
+    <script src="../assets/js/modal-modo.js"></script>
     <script src="../assets/js/edicion.js"></script>
-    
-    <!-- 10. Sistema de evaluación (añade botones 👍👎) -->
     <script src="../assets/js/edicion-evaluacion.js"></script>
 
 </body>

@@ -1,0 +1,149 @@
+/* ============================================
+   EDITOR SOCIAL (JUEGO DE EVALUACIÓN)
+   ============================================ */
+
+.editor-social-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.editor-social-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.editor-social-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.editor-social-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.editor-social-progreso {
+  font-size: 1rem;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Pasaje */
+.pasaje-container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+/* Notas del pasaje */
+.notas-container {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.nota {
+  background: white;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 4px solid #007bff;
+}
+
+.nota-tipo {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.nota-texto {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.nota-acciones {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-util,
+.btn-mejorable {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-util:hover {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.btn-mejorable:hover {
+  background: #fff3e0;
+  border-color: #ff9800;
+}
+
+.btn-util.votado {
+  background: #e8f5e9;
+  color: #4caf50;
+  border-color: #4caf50;
+  cursor: default;
+}
+
+.btn-mejorable.votado {
+  background: #fff3e0;
+  color: #ff9800;
+  border-color: #ff9800;
+  cursor: default;
+}
+
+/* Controles del juego */
+.editor-social-controles {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-siguiente {
+  background: #007bff;
+  color: white;
+  padding: 12px 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-siguiente:hover {
+  background: #0056b3;
+}
+
+.btn-saltar {
+  background: transparent;
+  color: #666;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 16px;
+  transition: all 0.2s;
+}
+
+.btn-saltar:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}

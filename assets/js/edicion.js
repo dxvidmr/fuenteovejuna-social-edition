@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (teiLoaded && notasLoaded && window.notasXML) {
             console.log('Todo cargado, procesando notas...');
             processNotes();
+            // ← NOTA: Ya NO ponemos nada aquí, todo va dentro de processNotes()
         }
     }
 
@@ -334,7 +335,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <div class="note-display">
                                     <h5>Nota ${noteNumber}</h5>
                                     <p>${noteToShow.textContent.trim()}</p>
-                                    <small class="note-id">ID: ${noteXmlId}</small>
+                                    <div class="note-footer">
+                                        <small class="note-id">ID: ${noteXmlId}</small>
+                                    </div>
                                 </div>
                             `;
                         } else {
@@ -346,8 +349,14 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
+        // ← AQUÍ VA TODO AL FINAL DE processNotes():
         console.log('Notas procesadas correctamente');
-    }
+        
+        // Inicializar sistema de evaluación
+        if (window.edicionEvaluacion) {
+            window.edicionEvaluacion.init();
+        }
+    } // ← Fin de processNotes()
     
     // Función para alinear versos partidos
     function alignSplitVerses() {
@@ -430,10 +439,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-
-
-
-
-
-
-
