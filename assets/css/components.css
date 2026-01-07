@@ -45,6 +45,50 @@
   margin-bottom: 24px;
 }
 
+/* ============================================
+   NAVEGACIÓN SUPERIOR SIMPLE
+   ============================================ */
+.top-nav {
+  padding: 12px 20px;
+  background: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.15s, color 0.15s;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+  background: rgba(0,0,0,0.04);
+  color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.08);
+}
+
+.top-nav .nav-back {
+  margin-right: auto;
+}
+
+@media (max-width: 640px) {
+  .top-nav {
+    justify-content: center;
+  }
+  .top-nav .nav-back {
+    margin-right: 0;
+  }
+}
+
+
 /* Opciones de modo */
 .modo-opciones {
   display: grid;

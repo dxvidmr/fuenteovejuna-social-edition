@@ -153,6 +153,37 @@ main {
   line-height: 1.6;
 }
 
+/* Estilos para la página de inicio (hero) */
+.home-hero {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-hero .subtitle {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 1.15rem;
+}
+
+.home-hero .buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.home-hero .description {
+  max-width: 1000px;
+  margin-top: 40px;
+  text-align: left;
+}
+
 .acciones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
