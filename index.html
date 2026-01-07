@@ -3,151 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuenteovejuna - Edición Digital</title>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/edicion.css">
-    
-    <!-- Librería Supabase (CDN) - DEBE IR ANTES DE TUS SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Fuenteovejuna - Edición Social</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
 </head>
 <body>
-    
-    <!-- Navegación superior -->
-    <nav style="padding: 20px; background: #f5f5f5; border-bottom: 2px solid #ddd;">
-        <a href="../index.html" style="margin-right: 20px;">← Inicio</a>
-        <a href="../editor-social/index.html">Editor Social</a>
-    </nav>
-    
-    <!-- Layout principal -->
-    <div class="main-layout">
-        <!-- Columna principal para el texto TEI -->
-        <div id="TEI" class="text-column"></div>
+    <div class="container">
+        <h1>Fuenteovejuna</h1>
+        <p class="subtitle">Edición digital colaborativa de Lope de Vega</p>
+        
+        <div class="buttons">
+            <a href="edicion/index.html" class="btn btn-primary">
+                📖 Leer la edición
+            </a>
+            <a href="editor-social/index.html" class="btn btn-secondary">
+                ✍️ Editor social
+            </a>
+        </div>
 
-        <!-- Columna para las opciones y notas -->
-        <div id="col-opciones" class="notes-column">
-            <div id="resize-handle"></div>
-            
-            <!-- Barra de botones -->
-            <div class="button-bar">
-                <button class="tab-button active" data-tab="notas">Notas</button>
-                <button class="tab-button" data-tab="opciones">Opciones</button>
-                <button class="tab-button" data-tab="info">Acerca de</button>
-            </div>
-            
-            <!-- Contenido de las pestañas -->
-            <div class="tab-content active" id="tab-notas">
-                <div id="panelNotas">
-                    <div id="noteContent">
-                        <p class="placeholder-text">Haz clic en el texto subrayado para ver las notas.</p>
-                    </div>
+        <div class="description">
+            <h2>Sobre este proyecto</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>📚 Edición crítica</h3>
+                    <p>Texto completo de Fuenteovejuna con notas académicas y análisis detallado.</p>
                 </div>
-            </div>
-            
-            <div class="tab-content" id="tab-opciones">
-                <div class="opciones-panel">
-                    <h4>Lectura</h4>
-                    
-                    <div class="option-group">
-                        <label class="option-item">
-                            <span>Mostrar marcas de notas</span>
-                            <label class="toggle-switch">
-                                <input type="checkbox" id="toggle-notes" checked>
-                                <span class="slider"></span>
-                            </label>
-                        </label>
-                        
-                        <label class="option-item">
-                            <span>Mostrar separación de estrofas</span>
-                            <label class="toggle-switch">
-                                <input type="checkbox" id="toggle-stanzas">
-                                <span class="slider"></span>
-                            </label>
-                        </label>
-                    </div>
-                    
-                    <h4>Tamaño del texto</h4>
-                    <div class="option-group">
-                        <div class="font-size-controls">
-                            <button id="decrease-font" class="font-btn">A-</button>
-                            <span id="font-size-display">100%</span>
-                            <button id="increase-font" class="font-btn">A+</button>
-                        </div>
-                    </div>
+                <div class="feature">
+                    <h3>👥 Colaborativa</h3>
+                    <p>Participa evaluando notas y ayudando a mejorar la edición.</p>
                 </div>
-            </div>
-            
-            <div class="tab-content" id="tab-info">
-                <div class="info-panel">
-                    <h4>Sobre la edición</h4>
-                    <p style="line-height: 1.6; color: #555;">
-                        Esta es una edición digital divulgativa de <em>Fuenteovejuna</em> 
-                        con notas explicativas que puedes evaluar para ayudar a mejorarlas.
-                    </p>
-                    <p style="margin-top: 16px; line-height: 1.6; color: #555;">
-                        Haz clic en las notas del panel y evalúalas con 👍 (útil) o 👎 (mejorable).
-                    </p>
+                <div class="feature">
+                    <h3>🔓 Acceso libre</h3>
+                    <p>Recursos educativos abiertos para estudiantes e investigadores.</p>
+                </div>
+                <div class="feature">
+                    <h3>💡 Tecnología TEI</h3>
+                    <p>Estándares internacionales de codificación de textos digitales.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Modal container (necesario para modal-modo.js) -->
-    <div id="modal-container"></div>
-
-    <!-- SCRIPTS EN ORDEN CORRECTO -->
-    
-    <!-- 1. Configuración (credenciales Supabase) -->
-    <script src="../assets/js/config.js"></script>
-    
-    <!-- 2. Cliente Supabase (usa config.js) -->
-    <script src="../assets/js/supabase-client.js"></script>
-    
-    <!-- 3. Utilidades generales -->
-    <script src="../assets/js/utils.js"></script>
-    
-    <!-- 4. Gestión de usuario -->
-    <script src="../assets/js/user-manager.js"></script>
-    
-    <!-- 5. Modal de modo de participación -->
-    <script src="../assets/js/modal-modo.js"></script>
-    
-    <!-- 6. Gestión de notas (carga desde Supabase) -->
-    <script src="../assets/js/notas.js"></script>
-    
-    <!-- 7. CETEIcean (tu versión custom) -->
-    <script src="../assets/js/CETEI.js"></script>
-    
-    <!-- 8. Script inline: Cargar XMLs -->
-    <script>
-        // Variable global para almacenar las notas XML
-        window.notasXML = null;
-
-        // Cargar el archivo de notas externas
-        fetch('../assets/xml/notas.xml')
-            .then(response => response.text())
-            .then(str => {
-                const parser = new DOMParser();
-                window.notasXML = parser.parseFromString(str, "application/xml");
-                console.log('✓ Notas XML cargadas:', window.notasXML);
-            })
-            .catch(error => console.error('Error cargando notas.xml:', error));
-
-        // Cargar el documento TEI principal
-        var CETEIcean = new CETEI();
-        CETEIcean.getHTML5("../assets/xml/fuenteovejuna.xml", function(data) {
-            document.getElementById("TEI").appendChild(data);
-            console.log('✓ TEI principal cargado');
-        });
-    </script>
-    
-    <!-- 9. Lógica de tu edición (procesa notas, eventos, etc.) -->
-    <script src="../assets/js/edicion.js"></script>
-    
-    <!-- 10. Sistema de evaluación (añade botones 👍👎) -->
-    <script src="../assets/js/edicion-evaluacion.js"></script>
-
 </body>
 </html>
