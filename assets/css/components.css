@@ -79,6 +79,99 @@
   margin-right: auto;
 }
 
+.btn-modo-usuario {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.btn-modo-usuario:hover {
+  background: #0056b3;
+}
+
+/* Panel de información del usuario */
+.info-usuario-panel {
+  padding: 20px;
+}
+
+.info-usuario-panel h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.info-modo {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.info-modo p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.info-stats {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e7f3ff;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+}
+
+.info-stats p {
+  margin: 8px 0;
+}
+
+.info-session-id {
+  opacity: 0.7;
+  font-family: monospace;
+}
+
+.info-acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-cambiar-modo {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-cambiar-modo:hover {
+  background-color: #0056b3;
+}
+
+.btn-cerrar-info {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-cerrar-info:hover {
+  background-color: #5a6268;
+}
+
 @media (max-width: 640px) {
   .top-nav {
     justify-content: center;
@@ -145,6 +238,62 @@
 }
 
 .btn-seleccionar:hover {
+  background: #0056b3;
+}
+
+/* Opciones de colaborador (registro/login) */
+.colaborador-opciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.opcion-colaborador {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.opcion-colaborador:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.opcion-icono {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.opcion-colaborador h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.opcion-colaborador p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 16px;
+  min-height: 36px;
+}
+
+.btn-opcion-colaborador {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-opcion-colaborador:hover {
   background: #0056b3;
 }
 

@@ -44,7 +44,7 @@ class ModalModo {
                 <h3>Colaborar en la edición</h3>
               </div>
               <p>Email + nombre opcional. Contribuciones reconocidas.</p>
-              <button class="btn-seleccionar" data-modo="colaborador">Registrarme como colaborador/a</button>
+              <button class="btn-seleccionar" data-modo="colaborador">Continuar como colaborador/a</button>
             </div>
             
           </div>
@@ -82,14 +82,34 @@ class ModalModo {
             </form>
           </div>
           
-          <!-- Formulario modo colaborador (oculto inicialmente) -->
-          <div id="form-colaborador" class="modo-form" style="display:none;">
+          <!-- Selección: Registro o Login colaborador -->
+          <div id="colaborador-opciones" class="modo-form" style="display:none;">
+            <h3>Colaborador/a</h3>
+            <div class="colaborador-opciones-grid">
+              <div class="opcion-colaborador" data-tipo="registro">
+                <span class="opcion-icono">✨</span>
+                <h4>Registrarme</h4>
+                <p>Nuevo colaborador. Completa tus datos.</p>
+                <button class="btn-opcion-colaborador" data-tipo="registro">Registrarme</button>
+              </div>
+              <div class="opcion-colaborador" data-tipo="login">
+                <span class="opcion-icono">🔑</span>
+                <h4>Iniciar sesión</h4>
+                <p>Ya estoy registrado. Solo mi email.</p>
+                <button class="btn-opcion-colaborador" data-tipo="login">Iniciar sesión</button>
+              </div>
+            </div>
+            <button type="button" class="btn-volver">← Volver</button>
+          </div>
+
+          <!-- Formulario registro colaborador -->
+          <div id="form-colaborador-registro" class="modo-form" style="display:none;">
             <h3>Registro de colaborador/a</h3>
-            <form id="form-colaborador-datos">
+            <form id="form-colaborador-registro-datos">
               <label>
                 Email:
                 <input type="email" name="email" required placeholder="tu@email.com">
-                <small>Se guardará hasheado (SHA-256) para privacidad</small>
+                <small>Se guardará hasheado (SHA-256) para privacidad. No se almacenará el email real.</small>
               </label>
               
               <label>
@@ -125,6 +145,21 @@ class ModalModo {
               <button type="button" class="btn-volver">← Volver</button>
             </form>
           </div>
+
+          <!-- Formulario login colaborador -->
+          <div id="form-colaborador-login" class="modo-form" style="display:none;">
+            <h3>Iniciar sesión como colaborador/a</h3>
+            <form id="form-colaborador-login-datos">
+              <label>
+                Email:
+                <input type="email" name="email" required placeholder="tu@email.com">
+                <small>Introduce el email con el que te registraste.</small>
+              </label>
+              
+              <button type="submit" class="btn-enviar">Iniciar sesión</button>
+              <button type="button" class="btn-volver">← Volver</button>
+            </form>
+          </div>
           
         </div>
       </div>
@@ -141,7 +176,9 @@ class ModalModo {
     this.modal = document.getElementById('modal-modo');
     this.opciones = document.querySelector('.modo-opciones');
     this.formLector = document.getElementById('form-lector');
-    this.formColaborador = document.getElementById('form-colaborador');
+    this.colaboradorOpciones = document.getElementById('colaborador-opciones');
+    this.formColaboradorRegistro = document.getElementById('form-colaborador-registro');
+    this.formColaboradorLogin = document.getElementById('form-colaborador-login');
     
     this.attachEventListeners();
   }
@@ -161,10 +198,24 @@ class ModalModo {
       this.procesarFormLector(e.target);
     });
     
-    // Form colaborador
-    document.getElementById('form-colaborador-datos').addEventListener('submit', (e) => {
+    // Opciones colaborador (registro/login)
+    document.querySelectorAll('.btn-opcion-colaborador').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const tipo = e.target.dataset.tipo;
+        this.mostrarFormColaborador(tipo);
+      });
+    });
+
+    // Form colaborador registro
+    document.getElementById('form-colaborador-registro-datos').addEventListener('submit', (e) => {
       e.preventDefault();
-      this.procesarFormColaborador(e.target);
+      this.procesarFormColaboradorRegistro(e.target);
+    });
+
+    // Form colaborador login
+    document.getElementById('form-colaborador-login-datos').addEventListener('submit', (e) => {
+      e.preventDefault();
+      this.procesarFormColaboradorLogin(e.target);
     });
     
     // Botones volver
@@ -191,9 +242,9 @@ class ModalModo {
       this.formLector.style.display = 'block';
       
     } else if (modo === 'colaborador') {
-      // Mostrar formulario de colaborador
+      // Mostrar opciones de colaborador (registro/login)
       this.opciones.style.display = 'none';
-      this.formColaborador.style.display = 'block';
+      this.colaboradorOpciones.style.display = 'block';
     }
   }
   
@@ -209,7 +260,16 @@ class ModalModo {
     mostrarToast('Modo lector activado');
   }
   
-  async procesarFormColaborador(form) {
+  mostrarFormColaborador(tipo) {
+    this.colaboradorOpciones.style.display = 'none';
+    if (tipo === 'registro') {
+      this.formColaboradorRegistro.style.display = 'block';
+    } else if (tipo === 'login') {
+      this.formColaboradorLogin.style.display = 'block';
+    }
+  }
+
+  async procesarFormColaboradorRegistro(form) {
     const formData = new FormData(form);
     const email = formData.get('email');
     const displayName = formData.get('display_name') || null;
@@ -257,6 +317,40 @@ class ModalModo {
       alert('Error al registrar. Por favor intenta de nuevo.');
     }
   }
+
+  async procesarFormColaboradorLogin(form) {
+    const formData = new FormData(form);
+    const email = formData.get('email');
+    
+    try {
+      // 1. Hash del email
+      const emailHash = await hashEmail(email);
+      
+      // 2. Buscar colaborador existente
+      const { data: colaborador, error } = await window.supabaseClient
+        .from('colaboradores')
+        .select('*')
+        .eq('email_hash', emailHash)
+        .single();
+      
+      if (error || !colaborador) {
+        alert('No se encontró ningún colaborador con ese email. Por favor, regístrate primero.');
+        return;
+      }
+      
+      // 3. Crear nueva sesión vinculada al colaborador existente
+      await this.crearSesion('colaborador', {
+        collaborator_id: colaborador.collaborator_id
+      });
+      
+      this.cerrar();
+      mostrarToast(`Bienvenido/a de nuevo ${colaborador.display_name || 'colaborador/a'}!`);
+      
+    } catch (error) {
+      console.error('Error al iniciar sesión:', error);
+      alert('Error al iniciar sesión. Por favor intenta de nuevo.');
+    }
+  }
   
   async crearSesion(modo, datosAdicionales = {}) {
     // Guardar en localStorage
@@ -289,7 +383,9 @@ class ModalModo {
   
   volverOpciones() {
     this.formLector.style.display = 'none';
-    this.formColaborador.style.display = 'none';
+    this.colaboradorOpciones.style.display = 'none';
+    this.formColaboradorRegistro.style.display = 'none';
+    this.formColaboradorLogin.style.display = 'none';
     this.opciones.style.display = 'grid';
   }
   
@@ -313,10 +409,110 @@ class ModalModo {
     this.modal.style.display = 'none';
     if (this.onClose) this.onClose();
   }
+
+  async mostrarInfoUsuario() {
+    const datosUsuario = window.userManager.obtenerDatosUsuario();
+    
+    if (!datosUsuario) {
+      alert('No tienes una sesión activa');
+      return;
+    }
+
+    // Obtener estadísticas de contribuciones
+    const { data: evaluaciones, error } = await window.supabaseClient
+      .from('evaluaciones')
+      .select('*', { count: 'exact', head: false })
+      .eq('session_id', datosUsuario.session_id);
+
+    const numContribuciones = evaluaciones ? evaluaciones.length : 0;
+
+    let modoTexto = '';
+    let infoExtra = '';
+
+    if (datosUsuario.modo === 'anonimo') {
+      modoTexto = '🕶️ Anónimo';
+      infoExtra = '<p>Participas de forma anónima sin datos personales.</p>';
+    } else if (datosUsuario.modo === 'lector') {
+      modoTexto = '📚 Lector/a';
+      infoExtra = `
+        <p><strong>Nivel:</strong> ${datosUsuario.nivel_estudios || 'No especificado'}</p>
+        <p><strong>Disciplina:</strong> ${datosUsuario.disciplina || 'No especificada'}</p>
+      `;
+    } else if (datosUsuario.modo === 'colaborador') {
+      modoTexto = '✍️ Colaborador/a';
+      // Obtener info del colaborador
+      const { data: colaborador } = await window.supabaseClient
+        .from('colaboradores')
+        .select('*')
+        .eq('collaborator_id', datosUsuario.collaborator_id)
+        .single();
+
+      if (colaborador) {
+        infoExtra = `
+          <p><strong>Nombre:</strong> ${colaborador.display_name || 'No especificado'}</p>
+          <p><strong>Nivel:</strong> ${colaborador.nivel_estudios || 'No especificado'}</p>
+          <p><strong>Disciplina:</strong> ${colaborador.disciplina || 'No especificada'}</p>
+        `;
+      }
+    }
+
+    const infoHTML = `
+      <div class="info-usuario-panel">
+        <h3>Tu participación</h3>
+        <div class="info-modo">
+          <p><strong>Modo actual:</strong> ${modoTexto}</p>
+          ${infoExtra}
+        </div>
+        <div class="info-stats">
+          <p><strong>Contribuciones totales:</strong> ${numContribuciones}</p>
+          <p class="info-session-id"><small>ID de sesión: ${datosUsuario.session_id.substring(0, 8)}...</small></p>
+        </div>
+        <div class="info-acciones">
+          <button class="btn-cambiar-modo">Cambiar modo de participación</button>
+          <button class="btn-cerrar-info">Cerrar</button>
+        </div>
+      </div>
+    `;
+
+    // Crear modal temporal para mostrar info
+    const infoModal = document.createElement('div');
+    infoModal.className = 'modal';
+    infoModal.style.display = 'flex';
+    infoModal.innerHTML = `
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        ${infoHTML}
+      </div>
+    `;
+
+    document.body.appendChild(infoModal);
+
+    // Event listeners
+    infoModal.querySelector('.btn-cerrar-info').addEventListener('click', () => {
+      infoModal.remove();
+    });
+
+    infoModal.querySelector('.btn-cambiar-modo').addEventListener('click', () => {
+      infoModal.remove();
+      this.mostrar(true); // Permitir cambio de modo
+    });
+
+    infoModal.querySelector('.modal-overlay').addEventListener('click', () => {
+      infoModal.remove();
+    });
+  }
 }
 
 // Instancia global
 document.addEventListener('DOMContentLoaded', () => {
   window.modalModo = new ModalModo();
   console.log('✓ ModalModo inicializado');
+
+  // Vincular botón en navegación
+  const btnModoUsuario = document.getElementById('btn-modo-usuario');
+  if (btnModoUsuario) {
+    btnModoUsuario.addEventListener('click', () => {
+      window.modalModo.mostrarInfoUsuario();
+    });
+  }
 });
