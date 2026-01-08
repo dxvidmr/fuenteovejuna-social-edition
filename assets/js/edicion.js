@@ -358,46 +358,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     } // ← Fin de processNotes()
     
-    // Función para alinear versos partidos
-    function alignSplitVerses() {
-        const allVerses = teiContainer.querySelectorAll('tei-l[part]');
-        
-        let accumulatedLength = 0; // Longitud acumulada del texto de versos anteriores
-        
-        allVerses.forEach(verse => {
-            const part = verse.getAttribute('part');
-            const verseText = verse.textContent.trim();
-            
-            if (part === 'I') {
-                // Parte inicial: resetear acumulación y NO aplicar ningún margin extra
-                // (ya está posicionado al lado del speaker por el CSS flex)
-                verse.style.marginLeft = '';
-                verse.style.textIndent = '';
-                
-                // Calcular la longitud de esta parte para las siguientes
-                accumulatedLength = verseText.length + 1; // +1 para el espacio
-                
-                console.log(`Verso part="I": "${verseText}" (${verseText.length} chars) - acumulado: ${accumulatedLength}ch`);
-                
-            } else if (part === 'M' || part === 'F') {
-                // Partes intermedias o finales: indentar con el texto acumulado
-                // Usar text-indent para que funcione con el margin-left base de 170px
-                verse.style.textIndent = `${accumulatedLength}ch`;
-                
-                console.log(`Verso part="${part}": "${verseText}" (${verseText.length} chars) - indent: ${accumulatedLength}ch`);
-                
-                // Si es parte intermedia, acumular su longitud para la siguiente
-                if (part === 'M') {
-                    accumulatedLength = accumulatedLength + verseText.length + 1; // +1 para espacio
-                }
-            }
-        });
-    }
     
     // Llamar a la función de alineación después de que el TEI esté cargado
     const verseObserver = new MutationObserver(() => {
         if (teiContainer.querySelector('tei-l[part]')) {
-            alignSplitVerses();
+            alignSplitVerses(teiContainer);
             verseObserver.disconnect();
         }
     });

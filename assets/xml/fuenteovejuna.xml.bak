@@ -104,10 +104,8 @@
             <role corresp="#juan_rojo">Juan Rojo</role></castItem>
           <castItem>
             <role corresp="#esteban">Esteban</role>
-            <roleDesc>alcalde</roleDesc></castItem>
-          <castItem>
             <role corresp="#alonso">Alonso</role>
-            <roleDesc>alcalde</roleDesc></castItem>
+            <roleDesc>, alcaldes</roleDesc></castItem>
           <castItem>
             <role corresp="#fernando">Rey don Fernando</role></castItem>
           <castItem>
@@ -118,13 +116,13 @@
             <role corresp="#regidor">Un regidor</role></castItem>
           <castItem>
             <role corresp="#cuadrado">Regidor 2</role>
-            <roleDesc>llamado Cuadrado</roleDesc></castItem>
+            <roleDesc>, llamado Cuadrado</roleDesc></castItem>
           <castItem>
             <role corresp="#cimbranos">Cimbranos</role>
-            <roleDesc>soldado</roleDesc></castItem>
+            <roleDesc>, soldado</roleDesc></castItem>
           <castItem>
             <role corresp="#jacinta">Jacinta</role>
-            <roleDesc>labradora</roleDesc></castItem>
+            <roleDesc>, labradora</roleDesc></castItem>
           <castItem>
             <role corresp="#muchacho">Un muchacho</role></castItem>
           <castItem>

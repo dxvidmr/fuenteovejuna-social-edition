@@ -174,6 +174,9 @@ class EditorSocial {
 
     pasajeContainer.appendChild(teiContainer);
 
+    // Aplicar alineación de versos partidos usando función compartida
+    setTimeout(() => alignSplitVerses(pasajeContainer), 100);
+
     console.log('✓ Pasaje renderizado:', pasaje.titulo);
   }
 
