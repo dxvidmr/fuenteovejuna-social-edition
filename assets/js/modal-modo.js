@@ -237,9 +237,8 @@ class ModalModo {
       mostrarToast('Modo anónimo activado');
       
     } else if (modo === 'lector') {
-      // Mostrar formulario de lector
-      this.opciones.style.display = 'none';
-      this.formLector.style.display = 'block';
+      // Verificar si ya tiene datos demográficos
+      await this.verificarLectorExistente();
       
     } else if (modo === 'colaborador') {
       // Mostrar opciones de colaborador (registro/login)
@@ -281,6 +280,100 @@ class ModalModo {
     }
   }
   
+  async verificarLectorExistente() {
+    const lectorIdLocal = localStorage.getItem('fuenteovejuna_lector_id');
+    
+    if (lectorIdLocal) {
+      // Verificar si este lector_id tiene perfil completado en BD
+      const { data: lector } = await window.supabaseClient
+        .from('lectores')
+        .select('nivel_estudios, disciplina, perfil_completado')
+        .eq('lector_id', lectorIdLocal)
+        .single();
+      
+      if (lector && lector.perfil_completado) {
+        // Ya tiene datos, mostrar opciones
+        this.opciones.style.display = 'none';
+        this.mostrarOpcionesLectorExistente(lector);
+        return;
+      }
+    }
+    
+    // No tiene datos, mostrar formulario normal
+    this.opciones.style.display = 'none';
+    this.formLector.style.display = 'block';
+  }
+
+  mostrarOpcionesLectorExistente(lector) {
+    // Crear panel de opciones para lector existente
+    let lectorOpcionesDiv = document.getElementById('lector-opciones-existente');
+    
+    if (!lectorOpcionesDiv) {
+      lectorOpcionesDiv = document.createElement('div');
+      lectorOpcionesDiv.id = 'lector-opciones-existente';
+      lectorOpcionesDiv.className = 'modo-form';
+      lectorOpcionesDiv.innerHTML = `
+        <h3>Lector/a</h3>
+        <div class="lector-info-previa">
+          <p>Ya tenemos tus datos:</p>
+          <p><strong>Nivel:</strong> <span id="lector-nivel-prev"></span></p>
+          <p><strong>Disciplina:</strong> <span id="lector-disc-prev"></span></p>
+        </div>
+        <div class="colaborador-opciones-grid">
+          <div class="opcion-colaborador">
+            <h4>Soy el mismo lector</h4>
+            <button class="btn-opcion-colaborador" id="btn-lector-continuar">Continuar</button>
+          </div>
+          <div class="opcion-colaborador">
+            <h4>Soy nuevo/a</h4>
+            <button class="btn-opcion-colaborador" id="btn-lector-nuevo">Registrar datos</button>
+          </div>
+        </div>
+        <button type="button" class="btn-volver">← Volver</button>
+      `;
+      this.modal.querySelector('.modal-content').appendChild(lectorOpcionesDiv);
+      
+      // Event listeners
+      lectorOpcionesDiv.querySelector('#btn-lector-continuar').addEventListener('click', () => {
+        this.continuarComoLectorExistente();
+      });
+      
+      lectorOpcionesDiv.querySelector('#btn-lector-nuevo').addEventListener('click', () => {
+        this.registrarNuevoLector();
+      });
+      
+      lectorOpcionesDiv.querySelector('.btn-volver').addEventListener('click', () => {
+        lectorOpcionesDiv.style.display = 'none';
+        this.opciones.style.display = 'grid';
+      });
+    }
+    
+    // Actualizar datos mostrados
+    lectorOpcionesDiv.querySelector('#lector-nivel-prev').textContent = lector.nivel_estudios || 'No especificado';
+    lectorOpcionesDiv.querySelector('#lector-disc-prev').textContent = lector.disciplina || 'No especificada';
+    lectorOpcionesDiv.style.display = 'block';
+  }
+
+  continuarComoLectorExistente() {
+    // Usar el lector_id existente, crear nueva sesión
+    const lectorId = localStorage.getItem('fuenteovejuna_lector_id');
+    window.userManager.marcarModoSeleccionado('lector', { lector_id: lectorId });
+    this.cerrar();
+    mostrarToast('Bienvenido/a de nuevo');
+  }
+
+  registrarNuevoLector() {
+    // Crear nuevo lector_id y mostrar formulario
+    const nuevoLectorId = crypto.randomUUID();
+    localStorage.setItem('fuenteovejuna_lector_id', nuevoLectorId);
+    console.log('✓ Nuevo lector_id creado:', nuevoLectorId);
+    
+    // Ocultar opciones y mostrar formulario
+    const lectorOpcionesDiv = document.getElementById('lector-opciones-existente');
+    if (lectorOpcionesDiv) lectorOpcionesDiv.style.display = 'none';
+    this.formLector.style.display = 'block';
+  }
+
   mostrarFormColaborador(tipo) {
     this.colaboradorOpciones.style.display = 'none';
     if (tipo === 'registro') {
@@ -440,19 +533,16 @@ class ModalModo {
     this.colaboradorOpciones.style.display = 'none';
     this.formColaboradorRegistro.style.display = 'none';
     this.formColaboradorLogin.style.display = 'none';
+    const lectorOpcionesDiv = document.getElementById('lector-opciones-existente');
+    if (lectorOpcionesDiv) lectorOpcionesDiv.style.display = 'none';
     this.opciones.style.display = 'grid';
   }
   
   mostrar(permitirCambio = false) {
     return new Promise((resolve) => {
+      // Siempre volver a las opciones principales
+      this.volverOpciones();
       this.modal.style.display = 'flex';
-      
-      // Si ya tiene modo y no se permite cambio, cerrar inmediatamente
-      if (!permitirCambio && window.userManager.tieneModoDefinido()) {
-        this.cerrar();
-        resolve();
-        return;
-      }
       
       // Callback cuando se cierra
       this.onClose = resolve;
@@ -468,7 +558,8 @@ class ModalModo {
     const datosUsuario = window.userManager.obtenerDatosUsuario();
     
     if (!datosUsuario) {
-      alert('No tienes una sesión activa');
+      // No hay sesión activa, mostrar modal para elegir modo
+      await this.mostrar();
       return;
     }
 
@@ -554,7 +645,6 @@ class ModalModo {
         </div>
         <div class="info-stats">
           <p><strong>Contribuciones totales:</strong> ${numContribuciones}</p>
-          <p class="info-session-id"><small>ID de sesión: ${datosUsuario.session_id.substring(0, 8)}...</small></p>
         </div>
         <div class="info-acciones">
           <button class="btn-cambiar-modo">Cambiar modo de participación</button>

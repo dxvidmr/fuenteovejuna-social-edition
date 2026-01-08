@@ -5,13 +5,15 @@
 class UserManager {
   constructor() {
     this.storageKey = 'fuenteovejuna_user';
+    // Usamos sessionStorage para datos de sesión (se borra al cerrar navegador)
+    // y localStorage solo para lector_id (persistente)
   }
   
   /**
-   * Verifica si el usuario ya tiene modo definido
+   * Verifica si el usuario ya tiene modo definido EN ESTA SESIÓN DE NAVEGADOR
    */
   tieneModoDefinido() {
-    const datos = localStorage.getItem(this.storageKey);
+    const datos = sessionStorage.getItem(this.storageKey);
     return datos !== null;
   }
   
@@ -20,7 +22,7 @@ class UserManager {
    * @returns {Object} { session_id, modo, collaborator_id }
    */
   obtenerDatosUsuario() {
-    const datos = localStorage.getItem(this.storageKey);
+    const datos = sessionStorage.getItem(this.storageKey);
     if (!datos) return null;
     
     return JSON.parse(datos);
@@ -59,7 +61,7 @@ class UserManager {
       ...datosAdicionales
     };
     
-    localStorage.setItem(this.storageKey, JSON.stringify(datos));
+    sessionStorage.setItem(this.storageKey, JSON.stringify(datos));
     console.log('✓ Modo marcado:', modo, 'lector_id:', lectorId, '(sesión pendiente)');
     
     return datos;
@@ -72,7 +74,7 @@ class UserManager {
     const datos = this.obtenerDatosUsuario();
     if (datos) {
       datos.sesion_creada_en_bd = true;
-      localStorage.setItem(this.storageKey, JSON.stringify(datos));
+      sessionStorage.setItem(this.storageKey, JSON.stringify(datos));
     }
   }
 
@@ -93,7 +95,7 @@ class UserManager {
       ...datosAdicionales
     };
     
-    localStorage.setItem(this.storageKey, JSON.stringify(datos));
+    sessionStorage.setItem(this.storageKey, JSON.stringify(datos));
     console.log('✓ Modo guardado:', modo, 'lector_id:', lectorId);
     
     return datos;
@@ -103,7 +105,7 @@ class UserManager {
    * Cambia el modo actual (crea nueva sesión)
    */
   cambiarModo() {
-    localStorage.removeItem(this.storageKey);
+    sessionStorage.removeItem(this.storageKey);
     console.log('✓ Modo reseteado');
   }
   
