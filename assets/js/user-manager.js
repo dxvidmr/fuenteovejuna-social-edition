@@ -27,22 +27,74 @@ class UserManager {
   }
   
   /**
+   * Obtiene o crea lector_id persistente
+   */
+  obtenerOCrearLectorId() {
+    const lectorIdKey = 'fuenteovejuna_lector_id';
+    let lectorId = localStorage.getItem(lectorIdKey);
+    
+    if (!lectorId) {
+      lectorId = crypto.randomUUID();
+      localStorage.setItem(lectorIdKey, lectorId);
+      console.log('✓ Nuevo lector_id creado:', lectorId);
+    }
+    
+    return lectorId;
+  }
+
+  /**
+   * Marca el modo seleccionado sin crear sesión en BD todavía
+   * La sesión se creará en la primera evaluación
+   */
+  marcarModoSeleccionado(modo, datosAdicionales = {}) {
+    const sessionId = crypto.randomUUID();
+    const lectorId = this.obtenerOCrearLectorId();
+    
+    const datos = {
+      session_id: sessionId,
+      lector_id: lectorId,
+      modo: modo,
+      timestamp: new Date().toISOString(),
+      sesion_creada_en_bd: false,  // Flag para saber si ya se insertó en BD
+      ...datosAdicionales
+    };
+    
+    localStorage.setItem(this.storageKey, JSON.stringify(datos));
+    console.log('✓ Modo marcado:', modo, 'lector_id:', lectorId, '(sesión pendiente)');
+    
+    return datos;
+  }
+
+  /**
+   * Marca que la sesión ya fue creada en BD
+   */
+  marcarSesionCreada() {
+    const datos = this.obtenerDatosUsuario();
+    if (datos) {
+      datos.sesion_creada_en_bd = true;
+      localStorage.setItem(this.storageKey, JSON.stringify(datos));
+    }
+  }
+
+  /**
    * Guarda modo de participación seleccionado
    * @param {string} modo - 'anonimo', 'lector', 'colaborador'
    * @param {Object} datosAdicionales - Datos extra según modo
    */
   guardarModo(modo, datosAdicionales = {}) {
     const sessionId = crypto.randomUUID();
+    const lectorId = this.obtenerOCrearLectorId();
     
     const datos = {
       session_id: sessionId,
+      lector_id: lectorId,
       modo: modo,
       timestamp: new Date().toISOString(),
       ...datosAdicionales
     };
     
     localStorage.setItem(this.storageKey, JSON.stringify(datos));
-    console.log('✓ Modo guardado:', modo);
+    console.log('✓ Modo guardado:', modo, 'lector_id:', lectorId);
     
     return datos;
   }

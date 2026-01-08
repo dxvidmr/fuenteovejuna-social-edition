@@ -231,8 +231,8 @@ class ModalModo {
   
   async seleccionarModo(modo) {
     if (modo === 'anonimo') {
-      // Modo anónimo: guardar directamente y crear sesión en Supabase
-      await this.crearSesion('anonimo');
+      // Modo anónimo: guardar intención, sesión se creará en primera evaluación
+      window.userManager.marcarModoSeleccionado('anonimo');
       this.cerrar();
       mostrarToast('Modo anónimo activado');
       
@@ -250,14 +250,35 @@ class ModalModo {
   
   async procesarFormLector(form) {
     const formData = new FormData(form);
-    const datosAdicionales = {
-      nivel_estudios: formData.get('nivel_estudios'),
-      disciplina: formData.get('disciplina')
-    };
+    const nivelEstudios = formData.get('nivel_estudios');
+    const disciplina = formData.get('disciplina');
     
-    await this.crearSesion('lector', datosAdicionales);
-    this.cerrar();
-    mostrarToast('Modo lector activado');
+    try {
+      // 1. Obtener o crear lector_id persistente
+      const lectorId = window.userManager.obtenerOCrearLectorId();
+      
+      // 2. Crear o actualizar lector en BD
+      const { error: errorLector } = await window.supabaseClient
+        .from('lectores')
+        .upsert({
+          lector_id: lectorId,
+          nivel_estudios: nivelEstudios,
+          disciplina: disciplina,
+          perfil_completado: true,
+          updated_at: new Date().toISOString()
+        });
+      
+      if (errorLector) throw errorLector;
+      
+      // 3. Marcar modo seleccionado (sesión se creará en primera evaluación)
+      window.userManager.marcarModoSeleccionado('lector', { lector_id: lectorId });
+      this.cerrar();
+      mostrarToast('Modo lector activado');
+      
+    } catch (error) {
+      console.error('Error al procesar lector:', error);
+      alert('Error al guardar. Por favor intenta de nuevo.');
+    }
   }
   
   mostrarFormColaborador(tipo) {
@@ -280,33 +301,51 @@ class ModalModo {
       // 1. Hash del email
       const emailHash = await hashEmail(email);
       
-      // 2. Buscar o crear colaborador en Supabase
-      let { data: colaborador, error } = await window.supabaseClient
+      // 2. Verificar si ya existe colaborador con ese email
+      let { data: colaboradorExistente, error: errorBuscar } = await window.supabaseClient
         .from('colaboradores')
-        .select('collaborator_id')
+        .select('collaborator_id, lector_id')
         .eq('email_hash', emailHash)
         .single();
       
-      if (error && error.code === 'PGRST116') {
-        // No existe, crear nuevo colaborador
-        const { data: nuevoColaborador, error: errorInsert } = await window.supabaseClient
-          .from('colaboradores')
-          .insert({
-            email_hash: emailHash,
-            display_name: displayName,
-            nivel_estudios: nivelEstudios,
-            disciplina: disciplina
-          })
-          .select()
-          .single();
-        
-        if (errorInsert) throw errorInsert;
-        colaborador = nuevoColaborador;
+      if (colaboradorExistente) {
+        alert('Este email ya está registrado. Usa "Iniciar sesión" en su lugar.');
+        return;
       }
       
-      // 3. Crear sesión vinculada al colaborador
-      await this.crearSesion('colaborador', {
-        collaborator_id: colaborador.collaborator_id
+      // 3. Usar el lector_id que ya tiene (mantener historial de evaluaciones)
+      const lectorId = window.userManager.obtenerOCrearLectorId();
+      
+      // 4. Actualizar/crear lector en BD con nuevos datos demográficos
+      const { error: errorLector } = await window.supabaseClient
+        .from('lectores')
+        .upsert({
+          lector_id: lectorId,
+          nivel_estudios: nivelEstudios,
+          disciplina: disciplina,
+          perfil_completado: true,
+          updated_at: new Date().toISOString()
+        });
+      
+      if (errorLector) throw errorLector;
+      
+      // 5. Crear colaborador vinculado al lector existente (1:1)
+      const { data: nuevoColaborador, error: errorColaborador } = await window.supabaseClient
+        .from('colaboradores')
+        .insert({
+          email_hash: emailHash,
+          display_name: displayName,
+          lector_id: lectorId  // Usa el lector_id que ya tenía
+        })
+        .select()
+        .single();
+      
+      if (errorColaborador) throw errorColaborador;
+      
+      // 6. Marcar modo seleccionado (sesión se creará en primera evaluación)
+      window.userManager.marcarModoSeleccionado('colaborador', {
+        lector_id: lectorId,
+        collaborator_id: nuevoColaborador.collaborator_id
       });
       
       this.cerrar();
@@ -329,7 +368,7 @@ class ModalModo {
       // 2. Buscar colaborador existente
       const { data: colaborador, error } = await window.supabaseClient
         .from('colaboradores')
-        .select('*')
+        .select('collaborator_id, lector_id, display_name')
         .eq('email_hash', emailHash)
         .single();
       
@@ -338,8 +377,14 @@ class ModalModo {
         return;
       }
       
-      // 3. Crear nueva sesión vinculada al colaborador existente
-      await this.crearSesion('colaborador', {
+      // 3. SIEMPRE usar el lector_id del colaborador registrado
+      // Las evaluaciones futuras se vincularán a este lector_id
+      // (Las evaluaciones anónimas previas de este dispositivo quedan separadas)
+      localStorage.setItem('fuenteovejuna_lector_id', colaborador.lector_id);
+      
+      // 4. Marcar modo seleccionado (sesión se creará en primera evaluación)
+      window.userManager.marcarModoSeleccionado('colaborador', {
+        lector_id: colaborador.lector_id,
         collaborator_id: colaborador.collaborator_id
       });
       
@@ -352,23 +397,30 @@ class ModalModo {
     }
   }
   
-  async crearSesion(modo, datosAdicionales = {}) {
-    // Guardar en localStorage
-    const datosUsuario = window.userManager.guardarModo(modo, datosAdicionales);
+  async crearSesionEnBD(datosUsuario) {
+    const modo = datosUsuario.modo;
     
-    // Crear sesión en Supabase
+    // Si modo es anónimo, crear/actualizar lector sin perfil completado
+    if (modo === 'anonimo') {
+      const { error: errorLector } = await window.supabaseClient
+        .from('lectores')
+        .upsert({
+          lector_id: datosUsuario.lector_id,
+          perfil_completado: false,
+          updated_at: new Date().toISOString()
+        });
+      
+      if (errorLector) {
+        console.error('Error al crear lector anónimo:', errorLector);
+      }
+    }
+    
+    // Crear sesión en Supabase (solo session_id, modo, lector_id)
     const sesionData = {
       session_id: datosUsuario.session_id,
-      modo: modo
+      modo: modo,
+      lector_id: datosUsuario.lector_id
     };
-    
-    // Añadir campos según modo
-    if (modo === 'lector') {
-      sesionData.nivel_estudios = datosAdicionales.nivel_estudios;
-      sesionData.disciplina = datosAdicionales.disciplina;
-    } else if (modo === 'colaborador') {
-      sesionData.collaborator_id = datosAdicionales.collaborator_id;
-    }
     
     const { error } = await window.supabaseClient
       .from('sesiones')
@@ -376,8 +428,10 @@ class ModalModo {
     
     if (error) {
       console.error('Error al crear sesión:', error);
+      return false;
     } else {
-      console.log('✓ Sesión creada en Supabase');
+      console.log('✓ Sesión creada en Supabase:', sesionData);
+      return true;
     }
   }
   
@@ -418,41 +472,76 @@ class ModalModo {
       return;
     }
 
-    // Obtener estadísticas de contribuciones
-    const { data: evaluaciones, error } = await window.supabaseClient
-      .from('evaluaciones')
-      .select('*', { count: 'exact', head: false })
-      .eq('session_id', datosUsuario.session_id);
+    // Obtener todas las sesiones del mismo lector_id
+    const { data: sesiones, error: errorSesiones } = await window.supabaseClient
+      .from('sesiones')
+      .select('session_id')
+      .eq('lector_id', datosUsuario.lector_id);
 
-    const numContribuciones = evaluaciones ? evaluaciones.length : 0;
+    if (errorSesiones) {
+      console.error('Error al obtener sesiones:', errorSesiones);
+      alert('Error al cargar información. Intenta de nuevo.');
+      return;
+    }
+
+    let numContribuciones = 0;
+
+    // Si hay sesiones, contar evaluaciones
+    if (sesiones && sesiones.length > 0) {
+      const sessionIds = sesiones.map(s => s.session_id);
+      const { data: evaluaciones, error: errorEval } = await window.supabaseClient
+        .from('evaluaciones')
+        .select('*')
+        .in('session_id', sessionIds);
+
+      if (!errorEval && evaluaciones) {
+        numContribuciones = evaluaciones.length;
+      }
+    }
+    // Si no hay sesiones aún, significa que eligió modo pero no ha evaluado
 
     let modoTexto = '';
     let infoExtra = '';
+
+    // Obtener datos demográficos de la tabla lectores
+    const { data: lector } = await window.supabaseClient
+      .from('lectores')
+      .select('nivel_estudios, disciplina, perfil_completado')
+      .eq('lector_id', datosUsuario.lector_id)
+      .single();
 
     if (datosUsuario.modo === 'anonimo') {
       modoTexto = '🕶️ Anónimo';
       infoExtra = '<p>Participas de forma anónima sin datos personales.</p>';
     } else if (datosUsuario.modo === 'lector') {
       modoTexto = '📚 Lector/a';
-      infoExtra = `
-        <p><strong>Nivel:</strong> ${datosUsuario.nivel_estudios || 'No especificado'}</p>
-        <p><strong>Disciplina:</strong> ${datosUsuario.disciplina || 'No especificada'}</p>
-      `;
+      if (lector && lector.perfil_completado) {
+        infoExtra = `
+          <p><strong>Nivel:</strong> ${lector.nivel_estudios || 'No especificado'}</p>
+          <p><strong>Disciplina:</strong> ${lector.disciplina || 'No especificada'}</p>
+        `;
+      } else {
+        infoExtra = '<p>Perfil sin completar</p>';
+      }
     } else if (datosUsuario.modo === 'colaborador') {
       modoTexto = '✍️ Colaborador/a';
       // Obtener info del colaborador
       const { data: colaborador } = await window.supabaseClient
         .from('colaboradores')
-        .select('*')
-        .eq('collaborator_id', datosUsuario.collaborator_id)
+        .select('display_name')
+        .eq('lector_id', datosUsuario.lector_id)
         .single();
 
       if (colaborador) {
         infoExtra = `
           <p><strong>Nombre:</strong> ${colaborador.display_name || 'No especificado'}</p>
-          <p><strong>Nivel:</strong> ${colaborador.nivel_estudios || 'No especificado'}</p>
-          <p><strong>Disciplina:</strong> ${colaborador.disciplina || 'No especificada'}</p>
         `;
+        if (lector && lector.perfil_completado) {
+          infoExtra += `
+            <p><strong>Nivel:</strong> ${lector.nivel_estudios || 'No especificado'}</p>
+            <p><strong>Disciplina:</strong> ${lector.disciplina || 'No especificada'}</p>
+          `;
+        }
       }
     }
 

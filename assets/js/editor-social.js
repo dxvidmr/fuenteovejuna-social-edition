@@ -325,6 +325,18 @@ class EditorSocial {
 
     const datosUsuario = window.userManager.obtenerDatosUsuario();
 
+    // Asegurar que la sesión esté creada en BD (primera evaluación)
+    if (!datosUsuario.sesion_creada_en_bd) {
+      console.log('⏳ Primera evaluación: creando sesión en BD...');
+      const exito = await window.modalModo.crearSesionEnBD(datosUsuario);
+      if (exito) {
+        window.userManager.marcarSesionCreada();
+      } else {
+        mostrarToast('Error al crear sesión', 3000);
+        return false;
+      }
+    }
+
     const evaluacion = {
       timestamp: new Date().toISOString(),
       source: 'editor-social',

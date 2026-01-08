@@ -72,6 +72,18 @@ async function registrarEvaluacion(datos) {
   
   const datosUsuario = window.userManager.obtenerDatosUsuario();
   
+  // Asegurar que la sesión esté creada en BD (primera evaluación)
+  if (!datosUsuario.sesion_creada_en_bd) {
+    console.log('⏳ Primera evaluación: creando sesión en BD...');
+    const exito = await window.modalModo.crearSesionEnBD(datosUsuario);
+    if (exito) {
+      window.userManager.marcarSesionCreada();
+    } else {
+      alert('Error al crear sesión. Por favor intenta de nuevo.');
+      return false;
+    }
+  }
+  
   const evaluacion = {
     timestamp: new Date().toISOString(),
     session_id: datosUsuario.session_id,
