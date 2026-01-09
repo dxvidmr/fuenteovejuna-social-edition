@@ -226,6 +226,24 @@
   margin-bottom: 8px;
 }
 
+/* Estilos para iconos Font Awesome (más discretos) */
+.modo-icono i,
+.opcion-icono i {
+  font-size: 1.6rem;
+  color: var(--muted-2);
+  opacity: 0.95;
+}
+
+.nav-back i {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.btn-modo-usuario i {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 .modo-opcion h3 {
   font-size: 18px;
   margin-bottom: 8px;

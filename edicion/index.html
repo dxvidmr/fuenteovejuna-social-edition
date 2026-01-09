@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/edicion.css">
     
     <!-- Librería Supabase (CDN) - DEBE IR ANTES DE TUS SCRIPTS -->
@@ -17,9 +18,9 @@
     
     <!-- Navegación superior -->
     <nav class="top-nav" role="navigation" aria-label="Navegación principal">
-        <a href="../index.html" class="nav-back">← Inicio</a>
+        <a href="../index.html" class="nav-back"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Inicio</a>
         <a href="../editor-social/index.html">Editor Social</a>
-        <button id="btn-modo-usuario" class="btn-modo-usuario">👤 Mi participación</button>
+        <button id="btn-modo-usuario" class="btn-modo-usuario"><i class="fa-solid fa-user" aria-hidden="true"></i> Mi participación</button>
     </nav>
     
     <!-- Layout principal -->
@@ -88,7 +89,7 @@
                         con notas explicativas que puedes evaluar para ayudar a mejorarlas.
                     </p>
                     <p style="margin-top: 16px; line-height: 1.6; color: #555;">
-                        Haz clic en las notas del panel y evalúalas con 👍 (útil) o 👎 (mejorable).
+                        Haz clic en las notas del panel y evalúalas con <i class="fa-solid fa-heart"></i> (útil) o <i class="fa-solid fa-heart-crack"></i> (mejorable).
                     </p>
                 </div>
             </div>
@@ -150,7 +151,7 @@
     <!-- 10. Lógica de tu edición (procesa notas, eventos, etc.) -->
     <script src="../assets/js/edicion.js"></script>
     
-    <!-- 11. Sistema de evaluación (añade botones 👍👎) -->
+    <!-- 11. Sistema de evaluación (añade iconos de evaluación: útil / mejorable) -->
     <script src="../assets/js/edicion-evaluacion.js"></script>
 
 </body>

@@ -76,14 +76,14 @@ class EdicionEvaluacion {
         </div>
         <div class="evaluacion-botones">
           <button class="btn-evaluar btn-util" data-nota-id="${notaId}" data-version="${version}">
-            👍 Útil
+            <i class="fa-solid fa-heart" aria-hidden="true"></i> Útil
           </button>
           <button class="btn-evaluar btn-mejorable" data-nota-id="${notaId}" data-version="${version}">
-            👎 Mejorable
+            <i class="fa-solid fa-heart-crack" aria-hidden="true"></i> Mejorable
           </button>
         </div>
         <div class="evaluacion-comentario" style="display:none;">
-          <textarea placeholder="¿Por qué crees que es mejorable? (opcional)" rows="2"></textarea>
+          <textarea placeholder="¿Qué cambiarías? (opcional)" rows="2"></textarea>
           <button class="btn-enviar-comentario">Enviar</button>
           <button class="btn-cancelar-comentario">Cancelar</button>
         </div>

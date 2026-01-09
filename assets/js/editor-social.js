@@ -221,14 +221,14 @@ class EditorSocial {
         <div class="nota-texto">${nota.texto_nota}</div>
         <div class="nota-acciones">
           <button class="btn-util" data-nota-id="${nota.nota_id}" data-version="${nota.version}">
-            Útil
+            <i class="fa-solid fa-heart" aria-hidden="true"></i> Útil
           </button>
           <button class="btn-mejorable" data-nota-id="${nota.nota_id}" data-version="${nota.version}">
-            Mejorable
+            <i class="fa-solid fa-heart-crack" aria-hidden="true"></i> Mejorable
           </button>
         </div>
         <div class="nota-comentario" style="display:none; margin-top: 12px;">
-          <textarea placeholder="¿Por qué crees que es mejorable? (opcional)" rows="2"
+          <textarea placeholder="¿Qué cambiarías? (opcional)" rows="2"
                     style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 13px;"></textarea>
           <div style="margin-top: 8px;">
             <button class="btn-enviar-comentario" style="padding: 6px 12px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; margin-right: 6px;">Enviar</button>

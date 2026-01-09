@@ -488,6 +488,21 @@ tei-seg.note-active {
   transition: all 0.2s;
 }
 
+/* Iconos dentro de botones de evaluación */
+.btn-evaluar i {
+  margin-right: 6px;
+  font-size: 0.95em;
+  opacity: 0.85;
+  color: var(--muted-2);
+  vertical-align: middle;
+}
+
+/* Cambios de color en hover o cuando ya votado */
+.btn-util:hover i { color: var(--success); }
+.btn-mejorable:hover i { color: var(--warning); }
+.btn-util.votado i { color: var(--success); }
+.btn-mejorable.votado i { color: var(--warning); }
+
 .btn-evaluar:hover {
   background: var(--muted-light);
   border-color: var(--muted-mid);

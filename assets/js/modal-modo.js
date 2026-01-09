@@ -20,17 +20,17 @@ class ModalModo {
             <!-- Opción 1: Anónimo -->
             <div class="modo-opcion" data-modo="anonimo">
               <div class="modo-header">
-                <span class="modo-icono">🕶️</span>
+                <span class="modo-icono"><i class="fa-solid fa-user-secret" aria-hidden="true"></i></span>
                 <h3>Rápido y anónimo</h3>
               </div>
-              <p>Sin formularios. Click directo en 👍/👎</p>
+              <p>Sin formularios. Click directo en <i class="fa-solid fa-heart"></i>/<i class="fa-solid fa-heart-crack"></i></p>
               <button class="btn-seleccionar" data-modo="anonimo">Participar anónimamente</button>
             </div>
             
             <!-- Opción 2: Lector -->
             <div class="modo-opcion" data-modo="lector">
               <div class="modo-header">
-                <span class="modo-icono">📚</span>
+                <span class="modo-icono"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
                 <h3>Como lector/a</h3>
               </div>
               <p>Solo 2 datos: nivel de estudios y disciplina</p>
@@ -40,7 +40,7 @@ class ModalModo {
             <!-- Opción 3: Colaborador -->
             <div class="modo-opcion" data-modo="colaborador">
               <div class="modo-header">
-                <span class="modo-icono">✍️</span>
+                <span class="modo-icono"><i class="fa-solid fa-pen" aria-hidden="true"></i></span>
                 <h3>Colaborar en la edición</h3>
               </div>
               <p>Email + nombre opcional. Contribuciones reconocidas.</p>
@@ -78,7 +78,7 @@ class ModalModo {
               </label>
               
               <button type="submit" class="btn-enviar">Confirmar</button>
-              <button type="button" class="btn-volver">← Volver</button>
+              <button type="button" class="btn-volver"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Volver</button>
             </form>
           </div>
           
@@ -87,19 +87,19 @@ class ModalModo {
             <h3>Colaborador/a</h3>
             <div class="colaborador-opciones-grid">
               <div class="opcion-colaborador" data-tipo="registro">
-                <span class="opcion-icono">✨</span>
+                <span class="opcion-icono"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
                 <h4>Registrarme</h4>
                 <p>Nuevo colaborador. Completa tus datos.</p>
                 <button class="btn-opcion-colaborador" data-tipo="registro">Registrarme</button>
               </div>
               <div class="opcion-colaborador" data-tipo="login">
-                <span class="opcion-icono">🔑</span>
+                <span class="opcion-icono"><i class="fa-solid fa-key" aria-hidden="true"></i></span>
                 <h4>Iniciar sesión</h4>
                 <p>Ya estoy registrado. Solo mi email.</p>
                 <button class="btn-opcion-colaborador" data-tipo="login">Iniciar sesión</button>
               </div>
             </div>
-            <button type="button" class="btn-volver">← Volver</button>
+            <button type="button" class="btn-volver"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Volver</button>
           </div>
 
           <!-- Formulario registro colaborador -->
@@ -142,7 +142,7 @@ class ModalModo {
               </label>
               
               <button type="submit" class="btn-enviar">Registrarme</button>
-              <button type="button" class="btn-volver">← Volver</button>
+              <button type="button" class="btn-volver"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Volver</button>
             </form>
           </div>
 
@@ -157,7 +157,7 @@ class ModalModo {
               </label>
               
               <button type="submit" class="btn-enviar">Iniciar sesión</button>
-              <button type="button" class="btn-volver">← Volver</button>
+              <button type="button" class="btn-volver"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Volver</button>
             </form>
           </div>
           
@@ -329,7 +329,7 @@ class ModalModo {
             <button class="btn-opcion-colaborador" id="btn-lector-nuevo">Registrar datos</button>
           </div>
         </div>
-        <button type="button" class="btn-volver">← Volver</button>
+        <button type="button" class="btn-volver"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Volver</button>
       `;
       this.modal.querySelector('.modal-content').appendChild(lectorOpcionesDiv);
       
@@ -602,10 +602,10 @@ class ModalModo {
       .single();
 
     if (datosUsuario.modo === 'anonimo') {
-      modoTexto = '🕶️ Anónimo';
+      modoTexto = '<i class="fa-solid fa-user-secret" aria-hidden="true"></i> Anónimo';
       infoExtra = '<p>Participas de forma anónima sin datos personales.</p>';
     } else if (datosUsuario.modo === 'lector') {
-      modoTexto = '📚 Lector/a';
+      modoTexto = '<i class="fa-solid fa-book-open" aria-hidden="true"></i> Lector/a';
       if (lector && lector.perfil_completado) {
         infoExtra = `
           <p><strong>Nivel:</strong> ${lector.nivel_estudios || 'No especificado'}</p>
@@ -615,7 +615,7 @@ class ModalModo {
         infoExtra = '<p>Perfil sin completar</p>';
       }
     } else if (datosUsuario.modo === 'colaborador') {
-      modoTexto = '✍️ Colaborador/a';
+      modoTexto = '<i class="fa-solid fa-pen" aria-hidden="true"></i> Colaborador/a';
       // Obtener info del colaborador
       const { data: colaborador } = await window.supabaseClient
         .from('colaboradores')
