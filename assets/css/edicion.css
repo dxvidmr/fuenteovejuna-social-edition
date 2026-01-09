@@ -23,8 +23,8 @@
   width: 25%;
   min-width: 30%;
   max-width: 50%;
-  border-left: 2px solid #ccc;
-  background-color: #f9f9f9;
+  border-left: 2px solid var(--border-muted);
+  background-color: var(--bg);
   overflow-y: auto;
   max-height: 100vh;
   display: flex;
@@ -39,8 +39,8 @@
 .info-panel h4 {
   margin: 0 0 1rem 0;
   font-size: 1.1rem;
-  color: #333;
-  border-bottom: 1px solid #dee2e6;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
   padding-bottom: 0.5rem;
 }
 
@@ -65,9 +65,9 @@
 
 .font-btn {
   padding: 0.5rem 1rem;
-  border: 1px solid #007bff;
-  background-color: #fff;
-  color: #007bff;
+  border: 1px solid var(--primary);
+  background-color: var(--surface);
+  color: var(--primary);
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
@@ -76,13 +76,13 @@
 }
 
 .font-btn:hover {
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 #font-size-display {
   font-weight: 500;
-  color: #495057;
+  color: var(--muted-2);
   min-width: 50px;
   text-align: center;
 }
@@ -92,7 +92,7 @@
    ============================================ */
 
 .placeholder-text {
-  color: #6c757d;
+  color: var(--muted);
   font-style: italic;
   text-align: center;
   padding: 2rem 1rem;
@@ -104,7 +104,7 @@
 
 #noteContent {
   font-size: 90%;
-  color: #333;
+  color: var(--text);
   padding: 1rem;
   border-radius: 8px;
   min-height: 200px;
@@ -117,29 +117,61 @@
 
 /* Estilos mejorados para el panel de notas */
 .note-display {
-  background-color: #f8f9fa;
-  border-left: 4px solid #007bff;
+  background-color: var(--panel-bg);
   padding: 1rem;
   border-radius: 4px;
   margin-top: 0.5rem;
 }
 
+.note-display .note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
 .note-display h5 {
-  margin: 0 0 0.5rem 0;
-  color: #007bff;
+  margin: 0;
+  color: var(--primary);
   font-size: 1.1rem;
+}
+
+.note-display .note-badges {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.note-display .note-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.note-display .note-badge-type {
+  background-color: var(--primary-100);
+  color: var(--primary-600);
+  border: 1px solid var(--primary-border);
+}
+
+.note-display .note-badge-subtype {
+  background-color: var(--muted-light);
+  color: var(--muted-dark);
+  border: 1px solid var(--muted-border);
 }
 
 .note-display p {
   margin: 0.5rem 0;
   line-height: 1.6;
-  color: #333;
+  color: var(--text);
 }
 
 .note-display .note-id {
   display: block;
   margin-top: 0.75rem;
-  color: #6c757d;
+  color: var(--muted);
   font-size: 0.8rem;
   font-style: italic;
 }
@@ -147,7 +179,7 @@
 .note-footer {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--border);
 }
 
 /* ============================================
@@ -170,7 +202,7 @@
 }
 
 #resize-handle:hover {
-  background-color: #007bff;
+  background-color: var(--primary);
 }
 
 #resize-handle::after {
@@ -181,12 +213,12 @@
   transform: translate(-50%, -50%);
   width: 3px;
   height: 50px;
-  background-color: #ccc;
+  background-color: var(--border-muted);
   border-radius: 2px;
 }
 
 #resize-handle:hover::after {
-  background-color: #fff;
+  background-color: var(--surface);
 }
 
 /* ============================================
@@ -331,17 +363,17 @@ tei-div[type="footnotes"] {
 }
 
 tei-div[type="editor"] {
-  background-color: #f2f2f2;
+  background-color: var(--panel-bg);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-heavy);
   padding: 20px;
   margin: 20px;
 }
 
 tei-div[type="colophon"] {
-  background-color: #f2f2f2;
+  background-color: var(--panel-bg);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-heavy);
   padding: 20px;
   margin: 20px;
 }
@@ -354,7 +386,7 @@ tei-quote {
 tei-milestone[unit="stanza"]::after {
   content: "";
   display: block;
-  border-bottom: 1px dotted #999;
+  border-bottom: 1px dotted var(--muted-mid);
   width: 75%;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -372,7 +404,7 @@ tei-milestone[unit="stanza"].show-line::after {
 /* Estilo base para targets de notas con wrapper */
 .note-wrapper.note-target {
   text-decoration: underline;
-  text-decoration-color: #999;
+  text-decoration-color: var(--muted-mid);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
   cursor: pointer;
@@ -382,8 +414,8 @@ tei-milestone[unit="stanza"].show-line::after {
 .note-wrapper.note-target:hover,
 .note-wrapper.note-active {
   text-decoration: none;
-  background: linear-gradient(transparent 5%, rgba(0, 123, 255, 0.15) 5%, rgba(0, 123, 255, 0.15) 80%);
-  border-bottom: 2px solid #007bff;
+  background: linear-gradient(transparent 5%, rgba(var(--primary-rgb), 0.15) 5%, rgba(var(--primary-rgb), 0.15) 80%);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* Cuando las notas están ocultas */
@@ -396,18 +428,18 @@ tei-milestone[unit="stanza"].show-line::after {
 .notes-hidden .note-wrapper.note-target:hover,
 .notes-hidden .note-wrapper.note-active {
   text-decoration: none;
-  background: linear-gradient(transparent 5%, rgba(0, 123, 255, 0.15) 5%, rgba(0, 123, 255, 0.15) 80%);
-  border-bottom: 2px solid #007bff;
+  background: linear-gradient(transparent 5%, rgba(var(--primary-rgb), 0.15) 5%, rgba(var(--primary-rgb), 0.15) 80%);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* Mantener compatibilidad con elementos sin wrapper (legacy) */
 .note-target:not(.note-wrapper),
 tei-l.note-target,
 tei-seg.note-target {
-  border-bottom: 2px solid #999;
+  border-bottom: 2px solid var(--muted-mid);
   cursor: pointer;
   transition: all 0.2s ease;
-  background-image: linear-gradient(transparent 80%, #999 80%, #999 100%);
+  background-image: linear-gradient(transparent 80%, var(--muted-mid) 80%, var(--muted-mid) 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: fit-content;
@@ -420,8 +452,8 @@ tei-l.note-target:hover,
 tei-seg.note-target:hover,
 tei-l.note-active,
 tei-seg.note-active {
-  background-image: linear-gradient(transparent 65%, rgba(0, 123, 255, 0.25) 65%, rgba(0, 123, 255, 0.25) 100%);
-  border-bottom-color: #007bff;
+  background-image: linear-gradient(transparent 65%, rgba(var(--primary-rgb), 0.25) 65%, rgba(var(--primary-rgb), 0.25) 100%);
+  border-bottom-color: var(--primary);
 }
 
 /* ============================================
@@ -431,12 +463,12 @@ tei-seg.note-active {
 .nota-evaluacion {
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--muted-light);
 }
 
 .evaluacion-header {
   font-size: 13px;
-  color: #666;
+  color: var(--muted);
   margin-bottom: 8px;
 }
 
@@ -448,27 +480,27 @@ tei-seg.note-active {
 .btn-evaluar {
   flex: 1;
   padding: 8px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   border-radius: 4px;
-  background: white;
+  background: var(--surface);
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s;
 }
 
 .btn-evaluar:hover {
-  background: #f5f5f5;
-  border-color: #999;
+  background: var(--muted-light);
+  border-color: var(--muted-mid);
 }
 
 .btn-util:hover {
-  background: #e8f5e9;
-  border-color: #4caf50;
+  background: var(--success-100);
+  border-color: var(--success);
 }
 
 .btn-mejorable:hover {
-  background: #fff3e0;
-  border-color: #ff9800;
+  background: var(--warning-100);
+  border-color: var(--warning);
 }
 
 .evaluacion-comentario {
@@ -490,7 +522,7 @@ tei-seg.note-active {
 .evaluacion-comentario textarea {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   border-radius: 4px;
   font-family: inherit;
   font-size: 13px;
@@ -500,7 +532,7 @@ tei-seg.note-active {
 
 .evaluacion-comentario textarea:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--primary);
 }
 
 .btn-enviar-comentario,
@@ -514,30 +546,30 @@ tei-seg.note-active {
 }
 
 .btn-enviar-comentario {
-  background: #007bff;
-  color: white;
+  background: var(--primary);
+  color: var(--on-primary);
 }
 
 .btn-enviar-comentario:hover {
-  background: #0056b3;
+  background: var(--primary-700);
 }
 
 .btn-cancelar-comentario {
-  background: #eee;
-  color: #333;
+  background: var(--muted-light);
+  color: var(--text);
 }
 
 .btn-cancelar-comentario:hover {
-  background: #ddd;
+  background: var(--border);
 }
 
 .evaluacion-feedback {
-  color: #4caf50;
+  color: var(--success);
   font-size: 14px;
   font-weight: 500;
   padding: 8px;
   text-align: center;
-  background: #e8f5e9;
+  background: var(--success-100);
   border-radius: 4px;
 }
 
@@ -553,12 +585,12 @@ tei-seg.note-active {
   margin-top: 1rem;
   cursor: pointer;
   border: none;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--on-primary);
   border-radius: 5px;
   text-align: center;
 }
 
 .fixed-button:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-700);
 }
