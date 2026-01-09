@@ -331,12 +331,41 @@ document.addEventListener("DOMContentLoaded", function() {
                         if (noteToShow) {
                             const noteNumber = noteToShow.getAttribute('n') || '';
                             const noteXmlId = noteToShow.getAttribute('xml:id') || '';
+                            const noteType = noteToShow.getAttribute('type') || '';
+                            const noteSubtype = noteToShow.getAttribute('subtype') || '';
+                            
+                            // Mapeo de tipologías normalizadas
+                            const typeMap = {
+                                'lexica': 'léxica',
+                                'parafrasis': 'paráfrasis',
+                                'historica': 'histórica',
+                                'geografica': 'geográfica',
+                                'mitologica': 'mitológica',
+                                'estilistica': 'estilística',
+                                'escenica': 'escénica',
+                                'ecdotica': 'ecdótica',
+                                'realia': 'realia'
+                            };
+                            
+                            // Construir badges de tipo/subtipo
+                            let badgesHTML = '';
+                            if (noteType) {
+                                const normalizedType = typeMap[noteType] || noteType;
+                                badgesHTML += `<span class="note-badge note-badge-type">${normalizedType}</span>`;
+                            }
+                            if (noteSubtype) {
+                                const normalizedSubtype = typeMap[noteSubtype] || noteSubtype;
+                                badgesHTML += `<span class="note-badge note-badge-subtype">${normalizedSubtype}</span>`;
+                            }
+                            
                             noteContentDiv.innerHTML = `
-                                <div class="note-display">
-                                    <h5>Nota ${noteNumber}</h5>
+                                <div class="note-display" data-note-id="${noteXmlId}">
+                                    <div class="note-header">
+                                        <h5>Nota</h5>
+                                        ${badgesHTML ? `<div class="note-badges">${badgesHTML}</div>` : ''}
+                                    </div>
                                     <p>${noteToShow.textContent.trim()}</p>
                                     <div class="note-footer">
-                                        <small class="note-id">ID: ${noteXmlId}</small>
                                     </div>
                                 </div>
                             `;

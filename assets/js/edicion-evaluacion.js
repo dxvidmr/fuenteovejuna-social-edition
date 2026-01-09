@@ -51,10 +51,13 @@ class EdicionEvaluacion {
     if (!noteContentDiv) return;
     
     // Buscar el ID de la nota actual en el contenido
-    const noteIdMatch = noteContentDiv.innerHTML.match(/ID:\s*([^\s<]+)/);
-    if (!noteIdMatch) return;
-    
-    const notaId = noteIdMatch[1];
+    const noteDisplay = noteContentDiv.querySelector('.note-display');
+    let notaId = noteDisplay?.dataset?.noteId || null;
+    if (!notaId) {
+      const noteIdMatch = noteContentDiv.innerHTML.match(/ID:\s*([^\s<]+)/);
+      if (!noteIdMatch) return;
+      notaId = noteIdMatch[1];
+    }
     
     // Evitar añadir botones duplicados
     if (noteContentDiv.querySelector('.nota-evaluacion')) return;
