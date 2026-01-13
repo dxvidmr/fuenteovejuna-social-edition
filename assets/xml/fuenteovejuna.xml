@@ -1799,7 +1799,7 @@
               ¡Vive el Cielo, que me 
               <seg xml:id="seg-860-1">corro</seg>!</l></sp></div>
         <div type="act" n="2">
-          <head>ACTO SEGUNDO</head>
+          <head type="act-head">ACTO SEGUNDO</head>
           <stage>Salen Esteban y Regidor I</stage>
           <sp who="#esteban" xml:id="sp-193">
             <speaker>ESTEBAN</speaker>
@@ -3236,7 +3236,7 @@
             <l n="1652" xml:id="l-1652">¡como ruedas de salmón</l>
             <l n="1653" xml:id="l-1653">me puso los atabales{409}!</l></sp></div>
         <div type="act" n="3">
-          <head>ACTO TERCERO</head>
+          <head type="act-head">ACTO TERCERO</head>
           <stage>Salen Esteban, Alonso y Barrildo</stage>
           <sp who="#esteban" xml:id="sp-474">
             <speaker>ESTEBAN</speaker>

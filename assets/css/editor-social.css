@@ -1,36 +1,74 @@
 /* ============================================
    EDITOR SOCIAL (JUEGO DE EVALUACIÓN)
+   Layout de dos columnas con notas laterales
    ============================================ */
 
-.editor-social-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* ============================================
+   LAYOUT PRINCIPAL (2 COLUMNAS)
+   ============================================ */
+
+.editor-social-layout {
+  display: flex;
+  min-height: calc(100vh - 60px);
 }
+
+/* Columna de texto (izquierda) */
+.editor-social-text-column {
+  flex: 1;
+  padding: 30px 50px;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  font-family: 'Google Sans Code', 'Oxygen Mono', 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+/* Columna de notas (derecha) */
+.editor-social-notes-column {
+  width: 45%;
+  min-width: 400px;
+  max-width: 50%;
+  border-left: 2px solid var(--border-muted);
+  background-color: var(--bg);
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+/* ============================================
+   HEADER DEL EDITOR
+   ============================================ */
 
 .editor-social-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
 }
 
 .editor-social-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 8px;
   color: var(--text);
 }
 
 .editor-social-header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--muted);
 }
 
 .editor-social-progreso {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--primary);
-  margin-top: 10px;
+  margin-top: 8px;
+  font-weight: 500;
 }
 
-/* Pasaje */
+/* ============================================
+   PASAJE
+   ============================================ */
+
 .pasaje-container {
   background: var(--surface);
   padding: 30px;
@@ -39,100 +77,300 @@
   margin-bottom: 30px;
 }
 
-/* Notas del pasaje */
-.notas-container {
+/* ============================================
+   PANEL DE NOTAS (columna derecha)
+   ============================================ */
+
+.notas-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.notas-panel-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.notas-contador {
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--surface);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Navegación entre notas */
+.notas-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.btn-nav-nota {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
   background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btn-nav-nota:hover:not(:disabled) {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+}
+
+.btn-nav-nota:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nota-posicion {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Contenido de la nota actual */
+.nota-content {
+  flex: 1;
+  background: var(--surface);
   padding: 20px;
   border-radius: 8px;
-}
-
-.nota {
-  background: var(--surface);
-  padding: 16px;
-  border-radius: 6px;
   margin-bottom: 16px;
-  border-left: 4px solid var(--primary);
+  overflow-y: auto;
 }
 
-.nota-tipo {
+.nota-content .placeholder-text {
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Estilos de nota individual */
+.nota-content .nota-tipo {
   font-size: 12px;
   text-transform: uppercase;
   color: var(--primary);
   font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.nota-texto {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--text);
   margin-bottom: 12px;
-}
-
-.nota-acciones {
   display: flex;
   gap: 8px;
 }
 
-.btn-util,
-.btn-mejorable {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid var(--border);
+.nota-content .nota-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.nota-content .nota-badge-type {
+  background-color: var(--primary-100);
+  color: var(--primary-600);
+  border: 1px solid var(--primary-border);
+}
+
+.nota-content .nota-badge-subtype {
+  background-color: var(--muted-light);
+  color: var(--muted-dark);
+  border: 1px solid var(--muted-border);
+}
+
+.nota-content .nota-texto {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.nota-content .nota-target-text {
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  padding: 10px 12px;
+  background: var(--bg);
   border-radius: 4px;
-  background: var(--surface);
+  margin-bottom: 16px;
+  border-left: 3px solid var(--primary);
+}
+
+/* Botones de evaluación en panel de notas */
+.nota-content .nota-acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.nota-content .btn-util,
+.nota-content .btn-mejorable {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
-.btn-util i, .btn-mejorable i {
-  margin-right: 8px;
-  font-size: 0.95em;
+.nota-content .btn-util i,
+.nota-content .btn-mejorable i {
+  font-size: 1em;
   color: var(--muted-2);
-  opacity: 0.9;
 }
 
-.btn-util:hover i { color: var(--success); }
-.btn-mejorable:hover i { color: var(--warning); }
-.btn-util.votado i { color: var(--success); }
-.btn-mejorable.votado i { color: var(--warning); }
-
-.btn-util:hover {
+.nota-content .btn-util:hover {
   background: var(--success-100);
   border-color: var(--success);
 }
 
-.btn-mejorable:hover {
+.nota-content .btn-util:hover i {
+  color: var(--success);
+}
+
+.nota-content .btn-mejorable:hover {
   background: var(--warning-100);
   border-color: var(--warning);
 }
 
-.btn-util.votado {
+.nota-content .btn-mejorable:hover i {
+  color: var(--warning);
+}
+
+.nota-content .btn-util.votado {
   background: var(--success-100);
   color: var(--success);
   border-color: var(--success);
   cursor: default;
 }
 
-.btn-mejorable.votado {
+.nota-content .btn-util.votado i {
+  color: var(--success);
+}
+
+.nota-content .btn-mejorable.votado {
   background: var(--warning-100);
   color: var(--warning);
   border-color: var(--warning);
   cursor: default;
 }
 
-/* Controles del juego */
+.nota-content .btn-mejorable.votado i {
+  color: var(--warning);
+}
+
+/* Campo de comentario */
+.nota-content .nota-comentario {
+  margin-top: 12px;
+}
+
+.nota-content .nota-comentario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.nota-content .nota-comentario-btns {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.nota-content .btn-enviar-comentario {
+  padding: 8px 16px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.nota-content .btn-cancelar-comentario {
+  padding: 8px 16px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Estado evaluado de la nota */
+.nota-content .nota-evaluada {
+  text-align: center;
+  padding: 16px;
+  background: var(--success-100);
+  border-radius: 6px;
+  color: var(--success);
+  font-weight: 500;
+}
+
+.nota-content .nota-evaluada i {
+  margin-right: 8px;
+}
+
+/* Instrucciones */
+.notas-instrucciones {
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 12px;
+  background: var(--surface);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.notas-instrucciones i {
+  margin-right: 6px;
+  color: var(--primary);
+}
+
+/* ============================================
+   CONTROLES DE NAVEGACIÓN DE PASAJES
+   ============================================ */
+
 .editor-social-controles {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
 }
 
 .btn-siguiente {
   background: var(--primary);
   color: var(--on-primary);
-  padding: 12px 32px;
-  font-size: 18px;
+  padding: 12px 28px;
+  font-size: 16px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -146,16 +384,52 @@
 .btn-saltar {
   background: transparent;
   color: var(--muted);
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 12px 20px;
+  font-size: 14px;
   border: 1px solid var(--border);
   border-radius: 6px;
   cursor: pointer;
-  margin-left: 16px;
+  margin-left: 12px;
   transition: all 0.2s;
 }
 
 .btn-saltar:hover {
   background: var(--nav-bg);
   border-color: var(--muted-mid);
+}
+
+/* ============================================
+   HIGHLIGHTS EN TEXTO (reutilizado de edicion.css)
+   ============================================ */
+
+/* Los estilos de .note-wrapper y .note-target se heredan de edicion.css */
+
+/* Estado activo para la nota seleccionada */
+.editor-social-text-column .note-wrapper.note-current {
+  background: linear-gradient(transparent 5%, rgba(var(--primary-rgb), 0.25) 5%, rgba(var(--primary-rgb), 0.25) 80%);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 900px) {
+  .editor-social-layout {
+    flex-direction: column;
+  }
+  
+  .editor-social-text-column {
+    max-height: none;
+    padding: 20px;
+  }
+  
+  .editor-social-notes-column {
+    width: 100%;
+    max-width: none;
+    min-width: auto;
+    border-left: none;
+    border-top: 2px solid var(--border-muted);
+    max-height: 50vh;
+  }
 }

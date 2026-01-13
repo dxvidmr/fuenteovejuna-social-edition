@@ -21,9 +21,9 @@ class ModalModo {
             <div class="modo-opcion" data-modo="anonimo">
               <div class="modo-header">
                 <span class="modo-icono"><i class="fa-solid fa-user-secret" aria-hidden="true"></i></span>
-                <h3>Rápido y anónimo</h3>
+                <h3>Anónimo</h3>
               </div>
-              <p>Sin formularios. Click directo en <i class="fa-solid fa-heart"></i>/<i class="fa-solid fa-heart-crack"></i></p>
+              <p>Sin formularios ni preguntas.</i></p>
               <button class="btn-seleccionar" data-modo="anonimo">Participar anónimamente</button>
             </div>
             
@@ -31,9 +31,9 @@ class ModalModo {
             <div class="modo-opcion" data-modo="lector">
               <div class="modo-header">
                 <span class="modo-icono"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
-                <h3>Como lector/a</h3>
+                <h3>Lector ocasional</h3>
               </div>
-              <p>Solo 2 datos: nivel de estudios y disciplina</p>
+              <p>Solo te pediremos un par de datos demográficos</p>
               <button class="btn-seleccionar" data-modo="lector">Continuar como lector/a</button>
             </div>
             
@@ -41,9 +41,9 @@ class ModalModo {
             <div class="modo-opcion" data-modo="colaborador">
               <div class="modo-header">
                 <span class="modo-icono"><i class="fa-solid fa-pen" aria-hidden="true"></i></span>
-                <h3>Colaborar en la edición</h3>
+                <h3>Colaborador reconocido</h3>
               </div>
-              <p>Email + nombre opcional. Contribuciones reconocidas.</p>
+              <p>Registro con email. Contribuciones reconocidas.</p>
               <button class="btn-seleccionar" data-modo="colaborador">Continuar como colaborador/a</button>
             </div>
             
@@ -95,7 +95,7 @@ class ModalModo {
               <div class="opcion-colaborador" data-tipo="login">
                 <span class="opcion-icono"><i class="fa-solid fa-key" aria-hidden="true"></i></span>
                 <h4>Iniciar sesión</h4>
-                <p>Ya estoy registrado. Solo mi email.</p>
+                <p>Ya estoy registrado.</p>
                 <button class="btn-opcion-colaborador" data-tipo="login">Iniciar sesión</button>
               </div>
             </div>
@@ -326,7 +326,7 @@ class ModalModo {
           </div>
           <div class="opcion-colaborador">
             <h4>Soy nuevo/a</h4>
-            <button class="btn-opcion-colaborador" id="btn-lector-nuevo">Registrar datos</button>
+            <button class="btn-opcion-colaborador" id="btn-lector-nuevo">Registrar otros datos</button>
           </div>
         </div>
         <button type="button" class="btn-volver"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Volver</button>

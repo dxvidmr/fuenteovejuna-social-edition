@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const fontSizeDisplay = document.getElementById('font-size-display');
     let currentFontSize = 100;
     
+    // Estado de navegación de notas
+    window.edicionNotas = {
+        todasLasNotas: [],      // Array de xml:ids de notas
+        notaActualIndex: -1,    // Índice de la nota actualmente mostrada
+        notaActualId: null      // ID de la nota actualmente mostrada
+    };
+    
     // Sistema de pestañas
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -329,46 +336,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                         
                         if (noteToShow) {
-                            const noteNumber = noteToShow.getAttribute('n') || '';
-                            const noteXmlId = noteToShow.getAttribute('xml:id') || '';
-                            const noteType = noteToShow.getAttribute('type') || '';
-                            const noteSubtype = noteToShow.getAttribute('subtype') || '';
-                            
-                            // Mapeo de tipologías normalizadas
-                            const typeMap = {
-                                'lexica': 'léxica',
-                                'parafrasis': 'paráfrasis',
-                                'historica': 'histórica',
-                                'geografica': 'geográfica',
-                                'mitologica': 'mitológica',
-                                'estilistica': 'estilística',
-                                'escenica': 'escénica',
-                                'ecdotica': 'ecdótica',
-                                'realia': 'realia'
-                            };
-                            
-                            // Construir badges de tipo/subtipo
-                            let badgesHTML = '';
-                            if (noteType) {
-                                const normalizedType = typeMap[noteType] || noteType;
-                                badgesHTML += `<span class="note-badge note-badge-type">${normalizedType}</span>`;
-                            }
-                            if (noteSubtype) {
-                                const normalizedSubtype = typeMap[noteSubtype] || noteSubtype;
-                                badgesHTML += `<span class="note-badge note-badge-subtype">${normalizedSubtype}</span>`;
-                            }
-                            
-                            noteContentDiv.innerHTML = `
-                                <div class="note-display" data-note-id="${noteXmlId}">
-                                    <div class="note-header">
-                                        <h5>Nota</h5>
-                                        ${badgesHTML ? `<div class="note-badges">${badgesHTML}</div>` : ''}
-                                    </div>
-                                    <p>${noteToShow.textContent.trim()}</p>
-                                    <div class="note-footer">
-                                    </div>
-                                </div>
-                            `;
+                            // Mostrar nota usando función compartida
+                            mostrarNotaEnPanel(noteToShow, activeGroup, teiContainer, noteContentDiv);
                         } else {
                             noteContentDiv.innerHTML = '<p>Nota no encontrada.</p>';
                             console.error('No se encontró nota con xml:id:', activeGroup);
@@ -378,6 +347,10 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
+        // Guardar lista de todas las notas para navegación
+        window.edicionNotas.todasLasNotas = notes.map(n => n.getAttribute('xml:id')).filter(id => id);
+        console.log(`Total de notas para navegación: ${window.edicionNotas.todasLasNotas.length}`);
+        
         // ← AQUÍ VA TODO AL FINAL DE processNotes():
         console.log('Notas procesadas correctamente');
         
@@ -386,6 +359,147 @@ document.addEventListener("DOMContentLoaded", function() {
             window.edicionEvaluacion.init();
         }
     } // ← Fin de processNotes()
+    
+    // Función para mostrar nota en el panel con navegación
+    function mostrarNotaEnPanel(noteToShow, noteXmlId, teiContainer, noteContentDiv) {
+        const noteType = noteToShow.getAttribute('type') || '';
+        const noteSubtype = noteToShow.getAttribute('subtype') || '';
+        
+        // Mapeo de tipologías normalizadas
+        const typeMap = {
+            'lexica': 'léxica',
+            'parafrasis': 'paráfrasis',
+            'historica': 'histórica',
+            'geografica': 'geográfica',
+            'mitologica': 'mitológica',
+            'estilistica': 'estilística',
+            'escenica': 'escénica',
+            'ecdotica': 'ecdótica',
+            'realia': 'realia'
+        };
+        
+        // Construir badges de tipo/subtipo
+        let badgesHTML = '';
+        if (noteType) {
+            const normalizedType = typeMap[noteType] || noteType;
+            badgesHTML += `<span class="note-badge note-badge-type">${normalizedType}</span>`;
+        }
+        if (noteSubtype) {
+            const normalizedSubtype = typeMap[noteSubtype] || noteSubtype;
+            badgesHTML += `<span class="note-badge note-badge-subtype">${normalizedSubtype}</span>`;
+        }
+        
+        // Actualizar estado de navegación
+        window.edicionNotas.notaActualId = noteXmlId;
+        window.edicionNotas.notaActualIndex = window.edicionNotas.todasLasNotas.indexOf(noteXmlId);
+        
+        const currentIndex = window.edicionNotas.notaActualIndex;
+        const totalNotas = window.edicionNotas.todasLasNotas.length;
+        const hasPrev = currentIndex > 0;
+        const hasNext = currentIndex < totalNotas - 1;
+        
+        // Marcar nota activa en el texto (persistente)
+        marcarNotaActivaEnTexto(noteXmlId, teiContainer);
+        
+        noteContentDiv.innerHTML = `
+            <div class="note-panel-header">
+                <div class="note-nav-controls">
+                    <button class="btn-nav-nota" id="btn-nota-prev" ${!hasPrev ? 'disabled' : ''} title="Nota anterior">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <span class="nota-posicion">Nota ${currentIndex + 1} de ${totalNotas}</span>
+                    <button class="btn-nav-nota" id="btn-nota-next" ${!hasNext ? 'disabled' : ''} title="Nota siguiente">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <button class="btn-cerrar-nota" id="btn-cerrar-nota" title="Cerrar nota">
+                    <i class="fa-solid fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="note-display" data-note-id="${noteXmlId}">
+                <div class="note-header">
+                    <h5>Nota</h5>
+                    ${badgesHTML ? `<div class="note-badges">${badgesHTML}</div>` : ''}
+                </div>
+                <p>${noteToShow.textContent.trim()}</p>
+                <div class="note-footer">
+                </div>
+            </div>
+        `;
+        
+        // Añadir event listeners para navegación
+        document.getElementById('btn-nota-prev')?.addEventListener('click', () => {
+            navegarNota(-1, teiContainer, noteContentDiv);
+        });
+        
+        document.getElementById('btn-nota-next')?.addEventListener('click', () => {
+            navegarNota(1, teiContainer, noteContentDiv);
+        });
+        
+        document.getElementById('btn-cerrar-nota')?.addEventListener('click', () => {
+            cerrarNota(teiContainer, noteContentDiv);
+        });
+    }
+    
+    // Función para navegar entre notas
+    function navegarNota(direccion, teiContainer, noteContentDiv) {
+        const newIndex = window.edicionNotas.notaActualIndex + direccion;
+        
+        if (newIndex < 0 || newIndex >= window.edicionNotas.todasLasNotas.length) return;
+        
+        const newNoteId = window.edicionNotas.todasLasNotas[newIndex];
+        
+        // Buscar la nota en el XML
+        const allNotes = window.notasXML.getElementsByTagName('note');
+        let noteToShow = null;
+        for (let note of allNotes) {
+            if (note.getAttribute('xml:id') === newNoteId) {
+                noteToShow = note;
+                break;
+            }
+        }
+        
+        if (noteToShow) {
+            mostrarNotaEnPanel(noteToShow, newNoteId, teiContainer, noteContentDiv);
+            
+            // Scroll al elemento en el texto
+            const wrapper = teiContainer.querySelector(`[data-note-groups*="${newNoteId}"]`);
+            if (wrapper) {
+                wrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    }
+    
+    // Función para cerrar la nota
+    function cerrarNota(teiContainer, noteContentDiv) {
+        // Quitar highlight activo
+        teiContainer.querySelectorAll('.note-current').forEach(el => {
+            el.classList.remove('note-current', 'note-active');
+        });
+        
+        // Resetear estado
+        window.edicionNotas.notaActualId = null;
+        window.edicionNotas.notaActualIndex = -1;
+        
+        // Mostrar placeholder
+        noteContentDiv.innerHTML = '<p class="placeholder-text">Haz clic en el texto subrayado para ver las notas.</p>';
+    }
+    
+    // Función para marcar nota activa en el texto (persistente)
+    function marcarNotaActivaEnTexto(noteId, teiContainer) {
+        // Quitar marca anterior
+        teiContainer.querySelectorAll('.note-current').forEach(el => {
+            el.classList.remove('note-current', 'note-active');
+        });
+        
+        // Marcar la nueva
+        if (noteId) {
+            const wrappers = teiContainer.querySelectorAll(`[data-note-groups*="${noteId}"]`);
+            wrappers.forEach(wrapper => {
+                wrapper.classList.add('note-current', 'note-active');
+            });
+        }
+    }
     
     
     // Llamar a la función de alineación después de que el TEI esté cargado
@@ -432,4 +546,57 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+    
+    // Navegación por actos
+    const actsButtons = document.querySelectorAll('.btn-act');
+    actsButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const actNumber = this.getAttribute('data-act');
+            const actDiv = teiContainer.querySelector(`tei-div[type="act"][n="${actNumber}"]`);
+            
+            if (actDiv) {
+                // Remover clase active de todos los botones
+                actsButtons.forEach(btn => btn.classList.remove('active'));
+                // Agregar clase active al botón clickeado
+                this.classList.add('active');
+                
+                // Hacer scroll al acto
+                actDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                console.log('No se encontró el acto:', actNumber);
+            }
+        });
+    });
+    
+    // Inicializar navegación por actos cuando el TEI esté cargado
+    const teiActsObserver = new MutationObserver(() => {
+        if (teiContainer.querySelector('tei-div[type="act"]')) {
+            // Re-inicializar los event listeners
+            const actsButtons = document.querySelectorAll('.btn-act');
+            actsButtons.forEach(button => {
+                const newButton = button.cloneNode(true);
+                button.parentNode.replaceChild(newButton, button);
+            });
+            
+            const newActsButtons = document.querySelectorAll('.btn-act');
+            newActsButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const actNumber = this.getAttribute('data-act');
+                    const actDiv = teiContainer.querySelector(`tei-div[type="act"][n="${actNumber}"]`);
+                    
+                    if (actDiv) {
+                        newActsButtons.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        actDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                        console.log('No se encontró el acto:', actNumber, 'en', teiContainer);
+                    }
+                });
+            });
+            
+            teiActsObserver.disconnect();
+        }
+    });
+    
+    teiActsObserver.observe(teiContainer, { childList: true, subtree: true });
 });

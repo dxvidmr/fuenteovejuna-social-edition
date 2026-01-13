@@ -24,37 +24,70 @@
     <button id="btn-modo-usuario" class="btn-modo-usuario"><i class="fa-solid fa-user" aria-hidden="true"></i> Mi participación</button>
   </nav>
   
-  <!-- Contenido principal -->
-  <div class="editor-social-container">
+  <!-- Contenido principal: Layout de dos columnas -->
+  <div class="editor-social-layout">
     
-    <!-- Header del editor social -->
-    <div class="editor-social-header">
-      <h1>Editor Social de Fuenteovejuna</h1>
-      <p>Lee los pasajes y evalúa si las notas te resultan útiles</p>
-      <div class="editor-social-progreso">
-        Pasaje <span id="pasaje-actual">1</span> de <span id="pasajes-totales">-</span>
+    <!-- Columna izquierda: Texto del pasaje -->
+    <div class="editor-social-text-column">
+      
+      <!-- Header del editor social -->
+      <div class="editor-social-header">
+        <h1>Editor Social</h1>
+        <p>Lee los pasajes y evalúa si las notas te resultan útiles</p>
+        <div class="editor-social-progreso">
+          Pasaje <span id="pasaje-actual">1</span> de <span id="pasajes-totales">-</span>
+        </div>
       </div>
+      
+      <!-- Pasaje actual -->
+      <div class="pasaje-container">
+        <div id="pasaje-content">
+          <div class="loading">Cargando pasaje...</div>
+        </div>
+      </div>
+      
+      <!-- Controles de navegación de pasajes -->
+      <div class="editor-social-controles">
+        <button id="btn-siguiente" class="btn-siguiente">Siguiente pasaje <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        <button id="btn-saltar" class="btn-saltar">Saltar sin evaluar</button>
+      </div>
+      
     </div>
     
-    <!-- Pasaje actual -->
-    <div class="pasaje-container">
-      <div id="pasaje-content">
-        <div class="loading">Cargando pasaje...</div>
+    <!-- Columna derecha: Panel de notas -->
+    <div class="editor-social-notes-column">
+      
+      <!-- Header del panel de notas -->
+      <div class="notas-panel-header">
+        <h3>Notas</h3>
+        <div class="notas-contador">
+          <span id="notas-evaluadas">0</span> de <span id="notas-totales">0</span> evaluadas
+        </div>
       </div>
-    </div>
-    
-    <!-- Notas del pasaje -->
-    <div class="notas-container">
-      <h2 style="margin-bottom: 20px; color: #333;">Notas de este pasaje</h2>
-      <div id="notas-list">
-        <!-- Se llenará dinámicamente con JS -->
+      
+      <!-- Navegación entre notas -->
+      <div class="notas-navegacion">
+        <button id="btn-nota-anterior" class="btn-nav-nota" title="Nota anterior">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <span class="nota-posicion">
+          Nota <span id="nota-actual-index">0</span> de <span id="notas-pasaje-total">0</span>
+        </span>
+        <button id="btn-nota-siguiente" class="btn-nav-nota" title="Nota siguiente">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
       </div>
-    </div>
-    
-    <!-- Controles de navegación -->
-    <div class="editor-social-controles">
-      <button id="btn-siguiente" class="btn-siguiente">Siguiente pasaje <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-      <button id="btn-saltar" class="btn-saltar">Saltar sin evaluar</button>
+      
+      <!-- Contenido de la nota actual -->
+      <div id="nota-content" class="nota-content">
+        <p class="placeholder-text">Haz clic en un texto subrayado o usa las flechas para ver las notas</p>
+      </div>
+      
+      <!-- Instrucciones -->
+      <div class="notas-instrucciones">
+        <p><i class="fa-solid fa-info-circle" aria-hidden="true"></i> Haz clic en el texto subrayado para ver cada nota, o navega con las flechas.</p>
+      </div>
+      
     </div>
     
   </div>

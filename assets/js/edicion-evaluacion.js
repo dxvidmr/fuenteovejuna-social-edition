@@ -4,15 +4,19 @@
 
 class EdicionEvaluacion {
   constructor() {
-    this.notasEvaluadas = new Set(); // Para evitar duplicados
+    this.notasEvaluadasLocal = new Set(); // Notas evaluadas en esta sesión
+    this.notasEvaluadasBD = new Set();    // Notas evaluadas previamente (de BD)
   }
   
   /**
    * Inicializar sistema de evaluación
    * Llamar DESPUÉS de que processNotes() haya terminado
    */
-  init() {
+  async init() {
     console.log('Inicializando sistema de evaluación en edición...');
+    
+    // Cargar notas ya evaluadas por este usuario
+    await this.cargarNotasYaEvaluadas();
     
     // Esperar a que las notas estén renderizadas
     const checkNotas = setInterval(() => {
@@ -22,6 +26,35 @@ class EdicionEvaluacion {
         clearInterval(checkNotas);
       }
     }, 100);
+  }
+  
+  /**
+   * Cargar notas que el usuario ya evaluó previamente
+   */
+  async cargarNotasYaEvaluadas() {
+    try {
+      const datosUsuario = window.userManager?.obtenerDatosUsuario();
+      if (!datosUsuario?.session_id) return;
+      
+      const { data, error } = await window.supabaseClient
+        .from('evaluaciones')
+        .select('nota_id')
+        .eq('session_id', datosUsuario.session_id);
+      
+      if (!error && data) {
+        data.forEach(e => this.notasEvaluadasBD.add(e.nota_id));
+        console.log(`✓ ${this.notasEvaluadasBD.size} notas ya evaluadas cargadas`);
+      }
+    } catch (err) {
+      console.warn('No se pudieron cargar evaluaciones previas:', err);
+    }
+  }
+  
+  /**
+   * Verificar si una nota ya fue evaluada
+   */
+  estaEvaluada(notaId) {
+    return this.notasEvaluadasLocal.has(notaId) || this.notasEvaluadasBD.has(notaId);
   }
   
   /**
@@ -60,8 +93,23 @@ class EdicionEvaluacion {
     }
     
     // Evitar añadir botones duplicados
-    if (noteContentDiv.querySelector('.nota-evaluacion')) return;
-    if (this.notasEvaluadas.has(notaId)) return;
+    if (noteContentDiv.querySelector('.nota-evaluacion') || noteContentDiv.querySelector('.nota-ya-evaluada')) return;
+    
+    // Verificar si ya fue evaluada
+    if (this.estaEvaluada(notaId)) {
+      // Mostrar mensaje de "ya evaluada"
+      const yaEvaluadaDiv = document.createElement('div');
+      yaEvaluadaDiv.className = 'nota-ya-evaluada';
+      yaEvaluadaDiv.innerHTML = '<i class="fa-solid fa-check-circle" aria-hidden="true"></i> Nota evaluada';
+      
+      const noteFooter = noteContentDiv.querySelector('.note-footer');
+      if (noteFooter) {
+        noteFooter.parentNode.insertBefore(yaEvaluadaDiv, noteFooter);
+      } else {
+        noteContentDiv.appendChild(yaEvaluadaDiv);
+      }
+      return;
+    }
     
     // Obtener versión de la nota desde Supabase
     this.obtenerVersionNota(notaId).then(version => {
@@ -99,8 +147,6 @@ class EdicionEvaluacion {
       
       // Añadir event listeners
       this.attachButtonListeners(evaluacionDiv, notaId, version);
-      
-      this.notasEvaluadas.add(notaId);
     });
   }
   
@@ -142,7 +188,7 @@ class EdicionEvaluacion {
     btnUtil.addEventListener('click', async () => {
       const exito = await this.registrarEvaluacion(notaId, version, 'up', null);
       if (exito) {
-        this.mostrarFeedback(container, 'up');
+        this.mostrarFeedback(container, 'up', notaId);
       }
     });
     
@@ -157,7 +203,7 @@ class EdicionEvaluacion {
       const comentario = textarea.value.trim() || null;
       const exito = await this.registrarEvaluacion(notaId, version, 'down', comentario);
       if (exito) {
-        this.mostrarFeedback(container, 'down');
+        this.mostrarFeedback(container, 'down', notaId);
       }
     });
     
@@ -220,7 +266,7 @@ class EdicionEvaluacion {
   /**
    * Mostrar feedback visual tras evaluación
    */
-  mostrarFeedback(container, vote) {
+  mostrarFeedback(container, vote, notaId) {
     const botones = container.querySelector('.evaluacion-botones');
     const comentario = container.querySelector('.evaluacion-comentario');
     
@@ -228,14 +274,16 @@ class EdicionEvaluacion {
     botones.style.display = 'none';
     comentario.style.display = 'none';
     
+    // Marcar como evaluada localmente
+    this.notasEvaluadasLocal.add(notaId);
+    
     // Crear mensaje de confirmación
     const feedback = document.createElement('div');
-    feedback.className = 'evaluacion-feedback';
-    feedback.innerHTML = vote === 'up' 
-      ? '✓ Gracias por tu evaluación' 
-      : '✓ Gracias por tu comentario';
+    feedback.className = 'nota-ya-evaluada';
+    feedback.innerHTML = '<i class="fa-solid fa-check-circle" aria-hidden="true"></i> Nota evaluada';
     
-    container.appendChild(feedback);
+    // Reemplazar el contenedor de evaluación
+    container.replaceWith(feedback);
     
     // Toast adicional
     mostrarToast(vote === 'up' ? 'Nota marcada como útil' : 'Gracias por tu feedback', 2000);
