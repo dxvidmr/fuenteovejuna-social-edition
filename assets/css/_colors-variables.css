@@ -32,8 +32,8 @@
   /* Estados */
   --success: #4caf50;
   --success-100: #e8f5e9;
-  --warning: #ff9800;
-  --warning-100: #fff3e0;
+  --warning: #c0392b;
+  --warning-100: #fbeae9;
 
   /* Overlay / toasts */
   --overlay: rgba(0,0,0,0.7);
