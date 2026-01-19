@@ -622,50 +622,45 @@ class EditorSocial {
    * Registrar evaluacion en Supabase
    */
   async registrarEvaluacion(notaId, version, vote, comentario, pasajeId) {
-    // Verificar modo de usuario
-    if (!window.userManager.tieneModoDefinido()) {
-      await window.modalModo.mostrar();
-    }
+      // Verificar modo de usuario
+      if (!window.userManager.tieneModoDefinido()) {
+        await window.modalModo.mostrar();
+      }
 
-    const datosUsuario = window.userManager.obtenerDatosUsuario();
-
-    // Asegurar que la sesion este creada en BD
-    if (!datosUsuario.sesion_creada_en_bd) {
-      console.log('Primera evaluacion: creando sesion en BD...');
-      const exito = await window.modalModo.crearSesionEnBD(datosUsuario);
-      if (exito) {
-        window.userManager.marcarSesionCreada();
-      } else {
-        mostrarToast('Error al crear sesion', 3000);
+      const datosUsuario = window.userManager.obtenerDatosUsuario();
+      
+      if (!datosUsuario) {
+        console.error('No se pudo obtener datos de usuario');
+        mostrarToast('Error: modo no definido', 3000);
         return false;
       }
+
+      // La sesión ya está creada en BD (se creó al elegir modo)
+      const evaluacion = {
+        timestamp: new Date().toISOString(),
+        source: 'editor-social',
+        event_type: 'nota_eval',
+        session_id: datosUsuario.session_id,
+        pasaje_id: pasajeId,
+        nota_id: notaId,
+        nota_version: version,
+        vote: vote,
+        comment: comentario
+      };
+
+      const { error } = await window.supabaseClient
+        .from('evaluaciones')
+        .insert(evaluacion);
+
+      if (error) {
+        console.error('Error al registrar evaluacion:', error);
+        mostrarToast('Error al enviar evaluacion', 3000);
+        return false;
+      }
+
+      console.log('✓ Evaluacion registrada:', vote, notaId);
+      return true;
     }
-
-    const evaluacion = {
-      timestamp: new Date().toISOString(),
-      source: 'editor-social',
-      event_type: 'nota_eval',
-      session_id: datosUsuario.session_id,
-      pasaje_id: pasajeId,
-      nota_id: notaId,
-      nota_version: version,
-      vote: vote,
-      comment: comentario,
-    };
-
-    const { error } = await window.supabaseClient
-      .from('evaluaciones')
-      .insert(evaluacion);
-
-    if (error) {
-      console.error('Error al registrar evaluacion:', error);
-      mostrarToast('Error al enviar evaluacion', 3000);
-      return false;
-    }
-
-    console.log('Evaluacion registrada:', vote, notaId);
-    return true;
-  }
 
   /**
    * Obtener etiqueta legible del tipo de nota
