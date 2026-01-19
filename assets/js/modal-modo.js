@@ -8,10 +8,11 @@ class ModalModo {
       <div id="modal-modo" class="modal" style="display:none;">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-          <h2>¿Cómo quieres participar?</h2>
-          <p class="modal-descripcion">
-            Puedes evaluar las notas de esta edición. Tu participación ayuda a mejorar 
-            las explicaciones para futuros lectores.
+          <button id="modal-modo-close" class="modal-close" aria-label="Cerrar modal">&times;</button>
+          <h2 id="modal-titulo">¿Cómo quieres participar?</h2>
+          <p class="modal-descripcion" id="modal-descripcion">
+            Tu participación ayuda a mejorar 
+            las notas para futuros lectores.
           </p>
           
           <!-- Opciones de modo (2 opciones) -->
@@ -42,10 +43,10 @@ class ModalModo {
           <!-- Formulario anónimo con datos opcionales -->
           <div id="form-anonimo" class="modo-form" style="display:none;">
             <h3>Participación anónima</h3>
-            <p>Opcionalmente, puedes compartir datos demográficos para análisis (100% anónimo):</p>
+            <p>Opcionalmente, puedes compartir datos demográficos para análisis (100% anónimo):</p><br>
             <form id="form-anonimo-datos">
               <label>
-                Nivel de estudios (opcional):
+                <b>Nivel de estudios</b> (opcional):
                 <select name="nivel_estudios">
                   <option value="">Prefiero no decirlo</option>
                   <option value="secundaria">Secundaria</option>
@@ -57,7 +58,7 @@ class ModalModo {
               </label>
               
               <label>
-                Disciplina (opcional):
+                <b>Disciplina</b> (opcional):
                 <select name="disciplina">
                   <option value="">Prefiero no decirlo</option>
                   <option value="filologia">Filología/Lengua/Literatura</option>
@@ -78,7 +79,7 @@ class ModalModo {
           <!-- Opciones colaborador: Iniciar sesión o Registrarse -->
           <div id="colaborador-opciones" class="modo-form" style="display:none;">
             <h3>Identificarse como colaborador/a</h3>
-            <p class="info-colaborador">No necesitas contraseña. Solo tu email para reconocerte.</p>
+            <p class="info-colaborador">No necesitas contraseña. Solo tu email para reconocerte.</p><br>
             <div class="colaborador-opciones-grid">
               <div class="opcion-colaborador" data-tipo="login">
                 <span class="opcion-icono"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i></span>
@@ -102,7 +103,7 @@ class ModalModo {
             <p class="info-identificacion">
               Introduce el mismo email que usaste anteriormente. 
               No guardamos tu email real, solo un código único generado a partir de él.
-            </p>
+            </p><br>
             <form id="form-colaborador-login-datos">
               <label>
                 Email:
@@ -118,13 +119,12 @@ class ModalModo {
           <div id="form-colaborador-registro" class="modo-form" style="display:none;">
             <h3>Registrarse</h3>
             <p class="info-registro">
-              Tu email se convertirá en un código único (hash SHA-256) y no se almacenará como texto legible.
             </p>
             <form id="form-colaborador-registro-datos">
               <label>
                 Email:
                 <input type="email" name="email" required placeholder="tu@email.com">
-                <small>Solo para generar tu identificador único. No se guarda el email real.</small>
+                <small>Tu email se cifra y se convierte en un código único para identificarte en próximas visitas. No guardamos tu email real.</small>
               </label>
               
               <label>
@@ -168,6 +168,7 @@ class ModalModo {
       </div>
     `;
     
+    this._handleKeydown = this._handleKeydown.bind(this);
     this.init();
   }
   
@@ -225,16 +226,26 @@ class ModalModo {
     document.querySelectorAll('.btn-volver').forEach(btn => {
       btn.addEventListener('click', () => this.volverOpciones());
     });
+
+    // Botón de cierre (X) y cierre también al pulsar sobre la overlay
+    const closeBtn = this.modal.querySelector('#modal-modo-close');
+    if (closeBtn) closeBtn.addEventListener('click', () => this.cerrar());
+    const overlay = this.modal.querySelector('.modal-overlay');
+    if (overlay) overlay.addEventListener('click', () => this.cerrar());
   }
   
   seleccionarModo(modo) {
     if (modo === 'anonimo') {
       // Mostrar formulario con datos opcionales
+      document.getElementById('modal-titulo').style.display = 'none';
+      document.getElementById('modal-descripcion').style.display = 'none';
       this.opciones.style.display = 'none';
       this.formAnonimo.style.display = 'block';
       
     } else if (modo === 'colaborador') {
       // Mostrar opciones de login/registro
+      document.getElementById('modal-titulo').style.display = 'none';
+      document.getElementById('modal-descripcion').style.display = 'none';
       this.opciones.style.display = 'none';
       this.colaboradorOpciones.style.display = 'block';
     }
@@ -451,6 +462,10 @@ class ModalModo {
   }
   
   volverOpciones() {
+    // Mostrar cabecera
+    document.getElementById('modal-titulo').style.display = 'block';
+    document.getElementById('modal-descripcion').style.display = 'block';
+    
     // Ocultar todos los formularios
     this.formAnonimo.style.display = 'none';
     this.colaboradorOpciones.style.display = 'none';
@@ -471,12 +486,21 @@ class ModalModo {
       this.volverOpciones();
       this.modal.style.display = 'flex';
       this.onClose = resolve;
+      // Activar cierre con tecla Escape
+      document.addEventListener('keydown', this._handleKeydown);
     });
   }
   
   cerrar() {
     this.modal.style.display = 'none';
+    // Desactivar listener de tecla Escape
+    document.removeEventListener('keydown', this._handleKeydown);
     if (this.onClose) this.onClose();
+  }
+
+  // Manejar tecla Escape para cerrar modal
+  _handleKeydown(e) {
+    if (e.key === 'Escape') this.cerrar();
   }
   
   async mostrarInfoUsuario() {
@@ -541,7 +565,6 @@ class ModalModo {
           <button class="btn-cerrar-sesion">
             <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Cerrar sesión
           </button>
-          <button class="btn-cerrar-info">Cerrar</button>
         </div>
       </div>
     `;
@@ -553,6 +576,7 @@ class ModalModo {
     infoModal.innerHTML = `
       <div class="modal-overlay"></div>
       <div class="modal-content">
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
         ${infoHTML}
       </div>
     `;
@@ -560,14 +584,27 @@ class ModalModo {
     document.body.appendChild(infoModal);
     
     // Event listeners
-    infoModal.querySelector('.btn-cerrar-info').addEventListener('click', () => {
-      infoModal.remove();
-    });
+    const closeBtn = infoModal.querySelector('.modal-close');
+    const overlay = infoModal.querySelector('.modal-overlay');
+    
+    const cerrarModal = () => infoModal.remove();
+    
+    if (closeBtn) closeBtn.addEventListener('click', cerrarModal);
+    if (overlay) overlay.addEventListener('click', cerrarModal);
+    
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        cerrarModal();
+        document.removeEventListener('keydown', handleEscape);
+      }
+    };
+    document.addEventListener('keydown', handleEscape);
     
     // Botón cerrar sesión
     infoModal.querySelector('.btn-cerrar-sesion').addEventListener('click', () => {
       if (confirm('¿Seguro que quieres cerrar sesión? Podrás elegir otro modo después.')) {
         window.userManager.cerrarSesion();
+        document.removeEventListener('keydown', handleEscape);
         infoModal.remove();
         mostrarToast('Sesión cerrada', 2000);
         
@@ -576,10 +613,6 @@ class ModalModo {
           this.mostrar();
         }, 500);
       }
-    });
-    
-    infoModal.querySelector('.modal-overlay').addEventListener('click', () => {
-      infoModal.remove();
     });
   }
 }

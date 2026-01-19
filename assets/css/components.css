@@ -35,6 +35,29 @@
   box-shadow: var(--shadow-elev-2);
 }
 
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--text);
+  background: rgba(0,0,0,0.05);
+  outline: none;
+}
+
 .modal-content h2 {
   margin-bottom: 8px;
   color: var(--text);
