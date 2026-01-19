@@ -142,7 +142,7 @@
   justify-content: flex-end;
 }
 
-.btn-cambiar-modo {
+.btn-cerrar-sesion {
   background-color: var(--primary);
   color: var(--on-primary);
   padding: 10px 20px;
@@ -153,7 +153,7 @@
   transition: background-color 0.2s;
 }
 
-.btn-cambiar-modo:hover {
+.btn-cerrar-sesion:hover {
   background-color: var(--primary-700);
 }
 

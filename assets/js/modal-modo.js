@@ -271,98 +271,108 @@ class ModalModo {
   }
   
   async mostrarInfoUsuario() {
-    const datosUsuario = window.userManager.obtenerDatosUsuario();
+  const datosUsuario = window.userManager.obtenerDatosUsuario();
+  
+  if (!datosUsuario) {
+    // No hay sesión activa
+    await this.mostrar();
+    return;
+  }
+  
+  // Obtener estadísticas
+  const stats = await window.userManager.obtenerEstadisticas();
+  
+  let modoTexto = '';
+  let infoExtra = '';
+  
+  if (datosUsuario.es_colaborador) {
+    modoTexto = '<i class="fa-solid fa-pen" aria-hidden="true"></i> Colaborador/a';
+    infoExtra = `
+      <p><strong>Nombre:</strong> ${datosUsuario.display_name || 'No especificado'}</p>
+    `;
     
-    if (!datosUsuario) {
-      // No hay sesión activa
-      await this.mostrar();
-      return;
+    if (datosUsuario.nivel_estudios) {
+      infoExtra += `<p><strong>Nivel:</strong> ${datosUsuario.nivel_estudios}</p>`;
+    }
+    if (datosUsuario.disciplina) {
+      infoExtra += `<p><strong>Disciplina:</strong> ${datosUsuario.disciplina}</p>`;
     }
     
-    // Obtener estadísticas
-    const stats = await window.userManager.obtenerEstadisticas();
+  } else {
+    modoTexto = '<i class="fa-solid fa-user-secret" aria-hidden="true"></i> Anónimo';
+    infoExtra = '<p>Participas de forma anónima sin registro.</p>';
     
-    let modoTexto = '';
-    let infoExtra = '';
-    
-    if (datosUsuario.es_colaborador) {
-      modoTexto = '<i class="fa-solid fa-pen" aria-hidden="true"></i> Colaborador/a';
-      infoExtra = `
-        <p><strong>Nombre:</strong> ${datosUsuario.display_name || 'No especificado'}</p>
-      `;
-      
+    if (datosUsuario.nivel_estudios || datosUsuario.disciplina) {
+      infoExtra += '<p><strong>Datos demográficos compartidos:</strong></p>';
       if (datosUsuario.nivel_estudios) {
-        infoExtra += `<p><strong>Nivel:</strong> ${datosUsuario.nivel_estudios}</p>`;
+        infoExtra += `<p>Nivel: ${datosUsuario.nivel_estudios}</p>`;
       }
       if (datosUsuario.disciplina) {
-        infoExtra += `<p><strong>Disciplina:</strong> ${datosUsuario.disciplina}</p>`;
-      }
-      
-    } else {
-      modoTexto = '<i class="fa-solid fa-user-secret" aria-hidden="true"></i> Anónimo';
-      infoExtra = '<p>Participas de forma anónima sin registro.</p>';
-      
-      if (datosUsuario.nivel_estudios || datosUsuario.disciplina) {
-        infoExtra += '<p><strong>Datos demográficos compartidos:</strong></p>';
-        if (datosUsuario.nivel_estudios) {
-          infoExtra += `<p>Nivel: ${datosUsuario.nivel_estudios}</p>`;
-        }
-        if (datosUsuario.disciplina) {
-          infoExtra += `<p>Disciplina: ${datosUsuario.disciplina}</p>`;
-        }
+        infoExtra += `<p>Disciplina: ${datosUsuario.disciplina}</p>`;
       }
     }
-    
-    const infoHTML = `
-      <div class="info-usuario-panel">
-        <h3>Tu participación</h3>
-        <div class="info-modo">
-          <p><strong>Modo actual:</strong> ${modoTexto}</p>
-          ${infoExtra}
-        </div>
-        <div class="info-stats">
-          <p><strong>Contribuciones totales:</strong> ${stats?.total_evaluaciones || 0}</p>
-          ${stats ? `
-            <p>Votos positivos: ${stats.votos_up}</p>
-            <p>Votos negativos: ${stats.votos_down}</p>
-            <p>Comentarios: ${stats.comentarios}</p>
-          ` : ''}
-        </div>
-        <div class="info-acciones">
-          <button class="btn-cambiar-modo">Cambiar modo de participación</button>
-          <button class="btn-cerrar-info">Cerrar</button>
-        </div>
-      </div>
-    `;
-    
-    // Crear modal temporal
-    const infoModal = document.createElement('div');
-    infoModal.className = 'modal';
-    infoModal.style.display = 'flex';
-    infoModal.innerHTML = `
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
-        ${infoHTML}
-      </div>
-    `;
-    
-    document.body.appendChild(infoModal);
-    
-    // Event listeners
-    infoModal.querySelector('.btn-cerrar-info').addEventListener('click', () => {
-      infoModal.remove();
-    });
-    
-    infoModal.querySelector('.btn-cambiar-modo').addEventListener('click', () => {
-      window.userManager.cambiarModo();
-      infoModal.remove();
-      this.mostrar();
-    });
-    
-    infoModal.querySelector('.modal-overlay').addEventListener('click', () => {
-      infoModal.remove();
-    });
   }
+  
+  const infoHTML = `
+    <div class="info-usuario-panel">
+      <h3>Tu participación</h3>
+      <div class="info-modo">
+        <p><strong>Modo actual:</strong> ${modoTexto}</p>
+        ${infoExtra}
+      </div>
+      <div class="info-stats">
+        <p><strong>Contribuciones totales:</strong> ${stats?.total_evaluaciones || 0}</p>
+        ${stats ? `
+          <p>Votos positivos: ${stats.votos_up}</p>
+          <p>Votos negativos: ${stats.votos_down}</p>
+          <p>Comentarios: ${stats.comentarios}</p>
+        ` : ''}
+      </div>
+      <div class="info-acciones">
+        <button class="btn-cerrar-sesion">
+          <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Cerrar sesión
+        </button>
+        <button class="btn-cerrar-info">Cerrar</button>
+      </div>
+    </div>
+  `;
+  
+  // Crear modal temporal
+  const infoModal = document.createElement('div');
+  infoModal.className = 'modal';
+  infoModal.style.display = 'flex';
+  infoModal.innerHTML = `
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      ${infoHTML}
+    </div>
+  `;
+  
+  document.body.appendChild(infoModal);
+  
+  // Event listeners
+  infoModal.querySelector('.btn-cerrar-info').addEventListener('click', () => {
+    infoModal.remove();
+  });
+  
+  // ✅ NUEVO: Botón cerrar sesión
+  infoModal.querySelector('.btn-cerrar-sesion').addEventListener('click', () => {
+    if (confirm('¿Seguro que quieres cerrar sesión? Podrás elegir otro modo después.')) {
+      window.userManager.cerrarSesion();
+      infoModal.remove();
+      mostrarToast('✓ Sesión cerrada', 2000);
+      
+      // Opcional: Mostrar modal de selección de modo inmediatamente
+      setTimeout(() => {
+        this.mostrar();
+      }, 500);
+    }
+  });
+  
+  infoModal.querySelector('.modal-overlay').addEventListener('click', () => {
+    infoModal.remove();
+  });
+}
 }
 
 // Instancia global

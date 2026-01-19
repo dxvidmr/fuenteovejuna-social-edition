@@ -178,6 +178,24 @@ class UserManager {
       comentarios: data.filter(e => e.comment).length
     };
   }
+  
+  /**
+ * Cerrar sesión actual (limpiar sessionStorage)
+ */
+  cerrarSesion() {
+    sessionStorage.removeItem(this.sessionKey);
+    console.log('✓ Sesión cerrada');
+    
+    // Opcional: Recargar página para limpiar estado
+    // window.location.reload();
+  }
+
+  /**
+   * Cambiar modo (alias de cerrarSesion por compatibilidad)
+   */
+  cambiarModo() {
+    this.cerrarSesion();
+  }
 }
 
 // Instancia global
