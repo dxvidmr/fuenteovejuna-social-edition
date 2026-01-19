@@ -716,7 +716,7 @@
 <note
   xml:id="n-279-1"
   target="#seg-279-1"
-  type=""
+  type="lexica"
   n="1.0">
   69 concierto: ‘acuerdo’.
 </note>
@@ -724,7 +724,7 @@
 <note
   xml:id="n-281-1"
   target="#seg-281-1"
-  type=""
+  type="lexica"
   n="1.0">
   70 juzgan por mí: ‘sentencian, deciden a mi favor’.
 </note>
@@ -732,7 +732,7 @@
 <note
   xml:id="n-283-1"
   target="#seg-283-1"
-  type=""
+  type="lexica"
   n="1.0">
   71 precio: ‘premio’.
 </note>
@@ -740,7 +740,7 @@
 <note
   xml:id="n-286-1"
   target="#seg-286-1"
-  type=""
+  type="realia"
   n="1.0">
   72 rabel: instrumento musical pastoril de tres cuerdas que se hacen sonar con un arco; boj: un tipo de madera.
 </note>
@@ -748,7 +748,7 @@
 <note
   xml:id="n-287-1"
   target="#seg-287-1"
-  type=""
+  type="realia"
   n="1.0">
   73 troj: ‘granero’.
 </note>
@@ -756,7 +756,8 @@
 <note
   xml:id="n-292-1"
   target="#seg-292-1"
-  type=""
+  type="lexica"
+  subtype="intertextual"
   n="1.0">
   74 al uso: ‘a la moda’. El fragmento que aquí inicia sigue un tópico en que se satiriza la hipocresía, eufemismos, y manipulaciones del lenguaje, así como la inversión y confusión de valores de la corte, frente a los más auténticos de la aldea. Cultivaron este tópico también, por ejemplo, Erasmo y Fray Antonio de Guevara en el siglo XVI (en su tratado Menosprecio de corte y alabanza de aldea) o Quevedo en el siglo XVII.
 </note>
@@ -764,7 +765,7 @@
 <note
   xml:id="n-294-1"
   target="#seg-294-1"
-  type=""
+  type="lexica"
   n="1.0">
   75 bisojo: ‘estrábico’.
 </note>
@@ -772,7 +773,7 @@
 <note
   xml:id="n-298-1"
   target="#seg-298-1"
-  type=""
+  type="parafrasis"
   n="1.0">
   76 El desaliño y la descortesía se disculpan por el presunto ejercicio de las armas (soldadesca).
 </note>
@@ -780,7 +781,7 @@
 <note
   xml:id="n-305-1"
   target="#seg-305-1"
-  type=""
+  type="lexica"
   n="1.0">
   77 parapoco: persona de corto ingenio o apocada.
 </note>
@@ -788,7 +789,7 @@
 <note
   xml:id="n-306-1"
   target="#l-306"
-  type=""
+  type="parafrasis"
   n="1.0">
   78 ‘al osado, valiente’.
 </note>
@@ -796,7 +797,7 @@
 <note
   xml:id="n-307-1"
   target="#seg-307-1"
-  type=""
+  type="lexica"
   n="1.0">
   79 jarro: ‘necio, grosero’.
 </note>
@@ -804,7 +805,7 @@
 <note
   xml:id="n-313-1"
   target="#l-313"
-  type=""
+  type="realia"
   n="1.0">
   80 Las bubas o granos de la sífilis se hacían pasar por síntomas de resfriado.
 </note>
@@ -812,7 +813,7 @@
 <note
   xml:id="n-316-1"
   target="#seg-316-1"
-  type=""
+  type="lexia"
   n="1.0">
   81 corcovado: ‘jorobado’.
 </note>
@@ -820,7 +821,7 @@
 <note
   xml:id="n-317-1"
   target="#l-317 #l-318"
-  type=""
+  type="parafrasis"
   n="1.0">
   82 Tal vez deba entenderse ‘esto imito, al llamaros damas’.
 </note>
@@ -828,7 +829,7 @@
 <note
   xml:id="n-330-1"
   target="#seg-330-1"
-  type=""
+  type="lexica"
   n="1.0">
   83 descompuesto: ‘desventurado, desgraciado, depuesto’.
 </note>
@@ -836,7 +837,7 @@
 <note
   xml:id="n-331-1"
   target="#seg-331-1"
-  type=""
+  type="lexica"
   n="1.0">
   84 compuesto: ‘mesurado, circunspecto’
 </note>
@@ -844,7 +845,7 @@
 <note
   xml:id="n-334-1"
   target="#l-334"
-  type=""
+  type="parafrasis"
   n="1.0">
   85 ‘generoso al despilfarrador o manirroto’.
 </note>
@@ -852,7 +853,7 @@
 <note
   xml:id="n-336-1"
   target="#seg-336-1"
-  type=""
+  type="lexica"
   n="1.0">
   86 madeja: ‘flojo, pusilánime’.
 </note>
@@ -860,7 +861,8 @@
 <note
   xml:id="n-349-1"
   target="#seg-349-1"
-  type=""
+  type="estilistica"
+  subtype="lexica"
   n="1.0">
   87 dimuño: ‘demonio’, en la forma propia del sayagués o habla rústica.
 </note>
@@ -868,7 +870,8 @@
 <note
   xml:id="n-350-1"
   target="#seg-350-1"
-  type=""
+  type="estilistica"
+  subtype="lexica"
   n="1.0">
   88 Soncas: es una expresión rústica de énfasis, ‘en verdad, ciertamente’.
 </note>
@@ -876,7 +879,7 @@
 <note
   xml:id="n-351-1"
   target="#l-351 #l-352"
-  type=""
+  type="estilistica"
   n="1.0">
   89 Juego con el doble sentido de sal (también ‘gracia, agudeza’) y la alusión a la ceremonia del bautizo.
 </note>
@@ -884,7 +887,7 @@
 <note
   xml:id="n-359-1"
   target="#seg-359-1"
-  type=""
+  type="lexica"
   n="1.0">
   90 discreción: ‘sabiduría, inteligencia’.
 </note>
@@ -892,7 +895,7 @@
 <note
   xml:id="n-364-1"
   target="#l-364-b #l-365"
-  type=""
+  type="parafrasis"
   n="1.0">
   91 ‘Vengo a negarlo, porque es verdad lo que yo digo’.
 </note>
@@ -900,7 +903,7 @@
 <note
   xml:id="n-366-1"
   target="#seg-366-1"
-  type=""
+  type="lexica"
   n="1.0">
   92 hay: ‘existe’; así también en los siguientes versos.
 </note>
@@ -908,7 +911,7 @@
 <note
   xml:id="n-367-1"
   target="#l-367"
-  type=""
+  type="parafrasis"
   n="1.0">
   93 ‘Afirmarlo así, en general, es excesivo’.
 </note>
@@ -916,7 +919,7 @@
 <note
   xml:id="n-369-1"
   target="#l-369 #l-370"
-  type=""
+  type="intertextual"
   n="1.0">
   94 Comienza aquí una discusión sobre el amor, basada principalmente en nociones del pensamiento de Platón, que será mencionado hacia el final. Se trata de una situación típica de la literatura pastoril del siglo XVI, aunque acentuando aquí los rasgos rústicos de los personajes. Barrildo inicia recordando la idea de que el amor es el vínculo del mundo, lo que le da unidad y coherencia al universo.
 </note>
@@ -924,7 +927,7 @@
 <note
   xml:id="n-373-1"
   target="#l-373 #l-374 #l-375 #l-376 #l-377 #l-378"
-  type=""
+  type="intertextual"
   n="1.0">
   95 Mengo entiende hacia donde dirige Barrildo el debate, y responde con otras ideas muy importantes de la cosmovisión y la medicina antiguas para afirmar su punto (‘claro está lo que he dicho’): que todo el universo creado se rige por principios de oposición, y que esto influye en cada persona a través de los cuatro humores corporales asociados a los elementos (cólera... sangre).
 </note>
@@ -932,7 +935,7 @@
 <note
   xml:id="n-381-1"
   target="#l-381 #l-382"
-  type=""
+  type="intertextual"
   n="1.0">
   96 Una idea también muy difundida en los debates medievales sobre la constitución del mundo: la armonía, el buen orden (concierto) rige ambos mundos, cielo y tierra.
 </note>
@@ -940,7 +943,7 @@
 <note
   xml:id="n-383-1"
   target="#l-383 #l-384 #l-385 #l-386 #l-387 #l-388 #l-389 #l-390 #l-391 #l-392"
-  type=""
+  type="intertextual"
   n="1.0">
   97 Mengo acepta la teoría de la armonía universal utilizada por Barrildo (correspondencias), y también la existencia de un tipo de amor, el natural, que a continuación asocia con la teoría de los humores que ya recordó, y que identifica con la necesidad de conservación, el mantenimiento de la propia vida.
 </note>
@@ -948,7 +951,7 @@
 <note
   xml:id="n-406-1"
   target="#seg-406-407-a #seg-406-407-b"
-  type=""
+  type="parafrasis"
   n="1.0">
   98 Entiéndase ‘ama a su semejante’.
 </note>
@@ -956,7 +959,7 @@
 <note
   xml:id="n-409-1"
   target="#l-409-a #l-409-b #l-410-a #l-410-b #l-411 #l-412-a"
-  type=""
+  type="intertextual"
   n="1.0">
   99 También son de origen clásico las ideas sobre el amor como búsqueda de la belleza, y el placer que ella produce.
 </note>
@@ -964,7 +967,7 @@
 <note
   xml:id="n-420-1"
   target="#l-420"
-  type=""
+  type="parafrasis"
   n="1.0">
   100 Es decir, ‘darme gusto en todo’.
 </note>
@@ -972,7 +975,7 @@
 <note
   xml:id="n-421-1"
   target="#l-421 #l-422 #l-423 #l-424 #l-425 #l-426"
-  type=""
+  type="intertextual"
   n="1.0">
   101 En esta mención del filósofo, se recuerdan, para terminar el debate, dos conceptos fundamentales de su pensamiento: el alma y la virtud. Es gracioso, por absurdo, suponer que un cura va a citar a Platón en sus sermones.
 </note>
@@ -980,7 +983,7 @@
 <note
   xml:id="n-428-1"
   target="#seg-428-1"
-  type=""
+  type="parafrasis"
   n="1.0">
   102 Al decir que esto sucede por ventura, ‘acaso’ ‘casualmente’, Pascuala introduce una ligera burla a las discusiones eruditas.
 </note>
@@ -988,7 +991,8 @@
 <note
   xml:id="n-428-2"
   target="#seg-428-429-a #seg-428-429-b"
-  type=""
+  type="lexica"
+  subtype="estilistica"
   n="1.0">
   102 acrisola los caletres: metáfora burlesca, ‘mejora los entendimientos’.
 </note>
@@ -996,7 +1000,8 @@
 <note
   xml:id="n-430-1"
   target="#seg-430-1"
-  type=""
+  type="estilistica"
+  subtype="lexica"
   n="1.0">
   102 cademias: ‘academias’, forma rústica jocosa.
 </note>
@@ -1004,7 +1009,7 @@
 <note
   xml:id="n-431-1"
   target="#seg-431-432-a #seg-431-432-b"
-  type=""
+  type="parafrasis"
   n="1.0">
   103 ‘No te molestes en disuadirlos de sus insensateces’. Se refiere seguramente a la discusión de los pastores.
 </note>
@@ -1012,7 +1017,8 @@
 <note
   xml:id="n-437-1"
   target="#seg-437-1"
-  type=""
+  type="estilistica"
+  subtype="lexica"
   n="1.0">
   104 quistión: ‘cuestión’ ‘tema’; en la época es forma regular, sin sentido burlesco.
 </note>
@@ -1020,7 +1026,7 @@
 <note
   xml:id="n-444-1"
   target="#seg-444-1"
-  type=""
+  type="parafrasis"
   n="1.0">
   105 Es decir, con ese rechazo (desdén), en realidad Laurencia resuelve que no hay amor.
 </note>
@@ -1028,7 +1034,8 @@
 <note
   xml:id="n-447-1"
   target="#seg-447-1"
-  type=""
+  type="realia"
+  subtype="estilistica"
   n="1.0">
   106 Con lo de azor, Laurencia alude seguramente a la abundancia de plumas en la vestimenta de Flores, que eran un adorno de los trajes de soldado (como se dice también en v. 494). Como es un ave de caza, también puede tratarse de una alusión metafórica al carácter del Comendador, señor de Flores.
 </note>
@@ -1036,7 +1043,7 @@
 <note
   xml:id="n-452-1"
   target="#seg-452-1"
-  type=""
+  type="lexica"
   n="1.0">
   107 puesto que: ‘aunque’.
 </note>
@@ -1044,7 +1051,7 @@
 <note
   xml:id="n-457-1"
   target="#l-457"
-  type=""
+  type="historica"
   n="1.0">
   108 Lope se inspira en la Crónica de Rades y Andrada, incluso en cuestiones de detalle, para describir esta batalla.
 </note>
@@ -1052,7 +1059,8 @@
 <note
   xml:id="n-461-1"
   target="#seg-461-1"
-  type=""
+  type="lexica"
+  subtype="realia"
   n="1.0">
   109 infantes: ‘soldados de a pie, de infantería’.
 </note>
@@ -1060,7 +1068,8 @@
 <note
   xml:id="n-467-1"
   target="#seg-467-1"
-  type=""
+  type="realia"
+  subtype="lexica"
   n="1.0">
   110 Las órdenes militares, como la de Calatrava, acogían en sus filas tanto a seglares como a religiosos. Estos últimos eran llamados freiles. En la época, orden era sustantivo masculino.
 </note>
@@ -1068,7 +1077,8 @@
 <note
   xml:id="n-468-1"
   target="#l-468"
-  type=""
+  type="parafrasis"
+  subtype="estilistica"
   n="1.0">
   111 ‘se entiende que se permita luchar a religiosos cuando se trata de hacerlo contra los moros’. Posible ironía, pues en este caso no se ataca a los musulmanes, sino a otros cristianos.
 </note>
@@ -1076,7 +1086,7 @@
 <note
   xml:id="n-469-1"
   target="#seg-469-1"
-  type=""
+  type="lexica"
   n="1.0">
   112 bizarro: ‘espléndido’, pero también ‘joven’.
 </note>
@@ -1084,7 +1094,7 @@
 <note
   xml:id="n-470-1"
   target="#seg-470-1"
-  type=""
+  type="realia"
   n="1.0">
   113 casaca: tipo de vestidura masculina abierta por los lados.
 </note>
@@ -1092,7 +1102,7 @@
 <note
   xml:id="n-471-1"
   target="#seg-471-1"
-  type=""
+  type="realia"
   n="1.0">
   114 Se trata de un bordado típico de los trajes de gala.
 </note>
@@ -1100,7 +1110,7 @@
 <note
   xml:id="n-472-1"
   target="#seg-472-1"
-  type=""
+  type="realia"
   n="1.0">
   115 brazaletes: armaduras de los brazos.
 </note>
@@ -1108,7 +1118,7 @@
 <note
   xml:id="n-474-1"
   target="#seg-474-1"
-  type=""
+  type="realia"
   n="1.0">
   116 El alamar es una clase de abotonadura hecha a base de trenzas de oro.
 </note>
@@ -1116,7 +1126,7 @@
 <note
   xml:id="n-475-1"
   target="#seg-475-1"
-  type=""
+  type="realia"
   n="1.0">
   117 bridón: caballo con aparejos especiales para entrar en batalla.
 </note>
@@ -1124,7 +1134,7 @@
 <note
   xml:id="n-476-1"
   target="#seg-476-1"
-  type=""
+  type="lexica"
   n="1.0">
   118 rucio: animal, en este caso un caballo, de color pardo claro, blanquecino o canoso.
 </note>
@@ -1132,7 +1142,7 @@
 <note
   xml:id="n-476-2"
   target="#seg-476-2"
-  type=""
+  type="lexica"
   n="1.0">
   118 rodado: que tiene manchas, normalmente redondas, más oscuras que el color general de su pelo.
 </note>
@@ -1140,7 +1150,7 @@
 <note
   xml:id="n-476-3"
   target="#seg-476-3"
-  type=""
+  type="geografica"
   n="1.0">
   119 Betis: ‘el río Guadalquivir’.
 </note>
@@ -1148,7 +1158,8 @@
 <note
   xml:id="n-478-1"
   target="#seg-478-1"
-  type=""
+  type="lexica"
+  subtype="realia"
   n="1.0">
   120 grama: ‘tipo de hierba’. Está describiendo el típico caballo andaluz, reconocido como el superior por antonomasia en cuanto a raza.
 </note>
@@ -1156,7 +1167,8 @@
 <note
   xml:id="n-479-1"
   target="#seg-479-1"
-  type=""
+  type="realia"
+  subtype="ecdotica"
   n="1.0">
   121 codón: especie de bolsa de cuero que sirve para cubrir la cola del caballo. Proviene del italiano codone. La lectura colón de algunas ediciones es un error debido al cruce con la palabra cola.
 </note>
@@ -1164,7 +1176,7 @@
 <note
   xml:id="n-480-1"
   target="#seg-480-1"
-  type=""
+  type="lexica"
   n="1.0">
   122 rizo: 'rizado'.
 </note>
@@ -1172,7 +1184,7 @@
 <note
   xml:id="n-480-2"
   target="#seg-480-2"
-  type=""
+  type="lexica"
   n="1.0">
   122 copete: mechón de crin que cae al caballo sobre la frente.
 </note>
@@ -1180,7 +1192,7 @@
 <note
   xml:id="n-481-1"
   target="#seg-481-1"
-  type=""
+  type="lexica"
   n="1.0">
   122 lazadas: ‘cintas’.
 </note>
@@ -1188,7 +1200,8 @@
 <note
   xml:id="n-482-1"
   target="#seg-482-1"
-  type=""
+  type="lexica"
+  subtype="estilistica"
   n="1.0">
   123 moscas de nieve: literalmente, ‘copos de nieve’; aquí hacen referencia a las manchas de color del caballo. Las cintas del copete que adornan la crin del animal combinan grados de blanco como también sucede en su propia piel.
 </note>
@@ -1196,7 +1209,7 @@
 <note
   xml:id="n-487-1"
   target="#seg-487-1"
-  type=""
+  type="lexica"
   n="1.0">
   124 melado: ‘de color de miel’.
 </note>
@@ -1204,7 +1217,7 @@
 <note
   xml:id="n-487-2"
   target="#seg-487-2"
-  type=""
+  type="lexica"
   n="1.0">
   124 negros cabos: ‘negras patas’.
 </note>
@@ -1212,7 +1225,8 @@
 <note
   xml:id="n-488-1"
   target="#seg-488-1"
-  type=""
+  type="lexica"
+  subtype="estilistica"
   n="1.0">
   125 Es decir, ‘que tiene el labio blanco’. Los caballos con patas negras y labio blanco tenían fama de buenos y leales.
 </note>
@@ -1220,7 +1234,7 @@
 <note
   xml:id="n-489-1"
   target="#seg-489-1"
-  type=""
+  type="realia"
   n="1.0">
   126 jacerina: cota de malla de acero; se trataba de la cota más fina y cara, reservada a los nobles, la cual era de origen árabe.
 </note>
