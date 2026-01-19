@@ -234,7 +234,7 @@ class EdicionEvaluacion {
     // La sesión ya está creada en BD (se creó al elegir modo)
     const evaluacion = {
       timestamp: new Date().toISOString(),
-      source: 'edicion',
+      source: 'lectura',
       event_type: 'nota_eval',
       session_id: datosUsuario.session_id,
       pasaje_id: null, // En edición completa no hay pasaje específico

@@ -7,13 +7,13 @@
    LAYOUT PRINCIPAL (2 COLUMNAS)
    ============================================ */
 
-.editor-social-layout {
+.laboratorio-layout {
   display: flex;
   min-height: calc(100vh - 60px);
 }
 
 /* Columna de texto (izquierda) */
-.editor-social-text-column {
+.laboratorio-text-column {
   flex: 1;
   padding: 30px 50px;
   overflow-y: auto;
@@ -23,7 +23,7 @@
 }
 
 /* Columna de notas (derecha) */
-.editor-social-notes-column {
+.laboratorio-notes-column {
   width: 45%;
   min-width: 400px;
   max-width: 50%;
@@ -40,25 +40,25 @@
    HEADER DEL EDITOR
    ============================================ */
 
-.editor-social-header {
+.laboratorio-header {
   text-align: center;
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
 
-.editor-social-header h1 {
+.laboratorio-header h1 {
   font-size: 2rem;
   margin-bottom: 8px;
   color: var(--text);
 }
 
-.editor-social-header p {
+.laboratorio-header p {
   font-size: 1rem;
   color: var(--muted);
 }
 
-.editor-social-progreso {
+.laboratorio-progreso {
   font-size: 0.9rem;
   color: var(--primary);
   margin-top: 8px;
@@ -359,7 +359,7 @@
    CONTROLES DE NAVEGACIÓN DE PASAJES
    ============================================ */
 
-.editor-social-controles {
+.laboratorio-controles {
   text-align: center;
   margin-top: 20px;
   padding-top: 20px;
@@ -405,7 +405,7 @@
 /* Los estilos de .note-wrapper y .note-target se heredan de edicion.css */
 
 /* Estado activo para la nota seleccionada */
-.editor-social-text-column .note-wrapper.note-current {
+.laboratorio-text-column .note-wrapper.note-current {
   background: linear-gradient(transparent 5%, rgba(var(--primary-rgb), 0.25) 5%, rgba(var(--primary-rgb), 0.25) 80%);
   border-bottom: 2px solid var(--primary);
 }
@@ -415,16 +415,16 @@
    ============================================ */
 
 @media (max-width: 900px) {
-  .editor-social-layout {
+  .laboratorio-layout {
     flex-direction: column;
   }
   
-  .editor-social-text-column {
+  .laboratorio-text-column {
     max-height: none;
     padding: 20px;
   }
   
-  .editor-social-notes-column {
+  .laboratorio-notes-column {
     width: 100%;
     max-width: none;
     min-width: auto;

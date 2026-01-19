@@ -638,7 +638,7 @@ class EditorSocial {
       // La sesión ya está creada en BD (se creó al elegir modo)
       const evaluacion = {
         timestamp: new Date().toISOString(),
-        source: 'editor-social',
+        source: 'laboratorio',
         event_type: 'nota_eval',
         session_id: datosUsuario.session_id,
         pasaje_id: pasajeId,
@@ -729,7 +729,7 @@ class EditorSocial {
    * Mostrar pantalla de finalizacion
    */
   mostrarFinalizacion() {
-    const layout = document.querySelector('.editor-social-layout');
+    const layout = document.querySelector('.laboratorio-layout');
     layout.innerHTML = `
       <div style="text-align: center; padding: 80px 20px; max-width: 600px; margin: 0 auto;">
         <h1 style="font-size: 3rem; color: var(--success); margin-bottom: 20px;">Felicidades!</h1>
