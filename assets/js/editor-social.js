@@ -658,7 +658,7 @@ class EditorSocial {
         return false;
       }
 
-      console.log('✓ Evaluacion registrada:', vote, notaId);
+      console.log('Evaluacion registrada:', vote, notaId);
       return true;
     }
 

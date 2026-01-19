@@ -43,12 +43,12 @@ function mostrarToast(mensaje, duracion = 2000) {
 async function cargarXMLCacheado(url) {
   // Verificar si ya está en caché
   if (window.xmlCache && window.xmlCache[url]) {
-    console.log('✓ XML cargado desde caché:', url);
+    console.log('XML cargado desde caché:', url);
     return window.xmlCache[url];
   }
   
   // Cargar XML
-  console.log('⏳ Cargando XML:', url);
+  console.log('Cargando XML:', url);
   const response = await fetch(url);
   const xmlText = await response.text();
   const parser = new DOMParser();
@@ -58,7 +58,7 @@ async function cargarXMLCacheado(url) {
   if (!window.xmlCache) window.xmlCache = {};
   window.xmlCache[url] = xmlDoc;
   
-  console.log('✓ XML cargado y cacheado:', url);
+  console.log('XML cargado y cacheado:', url);
   return xmlDoc;
 }
 
@@ -80,4 +80,4 @@ function formatearFechaRelativa(timestamp) {
   return `Hace ${dias} día${dias > 1 ? 's' : ''}`;
 }
 
-console.log('✓ Utils cargado');
+console.log('Utils cargado');

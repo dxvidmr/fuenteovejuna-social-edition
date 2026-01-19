@@ -23,5 +23,5 @@
     window.SUPABASE_CONFIG.anonKey
   );
   
-  console.log('✓ Cliente Supabase inicializado');
+  console.log('Cliente Supabase inicializado');
 })();

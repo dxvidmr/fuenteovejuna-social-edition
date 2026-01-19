@@ -21,7 +21,7 @@ class ModalModo {
             <div class="modo-opcion" data-modo="anonimo">
               <div class="modo-header">
                 <span class="modo-icono"><i class="fa-solid fa-user-secret" aria-hidden="true"></i></span>
-                <h3>Anónimo</h3>
+                <h3>Editor anónimo</h3>
               </div>
               <p>Sin registro. Privacidad total.</p>
               <button class="btn-seleccionar" data-modo="anonimo">Participar anónimamente</button>
@@ -31,9 +31,9 @@ class ModalModo {
             <div class="modo-opcion" data-modo="colaborador">
               <div class="modo-header">
                 <span class="modo-icono"><i class="fa-solid fa-pen" aria-hidden="true"></i></span>
-                <h3>Colaborador reconocido</h3>
+                <h3>Colaborador</h3>
               </div>
-              <p>Registro con email. Contribuciones reconocidas.</p>
+              <p>Identificado por email. Contribuciones reconocidas.</p>
               <button class="btn-seleccionar" data-modo="colaborador">Continuar como colaborador/a</button>
             </div>
             
@@ -267,7 +267,7 @@ class ModalModo {
       
       if (exito) {
         this.cerrar();
-        mostrarToast('✓ Modo anónimo activado');
+        mostrarToast('Modo anónimo activado');
       } else {
         alert('Error al establecer modo anónimo. Intenta de nuevo.');
       }
@@ -280,7 +280,29 @@ class ModalModo {
   
   async procesarFormColaboradorLogin(form) {
     const formData = new FormData(form);
-    const email = formData.get('email').trim();
+    let emailRaw = formData.get('email');
+    let email;
+    if (window.userManager?.debug) {
+      // ═══════════════════════════════════════════════════════
+      // DEBUG LOGIN - INICIO
+      // ═══════════════════════════════════════════════════════
+      console.group('LOGIN - DEBUG DETALLADO');
+      console.log('Email RAW del FormData:', JSON.stringify(emailRaw));
+      console.log('Longitud RAW:', emailRaw?.length);
+      email = emailRaw.trim();
+      console.log('Email después de trim():', JSON.stringify(email));
+      console.log('Longitud después de trim:', email.length);
+      console.log('Caracteres del email:');
+      [...email].forEach((char, i) => {
+        console.log(`  [${i}]: "${char}" -> charCode: ${char.charCodeAt(0)}`);
+      });
+      console.groupEnd();
+      // ═══════════════════════════════════════════════════════
+      // DEBUG LOGIN - FIN
+      // ═══════════════════════════════════════════════════════
+    } else {
+      email = emailRaw.trim();
+    }
     
     if (!email) {
       alert('El email es obligatorio');
@@ -294,14 +316,15 @@ class ModalModo {
     btnSubmit.textContent = 'Buscando...';
     
     try {
+      if (window.userManager?.debug) console.log('Llamando a hashEmail() desde LOGIN...');
       // Hash del email (normalizado)
-      const emailHash = await window.userManager.hashEmail(email);
+      const email_hash = await window.userManager.hashEmail(email);
       
       // Buscar colaborador existente
       const { data: colaborador, error } = await window.supabaseClient
         .from('colaboradores')
         .select('collaborator_id, display_name, nivel_estudios, disciplina')
-        .eq('emailhash', emailHash)
+        .eq('email_hash', email_hash)
         .single();
       
       if (error || !colaborador) {
@@ -321,7 +344,7 @@ class ModalModo {
         return;
       }
       
-      // ✅ Colaborador encontrado, crear sesión
+      // Colaborador encontrado, crear sesión
       const sessionId = crypto.randomUUID();
       const { error: errorSesion } = await window.supabaseClient
         .from('sesiones')
@@ -334,14 +357,14 @@ class ModalModo {
         });
       
       if (errorSesion) {
-        console.error('❌ Error creando sesión:', errorSesion);
+        console.error('Error creando sesión:', errorSesion);
         btnSubmit.disabled = false;
         btnSubmit.textContent = textoOriginal;
         alert('Error al identificarte. Intenta de nuevo.');
         return;
       }
       
-      // ✅ Guardar en sessionStorage
+      // Guardar en sessionStorage
       const datos = {
         session_id: sessionId,
         es_colaborador: true,
@@ -353,9 +376,9 @@ class ModalModo {
       
       sessionStorage.setItem('fuenteovejuna_session', JSON.stringify(datos));
       
-      // ✅ Cerrar modal y mostrar bienvenida
+      // Cerrar modal y mostrar bienvenida
       this.cerrar();
-      mostrarToast(`✓ ¡Hola de nuevo, ${colaborador.display_name || 'colaborador/a'}!`, 3000);
+      mostrarToast(`¡Hola de nuevo, ${colaborador.display_name || 'colaborador/a'}!`, 3000);
       
     } catch (error) {
       console.error('Error al identificarse:', error);
@@ -368,7 +391,30 @@ class ModalModo {
   
   async procesarFormColaboradorRegistro(form) {
     const formData = new FormData(form);
-    const email = formData.get('email').trim();
+    let emailRaw = formData.get('email');
+    let email;
+    if (window.userManager?.debug) {
+      // ═══════════════════════════════════════════════════════
+      // DEBUG REGISTRO - INICIO
+      // ═══════════════════════════════════════════════════════
+      console.group('REGISTRO - DEBUG DETALLADO');
+      console.log('Email RAW del FormData:', JSON.stringify(emailRaw));
+      console.log('Longitud RAW:', emailRaw?.length);
+      email = emailRaw.trim();
+      console.log('Email después de trim():', JSON.stringify(email));
+      console.log('Longitud después de trim:', email.length);
+      console.log('Caracteres del email:');
+      [...email].forEach((char, i) => {
+        console.log(`  [${i}]: "${char}" -> charCode: ${char.charCodeAt(0)}`);
+      });
+      console.groupEnd();
+      // ═══════════════════════════════════════════════════════
+      // DEBUG REGISTRO - FIN
+      // ═══════════════════════════════════════════════════════
+    } else {
+      email = emailRaw.trim();
+    }
+    
     const displayname = formData.get('display_name')?.trim() || null;
     const nivel_estudios = formData.get('nivel_estudios') || null;
     const disciplina = formData.get('disciplina') || null;
@@ -384,6 +430,7 @@ class ModalModo {
     if (disciplina) datosDemograficos.disciplina = disciplina;
     
     try {
+      if (window.userManager?.debug) console.log('Llamando a hashEmail() desde REGISTRO...');
       const exito = await window.userManager.establecerColaborador(
         email,
         displayname,
@@ -392,7 +439,7 @@ class ModalModo {
       
       if (exito) {
         this.cerrar();
-        mostrarToast(`✓ Bienvenido/a ${displayname || 'colaborador/a'}!`);
+        mostrarToast(`Bienvenido/a ${displayname || 'colaborador/a'}!`);
       } else {
         alert('Error al registrar colaborador. Verifica tus datos.');
       }
@@ -522,7 +569,7 @@ class ModalModo {
       if (confirm('¿Seguro que quieres cerrar sesión? Podrás elegir otro modo después.')) {
         window.userManager.cerrarSesion();
         infoModal.remove();
-        mostrarToast('✓ Sesión cerrada', 2000);
+        mostrarToast('Sesión cerrada', 2000);
         
         // Mostrar modal de selección
         setTimeout(() => {
@@ -540,7 +587,7 @@ class ModalModo {
 // Instancia global
 document.addEventListener('DOMContentLoaded', () => {
   window.modalModo = new ModalModo();
-  console.log('✓ ModalModo inicializado');
+  console.log('ModalModo inicializado');
   
   // Vincular botón en navegación
   const btnModoUsuario = document.getElementById('btn-modo-usuario');

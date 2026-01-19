@@ -43,7 +43,7 @@ class EdicionEvaluacion {
       
       if (!error && data) {
         data.forEach(e => this.notasEvaluadasBD.add(e.nota_id));
-        console.log(`✓ ${this.notasEvaluadasBD.size} notas ya evaluadas cargadas`);
+        console.log(`${this.notasEvaluadasBD.size} notas ya evaluadas cargadas`);
       }
     } catch (err) {
       console.warn('No se pudieron cargar evaluaciones previas:', err);
@@ -73,7 +73,7 @@ class EdicionEvaluacion {
       subtree: true
     });
     
-    console.log('✓ Listeners de evaluación configurados');
+    console.log('Listeners de evaluación configurados');
   }
   
   /**
@@ -254,7 +254,7 @@ class EdicionEvaluacion {
       return false;
     }
     
-    console.log('✓ Evaluación registrada:', vote, notaId);
+    console.log('Evaluación registrada:', vote, notaId);
     return true;
   }
   
@@ -288,4 +288,4 @@ class EdicionEvaluacion {
 // Instanciar y exportar
 window.edicionEvaluacion = new EdicionEvaluacion();
 
-console.log('✓ EdicionEvaluacion cargado');
+console.log('EdicionEvaluacion cargado');
