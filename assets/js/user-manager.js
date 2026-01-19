@@ -25,13 +25,23 @@ class UserManager {
   }
   
   /**
-   * Hash SHA-256 del email para privacidad
-   */
+ * Generar hash SHA-256 de un email (normalizado)
+ */
   async hashEmail(email) {
-    const msgBuffer = new TextEncoder().encode(email.toLowerCase());
-    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    // ✅ CRÍTICO: Normalizar SIEMPRE
+    const normalizado = email.trim().toLowerCase();
+    
+    console.log('🔐 Hasheando email:', normalizado); // ✅ DEBUG
+    
+    const encoder = new TextEncoder();
+    const data = encoder.encode(normalizado);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    
+    console.log('🔐 Hash generado:', hashHex); // ✅ DEBUG
+    
+    return hashHex;
   }
   
   /**
@@ -74,41 +84,63 @@ class UserManager {
    * @param {string} display_name - Nombre público opcional
    * @param {Object} datosDemograficos - { nivel_estudios?, disciplina? }
    */
-  async establecerColaborador(email, display_name, datosDemograficos = null) {
-    const email_hash = await this.hashEmail(email);
+  async establecerColaborador(email, displayName = null, datosDemograficos = null) {
+    const sessionId = crypto.randomUUID();
     
-    // 1. Buscar o crear colaborador
-    let { data: colaborador } = await window.supabaseClient
+    console.log('📧 Registrando colaborador con email:', email);
+    
+    // Hash del email (normalizado)
+    const emailHash = await this.hashEmail(email);
+    
+    console.log('🔍 Hash generado:', emailHash);
+    
+    // ✅ PASO 1: Buscar si ya existe este colaborador
+    const { data: existente, error: errorBusqueda } = await window.supabaseClient
       .from('colaboradores')
-      .select('collaborator_id, display_name')
-      .eq('email_hash', email_hash)
-      .single();
+      .select('collaborator_id, display_name, nivel_estudios, disciplina')
+      .eq('emailhash', emailHash)
+      .maybeSingle(); // ✅ Cambiado de .single() a .maybeSingle()
     
-    if (!colaborador) {
-      // Crear nuevo colaborador
-      const { data: nuevo, error: errorCrear } = await window.supabaseClient
-        .from('colaboradores')
-        .insert({
-          email_hash: email_hash,
-          display_name: display_name || null,
-          nivel_estudios: datosDemograficos?.nivel_estudios || null,
-          disciplina: datosDemograficos?.disciplina || null
-        })
-        .select('collaborator_id, display_name')
-        .single();
-      
-      if (errorCrear) {
-        console.error('❌ Error creando colaborador:', errorCrear);
-        return false;
-      }
-      colaborador = nuevo;
-      console.log('✓ Nuevo colaborador creado');
-    } else {
-      console.log('✓ Colaborador existente encontrado');
+    console.log('👤 Colaborador existente:', existente);
+    
+    let colaborador = null;
+    
+    // ✅ PASO 2: Si ya existe, informar al usuario
+    if (existente) {
+      alert(`Este email ya está registrado como "${existente.display_name || 'colaborador/a'}". Usa "Identificarme" en lugar de "Registrarme".`);
+      return false;
     }
     
-    // 2. Crear sesión vinculada al colaborador
-    const sessionId = crypto.randomUUID();
+    // ✅ PASO 3: Si NO existe, crear nuevo colaborador
+    console.log('✨ Creando nuevo colaborador...');
+    
+    const { data: nuevo, error: errorCrear } = await window.supabaseClient
+      .from('colaboradores')
+      .insert({
+        emailhash: emailHash,
+        display_name: displayName || null,
+        nivel_estudios: datosDemograficos?.nivel_estudios || null,
+        disciplina: datosDemograficos?.disciplina || null
+      })
+      .select('collaborator_id, display_name')
+      .single();
+    
+    if (errorCrear) {
+      console.error('❌ Error creando colaborador:', errorCrear);
+      
+      // Mensaje específico si es constraint violation
+      if (errorCrear.code === '23505') { // UNIQUE violation
+        alert('Este email ya está registrado. Usa "Identificarme".');
+      } else {
+        alert('Error al registrar. Intenta de nuevo.');
+      }
+      return false;
+    }
+    
+    colaborador = nuevo;
+    console.log('✓ Colaborador creado:', colaborador);
+    
+    // ✅ PASO 4: Crear sesión
     const { error: errorSesion } = await window.supabaseClient
       .from('sesiones')
       .insert({
@@ -120,11 +152,11 @@ class UserManager {
       });
     
     if (errorSesion) {
-      console.error('❌ Error creando sesión de colaborador:', errorSesion);
+      console.error('❌ Error creando sesión:', errorSesion);
       return false;
     }
     
-    // 3. Guardar en sessionStorage
+    // ✅ PASO 5: Guardar en sessionStorage
     const datos = {
       session_id: sessionId,
       es_colaborador: true,
@@ -134,7 +166,8 @@ class UserManager {
     };
     
     sessionStorage.setItem(this.sessionKey, JSON.stringify(datos));
-    console.log('✓ Sesión de colaborador creada:', sessionId);
+    
+    console.log('✓ Colaborador establecido:', sessionId);
     return true;
   }
   
@@ -178,7 +211,7 @@ class UserManager {
       comentarios: data.filter(e => e.comment).length
     };
   }
-  
+
   /**
  * Cerrar sesión actual (limpiar sessionStorage)
  */
