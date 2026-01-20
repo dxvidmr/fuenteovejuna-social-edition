@@ -1,0 +1,149 @@
+// ============================================
+// Fuenteovejuna Digital - Database Schema
+// Edición Digital Participativa de Fuenteovejuna
+// Actualizado: 2026-01-20
+// ============================================
+
+
+Table pasajes {
+  id integer [pk, increment]
+  orden integer [unique, not null]
+  inicio_elemento text [not null]
+  inicio_xmlid text [not null]
+  fin_elemento text [not null]
+  fin_xmlid text [not null]
+  acto smallint [not null]
+  titulo text [not null]
+  descripcion text [null]
+  created_at timestamptz [default: `now()`]
+  version numeric(4,1) [not null, default: 1.0]
+  active boolean [not null, default: true]
+  
+  Indexes {
+    orden [unique]
+    acto
+    active [note: 'WHERE active = true']
+    (orden, active) [unique, note: 'Solo una versión activa por orden']
+  }
+  
+  Note: '~200 fragmentos del texto. Sistema de versionado: nueva versión con active=true marca anterior como false.'
+}
+
+
+Table notas {
+  id integer [pk, increment]
+  nota_id text [not null]
+  target text [not null]
+  version numeric(4,1) [not null, default: 1.0]
+  active boolean [not null, default: true]
+  type text [not null]
+  subtype text [null]
+  texto_nota text [not null]
+  created_at timestamptz [default: `now()`]
+  
+  Indexes {
+    (nota_id, version) [unique]
+    nota_id
+    type
+    active
+  }
+  
+  Note: 'Historial de versiones. Vista notas_activas disponible (WHERE active=true).'
+}
+
+
+Table colaboradores {
+  collaborator_id uuid [pk, default: `gen_random_uuid()`]
+  email_hash text [unique, not null, note: 'SHA-256 del email']
+  display_name text [null]
+  nivel_estudios text [null, note: 'secundaria, universitario, postgrado, otro']
+  disciplina text [null, note: 'filologia, historia, educacion, otro']
+  created_at timestamptz [default: `now()`]
+  
+  Indexes {
+    email_hash [unique]
+    email_hash
+  }
+  
+  Note: 'Usuarios registrados. Datos demográficos del perfil base (se copian a sesiones al login).'
+}
+
+
+Table sesiones {
+  session_id uuid [pk, note: 'UUID volátil en sessionStorage']
+  es_colaborador boolean [not null, default: false, note: 'false=anónimo, true=colaborador']
+  collaborator_id uuid [null, note: 'FK. Solo si es_colaborador=true']
+  nivel_estudios text [null, note: 'Snapshot temporal. Anónimos: del form opcional. Colaboradores: copiado del perfil']
+  disciplina text [null, note: 'Snapshot temporal. Anónimos: del form opcional. Colaboradores: copiado del perfil']
+  created_at timestamptz [default: `now()`]
+  
+  Indexes {
+    collaborator_id
+    es_colaborador
+    nivel_estudios
+    disciplina
+  }
+  
+  Note: 'Snapshot de datos demográficos al momento de la sesión. Nueva session_id al cambiar de modo. Facilita análisis sin JOINs.'
+}
+
+
+Table evaluaciones {
+  id bigint [pk, increment]
+  timestamp timestamptz [not null, default: `now()`]
+  source text [not null, note: 'juego, edicion']
+  event_type text [not null, note: 'nota_eval, falta_nota']
+  session_id uuid [not null]
+  pasaje_id integer [null]
+  nota_id text [null]
+  nota_version numeric [null]
+  target_xmlid text [null, note: 'xmlid del elemento TEI anotado o estimado (para falta_nota)']
+  vote text [null, note: 'util, mejorable - Solo para event_type=nota_eval']
+  selected_text text [null, note: 'Texto seleccionado por el usuario cuando sugiere que falta una nota. Null para event_type=nota_eval']
+  comment text [null, note: 'Comentario opcional del usuario. Para nota_eval: por qué es mejorable. Para falta_nota: qué añadiría']
+  
+  Indexes {
+    session_id [name: 'idx_evaluaciones_session_id']
+    (nota_id, nota_version) [name: 'idx_evaluaciones_nota']
+    pasaje_id [name: 'idx_evaluaciones_pasaje']
+    event_type [name: 'idx_evaluaciones_event_type']
+    timestamp [name: 'idx_evaluaciones_timestamp']
+    selected_text [name: 'idx_evaluaciones_selected_text', note: 'WHERE event_type = falta_nota']
+  }
+  
+  Note: 'Núcleo del sistema. Registro de todas las interacciones: evaluaciones de notas existentes (nota_eval) y sugerencias de notas faltantes (falta_nota).'
+}
+
+
+
+
+// ============================================
+// RELACIONES
+// ============================================
+
+Ref: sesiones.collaborator_id > colaboradores.collaborator_id [delete: cascade]
+Ref: evaluaciones.session_id > sesiones.session_id [delete: cascade]
+Ref: evaluaciones.pasaje_id > pasajes.id [delete: no action]
+
+
+// ============================================
+// FLUJO DE DATOS DEMOGRÁFICOS
+// ============================================
+
+// ANÓNIMO:
+//   1. Genera session_id
+//   2. (Opcional) Completa formulario demográfico
+//   3. Datos van directo a sesiones.nivel_estudios/disciplina
+//   4. collaborator_id = null, es_colaborador = false
+
+// COLABORADOR:
+//   1. Registro: guarda datos en colaboradores
+//   2. Login: busca por email_hash
+//   3. Al crear sesión: COPIA datos de colaboradores → sesiones
+//   4. collaborator_id = id del colaborador, es_colaborador = true
+
+// ANÁLISIS:
+//   SELECT e.*, s.nivel_estudios, s.disciplina
+//   FROM evaluaciones e
+//   JOIN sesiones s ON e.session_id = s.session_id
+//   -- ¡Un solo JOIN! Datos demo siempre en sesiones
