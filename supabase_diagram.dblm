@@ -1,7 +1,7 @@
 // ============================================
-// Fuenteovejuna Digital - Database Schema
+// Fuenteovejuna Digital - Database Schema FINAL
 // Edición Digital Participativa de Fuenteovejuna
-// Actualizado: 2026-01-20
+// Actualizado: 2026-01-19
 // ============================================
 
 
@@ -91,14 +91,14 @@ Table sesiones {
 Table evaluaciones {
   id bigint [pk, increment]
   timestamp timestamptz [not null, default: `now()`]
-  source text [not null, note: 'juego, edicion']
+  source text [not null, note: 'lectura, laboratorio']
   event_type text [not null, note: 'nota_eval, falta_nota']
   session_id uuid [not null]
   pasaje_id integer [null]
   nota_id text [null]
   nota_version numeric [null]
   target_xmlid text [null, note: 'xmlid del elemento TEI anotado o estimado (para falta_nota)']
-  vote text [null, note: 'util, mejorable - Solo para event_type=nota_eval']
+  vote text [null, note: 'util (up), mejorable (down) - Solo para event_type=nota_eval']
   selected_text text [null, note: 'Texto seleccionado por el usuario cuando sugiere que falta una nota. Null para event_type=nota_eval']
   comment text [null, note: 'Comentario opcional del usuario. Para nota_eval: por qué es mejorable. Para falta_nota: qué añadiría']
   
