@@ -24,6 +24,64 @@
     <button id="btn-modo-usuario" class="btn-modo-usuario"><i class="fa-solid fa-user" aria-hidden="true"></i> Mi participación</button>
   </nav>
   
+  <!-- Pantalla de bienvenida -->
+  <div id="laboratorio-bienvenida" class="laboratorio-bienvenida">
+    <div class="bienvenida-container">
+      <!-- Lado izquierdo: Explicación -->
+      <div class="bienvenida-explicacion">
+        <h1><i class="fa-solid fa-flask" aria-hidden="true"></i> Laboratorio de notas</h1>
+        
+        <div class="explicacion-seccion">
+          <h3>📚 ¿Qué es?</h3>
+          <p>Un espacio colaborativo donde puedes leer pasajes de <em>Fuenteovejuna</em> y evaluar si las notas explicativas te resultan útiles o mejorables.</p>
+        </div>
+        
+        <div class="explicacion-seccion">
+          <h3>🎯 ¿Para qué?</h3>
+          <p>Tu opinión ayuda a mejorar la experiencia de lectura para toda la comunidad. Con tus evaluaciones contribuyes a identificar qué notas funcionan mejor.</p>
+        </div>
+        
+        <div class="explicacion-seccion">
+          <h3>⚙️ ¿Cómo funciona?</h3>
+          <ol>
+            <li>Elige un modo de lectura (secuencial o aleatorio)</li>
+            <li>Lee el pasaje y haz clic en el texto subrayado para ver las notas</li>
+            <li>Evalúa cada nota como "útil" o "mejorable"</li>
+            <li>Opcionalmente, sugiere nuevas notas</li>
+            <li>Continúa con el siguiente pasaje</li>
+          </ol>
+        </div>
+      </div>
+      
+      <!-- Lado derecho: Opciones de entrada -->
+      <div class="bienvenida-opciones">
+        <div class="opcion-modo">
+          <div class="opcion-icono">🎯</div>
+          <h3>Modo Secuencial</h3>
+          <p>Recorre los pasajes en orden cronológico de la obra</p>
+          <button id="btn-modo-secuencial" class="btn-modo-entrada">
+            <i class="fa-solid fa-list-ol" aria-hidden="true"></i> Comenzar en orden
+          </button>
+        </div>
+        
+        <div class="opcion-modo">
+          <div class="opcion-icono">🎲</div>
+          <h3>Modo Aleatorio</h3>
+          <p>Sorpréndete con un pasaje al azar de la obra</p>
+          <button id="btn-modo-aleatorio" class="btn-modo-entrada">
+            <i class="fa-solid fa-shuffle" aria-hidden="true"></i> Sorpréndeme
+          </button>
+        </div>
+        
+        <div class="stats-globales">
+          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+          <strong>Estadísticas globales:</strong>
+          <span id="stats-evaluaciones-totales" class="loading-stats">Cargando...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- Contenido principal: Layout de dos columnas -->
   <div class="laboratorio-layout">
     
@@ -34,8 +92,17 @@
       <div class="laboratorio-header">
         <h1>Laboratorio de notas</h1>
         <p>Lee los pasajes y evalúa si las notas te resultan útiles</p>
+        
+        <!-- Barra de progreso (solo modo secuencial) -->
+        <div id="barra-progreso-container" class="barra-progreso-container" style="display: none;">
+          <div class="barra-progreso">
+            <div id="barra-progreso-fill" class="barra-progreso-fill" style="width: 0%"></div>
+          </div>
+        </div>
+        
         <div class="laboratorio-progreso">
           Pasaje <span id="pasaje-actual">1</span> de <span id="pasajes-totales">-</span>
+          <span id="modo-actual-badge" class="modo-badge"></span>
         </div>
       </div>
       
@@ -48,8 +115,12 @@
       
       <!-- Controles de navegación de pasajes -->
       <div class="laboratorio-controles">
+        <button id="btn-anterior" class="btn-navegacion" style="display: none;"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Pasaje anterior</button>
         <button id="btn-siguiente" class="btn-siguiente">Siguiente pasaje <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         <button id="btn-saltar" class="btn-saltar">Saltar sin evaluar</button>
+        <button id="btn-cambiar-modo" class="btn-cambiar-modo" title="Volver a la pantalla de selección de modo">
+          <i class="fa-solid fa-home" aria-hidden="true"></i> Cambiar modo
+        </button>
       </div>
       
     </div>

@@ -1,6 +1,7 @@
 // ============================================
 // EDITOR SOCIAL (JUEGO DE EVALUACION)
 // Sistema de notas con navegacion lateral
+// Actualizado con modos de navegación
 // ============================================
 
 class EditorSocial {
@@ -14,9 +15,17 @@ class EditorSocial {
     this.notaActualIndex = -1;
     this.notasEvaluadas = new Set();
     
+    // Modo de navegación: 'secuencial' | 'aleatorio'
+    this.modoNavegacion = null;
+    
+    // Tracking de pasajes visitados en modo aleatorio (para no repetir en sesión)
+    this.pasajesVisitados = new Set();
+    
     // Referencias DOM
     this.pasajeContent = null;
     this.notaContent = null;
+    this.bienvenidaContainer = null;
+    this.laboratorioLayout = null;
   }
 
   /**
@@ -55,6 +64,8 @@ class EditorSocial {
     // Referencias DOM
     this.pasajeContent = document.getElementById('pasaje-content');
     this.notaContent = document.getElementById('nota-content');
+    this.bienvenidaContainer = document.getElementById('laboratorio-bienvenida');
+    this.laboratorioLayout = document.querySelector('.laboratorio-layout');
 
     // Verificar si usuario tiene modo definido
     if (!window.userManager.tieneModoDefinido()) {
@@ -73,13 +84,199 @@ class EditorSocial {
       throw new Error('CETEI.js no esta cargado y no se pudo cargar dinamicamente.');
     }
 
-    // Cargar primer pasaje
-    await this.cargarPasaje(0);
+    // Cargar estadísticas globales
+    await this.cargarEstadisticasGlobales();
 
-    // Event listeners para controles
+    // Mostrar pantalla de bienvenida
+    this.mostrarPantallaBienvenida();
+
+    // Event listeners para pantalla de bienvenida
+    this.setupBienvenidaListeners();
+    
+    // Event listeners para controles del laboratorio
     this.setupEventListeners();
 
     console.log('Editor Social inicializado');
+  }
+
+  /**
+   * Cargar estadísticas globales
+   */
+  async cargarEstadisticasGlobales() {
+    try {
+      const { count, error } = await window.supabaseClient
+        .from('evaluaciones')
+        .select('*', { count: 'exact', head: true });
+
+      if (error) throw error;
+
+      const statsElement = document.getElementById('stats-evaluaciones-totales');
+      if (statsElement) {
+        statsElement.textContent = `${count || 0} evaluaciones recogidas`;
+        statsElement.classList.remove('loading-stats');
+      }
+    } catch (error) {
+      console.error('Error al cargar estadísticas:', error);
+      const statsElement = document.getElementById('stats-evaluaciones-totales');
+      if (statsElement) {
+        statsElement.textContent = 'No disponible';
+        statsElement.classList.remove('loading-stats');
+      }
+    }
+  }
+
+  /**
+   * Mostrar pantalla de bienvenida
+   */
+  mostrarPantallaBienvenida() {
+    if (this.bienvenidaContainer) {
+      this.bienvenidaContainer.style.display = 'flex';
+    }
+    if (this.laboratorioLayout) {
+      this.laboratorioLayout.classList.remove('active');
+    }
+  }
+
+  /**
+   * Ocultar pantalla de bienvenida y mostrar laboratorio
+   */
+  ocultarPantallaBienvenida() {
+    if (this.bienvenidaContainer) {
+      this.bienvenidaContainer.style.display = 'none';
+    }
+    if (this.laboratorioLayout) {
+      this.laboratorioLayout.classList.add('active');
+    }
+  }
+
+  /**
+   * Setup listeners para botones de modo
+   */
+  setupBienvenidaListeners() {
+    const btnSecuencial = document.getElementById('btn-modo-secuencial');
+    const btnAleatorio = document.getElementById('btn-modo-aleatorio');
+
+    btnSecuencial?.addEventListener('click', () => {
+      this.iniciarModoSecuencial();
+    });
+
+    btnAleatorio?.addEventListener('click', () => {
+      this.iniciarModoAleatorio();
+    });
+  }
+
+  /**
+   * Iniciar modo secuencial
+   */
+  async iniciarModoSecuencial() {
+    this.modoNavegacion = 'secuencial';
+    this.pasajesVisitados.clear();
+    this.ocultarPantallaBienvenida();
+    
+    // Actualizar badge de modo
+    const badgeElement = document.getElementById('modo-actual-badge');
+    if (badgeElement) {
+      badgeElement.textContent = '📋 Secuencial';
+    }
+    
+    // Mostrar barra de progreso
+    const barraContainer = document.getElementById('barra-progreso-container');
+    if (barraContainer) {
+      barraContainer.style.display = 'block';
+    }
+    
+    // Mostrar botón anterior
+    const btnAnterior = document.getElementById('btn-anterior');
+    if (btnAnterior) {
+      btnAnterior.style.display = 'inline-block';
+    }
+    
+    // Ocultar botón saltar (no necesario en modo secuencial)
+    const btnSaltar = document.getElementById('btn-saltar');
+    if (btnSaltar) {
+      btnSaltar.style.display = 'none';
+    }
+    
+    // Cargar primer pasaje
+    await this.cargarPasaje(0);
+  }
+
+  /**
+   * Iniciar modo aleatorio
+   */
+  async iniciarModoAleatorio() {
+    this.modoNavegacion = 'aleatorio';
+    this.pasajesVisitados.clear();
+    this.ocultarPantallaBienvenida();
+    
+    // Actualizar badge de modo
+    const badgeElement = document.getElementById('modo-actual-badge');
+    if (badgeElement) {
+      badgeElement.textContent = '🎲 Aleatorio';
+    }
+    
+    // Ocultar barra de progreso
+    const barraContainer = document.getElementById('barra-progreso-container');
+    if (barraContainer) {
+      barraContainer.style.display = 'none';
+    }
+    
+    // Ocultar botón anterior
+    const btnAnterior = document.getElementById('btn-anterior');
+    if (btnAnterior) {
+      btnAnterior.style.display = 'none';
+    }
+    
+    // Mostrar botón saltar
+    const btnSaltar = document.getElementById('btn-saltar');
+    if (btnSaltar) {
+      btnSaltar.style.display = 'inline-block';
+    }
+    
+    // Cargar pasaje aleatorio
+    await this.cargarPasajeAleatorio();
+  }
+
+  /**
+   * Cargar un pasaje aleatorio no visitado
+   */
+  async cargarPasajeAleatorio() {
+    // Obtener pasajes no visitados
+    const pasajesDisponibles = this.pasajes.filter((_, index) => 
+      !this.pasajesVisitados.has(index)
+    );
+
+    if (pasajesDisponibles.length === 0) {
+      // Todos visitados - resetear o mostrar finalización
+      if (confirm('Has visitado todos los pasajes. ¿Quieres volver a empezar?')) {
+        this.pasajesVisitados.clear();
+        await this.cargarPasajeAleatorio();
+      } else {
+        this.mostrarFinalizacion();
+      }
+      return;
+    }
+
+    // Elegir pasaje aleatorio
+    const pasajeAleatorio = pasajesDisponibles[
+      Math.floor(Math.random() * pasajesDisponibles.length)
+    ];
+    
+    const indexAleatorio = this.pasajes.indexOf(pasajeAleatorio);
+    await this.cargarPasaje(indexAleatorio);
+  }
+
+  /**
+   * Actualizar barra de progreso (solo modo secuencial)
+   */
+  actualizarBarraProgreso() {
+    if (this.modoNavegacion !== 'secuencial') return;
+
+    const barraFill = document.getElementById('barra-progreso-fill');
+    if (barraFill && this.pasajes.length > 0) {
+      const progreso = ((this.pasajeActualIndex + 1) / this.pasajes.length) * 100;
+      barraFill.style.width = `${progreso}%`;
+    }
   }
 
   /**
@@ -114,6 +311,9 @@ class EditorSocial {
 
     this.pasajeActualIndex = index;
     
+    // Marcar como visitado (para modo aleatorio)
+    this.pasajesVisitados.add(index);
+    
     // Reset estado de notas
     this.notasPasaje = [];
     this.notaActualIndex = -1;
@@ -123,6 +323,12 @@ class EditorSocial {
 
     // Actualizar UI
     document.getElementById('pasaje-actual').textContent = index + 1;
+    
+    // Actualizar barra de progreso (solo modo secuencial)
+    this.actualizarBarraProgreso();
+    
+    // Actualizar botones de navegación
+    this.actualizarBotonesNavegacionPasajes();
 
     // Extraer fragmento del XML
     const fragmento = extraerFragmento(this.xmlDoc, pasaje);
@@ -744,13 +950,22 @@ class EditorSocial {
     });
 
     // Navegacion de pasajes
+    document.getElementById('btn-anterior')?.addEventListener('click', () => {
+      this.pasajeAnterior();
+    });
+
     document.getElementById('btn-siguiente')?.addEventListener('click', () => {
       this.siguientePasaje();
     });
 
     document.getElementById('btn-saltar')?.addEventListener('click', () => {
-      if (confirm('Seguro que quieres saltar este pasaje sin evaluar todas las notas?')) {
-        this.siguientePasaje();
+      this.siguientePasaje();
+    });
+
+    // Botón cambiar modo
+    document.getElementById('btn-cambiar-modo')?.addEventListener('click', () => {
+      if (confirm('¿Quieres volver a la pantalla de selección de modo?')) {
+        this.volverABienvenida();
       }
     });
 
@@ -759,11 +974,60 @@ class EditorSocial {
   }
 
   /**
+   * Volver a la pantalla de bienvenida
+   */
+  volverABienvenida() {
+    this.modoNavegacion = null;
+    this.pasajesVisitados.clear();
+    this.mostrarPantallaBienvenida();
+  }
+
+  /**
+   * Actualizar estado de botones de navegación de pasajes
+   */
+  actualizarBotonesNavegacionPasajes() {
+    const btnAnterior = document.getElementById('btn-anterior');
+    const btnSiguiente = document.getElementById('btn-siguiente');
+
+    if (this.modoNavegacion === 'secuencial') {
+      if (btnAnterior) {
+        btnAnterior.disabled = this.pasajeActualIndex <= 0;
+      }
+      if (btnSiguiente) {
+        btnSiguiente.disabled = this.pasajeActualIndex >= this.pasajes.length - 1;
+        btnSiguiente.innerHTML = '<i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Siguiente pasaje';
+      }
+    } else if (this.modoNavegacion === 'aleatorio') {
+      if (btnSiguiente) {
+        btnSiguiente.disabled = false;
+        btnSiguiente.innerHTML = '<i class="fa-solid fa-shuffle" aria-hidden="true"></i> Otro pasaje aleatorio';
+      }
+    }
+  }
+
+  /**
+   * Ir al pasaje anterior (solo modo secuencial)
+   */
+  pasajeAnterior() {
+    if (this.modoNavegacion !== 'secuencial') return;
+    
+    if (this.pasajeActualIndex > 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      this.cargarPasaje(this.pasajeActualIndex - 1);
+    }
+  }
+
+  /**
    * Ir al siguiente pasaje
    */
   siguientePasaje() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    this.cargarPasaje(this.pasajeActualIndex + 1);
+    
+    if (this.modoNavegacion === 'secuencial') {
+      this.cargarPasaje(this.pasajeActualIndex + 1);
+    } else if (this.modoNavegacion === 'aleatorio') {
+      this.cargarPasajeAleatorio();
+    }
   }
 
   /**
