@@ -32,8 +32,16 @@
   /* Estados */
   --success: #4caf50;
   --success-100: #e8f5e9;
+  --success-light: #e8f5e9;
+  --success-dark: #2e7d32;
   --warning: #c0392b;
   --warning-100: #fbeae9;
+  --warning-light: #fff3e0;
+  --warning-dark: #d84315;
+
+  /* Variantes de superficie */
+  --surface-variant: #f5f5f5;
+  --bg-subtle: #fafafa;
 
   /* Overlay / toasts */
   --overlay: rgba(0,0,0,0.7);

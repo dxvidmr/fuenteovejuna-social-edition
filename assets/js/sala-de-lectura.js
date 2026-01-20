@@ -101,11 +101,20 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let teiLoaded = false;
     let notasLoaded = false;
+    let notasSupabaseLoaded = false;
 
     // Función para verificar si todo está listo y procesar
-    function checkAndProcess() {
-        console.log('checkAndProcess:', { teiLoaded, notasLoaded, notasXML: !!window.notasXML });
+    async function checkAndProcess() {
+        console.log('checkAndProcess:', { teiLoaded, notasLoaded, notasSupabaseLoaded, notasXML: !!window.notasXML });
         if (teiLoaded && notasLoaded && window.notasXML) {
+            // Cargar notas desde Supabase (para obtener contadores de evaluaciones)
+            if (!notasSupabaseLoaded) {
+                console.log('Cargando notas desde Supabase...');
+                await cargarNotasActivas();
+                notasSupabaseLoaded = true;
+                console.log('✓ Notas de Supabase cargadas con contadores');
+            }
+            
             console.log('Todo cargado, procesando notas...');
             processNotes();
             // ← NOTA: Ya NO ponemos nada aquí, todo va dentro de processNotes()
@@ -389,6 +398,11 @@ document.addEventListener("DOMContentLoaded", function() {
             badgesHTML += `<span class="note-badge note-badge-subtype">${normalizedSubtype}</span>`;
         }
         
+        // Obtener contadores de evaluaciones usando módulo reutilizable
+        const evaluacionesHTML = typeof obtenerEvaluacionesHTML === 'function' 
+            ? obtenerEvaluacionesHTML(noteXmlId) 
+            : '';
+        
         // Actualizar estado de navegación
         window.edicionNotas.notaActualId = noteXmlId;
         window.edicionNotas.notaActualIndex = window.edicionNotas.todasLasNotas.indexOf(noteXmlId);
@@ -422,6 +436,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     ${badgesHTML ? `<div class="note-badges">${badgesHTML}</div>` : ''}
                 </div>
                 <p>${noteToShow.textContent.trim()}</p>
+                ${evaluacionesHTML}
                 <div class="note-footer">
                 </div>
             </div>

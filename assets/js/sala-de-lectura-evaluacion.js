@@ -115,27 +115,39 @@ class EdicionEvaluacion {
     this.obtenerVersionNota(notaId).then(version => {
       if (!version) return;
       
-      // Crear contenedor de evaluación
+      // Obtener estadísticas de evaluaciones
+      const evaluaciones = typeof obtenerEvaluacionesStats === 'function'
+        ? obtenerEvaluacionesStats(notaId)
+        : { total: 0, utiles: 0, mejorables: 0 };
+      
+      // Crear contenedor de evaluación con contadores integrados
       const evaluacionDiv = document.createElement('div');
       evaluacionDiv.className = 'nota-evaluacion';
-      evaluacionDiv.innerHTML = `
-        <div class="evaluacion-header">
-          <span>¿Te resulta útil esta nota?</span>
-        </div>
-        <div class="evaluacion-botones">
-          <button class="btn-evaluar btn-util" data-nota-id="${notaId}" data-version="${version}">
-            <i class="fa-solid fa-heart" aria-hidden="true"></i> Útil
-          </button>
-          <button class="btn-evaluar btn-mejorable" data-nota-id="${notaId}" data-version="${version}">
-            <i class="fa-solid fa-heart-crack" aria-hidden="true"></i> Mejorable
-          </button>
-        </div>
-        <div class="evaluacion-comentario" style="display:none;">
-          <textarea placeholder="¿Qué cambiarías? (opcional)" rows="2"></textarea>
-          <button class="btn-enviar-comentario">Enviar</button>
-          <button class="btn-cancelar-comentario">Cancelar</button>
-        </div>
-      `;
+      
+      // Usar la función del módulo si existe
+      if (typeof crearBotonesConContadores === 'function') {
+        evaluacionDiv.innerHTML = crearBotonesConContadores(notaId, version, evaluaciones);
+      } else {
+        // Fallback sin contadores
+        evaluacionDiv.innerHTML = `
+          <div class="evaluacion-header">
+            <span>¿Te resulta útil esta nota?</span>
+          </div>
+          <div class="evaluacion-botones">
+            <button class="btn-evaluar btn-util" data-nota-id="${notaId}" data-version="${version}">
+              <i class="fa-solid fa-heart" aria-hidden="true"></i> Útil
+            </button>
+            <button class="btn-evaluar btn-mejorable" data-nota-id="${notaId}" data-version="${version}">
+              <i class="fa-solid fa-heart-crack" aria-hidden="true"></i> Mejorable
+            </button>
+          </div>
+          <div class="evaluacion-comentario" style="display:none;">
+            <textarea placeholder="¿Qué cambiarías? (opcional)" rows="2"></textarea>
+            <button class="btn-enviar-comentario">Enviar</button>
+            <button class="btn-cancelar-comentario">Cancelar</button>
+          </div>
+        `;
+      }
       
       // Insertar antes del footer de la nota
       const noteFooter = noteContentDiv.querySelector('.note-footer');
@@ -188,6 +200,10 @@ class EdicionEvaluacion {
     btnUtil.addEventListener('click', async () => {
       const exito = await this.registrarEvaluacion(notaId, version, 'up', null);
       if (exito) {
+        // Actualizar contador local inmediatamente
+        if (typeof actualizarContadorLocal === 'function') {
+          actualizarContadorLocal(notaId, 'up');
+        }
         this.mostrarFeedback(container, 'up', notaId);
       }
     });
@@ -203,6 +219,10 @@ class EdicionEvaluacion {
       const comentario = textarea.value.trim() || null;
       const exito = await this.registrarEvaluacion(notaId, version, 'down', comentario);
       if (exito) {
+        // Actualizar contador local inmediatamente
+        if (typeof actualizarContadorLocal === 'function') {
+          actualizarContadorLocal(notaId, 'down');
+        }
         this.mostrarFeedback(container, 'down', notaId);
       }
     });
@@ -253,6 +273,8 @@ class EdicionEvaluacion {
       mostrarToast('Error al enviar evaluación', 3000);
       return false;
     }
+    
+    // NO invalidamos caché aquí - actualizamos localmente en actualizarContadorLocal()
     
     console.log('Evaluación registrada:', vote, notaId);
     return true;

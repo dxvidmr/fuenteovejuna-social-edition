@@ -438,6 +438,16 @@ class EditorSocial {
       badgesHTML += `<span class="nota-badge nota-badge-subtype">${nota.subtype}</span>`;
     }
 
+    // Obtener estadísticas de evaluaciones
+    const evaluaciones = typeof obtenerEvaluacionesStats === 'function' 
+      ? obtenerEvaluacionesStats(nota.nota_id, nota) 
+      : { total: 0, utiles: 0, mejorables: 0 };
+    
+    // Mensaje si no hay evaluaciones
+    const mensajePrimero = evaluaciones.total === 0 
+      ? '<p class="eval-mensaje-primero">¡Sé el primero en evaluar esta nota!</p>' 
+      : '';
+
     // Contenido HTML de la nota
     let html = `
       <div class="nota-tipo">${badgesHTML}</div>
@@ -456,12 +466,17 @@ class EditorSocial {
       html += `
         <div class="nota-acciones">
           <button class="btn-util" data-nota-id="${nota.nota_id}" data-version="${nota.version}">
-            <i class="fa-solid fa-heart" aria-hidden="true"></i> Util
+            <span class="btn-contador">${evaluaciones.utiles}</span>
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            Util
           </button>
           <button class="btn-mejorable" data-nota-id="${nota.nota_id}" data-version="${nota.version}">
-            <i class="fa-solid fa-heart-crack" aria-hidden="true"></i> Mejorable
+            <span class="btn-contador">${evaluaciones.mejorables}</span>
+            <i class="fa-solid fa-heart-crack" aria-hidden="true"></i>
+            Mejorable
           </button>
         </div>
+        ${mensajePrimero}
         <div class="nota-comentario" style="display: none;">
           <textarea placeholder="Que cambiarias? (opcional)" rows="2"></textarea>
           <div class="nota-comentario-btns">
@@ -502,6 +517,10 @@ class EditorSocial {
       );
 
       if (exito) {
+        // Actualizar contador local inmediatamente
+        if (typeof actualizarContadorLocal === 'function') {
+          actualizarContadorLocal(nota.nota_id, 'up');
+        }
         this.marcarNotaComoEvaluada(nota.nota_id);
         this.avanzarSiguienteNotaPendiente();
       }
@@ -527,6 +546,10 @@ class EditorSocial {
       );
 
       if (exito) {
+        // Actualizar contador local inmediatamente
+        if (typeof actualizarContadorLocal === 'function') {
+          actualizarContadorLocal(nota.nota_id, 'down');
+        }
         this.marcarNotaComoEvaluada(nota.nota_id);
         this.avanzarSiguienteNotaPendiente();
       }
@@ -657,6 +680,8 @@ class EditorSocial {
         mostrarToast('Error al enviar evaluacion', 3000);
         return false;
       }
+
+      // NO invalidamos caché aquí - actualizamos localmente en actualizarContadorLocal()
 
       console.log('Evaluacion registrada:', vote, notaId);
       return true;
