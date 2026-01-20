@@ -223,6 +223,170 @@
 }
 
 /* ============================================
+   SUGERENCIAS DE NOTAS FALTANTES
+   ============================================ */
+
+/* Tooltip flotante */
+.sugerencia-tooltip {
+  position: absolute;
+  z-index: 9000;
+  transform: translateX(-50%);
+  animation: fadeInUp 0.15s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.btn-sugerir-nota {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: var(--shadow-elev-2);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-sugerir-nota:hover {
+  background: var(--primary-700);
+  transform: scale(1.02);
+}
+
+.btn-sugerir-nota i {
+  color: var(--warning-300, #fcd34d);
+}
+
+/* Modal de sugerencia */
+.sugerencia-modal-content {
+  max-width: 500px;
+}
+
+.sugerencia-modal-content h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sugerencia-modal-content h2 i {
+  color: var(--warning);
+}
+
+.sugerencia-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sugerencia-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: -8px;
+}
+
+.sugerencia-label .label-opcional {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.sugerencia-texto-seleccionado {
+  padding: 12px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.5;
+  max-height: 150px;
+  overflow-y: auto;
+  font-family: 'Google Sans Code', 'Oxygen Mono', monospace;
+  font-size: 14px;
+}
+
+.sugerencia-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.2s;
+}
+
+.sugerencia-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.sugerencia-textarea::placeholder {
+  color: var(--muted);
+}
+
+.sugerencia-botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn-cancelar-sugerencia {
+  padding: 10px 18px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancelar-sugerencia:hover {
+  background: var(--muted-light);
+  border-color: var(--muted-mid);
+}
+
+.btn-enviar-sugerencia {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-enviar-sugerencia:hover:not(:disabled) {
+  background: var(--primary-700);
+}
+
+.btn-enviar-sugerencia:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ============================================
    MODAL
    ============================================ */
 
