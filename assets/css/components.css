@@ -309,7 +309,6 @@
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 6px;
-  font-style: italic;
   color: var(--text);
   line-height: 1.5;
   max-height: 150px;

@@ -16,7 +16,7 @@ class SugerenciasNotas {
    */
   detectarSource() {
     if (window.location.pathname.includes('laboratorio')) {
-      return 'juego';
+      return 'laboratorio';
     }
     return 'lectura';
   }
