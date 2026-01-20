@@ -103,25 +103,34 @@ class EditorSocial {
    * Cargar estadísticas globales
    */
   async cargarEstadisticasGlobales() {
+    const container = document.querySelector('.stats-globales');
+    
+    if (!container) {
+      console.warn('Contenedor de estadísticas no encontrado');
+      return;
+    }
+
     try {
-      const { count, error } = await window.supabaseClient
-        .from('evaluaciones')
-        .select('*', { count: 'exact', head: true });
-
-      if (error) throw error;
-
-      const statsElement = document.getElementById('stats-evaluaciones-totales');
-      if (statsElement) {
-        statsElement.textContent = `${count || 0} evaluaciones recogidas`;
-        statsElement.classList.remove('loading-stats');
+      // Usar la función del módulo evaluaciones-stats
+      if (typeof obtenerEstadisticasGlobales === 'function') {
+        const stats = await obtenerEstadisticasGlobales();
+        
+        // Renderizar con la función del módulo
+        if (typeof renderizarEstadisticasGlobales === 'function') {
+          renderizarEstadisticasGlobales(container, stats);
+        }
+      } else {
+        throw new Error('Función obtenerEstadisticasGlobales no disponible');
       }
     } catch (error) {
       console.error('Error al cargar estadísticas:', error);
-      const statsElement = document.getElementById('stats-evaluaciones-totales');
-      if (statsElement) {
-        statsElement.textContent = 'No disponible';
-        statsElement.classList.remove('loading-stats');
-      }
+      container.innerHTML = `
+        <div class="stats-header">
+          <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+          <strong>Estadísticas globales</strong>
+        </div>
+        <p class="stats-error">No disponible</p>
+      `;
     }
   }
 
