@@ -478,7 +478,7 @@ class EditorSocial {
         </div>
         ${mensajePrimero}
         <div class="nota-comentario" style="display: none;">
-          <textarea placeholder="Que cambiarias? (opcional)" rows="2"></textarea>
+          <textarea placeholder="¿Qué cambiarías? Puedes explicar lo que no te gusta o redactar una nueva nota (opcional)" rows="3"></textarea>
           <div class="nota-comentario-btns">
             <button class="btn-enviar-comentario">Enviar</button>
             <button class="btn-cancelar-comentario">Cancelar</button>

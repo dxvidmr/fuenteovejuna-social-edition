@@ -142,7 +142,7 @@ class EdicionEvaluacion {
             </button>
           </div>
           <div class="evaluacion-comentario" style="display:none;">
-            <textarea placeholder="¿Qué cambiarías? (opcional)" rows="2"></textarea>
+            <textarea placeholder="¿Qué cambiarías? Puedes explicar lo que no te gusta o redactar una nueva nota (opcional)" rows="3"></textarea>
             <button class="btn-enviar-comentario">Enviar</button>
             <button class="btn-cancelar-comentario">Cancelar</button>
           </div>
