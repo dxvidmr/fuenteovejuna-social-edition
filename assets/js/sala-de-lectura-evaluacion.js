@@ -157,8 +157,19 @@ class EdicionEvaluacion {
         noteContentDiv.appendChild(evaluacionDiv);
       }
       
-      // Añadir event listeners
-      this.attachButtonListeners(evaluacionDiv, notaId, version);
+      // Adjuntar event listeners usando función reutilizable
+      if (typeof attachEvaluationListeners === 'function') {
+        attachEvaluationListeners(
+          evaluacionDiv,
+          notaId,
+          version,
+          (nId, ver, vote, comment) => this.registrarEvaluacion(nId, ver, vote, comment),
+          (nId, vote) => this.mostrarFeedback(evaluacionDiv, vote, nId)
+        );
+      } else {
+        // Fallback a método legacy
+        this.attachButtonListeners(evaluacionDiv, notaId, version);
+      }
     });
   }
   
@@ -186,7 +197,8 @@ class EdicionEvaluacion {
   }
   
   /**
-   * Adjuntar listeners a botones de evaluación
+   * Adjuntar listeners a botones de evaluación (LEGACY - usar attachEvaluationListeners)
+   * @deprecated Usar attachEvaluationListeners de evaluaciones-stats.js
    */
   attachButtonListeners(container, notaId, version) {
     const btnUtil = container.querySelector('.btn-util');

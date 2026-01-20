@@ -489,14 +489,30 @@ class EditorSocial {
 
     this.notaContent.innerHTML = html;
 
-    // Adjuntar event listeners si no esta evaluada
+    // Adjuntar event listeners si no esta evaluada usando función reutilizable
     if (!yaEvaluada) {
-      this.attachNotaListeners(nota, pasajeId);
+      if (typeof attachEvaluationListeners === 'function') {
+        const container = this.notaContent;
+        attachEvaluationListeners(
+          container,
+          nota.nota_id,
+          nota.version,
+          (nId, ver, vote, comment) => this.registrarEvaluacion(nId, ver, vote, comment, pasajeId),
+          (nId, vote) => {
+            this.marcarNotaComoEvaluada(nId);
+            this.avanzarSiguienteNotaPendiente();
+          }
+        );
+      } else {
+        // Fallback a método legacy
+        this.attachNotaListeners(nota, pasajeId);
+      }
     }
   }
 
   /**
-   * Adjuntar listeners a los botones de evaluacion
+   * Adjuntar listeners a los botones de evaluacion (LEGACY)
+   * @deprecated Usar attachEvaluationListeners de evaluaciones-stats.js
    */
   attachNotaListeners(nota, pasajeId) {
     const btnUtil = this.notaContent.querySelector('.btn-util');

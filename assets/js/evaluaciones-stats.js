@@ -77,6 +77,63 @@ function crearBotonesConContadores(notaId, version, evaluaciones) {
   `;
 }
 
+/**
+ * Adjuntar listeners de evaluación a botones (REUTILIZABLE)
+ * @param {HTMLElement} container - Contenedor con los botones
+ * @param {string} notaId - ID de la nota
+ * @param {string} version - Versión de la nota
+ * @param {Function} registrarCallback - Callback async(notaId, version, vote, comment) => boolean
+ * @param {Function} feedbackCallback - Callback(notaId, vote) => void
+ */
+function attachEvaluationListeners(container, notaId, version, registrarCallback, feedbackCallback) {
+  const btnUtil = container.querySelector('.btn-util');
+  const btnMejorable = container.querySelector('.btn-mejorable');
+  const comentarioDiv = container.querySelector('.evaluacion-comentario, .nota-comentario');
+  const textarea = comentarioDiv?.querySelector('textarea');
+  const btnEnviar = comentarioDiv?.querySelector('.btn-enviar-comentario');
+  const btnCancelar = comentarioDiv?.querySelector('.btn-cancelar-comentario');
+
+  if (!btnUtil || !btnMejorable) {
+    console.warn('Botones de evaluación no encontrados');
+    return;
+  }
+
+  // Botón "Útil"
+  btnUtil.addEventListener('click', async () => {
+    const exito = await registrarCallback(notaId, version, 'up', null);
+    if (exito) {
+      actualizarContadorLocal(notaId, 'up');
+      if (feedbackCallback) feedbackCallback(notaId, 'up');
+    }
+  });
+
+  // Botón "Mejorable" - mostrar textarea
+  btnMejorable.addEventListener('click', () => {
+    if (comentarioDiv) {
+      comentarioDiv.style.display = 'block';
+      textarea?.focus();
+    }
+  });
+
+  // Botón "Enviar comentario"
+  btnEnviar?.addEventListener('click', async () => {
+    const comentario = textarea?.value.trim() || null;
+    const exito = await registrarCallback(notaId, version, 'down', comentario);
+    if (exito) {
+      actualizarContadorLocal(notaId, 'down');
+      if (feedbackCallback) feedbackCallback(notaId, 'down');
+    }
+  });
+
+  // Botón "Cancelar"
+  btnCancelar?.addEventListener('click', () => {
+    if (comentarioDiv) {
+      comentarioDiv.style.display = 'none';
+      if (textarea) textarea.value = '';
+    }
+  });
+}
+
 console.log('✓ Evaluaciones-stats.js cargado');
 
 /**
